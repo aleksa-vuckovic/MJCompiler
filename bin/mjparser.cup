@@ -1,0 +1,262 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.my.*;
+import java.util.List;
+
+parser code {:
+
+	boolean errorDetected = false;
+	boolean fatalErrorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    public void syntax_error(Symbol cur_token) {
+        report_error("Sintaksna greska.", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti.", cur_token);
+    }
+    
+     
+    public void report_fatal_error(String message, Symbol token) throws java.lang.Exception {
+      done_parsing();
+      fatalErrorDetected = true;
+      report_error(message, token);
+    }
+  
+
+    public void report_error(String message, Symbol token) {
+    	errorDetected = true;
+        message = "Linija " + token.left + ", kolona " + token.right + ":" + message;
+        log.error(message);
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info("Parser je ucitao token:" + s.toString() + " -> " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, CLASS, NAMESPACE, EXTENDS, VOID, STATIC, CONST;
+terminal RETURN, BREAK, CONTINUE, PRINT, READ, NEW, IF, ELSE, FOR;
+terminal LPAREN, RPAREN, LBRACE, RBRACE, LBRACK, RBRACK, DOT, COMMA, SEMI, SCOPE;
+terminal ADD, SUB, MUL, DIV, MOD, EQ, NE, GT, GE, LT, LE, AND, OR, ASSIGN, INC, DEC;
+terminal Integer NUM;
+terminal String IDENT;
+terminal Integer BOOL;
+terminal Integer CHAR;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
+nonterminal NamespaceList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Namespace, NamespaceName;
+nonterminal DeclList, Decl;
+nonterminal ConstDeclLine, ConstDeclLineStart, ConstDeclComma, ConstDecl;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName;
+nonterminal Methods;
+nonterminal StaticMemberList, StaticMember;
+nonterminal StaticVarDeclLine, StaticVarDeclLineStart, StaticVarDeclComma, StaticVarDecl;
+nonterminal StaticInitializer, StaticInitializerStart;
+
+nonterminal MethodList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDeclaration, MethodName, Method;
+nonterminal FormalParamComma, FormalParam;
+
+nonterminal VarDeclLineList, VarDeclLine, VarDeclLineStart, VarDeclComma, VarDecl;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct MethodInvocation;
+nonterminal rs.ac.bg.etf.pp1.my.TypeList ActPars;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ActPar;
+
+nonterminal StatementList, Statement, DesignatorStatement, DesignatorStatementComma;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
+
+nonterminal Condition, ConditionTerm, ConditionFactor;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Relop;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor, ConstructorInvocation;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Addop, Mulop, Assignop;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+
+
+precedence right ELSE;
+
+
+Program ::= (Program) ProgramName NamespaceList DeclList LBRACE MethodList RBRACE;
+ProgramName ::= (ProgramName) PROG IDENT:name;
+NamespaceList ::= (NamespaceListItem) NamespaceList Namespace
+					| (NamespaceListEnd);
+Namespace ::= (Namespace) NamespaceName LBRACE DeclList LBRACE MethodList RBRACE RBRACE;
+NamespaceName ::= (NamespaceName) NAMESPACE IDENT:name;
+
+DeclList ::= (DeclListItem) DeclList Decl
+				| (DeclListEnd);
+Decl ::= (DeclConst) ConstDeclLine
+			| (DeclVar) VarDeclLine
+			| (DeclClass) ClassDecl;
+			
+ConstDeclLine ::= (ConstDeclLine) ConstDeclLineStart ConstDeclComma SEMI;
+ConstDeclLineStart ::= (ConstDeclLineStart) CONST Type;
+ConstDeclComma ::= (ConstDeclCommaItem) ConstDeclComma COMMA ConstDecl
+					| (ConstDeclCommaEnd) ConstDecl;
+ConstDecl ::= (ConstDeclNum) IDENT:name ASSIGN NUM:val
+				| (ConstDeclChar) IDENT:name ASSIGN CHAR:val
+				| (ConstDeclBool) IDENT:name ASSIGN BOOL:val
+				;
+
+ClassDecl ::= (ClassDecl) ClassName LBRACE StaticMemberList VarDeclLineList Methods RBRACE;
+ClassName ::= (ClassNameNoExtend) CLASS IDENT:name
+				| (ClassNameExtend) CLASS IDENT:name EXTENDS Type
+				;
+StaticMemberList ::= (StaticMemberListItem) StaticMemberList StaticMember
+						| (StaticMemberListEnd)
+						;
+StaticMember ::= (StaticMemberInitializer) StaticInitializer
+				| (StaticMemberVar) StaticVarDeclLine
+				;
+Methods ::= (MethodsNonempty) LBRACE MethodList RBRACE
+			| (MethodsEmpty)
+			;
+
+StaticVarDeclLine ::= (StaticVarDeclLine) StaticVarDeclLineStart StaticVarDeclComma SEMI;
+StaticVarDeclLineStart ::= (StaticVarDeclLineStart) STATIC Type;
+StaticVarDeclComma ::= (StaticVarDeclCommaItem) StaticVarDeclComma COMMA StaticVarDecl
+						| (StaticVarDeclCommaEnd) StaticVarDecl;
+StaticVarDecl ::= (StaticVarDeclScalar) IDENT:name
+					| (StaticVarDeclArray) IDENT:name LBRACK RBRACK;
+
+StaticInitializer ::= (StaticInitializer) StaticInitializerStart LBRACE StatementList RBRACE;
+StaticInitializerStart ::= (StaticInitializerStart) STATIC;
+
+MethodList ::= (MethodListItem) MethodList Method
+				| (MethodListEnd) ;
+Method ::= (Method) MethodDeclaration VarDeclLineList LBRACE StatementList RBRACE;
+MethodDeclaration ::= (MethodDeclaration) MethodName LPAREN FormalParamComma RPAREN;
+MethodName ::= (MethodNameRet) Type IDENT:name
+				| (MethodNameVoid) VOID IDENT:name
+				| (MethodNameCons) IDENT:name;
+
+FormalParamComma ::= (FormalParamCommaItem) FormalParamComma COMMA FormalParam
+						| (FormalParamCommaEnd) FormalParam
+						| (FormalParamCommaEmpty) ;
+FormalParam ::= (FormalParamScalar) Type IDENT:name
+				| (FormalParamArray) Type IDENT:name LBRACK RBRACK;
+
+VarDeclLineList ::= (VarDeclLineListItem) VarDeclLineList VarDeclLine
+					| (VarDeclLineListEnd)
+					;
+VarDeclLine ::= (VarDeclLine) VarDeclLineStart VarDeclComma SEMI;
+VarDeclLineStart ::= (VarDeclLineStart) Type;
+VarDeclComma ::= (VarDeclCommaItem) VarDeclComma COMMA VarDecl
+					| (VarDeclCommaEnd) VarDecl;
+VarDecl ::= (VarDeclScalar) IDENT:name
+			| (VarDeclArray) IDENT:name LBRACK RBRACK;
+
+MethodInvocation ::= (MethodInvocation) Designator LPAREN ActPars RPAREN;
+ActPars ::= (ActParsItem) ActPars COMMA ActPar
+			| (ActParsEnd) ActPar
+			| (ActParsEmpty) ;
+ActPar ::= (ActPar) Expr;
+
+StatementList ::= (StatementListItem) StatementList Statement
+					| (StatementListEnd)
+					;
+Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition RPAREN IfStatement
+				| (StatementDesignatorStatement) DesignatorStatement SEMI
+				| (StatementBreak) BREAK SEMI
+				| (StatementContinue) CONTINUE SEMI
+				| (StatementReturn) RETURN SEMI
+				| (StatementReturnExpr) RETURN Expr SEMI
+				| (StatementRead) READ LPAREN Designator RPAREN SEMI
+				| (StatementPrint) PRINT LPAREN Expr RPAREN SEMI
+				| (StatementPrintNum) PRINT LPAREN Expr COMMA NUM RPAREN SEMI
+				| (StatementBlock) LBRACE StatementList RBRACE
+				| (StatementMatchedIf) IF LPAREN IfCondition RPAREN IfStatement ELSE Statement
+				| (StatementFor) FOR LPAREN ForEntry SEMI ForCondition SEMI ForExit RPAREN Statement
+				;
+
+IfCondition ::= (IfCondition) Condition;
+IfStatement ::= (IfStatement) Statement;
+ForEntry ::= (ForEntry) DesignatorStatementComma;
+ForCondition ::= (ForConditionNonempty) ConditionFactor
+				| (ForConditionEmpty) ;
+ForExit ::= (ForExit)DesignatorStatementComma;
+
+DesignatorStatementComma ::= (DesignatorStatementCommaItem) DesignatorStatementComma COMMA DesignatorStatement
+								| (DesignatorStatementCommaEnd) DesignatorStatement
+								| (DesignatorStatementCommaEmpty) 
+								;
+DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr
+						| (DesignatorStatementMethod) MethodInvocation
+						| (DesignatorStatementInc) Designator INC
+						| (DesignatorStatementDec) Designator DEC
+						;
+
+Condition ::= (ConditionOr) Condition OR ConditionTerm
+				| (ConditionSingle) ConditionTerm
+				;
+ConditionTerm ::= (ConditionTermAnd) ConditionTerm AND ConditionFactor
+					| (ConditionTermSingle) ConditionFactor
+					;
+ConditionFactor ::= (ConditionFactorRel) Expr Relop Expr
+					| (ConditonFactorExpr) Expr
+					;
+
+Expr ::= (ExprAdd) Expr Addop Term
+			| (ExprSingle) Term
+			| (ExprSingleNeg) SUB Term
+			;
+Term ::= (TermMul) Term Mulop Factor
+			| (TermSingle) Factor
+			;
+Factor ::= (FactorNum) NUM:val
+			| (FactorChar) CHAR:val
+			| (FactorBool) BOOL:val
+			| (FactorDesignator) Designator
+			| (FactorMethod) MethodInvocation
+			| (FactorArray) NEW Type LBRACK Expr RBRACK
+			| (FactorExpr) LPAREN Expr RPAREN
+			| (FactorCons) ConstructorInvocation LPAREN ActPars RPAREN
+			;
+ConstructorInvocation ::= (ConstructorInvocation) NEW Type;
+
+Type ::= (TypeSimple) IDENT:name
+			| (TypeScoped) IDENT:namespace SCOPE IDENT:name
+			;
+
+Assignop ::= (Assignop) ASSIGN;
+Relop ::= (RelopEq) EQ
+			| (RelopNe) NE
+			| (RelopGt) GT
+			| (RelopGe) GE
+			| (RelopLt) LT
+			| (RelopLe) LE
+			;
+Addop ::= (AddopAdd) ADD
+			| (AddopSub) SUB
+			;
+Mulop ::= (MulopMul) MUL
+			| (MulopDiv) DIV
+			| (MulopMod) MOD
+			;
+
+Designator ::= (DesignatorField) Designator DOT IDENT:name
+				| (DesignatorElem) Designator LBRACK Expr RBRACK
+				| (DesignatorScoped) IDENT:namespace SCOPE IDENT:name
+				| (DesignatorSimple) IDENT:name
+				;

@@ -1,0 +1,35 @@
+INFO  22:07:35,063 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\if-for.mj
+INFO  22:07:35,143 - Parser je ucitao token:#2 -> program
+INFO  22:07:35,144 - Parser je ucitao token:#45 -> MJProgram
+INFO  22:07:35,144 - Parser je ucitao token:#45 -> int
+INFO  22:07:35,147 - Parser je ucitao token:#45 -> x
+INFO  22:07:35,148 - Parser je ucitao token:#26 -> ;
+INFO  22:07:35,149 - Parser je ucitao token:#45 -> int
+INFO  22:07:35,150 - Parser je ucitao token:#45 -> y
+INFO  22:07:35,150 - Parser je ucitao token:#26 -> ;
+INFO  22:07:35,151 - Parser je ucitao token:#20 -> {
+INFO  22:07:35,151 - Parser je ucitao token:#45 -> int
+INFO  22:07:35,152 - Parser je ucitao token:#45 -> sqrt
+INFO  22:07:35,153 - Parser je ucitao token:#18 -> (
+INFO  22:07:35,155 - Parser je ucitao token:#45 -> int
+INFO  22:07:35,155 - Parser je ucitao token:#45 -> t
+INFO  22:07:35,155 - Parser je ucitao token:#19 -> )
+INFO  22:07:35,156 - Parser je ucitao token:#45 -> int
+INFO  22:07:35,158 - Parser je ucitao token:#45 -> res
+INFO  22:07:35,158 - Parser je ucitao token:#26 -> ;
+INFO  22:07:35,158 - Parser je ucitao token:#20 -> {
+INFO  22:07:35,159 - Parser je ucitao token:#45 -> res
+INFO  22:07:35,160 - Parser je ucitao token:#41 -> =
+INFO  22:07:35,160 - Parser je ucitao token:#44 -> 0
+INFO  22:07:35,162 - Parser je ucitao token:#26 -> ;
+INFO  22:07:35,162 - Parser je ucitao token:#15 -> if
+ERROR 22:07:35,162 - Linija 7, kolona 2:Sintaksna greska.
+ERROR 22:07:35,163 - Linija 7, kolona 2:Fatalna greska, parsiranje se ne moze nastaviti.
+INFO  22:07:35,163 - Detektovane fatalne greske! Semanticka analiza se preskace.
+INFO  22:07:35,163 - ExprSingle(
+  TermSingle(
+    FactorNum(
+     0
+    ) [FactorNum]
+  ) [TermSingle]
+) [ExprSingle]

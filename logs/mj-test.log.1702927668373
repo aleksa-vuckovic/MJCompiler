@@ -1,0 +1,23 @@
+INFO  20:26:35,214 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\program.mj
+INFO  20:26:35,324 - Parser je ucitao token:#2 -> program
+INFO  20:26:35,324 - Parser je ucitao token:#45 -> MJProgram
+INFO  20:26:35,324 - Parser je ucitao token:#45 -> int
+INFO  20:26:35,327 - Parser je ucitao token:#45 -> x
+INFO  20:26:35,329 - Parser je ucitao token:#26 -> ;
+INFO  20:26:35,330 - Parser je ucitao token:#45 -> int
+INFO  20:26:35,331 - Parser je ucitao token:#45 -> y
+INFO  20:26:35,332 - Parser je ucitao token:#26 -> ;
+INFO  20:26:35,332 - Parser je ucitao token:#20 -> {
+INFO  20:26:35,332 - Parser je ucitao token:#45 -> int
+INFO  20:26:35,334 - Parser je ucitao token:#45 -> main
+INFO  20:26:35,335 - Parser je ucitao token:#18 -> (
+INFO  20:26:35,337 - Parser je ucitao token:#19 -> )
+INFO  20:26:35,339 - Parser je ucitao token:#20 -> {
+INFO  20:26:35,343 - Parser je ucitao token:#12 -> print
+INFO  20:26:35,344 - Parser je ucitao token:#18 -> (
+INFO  20:26:35,345 - Parser je ucitao token:#45 -> a
+INFO  20:26:35,345 - Parser je ucitao token:#19 -> )
+INFO  20:26:35,347 - Parser je ucitao token:#26 -> ;
+ERROR 20:26:35,347 - Linija 6, kolona 10:Sintaksna greska.
+ERROR 20:26:35,348 - Linija 6, kolona 10:Fatalna greska, parsiranje se ne moze nastaviti.
+INFO  20:26:35,348 - Fatal errors detected, skipping Semantic analysis.

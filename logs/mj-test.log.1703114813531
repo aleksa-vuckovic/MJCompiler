@@ -1,0 +1,8 @@
+INFO  00:26:30,346 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\polymorphism.mj
+ERROR 00:26:30,347 - test\polymorphism.mj (The system cannot find the file specified)
+java.io.FileNotFoundException: test\polymorphism.mj (The system cannot find the file specified)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:216)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileReader.<init>(FileReader.java:75)
+	at rs.ac.bg.etf.pp1.SemanticAnalyzerTest.main(SemanticAnalyzerTest.java:31)

@@ -1,0 +1,281 @@
+
+
+package rs.ac.bg.etf.pp1;
+
+import java_cup.runtime.*;
+import org.apache.log4j.*;
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.my.*;
+import java.util.List;
+
+parser code {:
+
+	boolean errorDetected = false;
+	boolean fatalErrorDetected = false;
+	
+	Logger log = Logger.getLogger(getClass());
+   
+   
+    public void syntax_error(Symbol cur_token) {
+        report_error("Sintaksna greska.", cur_token);
+    }
+  
+    public void unrecovered_syntax_error(Symbol cur_token) throws java.lang.Exception {
+        report_fatal_error("Fatalna greska, parsiranje se ne moze nastaviti.", cur_token);
+    }
+    
+     
+    public void report_fatal_error(String message, Symbol token) throws java.lang.Exception {
+      done_parsing();
+      fatalErrorDetected = true;
+      report_error(message, token);
+    }
+  
+
+    public void report_error(String message, Symbol token) {
+    	errorDetected = true;
+        message = "Linija " + token.left + ", kolona " + token.right + ":" + message;
+        log.error(message);
+    }
+
+
+:}
+
+
+scan with {:
+	Symbol s = this.getScanner().next_token();
+	if (s != null && s.value != null) 
+		log.info("Parser je ucitao token:" + s.toString() + " -> " + s.value.toString());
+	return s;
+:}
+
+terminal PROG, CLASS, NAMESPACE, EXTENDS, VOID, STATIC, CONST;
+terminal RETURN, BREAK, CONTINUE, PRINT, READ, NEW, IF, ELSE, FOR;
+terminal LPAREN, RPAREN, LBRACE, RBRACE, LBRACK, RBRACK, DOT, COMMA, SEMI, SCOPE;
+terminal ADD, SUB, MUL, DIV, MOD, EQ, NE, GT, GE, LT, LE, AND, OR, ASSIGN, INC, DEC;
+terminal Integer NUM;
+terminal String IDENT;
+terminal Integer BOOL;
+terminal Integer CHAR;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Program, ProgramName;
+nonterminal NamespaceList NamespaceList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Namespace, NamespaceName;
+nonterminal DeclList DeclList;
+nonterminal Decl Decl;
+nonterminal ConstDeclLine ConstDeclLine;
+nonterminal ConstDeclLineStart ConstDeclLineStart;
+nonterminal ConstDeclComma ConstDeclComma;
+nonterminal ConstDecl ConstDecl;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName;
+nonterminal Methods Methods;
+nonterminal StaticMemberList StaticMemberList;
+nonterminal StaticMember StaticMember;
+nonterminal StaticVarDeclLine StaticVarDeclLine;
+nonterminal StaticVarDeclLineStart StaticVarDeclLineStart;
+nonterminal StaticVarDeclComma StaticVarDeclComma;
+nonterminal StaticVarDecl StaticVarDecl;
+nonterminal StaticInitializer StaticInitializer;
+nonterminal StaticInitializerStart StaticInitializerStart;
+
+nonterminal MethodList MethodList;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodDeclaration, MethodName, Method;
+nonterminal FormalParamComma FormalParamComma;
+nonterminal FormalParam FormalParam;
+
+nonterminal VarDeclLineList VarDeclLineList;
+nonterminal VarDeclLine VarDeclLine;
+nonterminal VarDeclLineStart VarDeclLineStart;
+nonterminal VarDeclComma VarDeclComma;
+nonterminal VarDecl VarDecl;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct MethodInvocation;
+nonterminal rs.ac.bg.etf.pp1.my.TypeList ActPars;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct ActPar;
+
+nonterminal StatementList StatementList;
+nonterminal Statement Statement;
+nonterminal DesignatorStatement DesignatorStatement;
+nonterminal DesignatorStatementComma DesignatorStatementComma;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
+
+nonterminal Condition Condition;
+nonterminal ConditionTerm ConditionTerm;
+nonterminal ConditionFactor ConditionFactor;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Relop;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor, ConstructorInvocation;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Addop, Mulop, Assignop;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+
+
+precedence right ELSE;
+
+
+Program ::= (Program) ProgramName:P1 NamespaceList:N2 DeclList:D3 LBRACE MethodList:M4 RBRACE {: RESULT=new Program(P1, N2, D3, M4); RESULT.setLine(P1left); :};
+ProgramName ::= (ProgramName) PROG IDENT:name {: RESULT=new ProgramName(name); RESULT.setLine(nameleft); :};
+NamespaceList ::= (NamespaceListItem) NamespaceList:N1 Namespace:N2 {: RESULT=new NamespaceListItem(N1, N2); RESULT.setLine(N1left); :}
+					| (NamespaceListEnd) {: RESULT=new NamespaceListEnd(); :};
+Namespace ::= (Namespace) NamespaceName:N1 LBRACE DeclList:D2 LBRACE MethodList:M3 RBRACE RBRACE {: RESULT=new Namespace(N1, D2, M3); RESULT.setLine(N1left); :};
+NamespaceName ::= (NamespaceName) NAMESPACE IDENT:name {: RESULT=new NamespaceName(name); RESULT.setLine(nameleft); :};
+
+DeclList ::= (DeclListItem) DeclList:D1 Decl:D2 {: RESULT=new DeclListItem(D1, D2); RESULT.setLine(D1left); :}
+				| (DeclListEnd) {: RESULT=new DeclListEnd(); :};
+Decl ::= (DeclConst) ConstDeclLine:C1 {: RESULT=new DeclConst(C1); RESULT.setLine(C1left); :}
+			| (DeclVar) VarDeclLine:V1 {: RESULT=new DeclVar(V1); RESULT.setLine(V1left); :}
+			| (DeclClass) ClassDecl:C1 {: RESULT=new DeclClass(C1); RESULT.setLine(C1left); :};
+			
+ConstDeclLine ::= (ConstDeclLine) ConstDeclLineStart:C1 ConstDeclComma:C2 SEMI {: RESULT=new ConstDeclLine(C1, C2); RESULT.setLine(C1left); :};
+ConstDeclLineStart ::= (ConstDeclLineStart) CONST Type:T1 {: RESULT=new ConstDeclLineStart(T1); RESULT.setLine(T1left); :};
+ConstDeclComma ::= (ConstDeclCommaItem) ConstDeclComma:C1 COMMA ConstDecl:C2 {: RESULT=new ConstDeclCommaItem(C1, C2); RESULT.setLine(C1left); :}
+					| (ConstDeclCommaEnd) ConstDecl:C1 {: RESULT=new ConstDeclCommaEnd(C1); RESULT.setLine(C1left); :};
+ConstDecl ::= (ConstDeclNum) IDENT:name ASSIGN NUM:val {: RESULT=new ConstDeclNum(name, val); RESULT.setLine(nameleft); :}
+				| (ConstDeclChar) IDENT:name ASSIGN CHAR:val {: RESULT=new ConstDeclChar(name, val); RESULT.setLine(nameleft); :}
+				| (ConstDeclBool) IDENT:name ASSIGN BOOL:val {: RESULT=new ConstDeclBool(name, val); RESULT.setLine(nameleft); :}
+				;
+
+ClassDecl ::= (ClassDecl) ClassName:C1 LBRACE StaticMemberList:S2 VarDeclLineList:V3 Methods:M4 RBRACE {: RESULT=new ClassDecl(C1, S2, V3, M4); RESULT.setLine(C1left); :};
+ClassName ::= (ClassNameNoExtend) CLASS IDENT:name {: RESULT=new ClassNameNoExtend(name); RESULT.setLine(nameleft); :}
+				| (ClassNameExtend) CLASS IDENT:name EXTENDS Type:T1 {: RESULT=new ClassNameExtend(name, T1); RESULT.setLine(nameleft); :}
+				;
+StaticMemberList ::= (StaticMemberListItem) StaticMemberList:S1 StaticMember:S2 {: RESULT=new StaticMemberListItem(S1, S2); RESULT.setLine(S1left); :}
+						| (StaticMemberListEnd) {: RESULT=new StaticMemberListEnd(); :}
+						;
+StaticMember ::= (StaticMemberInitializer) StaticInitializer:S1 {: RESULT=new StaticMemberInitializer(S1); RESULT.setLine(S1left); :}
+				| (StaticMemberVar) StaticVarDeclLine:S1 {: RESULT=new StaticMemberVar(S1); RESULT.setLine(S1left); :}
+				;
+Methods ::= (MethodsNonempty) LBRACE MethodList:M1 RBRACE {: RESULT=new MethodsNonempty(M1); RESULT.setLine(M1left); :}
+			| (MethodsEmpty) {: RESULT=new MethodsEmpty(); :}
+			;
+
+StaticVarDeclLine ::= (StaticVarDeclLine) StaticVarDeclLineStart:S1 StaticVarDeclComma:S2 SEMI {: RESULT=new StaticVarDeclLine(S1, S2); RESULT.setLine(S1left); :};
+StaticVarDeclLineStart ::= (StaticVarDeclLineStart) STATIC Type:T1 {: RESULT=new StaticVarDeclLineStart(T1); RESULT.setLine(T1left); :};
+StaticVarDeclComma ::= (StaticVarDeclCommaItem) StaticVarDeclComma:S1 COMMA StaticVarDecl:S2 {: RESULT=new StaticVarDeclCommaItem(S1, S2); RESULT.setLine(S1left); :}
+						| (StaticVarDeclCommaEnd) StaticVarDecl:S1 {: RESULT=new StaticVarDeclCommaEnd(S1); RESULT.setLine(S1left); :};
+StaticVarDecl ::= (StaticVarDeclScalar) IDENT:name {: RESULT=new StaticVarDeclScalar(name); RESULT.setLine(nameleft); :}
+					| (StaticVarDeclArray) IDENT:name LBRACK RBRACK {: RESULT=new StaticVarDeclArray(name); RESULT.setLine(nameleft); :};
+
+StaticInitializer ::= (StaticInitializer) StaticInitializerStart:S1 LBRACE StatementList:S2 RBRACE {: RESULT=new StaticInitializer(S1, S2); RESULT.setLine(S1left); :};
+StaticInitializerStart ::= (StaticInitializerStart) STATIC {: RESULT=new StaticInitializerStart(); :};
+
+MethodList ::= (MethodListItem) MethodList:M1 Method:M2 {: RESULT=new MethodListItem(M1, M2); RESULT.setLine(M1left); :}
+				| (MethodListEnd) {: RESULT=new MethodListEnd(); :} ;
+Method ::= (Method) MethodDeclaration:M1 VarDeclLineList:V2 LBRACE StatementList:S3 RBRACE {: RESULT=new Method(M1, V2, S3); RESULT.setLine(M1left); :};
+MethodDeclaration ::= (MethodDeclaration) MethodName:M1 LPAREN FormalParamComma:F2 RPAREN {: RESULT=new MethodDeclaration(M1, F2); RESULT.setLine(M1left); :};
+MethodName ::= (MethodNameRet) Type:T1 IDENT:name {: RESULT=new MethodNameRet(T1, name); RESULT.setLine(T1left); :}
+				| (MethodNameVoid) VOID IDENT:name {: RESULT=new MethodNameVoid(name); RESULT.setLine(nameleft); :}
+				| (MethodNameCons) IDENT:name {: RESULT=new MethodNameCons(name); RESULT.setLine(nameleft); :};
+
+FormalParamComma ::= (FormalParamCommaItem) FormalParamComma:F1 COMMA FormalParam:F2 {: RESULT=new FormalParamCommaItem(F1, F2); RESULT.setLine(F1left); :}
+						| (FormalParamCommaEnd) FormalParam:F1 {: RESULT=new FormalParamCommaEnd(F1); RESULT.setLine(F1left); :}
+						| (FormalParamCommaEmpty) {: RESULT=new FormalParamCommaEmpty(); :} ;
+FormalParam ::= (FormalParamScalar) Type:T1 IDENT:name {: RESULT=new FormalParamScalar(T1, name); RESULT.setLine(T1left); :}
+				| (FormalParamArray) Type:T1 IDENT:name LBRACK RBRACK {: RESULT=new FormalParamArray(T1, name); RESULT.setLine(T1left); :};
+
+VarDeclLineList ::= (VarDeclLineListItem) VarDeclLineList:V1 VarDeclLine:V2 {: RESULT=new VarDeclLineListItem(V1, V2); RESULT.setLine(V1left); :}
+					| (VarDeclLineListEnd) {: RESULT=new VarDeclLineListEnd(); :}
+					;
+VarDeclLine ::= (VarDeclLine) VarDeclLineStart:V1 VarDeclComma:V2 SEMI {: RESULT=new VarDeclLine(V1, V2); RESULT.setLine(V1left); :};
+VarDeclLineStart ::= (VarDeclLineStart) Type:T1 {: RESULT=new VarDeclLineStart(T1); RESULT.setLine(T1left); :};
+VarDeclComma ::= (VarDeclCommaItem) VarDeclComma:V1 COMMA VarDecl:V2 {: RESULT=new VarDeclCommaItem(V1, V2); RESULT.setLine(V1left); :}
+					| (VarDeclCommaEnd) VarDecl:V1 {: RESULT=new VarDeclCommaEnd(V1); RESULT.setLine(V1left); :};
+VarDecl ::= (VarDeclScalar) IDENT:name {: RESULT=new VarDeclScalar(name); RESULT.setLine(nameleft); :}
+			| (VarDeclArray) IDENT:name LBRACK RBRACK {: RESULT=new VarDeclArray(name); RESULT.setLine(nameleft); :};
+
+MethodInvocation ::= (MethodInvocation) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new MethodInvocation(D1, A2); RESULT.setLine(D1left); :};
+ActPars ::= (ActParsItem) ActPars:A1 COMMA ActPar:A2 {: RESULT=new ActParsItem(A1, A2); RESULT.setLine(A1left); :}
+			| (ActParsEnd) ActPar:A1 {: RESULT=new ActParsEnd(A1); RESULT.setLine(A1left); :}
+			| (ActParsEmpty) {: RESULT=new ActParsEmpty(); :} ;
+ActPar ::= (ActPar) Expr:E1 {: RESULT=new ActPar(E1); RESULT.setLine(E1left); :};
+
+StatementList ::= (StatementListItem) StatementList:S1 Statement:S2 {: RESULT=new StatementListItem(S1, S2); RESULT.setLine(S1left); :}
+					| (StatementListEnd) {: RESULT=new StatementListEnd(); :}
+					;
+Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement:I2 {: RESULT=new StatementUnmatchedIf(I1, I2); RESULT.setLine(I1left); :}
+				| (StatementDesignatorStatement) DesignatorStatement:D1 SEMI {: RESULT=new StatementDesignatorStatement(D1); RESULT.setLine(D1left); :}
+				| (StatementBreak) BREAK SEMI {: RESULT=new StatementBreak(); :}
+				| (StatementContinue) CONTINUE SEMI {: RESULT=new StatementContinue(); :}
+				| (StatementReturn) RETURN SEMI {: RESULT=new StatementReturn(); :}
+				| (StatementReturnExpr) RETURN Expr:E1 SEMI {: RESULT=new StatementReturnExpr(E1); RESULT.setLine(E1left); :}
+				| (StatementRead) READ LPAREN Designator:D1 RPAREN SEMI {: RESULT=new StatementRead(D1); RESULT.setLine(D1left); :}
+				| (StatementPrint) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new StatementPrint(E1); RESULT.setLine(E1left); :}
+				| (StatementPrintNum) PRINT LPAREN Expr:E1 COMMA NUM:N2 RPAREN SEMI {: RESULT=new StatementPrintNum(E1, N2); RESULT.setLine(E1left); :}
+				| (StatementBlock) LBRACE StatementList:S1 RBRACE {: RESULT=new StatementBlock(S1); RESULT.setLine(S1left); :}
+				| (StatementMatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement:I2 ELSE Statement:S3 {: RESULT=new StatementMatchedIf(I1, I2, S3); RESULT.setLine(I1left); :}
+				| (StatementFor) FOR LPAREN ForEntry:F1 SEMI ForCondition:F2 SEMI ForExit:F3 RPAREN Statement:S4 {: RESULT=new StatementFor(F1, F2, F3, S4); RESULT.setLine(F1left); :}
+				;
+
+IfCondition ::= (IfCondition) Condition:C1 {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :};
+IfStatement ::= (IfStatement) Statement:S1 {: RESULT=new IfStatement(S1); RESULT.setLine(S1left); :};
+ForEntry ::= (ForEntry) DesignatorStatementComma:D1 {: RESULT=new ForEntry(D1); RESULT.setLine(D1left); :};
+ForCondition ::= (ForConditionNonempty) ConditionFactor:C1 {: RESULT=new ForConditionNonempty(C1); RESULT.setLine(C1left); :}
+				| (ForConditionEmpty) {: RESULT=new ForConditionEmpty(); :} ;
+ForExit ::= (ForExit)DesignatorStatementComma:D1 {: RESULT=new ForExit(D1); RESULT.setLine(D1left); :};
+
+DesignatorStatementComma ::= (DesignatorStatementCommaItem) DesignatorStatementComma:D1 COMMA DesignatorStatement:D2 {: RESULT=new DesignatorStatementCommaItem(D1, D2); RESULT.setLine(D1left); :}
+								| (DesignatorStatementCommaEnd) DesignatorStatement:D1 {: RESULT=new DesignatorStatementCommaEnd(D1); RESULT.setLine(D1left); :}
+								| (DesignatorStatementCommaEmpty) {: RESULT=new DesignatorStatementCommaEmpty(); :} 
+								;
+DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStatementAssign(D1, A2, E3); RESULT.setLine(D1left); :}
+						| (DesignatorStatementMethod) MethodInvocation:M1 {: RESULT=new DesignatorStatementMethod(M1); RESULT.setLine(M1left); :}
+						| (DesignatorStatementInc) Designator:D1 INC {: RESULT=new DesignatorStatementInc(D1); RESULT.setLine(D1left); :}
+						| (DesignatorStatementDec) Designator:D1 DEC {: RESULT=new DesignatorStatementDec(D1); RESULT.setLine(D1left); :}
+						;
+
+Condition ::= (ConditionOr) Condition:C1 OR ConditionTerm:C2 {: RESULT=new ConditionOr(C1, C2); RESULT.setLine(C1left); :}
+				| (ConditionSingle) ConditionTerm:C1 {: RESULT=new ConditionSingle(C1); RESULT.setLine(C1left); :}
+				;
+ConditionTerm ::= (ConditionTermAnd) ConditionTerm:C1 AND ConditionFactor:C2 {: RESULT=new ConditionTermAnd(C1, C2); RESULT.setLine(C1left); :}
+					| (ConditionTermSingle) ConditionFactor:C1 {: RESULT=new ConditionTermSingle(C1); RESULT.setLine(C1left); :}
+					;
+ConditionFactor ::= (ConditionFactorRel) Expr:E1 Relop:R2 Expr:E3 {: RESULT=new ConditionFactorRel(E1, R2, E3); RESULT.setLine(E1left); :}
+					| (ConditonFactorExpr) Expr:E1 {: RESULT=new ConditonFactorExpr(E1); RESULT.setLine(E1left); :}
+					;
+
+Expr ::= (ExprAdd) Expr:E1 Addop:A2 Term:T3 {: RESULT=new ExprAdd(E1, A2, T3); RESULT.setLine(E1left); :}
+			| (ExprSingle) Term:T1 {: RESULT=new ExprSingle(T1); RESULT.setLine(T1left); :}
+			| (ExprSingleNeg) SUB Term:T1 {: RESULT=new ExprSingleNeg(T1); RESULT.setLine(T1left); :}
+			;
+Term ::= (TermMul) Term:T1 Mulop:M2 Factor:F3 {: RESULT=new TermMul(T1, M2, F3); RESULT.setLine(T1left); :}
+			| (TermSingle) Factor:F1 {: RESULT=new TermSingle(F1); RESULT.setLine(F1left); :}
+			;
+Factor ::= (FactorNum) NUM:val {: RESULT=new FactorNum(val); RESULT.setLine(valleft); :}
+			| (FactorChar) CHAR:val {: RESULT=new FactorChar(val); RESULT.setLine(valleft); :}
+			| (FactorBool) BOOL:val {: RESULT=new FactorBool(val); RESULT.setLine(valleft); :}
+			| (FactorDesignator) Designator:D1 {: RESULT=new FactorDesignator(D1); RESULT.setLine(D1left); :}
+			| (FactorMethod) MethodInvocation:M1 {: RESULT=new FactorMethod(M1); RESULT.setLine(M1left); :}
+			| (FactorArray) NEW Type:T1 LBRACK Expr:E2 RBRACK {: RESULT=new FactorArray(T1, E2); RESULT.setLine(T1left); :}
+			| (FactorExpr) LPAREN Expr:E1 RPAREN {: RESULT=new FactorExpr(E1); RESULT.setLine(E1left); :}
+			| (FactorCons) ConstructorInvocation:C1 LPAREN ActPars:A2 RPAREN {: RESULT=new FactorCons(C1, A2); RESULT.setLine(C1left); :}
+			;
+ConstructorInvocation ::= (ConstructorInvocation) NEW Type:T1 {: RESULT=new ConstructorInvocation(T1); RESULT.setLine(T1left); :};
+
+Type ::= (TypeSimple) IDENT:name {: RESULT=new TypeSimple(name); RESULT.setLine(nameleft); :}
+			| (TypeScoped) IDENT:namespace SCOPE IDENT:name {: RESULT=new TypeScoped(namespace, name); RESULT.setLine(namespaceleft); :}
+			;
+
+Assignop ::= (Assignop) ASSIGN {: RESULT=new Assignop(); :};
+Relop ::= (RelopEq) EQ {: RESULT=new RelopEq(); :}
+			| (RelopNe) NE {: RESULT=new RelopNe(); :}
+			| (RelopGt) GT {: RESULT=new RelopGt(); :}
+			| (RelopGe) GE {: RESULT=new RelopGe(); :}
+			| (RelopLt) LT {: RESULT=new RelopLt(); :}
+			| (RelopLe) LE {: RESULT=new RelopLe(); :}
+			;
+Addop ::= (AddopAdd) ADD {: RESULT=new AddopAdd(); :}
+			| (AddopSub) SUB {: RESULT=new AddopSub(); :}
+			;
+Mulop ::= (MulopMul) MUL {: RESULT=new MulopMul(); :}
+			| (MulopDiv) DIV {: RESULT=new MulopDiv(); :}
+			| (MulopMod) MOD {: RESULT=new MulopMod(); :}
+			;
+
+Designator ::= (DesignatorField) Designator:D1 DOT IDENT:name {: RESULT=new DesignatorField(D1, name); RESULT.setLine(D1left); :}
+				| (DesignatorElem) Designator:D1 LBRACK Expr:E2 RBRACK {: RESULT=new DesignatorElem(D1, E2); RESULT.setLine(D1left); :}
+				| (DesignatorScoped) IDENT:namespace SCOPE IDENT:name {: RESULT=new DesignatorScoped(namespace, name); RESULT.setLine(namespaceleft); :}
+				| (DesignatorSimple) IDENT:name {: RESULT=new DesignatorSimple(name); RESULT.setLine(nameleft); :}
+				;

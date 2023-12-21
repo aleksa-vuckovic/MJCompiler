@@ -1,0 +1,364 @@
+INFO  22:13:43,240 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\if-for.mj
+INFO  22:13:43,330 - Parser je ucitao token:#2 -> program
+INFO  22:13:43,331 - Parser je ucitao token:#45 -> MJProgram
+INFO  22:13:43,331 - Parser je ucitao token:#45 -> int
+INFO  22:13:43,333 - Parser je ucitao token:#45 -> x
+INFO  22:13:43,334 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,334 - Parser je ucitao token:#45 -> int
+INFO  22:13:43,336 - Parser je ucitao token:#45 -> y
+INFO  22:13:43,336 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,336 - Parser je ucitao token:#20 -> {
+INFO  22:13:43,336 - Parser je ucitao token:#45 -> int
+INFO  22:13:43,337 - Parser je ucitao token:#45 -> sqrt
+INFO  22:13:43,338 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,340 - Parser je ucitao token:#45 -> int
+INFO  22:13:43,340 - Parser je ucitao token:#45 -> t
+INFO  22:13:43,340 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,341 - Parser je ucitao token:#45 -> int
+INFO  22:13:43,344 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,344 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,344 - Parser je ucitao token:#20 -> {
+INFO  22:13:43,344 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,346 - Parser je ucitao token:#41 -> =
+INFO  22:13:43,347 - Parser je ucitao token:#44 -> 0
+INFO  22:13:43,348 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,349 - Parser je ucitao token:#15 -> if
+INFO  22:13:43,349 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,350 - Parser je ucitao token:#46 -> 1
+INFO  22:13:43,350 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,352 - Parser je ucitao token:#20 -> {
+INFO  22:13:43,352 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,352 - Parser je ucitao token:#41 -> =
+INFO  22:13:43,352 - Parser je ucitao token:#44 -> 1
+INFO  22:13:43,352 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,352 - Parser je ucitao token:#21 -> }
+INFO  22:13:43,353 - Parser je ucitao token:#17 -> for
+INFO  22:13:43,354 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,354 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,355 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,355 - Parser je ucitao token:#30 -> *
+INFO  22:13:43,355 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,357 - Parser je ucitao token:#38 -> <=
+INFO  22:13:43,357 - Parser je ucitao token:#45 -> t
+INFO  22:13:43,358 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,359 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,360 - Parser je ucitao token:#20 -> {
+INFO  22:13:43,360 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,360 - Parser je ucitao token:#41 -> =
+INFO  22:13:43,360 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,361 - Parser je ucitao token:#28 -> +
+INFO  22:13:43,361 - Parser je ucitao token:#44 -> 1
+INFO  22:13:43,362 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,362 - Parser je ucitao token:#21 -> }
+INFO  22:13:43,363 - Parser je ucitao token:#9 -> return
+INFO  22:13:43,363 - Parser je ucitao token:#45 -> res
+INFO  22:13:43,363 - Parser je ucitao token:#31 -> /
+INFO  22:13:43,363 - Parser je ucitao token:#44 -> 2
+INFO  22:13:43,364 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,364 - Parser je ucitao token:#21 -> }
+INFO  22:13:43,365 - Parser je ucitao token:#6 -> void
+INFO  22:13:43,366 - Parser je ucitao token:#45 -> main
+INFO  22:13:43,366 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,367 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,368 - Parser je ucitao token:#20 -> {
+INFO  22:13:43,368 - Parser je ucitao token:#12 -> print
+INFO  22:13:43,368 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,368 - Parser je ucitao token:#45 -> sqrt
+INFO  22:13:43,368 - Parser je ucitao token:#18 -> (
+INFO  22:13:43,369 - Parser je ucitao token:#44 -> 120
+INFO  22:13:43,369 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,370 - Parser je ucitao token:#19 -> )
+INFO  22:13:43,371 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,371 - Parser je ucitao token:#9 -> return
+INFO  22:13:43,371 - Parser je ucitao token:#26 -> ;
+INFO  22:13:43,371 - Parser je ucitao token:#21 -> }
+INFO  22:13:43,372 - Parser je ucitao token:#21 -> }
+INFO  22:13:43,372 - Parser je ucitao token:#0 -> EOF
+INFO  22:13:43,383 - Parser je ucitao token:#0 -> EOF
+INFO  22:13:43,384 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListEnd(
+  ) [NamespaceListEnd]
+  DeclListItem(
+    DeclListItem(
+      DeclListEnd(
+      ) [DeclListEnd]
+      DeclVar(
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaEnd(
+            VarDeclScalar(
+             x
+            ) [VarDeclScalar]
+          ) [VarDeclCommaEnd]
+        ) [VarDeclLine]
+      ) [DeclVar]
+    ) [DeclListItem]
+    DeclVar(
+      VarDeclLine(
+        VarDeclLineStart(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+        ) [VarDeclLineStart]
+        VarDeclCommaEnd(
+          VarDeclScalar(
+           y
+          ) [VarDeclScalar]
+        ) [VarDeclCommaEnd]
+      ) [VarDeclLine]
+    ) [DeclVar]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListItem(
+      MethodListEnd(
+      ) [MethodListEnd]
+      Method(
+        MethodDeclaration(
+          MethodNameRet(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           sqrt
+          ) [MethodNameRet]
+          FormalParamCommaEnd(
+            FormalParamScalar(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+             t
+            ) [FormalParamScalar]
+          ) [FormalParamCommaEnd]
+        ) [MethodDeclaration]
+        VarDeclLineListItem(
+          VarDeclLineListEnd(
+          ) [VarDeclLineListEnd]
+          VarDeclLine(
+            VarDeclLineStart(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+            ) [VarDeclLineStart]
+            VarDeclCommaEnd(
+              VarDeclScalar(
+               res
+              ) [VarDeclScalar]
+            ) [VarDeclCommaEnd]
+          ) [VarDeclLine]
+        ) [VarDeclLineListItem]
+        StatementListItem(
+          StatementListItem(
+            StatementListItem(
+              StatementListItem(
+                StatementListEnd(
+                ) [StatementListEnd]
+                StatementDesignatorStatement(
+                  DesignatorStatementAssign(
+                    DesignatorSimple(
+                     res
+                    ) [DesignatorSimple]
+                    Assignop(
+                    ) [Assignop]
+                    ExprSingle(
+                      TermSingle(
+                        FactorNum(
+                         0
+                        ) [FactorNum]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [DesignatorStatementAssign]
+                ) [StatementDesignatorStatement]
+              ) [StatementListItem]
+              StatementUnmatchedIf(
+                IfCondition(
+                  ConditionSingle(
+                    ConditionTermSingle(
+                      ConditonFactorExpr(
+                        ExprSingle(
+                          TermSingle(
+                            FactorBool(
+                             1
+                            ) [FactorBool]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [ConditonFactorExpr]
+                    ) [ConditionTermSingle]
+                  ) [ConditionSingle]
+                ) [IfCondition]
+                IfStatement(
+                  StatementBlock(
+                    StatementListItem(
+                      StatementListEnd(
+                      ) [StatementListEnd]
+                      StatementDesignatorStatement(
+                        DesignatorStatementAssign(
+                          DesignatorSimple(
+                           res
+                          ) [DesignatorSimple]
+                          Assignop(
+                          ) [Assignop]
+                          ExprSingle(
+                            TermSingle(
+                              FactorNum(
+                               1
+                              ) [FactorNum]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesignatorStatement]
+                    ) [StatementListItem]
+                  ) [StatementBlock]
+                ) [IfStatement]
+              ) [StatementUnmatchedIf]
+            ) [StatementListItem]
+            StatementFor(
+              ForEntry(
+                DesignatorStatementCommaEmpty(
+                ) [DesignatorStatementCommaEmpty]
+              ) [ForEntry]
+              ForConditionNonempty(
+                ConditionFactorRel(
+                  ExprSingle(
+                    TermMul(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           res
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                      MulopMul(
+                      ) [MulopMul]
+                      FactorDesignator(
+                        DesignatorSimple(
+                         res
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermMul]
+                  ) [ExprSingle]
+                  RelopLe(
+                  ) [RelopLe]
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         t
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [ConditionFactorRel]
+              ) [ForConditionNonempty]
+              ForExit(
+                DesignatorStatementCommaEmpty(
+                ) [DesignatorStatementCommaEmpty]
+              ) [ForExit]
+              StatementBlock(
+                StatementListItem(
+                  StatementListEnd(
+                  ) [StatementListEnd]
+                  StatementDesignatorStatement(
+                    DesignatorStatementAssign(
+                      DesignatorSimple(
+                       res
+                      ) [DesignatorSimple]
+                      Assignop(
+                      ) [Assignop]
+                      ExprAdd(
+                        ExprSingle(
+                          TermSingle(
+                            FactorDesignator(
+                              DesignatorSimple(
+                               res
+                              ) [DesignatorSimple]
+                            ) [FactorDesignator]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                        AddopAdd(
+                        ) [AddopAdd]
+                        TermSingle(
+                          FactorNum(
+                           1
+                          ) [FactorNum]
+                        ) [TermSingle]
+                      ) [ExprAdd]
+                    ) [DesignatorStatementAssign]
+                  ) [StatementDesignatorStatement]
+                ) [StatementListItem]
+              ) [StatementBlock]
+            ) [StatementFor]
+          ) [StatementListItem]
+          StatementReturnExpr(
+            ExprSingle(
+              TermMul(
+                TermSingle(
+                  FactorDesignator(
+                    DesignatorSimple(
+                     res
+                    ) [DesignatorSimple]
+                  ) [FactorDesignator]
+                ) [TermSingle]
+                MulopDiv(
+                ) [MulopDiv]
+                FactorNum(
+                 2
+                ) [FactorNum]
+              ) [TermMul]
+            ) [ExprSingle]
+          ) [StatementReturnExpr]
+        ) [StatementListItem]
+      ) [Method]
+    ) [MethodListItem]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         main
+        ) [MethodNameVoid]
+        FormalParamCommaEmpty(
+        ) [FormalParamCommaEmpty]
+      ) [MethodDeclaration]
+      VarDeclLineListEnd(
+      ) [VarDeclLineListEnd]
+      StatementListItem(
+        StatementListItem(
+          StatementListEnd(
+          ) [StatementListEnd]
+          StatementPrint(
+            ExprSingle(
+              TermSingle(
+                FactorMethod(
+                  MethodInvocation(
+                    DesignatorSimple(
+                     sqrt
+                    ) [DesignatorSimple]
+                    ActParsEnd(
+                      ActPar(
+                        ExprSingle(
+                          TermSingle(
+                            FactorNum(
+                             120
+                            ) [FactorNum]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [ActPar]
+                    ) [ActParsEnd]
+                  ) [MethodInvocation]
+                ) [FactorMethod]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StatementPrint]
+        ) [StatementListItem]
+        StatementReturn(
+        ) [StatementReturn]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  22:13:43,385 - ===================================
+INFO  22:13:43,413 - ======================================

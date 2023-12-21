@@ -1,0 +1,27 @@
+INFO  20:19:11,597 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\program.mj
+INFO  20:19:11,619 - Token string: #2 Token value: program
+INFO  20:19:11,620 - Token string: #45 Token value: MJProgram
+INFO  20:19:11,620 - Token string: #45 Token value: int
+INFO  20:19:11,620 - Token string: #45 Token value: x
+INFO  20:19:11,620 - Token string: #26 Token value: ;
+INFO  20:19:11,620 - Token string: #45 Token value: int
+INFO  20:19:11,621 - Token string: #45 Token value: y
+INFO  20:19:11,621 - Token string: #26 Token value: ;
+INFO  20:19:11,621 - Token string: #20 Token value: {
+INFO  20:19:11,622 - Token string: #45 Token value: int
+INFO  20:19:11,622 - Token string: #45 Token value: main
+INFO  20:19:11,624 - Token string: #18 Token value: (
+INFO  20:19:11,625 - Token string: #19 Token value: )
+INFO  20:19:11,625 - Token string: #20 Token value: {
+INFO  20:19:11,625 - Token string: #12 Token value: print
+INFO  20:19:11,625 - Token string: #18 Token value: (
+INFO  20:19:11,625 - Token string: #45 Token value: a
+INFO  20:19:11,625 - Token string: #19 Token value: )
+INFO  20:19:11,625 - Token string: #26 Token value: ;
+INFO  20:19:11,626 - Token string: #12 Token value: print
+INFO  20:19:11,626 - Token string: #18 Token value: (
+INFO  20:19:11,626 - Token string: #45 Token value: b
+INFO  20:19:11,626 - Token string: #19 Token value: )
+INFO  20:19:11,626 - Token string: #26 Token value: ;
+INFO  20:19:11,626 - Token string: #21 Token value: }
+INFO  20:19:11,626 - Token string: #21 Token value: }

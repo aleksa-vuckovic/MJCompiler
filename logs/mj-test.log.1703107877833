@@ -1,0 +1,25 @@
+INFO  22:30:57,255 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\if-for.mj
+INFO  22:30:57,317 - Parser je ucitao token:#2 -> program
+INFO  22:30:57,318 - Parser je ucitao token:#45 -> MJProgram
+INFO  22:30:57,318 - Parser je ucitao token:#4 -> namespace
+INFO  22:30:57,319 - Parser je ucitao token:#45 -> data
+INFO  22:30:57,319 - Parser je ucitao token:#20 -> {
+INFO  22:30:57,320 - Parser je ucitao token:#45 -> int
+INFO  22:30:57,321 - Parser je ucitao token:#45 -> callcount
+INFO  22:30:57,323 - Parser je ucitao token:#26 -> ;
+INFO  22:30:57,323 - Parser je ucitao token:#8 -> const
+INFO  22:30:57,324 - Parser je ucitao token:#45 -> int
+INFO  22:30:57,324 - Parser je ucitao token:#45 -> max
+INFO  22:30:57,328 - Parser je ucitao token:#41 -> =
+INFO  22:30:57,328 - Parser je ucitao token:#44 -> 100
+INFO  22:30:57,328 - Parser je ucitao token:#26 -> ;
+INFO  22:30:57,329 - Parser je ucitao token:#21 -> }
+ERROR 22:30:57,329 - Linija 5, kolona 1:Sintaksna greska.
+ERROR 22:30:57,329 - Linija 5, kolona 1:Fatalna greska, parsiranje se ne moze nastaviti.
+INFO  22:30:57,330 - Detektovane fatalne greske! Semanticka analiza se preskace.
+INFO  22:30:57,330 - ConstDeclCommaEnd(
+  ConstDeclNum(
+   max
+   100
+  ) [ConstDeclNum]
+) [ConstDeclCommaEnd]

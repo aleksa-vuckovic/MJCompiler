@@ -1,0 +1,34 @@
+program MJProgram
+	namespace data {
+		int callcount;
+		const int max = 100;
+		{}
+	}
+	int cur;
+{
+	int sqrt(int t) int res; {
+		data::callcount ++;
+		res = 0;
+		for (; res * res <= t;) {
+			res = res + 1;
+		}
+		return res / 2;
+	}
+	
+	void main() int cur; {
+		data::callcount = 0;
+		cur = 1;
+		
+		for(;;) {
+			print(sqrt(cur));
+			print('\n');
+			
+			cur++;
+			if (cur > data::max) break;
+		}
+		
+		
+		
+		return;
+	}
+}

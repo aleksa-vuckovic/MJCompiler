@@ -1,0 +1,96 @@
+INFO  23:06:33,213 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\program.mj
+INFO  23:06:33,230 - #2 program
+INFO  23:06:33,230 - #15 MJProgram
+INFO  23:06:33,230 - #15 int
+INFO  23:06:33,231 - #15 x
+INFO  23:06:33,232 - #5 ;
+INFO  23:06:33,232 - #15 int
+INFO  23:06:33,233 - #15 y
+INFO  23:06:33,233 - #5 ;
+INFO  23:06:33,233 - #3 {
+INFO  23:06:33,233 - #15 int
+INFO  23:06:33,234 - #15 main
+INFO  23:06:33,234 - #6 (
+INFO  23:06:33,235 - #7 )
+INFO  23:06:33,235 - #3 {
+INFO  23:06:33,236 - #12 print
+INFO  23:06:33,236 - #6 (
+INFO  23:06:33,236 - #15 a
+INFO  23:06:33,237 - #7 )
+INFO  23:06:33,238 - #5 ;
+INFO  23:06:33,239 - #12 print
+INFO  23:06:33,239 - #6 (
+INFO  23:06:33,239 - #15 b
+INFO  23:06:33,241 - #7 )
+INFO  23:06:33,241 - #5 ;
+INFO  23:06:33,241 - #4 }
+INFO  23:06:33,241 - #4 }
+INFO  23:06:33,244 - Program(
+ MJProgram
+  VarDeclarations(
+    VarDeclarations(
+      NoVarDecl(
+      ) [NoVarDecl]
+      VarDecl(
+        Type(
+         int
+        ) [Type]
+       x
+      ) [VarDecl]
+    ) [VarDeclarations]
+    VarDecl(
+      Type(
+       int
+      ) [Type]
+     y
+    ) [VarDecl]
+  ) [VarDeclarations]
+  MethodDeclarations(
+    NoMethodDecl(
+    ) [NoMethodDecl]
+    MethodDecl(
+      Type(
+       int
+      ) [Type]
+     main
+      NoFormParam(
+      ) [NoFormParam]
+      NoVarDecl(
+      ) [NoVarDecl]
+      Statements(
+        Statements(
+          NoStmt(
+          ) [NoStmt]
+          MatchedStmt(
+            PrintStmt(
+              TermExpr(
+                Term(
+                  Var(
+                    Designator(
+                     a
+                    ) [Designator]
+                  ) [Var]
+                ) [Term]
+              ) [TermExpr]
+            ) [PrintStmt]
+          ) [MatchedStmt]
+        ) [Statements]
+        MatchedStmt(
+          PrintStmt(
+            TermExpr(
+              Term(
+                Var(
+                  Designator(
+                   b
+                  ) [Designator]
+                ) [Var]
+              ) [Term]
+            ) [TermExpr]
+          ) [PrintStmt]
+        ) [MatchedStmt]
+      ) [Statements]
+    ) [MethodDecl]
+  ) [MethodDeclarations]
+) [Program]
+INFO  23:06:33,244 - ===================================
+INFO  23:06:33,246 -  Print count calls = 2

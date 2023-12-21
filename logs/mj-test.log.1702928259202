@@ -1,0 +1,118 @@
+INFO  20:30:31,089 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\program.mj
+INFO  20:30:31,154 - Parser je ucitao token:#2 -> program
+INFO  20:30:31,154 - Parser je ucitao token:#45 -> MJProgram
+INFO  20:30:31,154 - Parser je ucitao token:#45 -> int
+INFO  20:30:31,157 - Parser je ucitao token:#45 -> x
+INFO  20:30:31,158 - Parser je ucitao token:#26 -> ;
+INFO  20:30:31,158 - Parser je ucitao token:#45 -> int
+INFO  20:30:31,159 - Parser je ucitao token:#45 -> y
+INFO  20:30:31,159 - Parser je ucitao token:#26 -> ;
+INFO  20:30:31,160 - Parser je ucitao token:#20 -> {
+INFO  20:30:31,160 - Parser je ucitao token:#45 -> int
+INFO  20:30:31,161 - Parser je ucitao token:#45 -> main
+INFO  20:30:31,161 - Parser je ucitao token:#18 -> (
+INFO  20:30:31,163 - Parser je ucitao token:#19 -> )
+INFO  20:30:31,165 - Parser je ucitao token:#20 -> {
+INFO  20:30:31,167 - Parser je ucitao token:#12 -> print
+INFO  20:30:31,168 - Parser je ucitao token:#18 -> (
+INFO  20:30:31,168 - Parser je ucitao token:#45 -> a
+INFO  20:30:31,168 - Parser je ucitao token:#19 -> )
+INFO  20:30:31,169 - Parser je ucitao token:#26 -> ;
+INFO  20:30:31,169 - Parser je ucitao token:#12 -> print
+INFO  20:30:31,169 - Parser je ucitao token:#18 -> (
+INFO  20:30:31,170 - Parser je ucitao token:#45 -> b
+INFO  20:30:31,170 - Parser je ucitao token:#19 -> )
+INFO  20:30:31,170 - Parser je ucitao token:#26 -> ;
+INFO  20:30:31,170 - Parser je ucitao token:#21 -> }
+INFO  20:30:31,170 - Parser je ucitao token:#21 -> }
+INFO  20:30:31,172 - Parser je ucitao token:#0 -> EOF
+INFO  20:30:31,173 - Parser je ucitao token:#0 -> EOF
+INFO  20:30:31,173 - Parsing successful, 0 errors.
+INFO  20:30:31,174 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListEnd(
+  ) [NamespaceListEnd]
+  DeclListItem(
+    DeclListItem(
+      DeclListEnd(
+      ) [DeclListEnd]
+      DeclVar(
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaEnd(
+            VarDeclScalar(
+             x
+            ) [VarDeclScalar]
+          ) [VarDeclCommaEnd]
+        ) [VarDeclLine]
+      ) [DeclVar]
+    ) [DeclListItem]
+    DeclVar(
+      VarDeclLine(
+        VarDeclLineStart(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+        ) [VarDeclLineStart]
+        VarDeclCommaEnd(
+          VarDeclScalar(
+           y
+          ) [VarDeclScalar]
+        ) [VarDeclCommaEnd]
+      ) [VarDeclLine]
+    ) [DeclVar]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListEnd(
+    ) [MethodListEnd]
+    Method(
+      MethodDeclaration(
+        MethodNameRet(
+          TypeSimple(
+           int
+          ) [TypeSimple]
+         main
+        ) [MethodNameRet]
+        FormalParamCommnaEmpty(
+        ) [FormalParamCommnaEmpty]
+      ) [MethodDeclaration]
+      VarDeclLineListEnd(
+      ) [VarDeclLineListEnd]
+      StatementListItem(
+        StatementListItem(
+          StatementListEnd(
+          ) [StatementListEnd]
+          StatementPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorSimple(
+                   a
+                  ) [DesignatorSimple]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StatementPrint]
+        ) [StatementListItem]
+        StatementPrint(
+          ExprSingle(
+            TermSingle(
+              FactorDesignator(
+                DesignatorSimple(
+                 b
+                ) [DesignatorSimple]
+              ) [FactorDesignator]
+            ) [TermSingle]
+          ) [ExprSingle]
+        ) [StatementPrint]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  20:30:31,175 - ===================================

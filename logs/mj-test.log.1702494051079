@@ -1,0 +1,22 @@
+INFO  19:58:12,122 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\program.mj
+INFO  19:58:12,126 - Token string: #1 Token value: program
+INFO  19:58:12,126 - Token string: #4 Token value: MJProgram
+INFO  19:58:12,126 - Token string: #4 Token value: int
+INFO  19:58:12,126 - Token string: #4 Token value: x
+INFO  19:58:12,126 - Token string: #8 Token value: ,
+INFO  19:58:12,126 - Token string: #4 Token value: y
+INFO  19:58:12,126 - Token string: #9 Token value: ;
+INFO  19:58:12,126 - Token string: #12 Token value: {
+INFO  19:58:12,126 - Token string: #15 Token value: void
+INFO  19:58:12,126 - Token string: #4 Token value: main
+INFO  19:58:12,126 - Token string: #10 Token value: (
+INFO  19:58:12,127 - Token string: #11 Token value: )
+INFO  19:58:12,128 - Token string: #12 Token value: {
+INFO  19:58:12,128 - Token string: #5 Token value: 123
+INFO  19:58:12,128 - Token string: #4 Token value: abc
+INFO  19:58:12,129 - Token string: #9 Token value: ;
+INFO  19:58:12,129 - Token string: #3 Token value: return
+INFO  19:58:12,129 - Token string: #9 Token value: ;
+INFO  19:58:12,129 - Token string: #13 Token value: }
+INFO  19:58:12,129 - Token string: #13 Token value: }
+old

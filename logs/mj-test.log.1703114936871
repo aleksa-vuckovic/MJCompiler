@@ -1,0 +1,34 @@
+INFO  00:28:15,771 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\polymorphism.mj
+INFO  00:28:15,807 - Parser je ucitao token:#2 -> program
+INFO  00:28:15,807 - Parser je ucitao token:#45 -> MJProgram
+INFO  00:28:15,807 - Parser je ucitao token:#4 -> namespace
+INFO  00:28:15,808 - Parser je ucitao token:#45 -> colors
+INFO  00:28:15,808 - Parser je ucitao token:#20 -> {
+INFO  00:28:15,809 - Parser je ucitao token:#8 -> const
+INFO  00:28:15,810 - Parser je ucitao token:#45 -> int
+INFO  00:28:15,810 - Parser je ucitao token:#45 -> red
+INFO  00:28:15,810 - Parser je ucitao token:#41 -> =
+INFO  00:28:15,810 - Parser je ucitao token:#44 -> 0
+INFO  00:28:15,810 - Parser je ucitao token:#26 -> ;
+INFO  00:28:15,811 - Parser je ucitao token:#8 -> const
+INFO  00:28:15,812 - Parser je ucitao token:#45 -> int
+INFO  00:28:15,813 - Parser je ucitao token:#45 -> green
+INFO  00:28:15,813 - Parser je ucitao token:#41 -> =
+INFO  00:28:15,813 - Parser je ucitao token:#44 -> 1
+INFO  00:28:15,813 - Parser je ucitao token:#26 -> ;
+INFO  00:28:15,813 - Parser je ucitao token:#8 -> const
+INFO  00:28:15,813 - Parser je ucitao token:#45 -> int
+INFO  00:28:15,813 - Parser je ucitao token:#45 -> yellow
+INFO  00:28:15,813 - Parser je ucitao token:#41 -> =
+INFO  00:28:15,813 - Parser je ucitao token:#44 -> 2
+INFO  00:28:15,813 - Parser je ucitao token:#26 -> ;
+INFO  00:28:15,813 - Parser je ucitao token:#21 -> }
+ERROR 00:28:15,814 - Linija 7, kolona 1:Sintaksna greska.
+ERROR 00:28:15,814 - Linija 7, kolona 1:Fatalna greska, parsiranje se ne moze nastaviti.
+INFO  00:28:15,814 - Detektovane fatalne greske! Semanticka analiza se preskace.
+INFO  00:28:15,814 - ConstDeclCommaEnd(
+  ConstDeclNum(
+   yellow
+   2
+  ) [ConstDeclNum]
+) [ConstDeclCommaEnd]
