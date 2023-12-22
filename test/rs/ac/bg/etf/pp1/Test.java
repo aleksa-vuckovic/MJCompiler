@@ -7,8 +7,11 @@ import rs.etf.pp1.symboltable.structure.SymbolDataStructure;
 
 public class Test {
 
-	public static String getFile() {
-		return "test/polymorphism.mj";
+	public static String getInputFile(String[] args) {
+		return "test/simple.mj";
+	}
+	public static String getOutputFile(String[] args) {
+		return "test/output.obj";
 	}
 	
 	public static void main(String[] args) {

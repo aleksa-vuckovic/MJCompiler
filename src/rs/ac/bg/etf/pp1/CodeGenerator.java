@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.my.ConstructorIterator;
 import rs.ac.bg.etf.pp1.my.MethodIterator;
+import rs.ac.bg.etf.pp1.my.MyInt;
 import rs.ac.bg.etf.pp1.my.MyTab;
 import rs.ac.bg.etf.pp1.my.TypeList;
 import rs.ac.bg.etf.pp1.my.Utils;
@@ -19,19 +20,17 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class CodeGenerator extends VisitorAdaptor {
 	
 	
-	Logger log = Logger.getLogger(getClass());
-	public boolean errorDetected = false;
-	
-	private void report_error(String message, SyntaxNode node) {
-		log.error("Greska pri generisanju koda na liniji " + node.getLine() + ": " + message);
-		errorDetected = true;
-	}
+	//Logger log = Logger.getLogger(getClass());
 	
 	Obj currentClass = null;
 	Obj currentMethod = null;
 	
 	int mainPc = -1;
 	int initializerPc = -1;
+	
+	public int getStartPc() {
+		return initializerPc;
+	}
 	
 	List<Integer> initializerAddresses = new LinkedList<>();
 	Stack<List<Integer>> breakFixups = new Stack<>();
@@ -351,7 +350,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(ForExit ForExit) {
 		super.visit(ForExit);
 		Code.put(Code.jmp); Code.put2(0);
-		ForExit.myint.val = Code.pc;
+		ForExit.myint = new MyInt(Code.pc);
 	}
 	@Override
 	public void visit(ForConditionEmpty ForConditionEmpty) {
@@ -362,7 +361,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.jcc + Code.ne); Code.put2(0);
 		Code.put(Code.jmp); Code.put2(0);
 		
-		ForConditionEmpty.myint.val = Code.pc;
+		ForConditionEmpty.myint = new MyInt(Code.pc);
 	}
 	@Override
 	public void visit(ForConditionNonempty ForConditionNonempty) {
@@ -372,12 +371,12 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.jcc + Code.ne); Code.put2(0);
 		Code.put(Code.jmp); Code.put2(0);
 		
-		ForConditionNonempty.myint.val = Code.pc;
+		ForConditionNonempty.myint = new MyInt(Code.pc);
 	}
 	@Override
 	public void visit(ForEntry ForEntry) {
 		super.visit(ForEntry);
-		ForEntry.myint.val = Code.pc;
+		ForEntry.myint = new MyInt(Code.pc);
 		breakFixups.push(new ArrayList<>());
 		continueFixups.push(new ArrayList<>());
 	}
@@ -437,11 +436,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		Struct type = StatementPrint.getExpr().struct;
 		if (type == MyTab.charType) {
 			Code.put(Code.const_1);
-			Code.put(Code.print);
+			Code.put(Code.bprint);
 		}
 		else {
 			Code.put(Code.const_4);
-			Code.put(Code.bprint);
+			Code.put(Code.print);
 		}
 	}
 	@Override
@@ -491,7 +490,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		super.visit(IfStatement);
 		if (IfStatement.getParent() instanceof StatementMatchedIf) {
 			Code.put(Code.jmp); Code.put2(0);
-			IfStatement.myint.val = Code.pc;
+			IfStatement.myint = new MyInt(Code.pc);
 		}
 	}
 	@Override
@@ -499,7 +498,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		super.visit(IfCondition);
 		Code.put(Code.const_1);
 		Code.put(Code.jcc + Code.ne); Code.put2(0);
-		IfCondition.myint.val = Code.pc;
+		IfCondition.myint = new MyInt(Code.pc);
 	}
 	@Override
 	public void visit(StatementMatchedIf StatementMatchedIf) {
@@ -682,7 +681,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		super.visit(MethodDeclaration);
 		Obj obj = MethodDeclaration.obj;
 		//Ako je main pamti se
-		if (obj.getLevel() == 0 && obj.getName().equals("main") && obj.getFpPos() == 0) {
+		if (obj.getLevel() == 0 && obj.getName().equals("main") && obj.getFpPos() == 0 && obj.getType() == MyTab.noType) {
 			mainPc = obj.getAdr();
 		}
 	}
@@ -911,17 +910,13 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(Program Program) {
 		super.visit(Program);
 		
-		if (mainPc == -1) {
-			report_error("Nije definisana globalna metoda main bez argumenata.", Program);
+
+		initializerPc = Code.pc;
+		for (Integer initBlock: initializerAddresses) {
+			Utils.generateCall(initBlock);
 		}
-		else {
-			initializerPc = Code.pc;
-			for (Integer initBlock: initializerAddresses) {
-				Utils.generateCall(initBlock);
-			}
-			Utils.generateCall(mainPc);
-			Code.put(Code.return_);
-		}
+		Utils.generateCall(mainPc);
+		Code.put(Code.return_);
 	}
 
 	@Override

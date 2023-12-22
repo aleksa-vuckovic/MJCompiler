@@ -1,0 +1,14 @@
+program MJProgram
+	int x, y;
+{
+	void main() {
+	
+		x = 1;
+		y = 100;
+		
+		for(;x < y; x = x * 2) print(x);
+		
+		
+		
+	}
+}

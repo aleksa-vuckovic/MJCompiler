@@ -25,25 +25,25 @@ public class SemanticAnalyzerTest {
 	public static void main(String[] args) throws Exception {
 		
 		Logger log = Logger.getLogger(MJParserTest.class);
-		File sourceCode = new File(Test.getFile());
+		File sourceCode = new File(Test.getInputFile(args));
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(sourceCode));) {
 			
 			Yylex lexer = new Yylex(br);
 			
-			MJParser p = new MJParser(lexer);
-	        Symbol s = p.parse();
+			MJParser parser = new MJParser(lexer);
+	        Symbol s = parser.parse();
 	        
 	        if (lexer.errorDetected) {
 	        	log.info("Lekser je detektovao greske! Semanticka analiza se preskace.");
 	        }
-	        else if (p.fatalErrorDetected) {
+	        else if (parser.fatalErrorDetected) {
 	        	log.info("Detektovane fatalne greske! Semanticka analiza se preskace.");
 	        	log.info(s.value.toString());
 	        }
 	        else {
-	        	if (p.errorDetected) log.info("Greske su detektovane! Preskace se generisanje koda.");
+	        	if (parser.errorDetected) log.info("Greske su detektovane! Preskace se generisanje koda.");
 	        	Program prog = (Program)(s.value);
 				/*log.info(prog.toString(""));
 				log.info("===================================");*/
@@ -54,11 +54,11 @@ public class SemanticAnalyzerTest {
 				MyTab.dump();
 				log.info("======================================");
 				
-				if (sem.errorDetected) {
+				if (sem.error()) {
 					log.info("Semanticki analizator je detektovao greske. Preskace se generisanje koda");
 				}
 				
-				if (!p.errorDetected && !sem.errorDetected) {
+				if (!parser.errorDetected && !sem.error()) {
 					//code generation
 				}
 	        }

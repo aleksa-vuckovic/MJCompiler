@@ -23,7 +23,7 @@ public class MJParserTest {
 	public static void main(String[] args) throws Exception {
 		
 		Logger log = Logger.getLogger(MJParserTest.class);
-		File sourceCode = new File(Test.getFile());
+		File sourceCode = new File(Test.getInputFile(args));
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(sourceCode));) {

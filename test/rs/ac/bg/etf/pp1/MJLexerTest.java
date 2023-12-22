@@ -22,7 +22,7 @@ public class MJLexerTest {
 	
 	public static void main(String[] args) throws IOException {
 		Logger log = Logger.getLogger(MJLexerTest.class);
-		File sourceCode = new File(Test.getFile());	
+		File sourceCode = new File(Test.getInputFile(args));	
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 		
 		try(Reader br = new BufferedReader(new FileReader(sourceCode));) {

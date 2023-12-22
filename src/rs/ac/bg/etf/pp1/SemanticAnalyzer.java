@@ -14,28 +14,38 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class SemanticAnalyzer extends VisitorAdaptor {
 	
-	Logger log = Logger.getLogger(getClass());
-	public boolean errorDetected = false;
-	
+	private Logger log = Logger.getLogger(getClass());
+	private boolean errorDetected = false;
 	private void report_error(String message, SyntaxNode node) {
 		log.error("Semanticka greska na liniji " + node.getLine() + ": " + message);
 		errorDetected = true;
 	}
 	
-	Obj currentClass = null;
-	Obj currentMethod = null;
+	//Kontekst
+	private Obj currentClass = null;
+	private Obj currentMethod = null;
+	private int fors = 0; //Broj ugnezdjenih for petlji
 	
-	Struct declLineType = null;
-	int totalStatic = 0;
-	int fors = 0;
-	int constructorCount = 0;
+	//Tip deklaracione linije
+	private Struct declLineType = null;
+	//Pokazivac na narednu slobodnu lokaciju u statickoj memoriji, ujedno i ukupno zauzeta staticka memorija
+	private int totalStatic = 0;
+	//Broj konstruktora definisanih za trenutnu klasu
+	private int constructorCount = 0;
+	private boolean mainFound = false;
 	
-	int allocateStatic(int size) {
+	private int allocateStatic(int size) {
 		int ret = totalStatic;
 		totalStatic += size;
 		return ret;
 	}
 	
+	public int getStaticSize() {
+		return totalStatic;
+	}
+	public boolean error() {
+		return errorDetected;
+	}
 	public SemanticAnalyzer() {
 		MyTab.init();
 	}
@@ -835,6 +845,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			if (!MyTab.insertParentScope(obj)) {
 				report_error("Ime " + obj.getName() + " je vec deklarisano.", MethodDeclaration);
 			}
+			else {
+				if (obj.getName().equals("main") && obj.getFpPos() == 0 && obj.getType() == MyTab.noType) {
+					mainFound = true;
+				}
+			}
 		} else {
 			if (Utils.isConstructor(obj)) {
 				//provera da li vec postoji konstruktor sa istim parametrima
@@ -1185,6 +1200,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		super.visit(Program);
 		Program.obj = Program.getProgramName().obj;
 		MyTab.closeScope();
+		
+		if (!mainFound) {
+			report_error("Nije pronadjena globalna main metoda bez argumenata!", Program);
+		}
 	}
 
 	@Override
