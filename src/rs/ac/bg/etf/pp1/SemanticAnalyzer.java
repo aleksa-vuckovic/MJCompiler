@@ -155,27 +155,27 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(MulopMod MulopMod) {
 		super.visit(MulopMod);
-		MulopMod.myint = new MyInt(sym.MOD);
+		MulopMod.myint = new MyInt(Code.rem);
 	}
 	@Override
 	public void visit(MulopDiv MulopDiv) {
 		super.visit(MulopDiv);
-		MulopDiv.myint = new MyInt(sym.DIV);
+		MulopDiv.myint = new MyInt(Code.div);
 	}
 	@Override
 	public void visit(MulopMul MulopMul) {
 		super.visit(MulopMul);
-		MulopMul.myint = new MyInt(sym.MUL);
+		MulopMul.myint = new MyInt(Code.mul);
 	}
 	@Override
 	public void visit(AddopSub AddopSub) {
 		super.visit(AddopSub);
-		AddopSub.myint = new MyInt(sym.SUB);
+		AddopSub.myint = new MyInt(Code.sub);
 	}
 	@Override
 	public void visit(AddopAdd AddopAdd) {
 		super.visit(AddopAdd);
-		AddopAdd.myint = new MyInt(sym.ADD);
+		AddopAdd.myint = new MyInt(Code.add);
 	}
 	@Override
 	public void visit(RelopLe RelopLe) {

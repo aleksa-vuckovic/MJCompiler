@@ -113,4 +113,10 @@ public class Utils {
 		Code.fixup(patchAdr);
 		Code.pc = curPc;
 	}
+	
+	public static void generateCall(int adr) {
+		int pc = Code.pc;
+		Code.put(Code.call);
+		Code.put2(adr - pc);
+	}
 }

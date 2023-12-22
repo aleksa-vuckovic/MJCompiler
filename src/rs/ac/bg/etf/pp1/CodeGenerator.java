@@ -10,6 +10,7 @@ import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.my.ConstructorIterator;
 import rs.ac.bg.etf.pp1.my.MethodIterator;
 import rs.ac.bg.etf.pp1.my.MyTab;
+import rs.ac.bg.etf.pp1.my.TypeList;
 import rs.ac.bg.etf.pp1.my.Utils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.concepts.Obj;
@@ -38,254 +39,297 @@ public class CodeGenerator extends VisitorAdaptor {
 
 	@Override
 	public void visit(DesignatorSimple DesignatorSimple) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorSimple);
+		Obj leftObj = DesignatorSimple.obj;
+		if (leftObj.getLevel() == 1) {
+			//pristup preko podrazumevanog this
+			Code.put(Code.load_n);
+		}
 	}
-
 	@Override
 	public void visit(DesignatorScoped DesignatorScoped) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorScoped);
 	}
-
 	@Override
 	public void visit(DesignatorElem DesignatorElem) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorElem);
+		Obj designator = DesignatorElem.getDesignator().obj;
+		int pstackTop = 0;
+		if (currentMethod != null) {
+			pstackTop = Utils.localVariableCount(currentMethod);
+		}
+		//indeks treba sacuvati sa strane da bi se vrednost prethodnog
+		//designator objekta ucitala na estek
+		Code.put(Code.store); Code.put(pstackTop);
+		Code.load(designator);
+		Code.put(Code.load); Code.put(pstackTop);
 	}
-
 	@Override
 	public void visit(DesignatorField DesignatorField) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorField);
+		Obj designator = DesignatorField.getDesignator().obj;
+		int kind = designator.getKind();
+		
+		if (kind == Obj.Con || kind == Obj.Meth) {
+			//semanticki neispravno
+		}
+		else if (kind == Obj.Type || kind == Obj.Prog || kind == Utils.Namespace) {
+			//ispravno ali ne generise se nista
+		}
+		else {
+			Code.load(designator);
+		}
 	}
 
+	/*
+	 * Operators
+	 */
 	@Override
 	public void visit(MulopMod MulopMod) {
-		// TODO Auto-generated method stub
 		super.visit(MulopMod);
 	}
-
 	@Override
 	public void visit(MulopDiv MulopDiv) {
-		// TODO Auto-generated method stub
 		super.visit(MulopDiv);
 	}
-
 	@Override
 	public void visit(MulopMul MulopMul) {
-		// TODO Auto-generated method stub
 		super.visit(MulopMul);
 	}
-
 	@Override
 	public void visit(AddopSub AddopSub) {
-		// TODO Auto-generated method stub
 		super.visit(AddopSub);
 	}
-
 	@Override
 	public void visit(AddopAdd AddopAdd) {
-		// TODO Auto-generated method stub
 		super.visit(AddopAdd);
 	}
-
 	@Override
 	public void visit(RelopLe RelopLe) {
-		// TODO Auto-generated method stub
 		super.visit(RelopLe);
 	}
-
 	@Override
 	public void visit(RelopLt RelopLt) {
-		// TODO Auto-generated method stub
 		super.visit(RelopLt);
 	}
-
 	@Override
 	public void visit(RelopGe RelopGe) {
-		// TODO Auto-generated method stub
 		super.visit(RelopGe);
 	}
-
 	@Override
 	public void visit(RelopGt RelopGt) {
-		// TODO Auto-generated method stub
 		super.visit(RelopGt);
 	}
-
 	@Override
 	public void visit(RelopNe RelopNe) {
-		// TODO Auto-generated method stub
 		super.visit(RelopNe);
 	}
-
 	@Override
 	public void visit(RelopEq RelopEq) {
-		// TODO Auto-generated method stub
 		super.visit(RelopEq);
 	}
-
 	@Override
 	public void visit(Assignop Assignop) {
-		// TODO Auto-generated method stub
 		super.visit(Assignop);
 	}
 
+	/*
+	 * Type
+	 */
 	@Override
 	public void visit(TypeScoped TypeScoped) {
-		// TODO Auto-generated method stub
 		super.visit(TypeScoped);
 	}
-
 	@Override
 	public void visit(TypeSimple TypeSimple) {
-		// TODO Auto-generated method stub
 		super.visit(TypeSimple);
 	}
-
+	
+	/*
+	 * Expr
+	 */
 	@Override
 	public void visit(ConstructorInvocation ConstructorInvocation) {
-		// TODO Auto-generated method stub
 		super.visit(ConstructorInvocation);
+		Struct cls = ConstructorInvocation.getType().struct;
+		int size = Utils.getSize(cls);
+		
+		Code.put(Code.new_);
+		Code.put2(size);
+		Code.put(Code.dup);
 	}
-
 	@Override
 	public void visit(FactorCons FactorCons) {
-		// TODO Auto-generated method stub
 		super.visit(FactorCons);
+		Struct cls = FactorCons.getConstructorInvocation().struct;
+		TypeList args = FactorCons.getActPars().typelist;
+		
+		Obj cons = Utils.findConstructor(cls, args);
+		Utils.generateCall(cons.getAdr());
 	}
-
 	@Override
 	public void visit(FactorExpr FactorExpr) {
-		// TODO Auto-generated method stub
 		super.visit(FactorExpr);
 	}
-
 	@Override
 	public void visit(FactorArray FactorArray) {
-		// TODO Auto-generated method stub
 		super.visit(FactorArray);
+		Struct type = FactorArray.getType().struct;
+		Code.put(Code.newarray);
+		if (type == MyTab.charType) {
+			Code.put(0);
+		}
+		else {
+			Code.put(1);
+		}
 	}
-
 	@Override
 	public void visit(FactorMethod FactorMethod) {
-		// TODO Auto-generated method stub
 		super.visit(FactorMethod);
 	}
-
 	@Override
 	public void visit(FactorDesignator FactorDesignator) {
-		// TODO Auto-generated method stub
 		super.visit(FactorDesignator);
+		Obj designator = FactorDesignator.getDesignator().obj;
+		Code.load(designator);
 	}
-
 	@Override
 	public void visit(FactorBool FactorBool) {
-		// TODO Auto-generated method stub
 		super.visit(FactorBool);
+		int val = FactorBool.getVal();
+		Code.loadConst(val);
 	}
-
 	@Override
 	public void visit(FactorChar FactorChar) {
-		// TODO Auto-generated method stub
 		super.visit(FactorChar);
+		int val = FactorChar.getVal();
+		Code.loadConst(val);
 	}
-
 	@Override
 	public void visit(FactorNum FactorNum) {
-		// TODO Auto-generated method stub
 		super.visit(FactorNum);
+		int val = FactorNum.getVal();
+		Code.loadConst(val);
 	}
-
 	@Override
 	public void visit(TermSingle TermSingle) {
-		// TODO Auto-generated method stub
 		super.visit(TermSingle);
 	}
-
 	@Override
 	public void visit(TermMul TermMul) {
-		// TODO Auto-generated method stub
 		super.visit(TermMul);
+		int op = TermMul.getMulop().myint.val;
+		Code.put(op);
 	}
-
 	@Override
 	public void visit(ExprSingleNeg ExprSingleNeg) {
-		// TODO Auto-generated method stub
 		super.visit(ExprSingleNeg);
+		Code.put(Code.neg);
 	}
-
 	@Override
 	public void visit(ExprSingle ExprSingle) {
-		// TODO Auto-generated method stub
 		super.visit(ExprSingle);
 	}
-
 	@Override
 	public void visit(ExprAdd ExprAdd) {
-		// TODO Auto-generated method stub
 		super.visit(ExprAdd);
+		int op = ExprAdd.getAddop().myint.val;
+		Code.put(op);
 	}
 
+	/*
+	 * Condition
+	 */
 	@Override
 	public void visit(ConditonFactorExpr ConditonFactorExpr) {
-		// TODO Auto-generated method stub
 		super.visit(ConditonFactorExpr);
+		Code.put(Code.const_n);
+		Code.put(Code.jcc + Code.ne); Code.put2(7);
+		Code.put(Code.const_n);
+		Code.put(Code.jmp); Code.put2(4);
+		Code.put(Code.const_1);
 	}
-
 	@Override
 	public void visit(ConditionFactorRel ConditionFactorRel) {
-		// TODO Auto-generated method stub
 		super.visit(ConditionFactorRel);
+		int op = ConditionFactorRel.getRelop().myint.val;
+		Code.put(Code.jcc + op); Code.put2(7);
+		Code.put(Code.const_n);
+		Code.put(Code.jmp); Code.put2(4);
+		Code.put(Code.const_1);
 	}
-
 	@Override
 	public void visit(ConditionTermSingle ConditionTermSingle) {
-		// TODO Auto-generated method stub
 		super.visit(ConditionTermSingle);
 	}
-
 	@Override
 	public void visit(ConditionTermAnd ConditionTermAnd) {
-		// TODO Auto-generated method stub
 		super.visit(ConditionTermAnd);
+		Code.put(Code.add);
+		Code.put(Code.const_2);
+		Code.put(Code.jcc + Code.ne); Code.put2(7);
+		Code.put(Code.const_n);
+		Code.put(Code.jmp); Code.put2(4);
+		Code.put(Code.const_1);
 	}
-
 	@Override
 	public void visit(ConditionSingle ConditionSingle) {
-		// TODO Auto-generated method stub
 		super.visit(ConditionSingle);
 	}
-
 	@Override
 	public void visit(ConditionOr ConditionOr) {
-		// TODO Auto-generated method stub
 		super.visit(ConditionOr);
+		Code.put(Code.add);
+		Code.put(Code.const_n);
+		Code.put(Code.jcc + Code.ne); Code.put2(7);
+		Code.put(Code.const_n);
+		Code.put(Code.jmp); Code.put2(4);
+		Code.put(Code.const_1);
 	}
 
+	/*
+	 * Designator statement
+	 */
 	@Override
 	public void visit(DesignatorStatementDec DesignatorStatementDec) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementDec);
+		Obj designator = DesignatorStatementDec.getDesignator().obj;
+		generateIncDec(designator, Code.sub);
 	}
-
 	@Override
 	public void visit(DesignatorStatementInc DesignatorStatementInc) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementInc);
+		Obj designator = DesignatorStatementInc.getDesignator().obj;
+		generateIncDec(designator, Code.add);
 	}
-
+	void generateIncDec(Obj designator, int op) {
+		int kind = designator.getKind();
+		if (kind == Obj.Var) {
+		}
+		else if (kind == Obj.Fld) {
+			Code.put(Code.dup);
+		}
+		else if (kind == Obj.Elem) {
+			Code.put(Code.dup2);
+		}
+		Code.load(designator);
+		Code.put(Code.const_1);
+		Code.put(op);
+		Code.store(designator);
+	}
 	@Override
 	public void visit(DesignatorStatementMethod DesignatorStatementMethod) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementMethod);
+		Struct retType = DesignatorStatementMethod.getMethodInvocation().struct;
+		if (retType != MyTab.noType) {
+			Code.put(Code.pop);
+		}
 	}
-
 	@Override
 	public void visit(DesignatorStatementAssign DesignatorStatementAssign) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementAssign);
+		Obj obj = DesignatorStatementAssign.getDesignator().obj;
+		Code.store(obj);
 	}
 	@Override
 	public void visit(DesignatorStatementCommaEmpty DesignatorStatementCommaEmpty) {
@@ -519,7 +563,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		else if (meth.getLevel() == 0) {
 			//static method
-			Code.put(Code.call); Code.put2(meth.getAdr());
+			Utils.generateCall(meth.getAdr());
 		}
 		else {
 			//virtual method
@@ -631,10 +675,16 @@ public class CodeGenerator extends VisitorAdaptor {
 		int argCount = obj.getFpPos();
 		int localCount = Utils.localVariableCount(obj);
 		Code.put(Code.enter); Code.put(argCount); Code.put(localCount);
+		currentMethod = obj;
 	}
 	@Override
 	public void visit(MethodDeclaration MethodDeclaration) {
 		super.visit(MethodDeclaration);
+		Obj obj = MethodDeclaration.obj;
+		//Ako je main pamti se
+		if (obj.getLevel() == 0 && obj.getName().equals("main") && obj.getFpPos() == 0) {
+			mainPc = obj.getAdr();
+		}
 	}
 	@Override
 	public void visit(Method Method) {
@@ -647,6 +697,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		else {
 			Code.put(Code.trap); Code.put(1);
 		}
+		currentMethod = null;
 	}
 	@Override
 	public void visit(MethodListEnd MethodListEnd) {
@@ -859,6 +910,18 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(Program Program) {
 		super.visit(Program);
+		
+		if (mainPc == -1) {
+			report_error("Nije definisana globalna metoda main bez argumenata.", Program);
+		}
+		else {
+			initializerPc = Code.pc;
+			for (Integer initBlock: initializerAddresses) {
+				Utils.generateCall(initBlock);
+			}
+			Utils.generateCall(mainPc);
+			Code.put(Code.return_);
+		}
 	}
 
 	@Override
