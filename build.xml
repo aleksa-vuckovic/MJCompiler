@@ -7,6 +7,7 @@
 				<exclude name="util/*"/>
 				<exclude name="my/*"/>
 				<exclude name="SemanticAnalyzer.java"/>
+				<exclude name="CodeGenerator.java"/>
 				<exclude name="Yylex.java"/>
 			</fileset>
 		</delete>
@@ -25,6 +26,7 @@
 				<exclude name="my/*"/>
 				<exclude name="ast/*"/>
 				<exclude name="SemanticAnalyzer.java"/>
+				<exclude name="CodeGenerator.java"/>
 				<exclude name="MJParser.java"/>
 				<exclude name="sym.java"/>
 			</fileset>

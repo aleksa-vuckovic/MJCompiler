@@ -1,220 +1,40 @@
 package rs.ac.bg.etf.pp1;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
+
+import org.apache.log4j.Logger;
+
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.my.ConstructorIterator;
+import rs.ac.bg.etf.pp1.my.MethodIterator;
+import rs.ac.bg.etf.pp1.my.MyTab;
+import rs.ac.bg.etf.pp1.my.Utils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
 
 public class CodeGenerator extends VisitorAdaptor {
-
-	@Override
-	public void visit(Mulop Mulop) {
-		// TODO Auto-generated method stub
-		super.visit(Mulop);
+	
+	
+	Logger log = Logger.getLogger(getClass());
+	public boolean errorDetected = false;
+	
+	private void report_error(String message, SyntaxNode node) {
+		log.error("Greska pri generisanju koda na liniji " + node.getLine() + ": " + message);
+		errorDetected = true;
 	}
-
-	@Override
-	public void visit(Relop Relop) {
-		// TODO Auto-generated method stub
-		super.visit(Relop);
-	}
-
-	@Override
-	public void visit(ConstDeclComma ConstDeclComma) {
-		// TODO Auto-generated method stub
-		super.visit(ConstDeclComma);
-	}
-
-	@Override
-	public void visit(StaticVarDeclComma StaticVarDeclComma) {
-		// TODO Auto-generated method stub
-		super.visit(StaticVarDeclComma);
-	}
-
-	@Override
-	public void visit(VarDeclLineList VarDeclLineList) {
-		// TODO Auto-generated method stub
-		super.visit(VarDeclLineList);
-	}
-
-	@Override
-	public void visit(VarDeclComma VarDeclComma) {
-		// TODO Auto-generated method stub
-		super.visit(VarDeclComma);
-	}
-
-	@Override
-	public void visit(StatementList StatementList) {
-		// TODO Auto-generated method stub
-		super.visit(StatementList);
-	}
-
-	@Override
-	public void visit(NamespaceList NamespaceList) {
-		// TODO Auto-generated method stub
-		super.visit(NamespaceList);
-	}
-
-	@Override
-	public void visit(ClassName ClassName) {
-		// TODO Auto-generated method stub
-		super.visit(ClassName);
-	}
-
-	@Override
-	public void visit(Addop Addop) {
-		// TODO Auto-generated method stub
-		super.visit(Addop);
-	}
-
-	@Override
-	public void visit(ConditionTerm ConditionTerm) {
-		// TODO Auto-generated method stub
-		super.visit(ConditionTerm);
-	}
-
-	@Override
-	public void visit(ForCondition ForCondition) {
-		// TODO Auto-generated method stub
-		super.visit(ForCondition);
-	}
-
-	@Override
-	public void visit(Factor Factor) {
-		// TODO Auto-generated method stub
-		super.visit(Factor);
-	}
-
-	@Override
-	public void visit(DeclList DeclList) {
-		// TODO Auto-generated method stub
-		super.visit(DeclList);
-	}
-
-	@Override
-	public void visit(Designator Designator) {
-		// TODO Auto-generated method stub
-		super.visit(Designator);
-	}
-
-	@Override
-	public void visit(MethodName MethodName) {
-		// TODO Auto-generated method stub
-		super.visit(MethodName);
-	}
-
-	@Override
-	public void visit(Term Term) {
-		// TODO Auto-generated method stub
-		super.visit(Term);
-	}
-
-	@Override
-	public void visit(StaticVarDecl StaticVarDecl) {
-		// TODO Auto-generated method stub
-		super.visit(StaticVarDecl);
-	}
-
-	@Override
-	public void visit(Condition Condition) {
-		// TODO Auto-generated method stub
-		super.visit(Condition);
-	}
-
-	@Override
-	public void visit(FormalParamComma FormalParamComma) {
-		// TODO Auto-generated method stub
-		super.visit(FormalParamComma);
-	}
-
-	@Override
-	public void visit(MethodList MethodList) {
-		// TODO Auto-generated method stub
-		super.visit(MethodList);
-	}
-
-	@Override
-	public void visit(StaticMemberList StaticMemberList) {
-		// TODO Auto-generated method stub
-		super.visit(StaticMemberList);
-	}
-
-	@Override
-	public void visit(Methods Methods) {
-		// TODO Auto-generated method stub
-		super.visit(Methods);
-	}
-
-	@Override
-	public void visit(FormalParam FormalParam) {
-		// TODO Auto-generated method stub
-		super.visit(FormalParam);
-	}
-
-	@Override
-	public void visit(Expr Expr) {
-		// TODO Auto-generated method stub
-		super.visit(Expr);
-	}
-
-	@Override
-	public void visit(ActPars ActPars) {
-		// TODO Auto-generated method stub
-		super.visit(ActPars);
-	}
-
-	@Override
-	public void visit(DesignatorStatement DesignatorStatement) {
-		// TODO Auto-generated method stub
-		super.visit(DesignatorStatement);
-	}
-
-	@Override
-	public void visit(StaticMember StaticMember) {
-		// TODO Auto-generated method stub
-		super.visit(StaticMember);
-	}
-
-	@Override
-	public void visit(Decl Decl) {
-		// TODO Auto-generated method stub
-		super.visit(Decl);
-	}
-
-	@Override
-	public void visit(Statement Statement) {
-		// TODO Auto-generated method stub
-		super.visit(Statement);
-	}
-
-	@Override
-	public void visit(VarDecl VarDecl) {
-		// TODO Auto-generated method stub
-		super.visit(VarDecl);
-	}
-
-	@Override
-	public void visit(Type Type) {
-		// TODO Auto-generated method stub
-		super.visit(Type);
-	}
-
-	@Override
-	public void visit(ConstDecl ConstDecl) {
-		// TODO Auto-generated method stub
-		super.visit(ConstDecl);
-	}
-
-	@Override
-	public void visit(ConditionFactor ConditionFactor) {
-		// TODO Auto-generated method stub
-		super.visit(ConditionFactor);
-	}
-
-	@Override
-	public void visit(DesignatorStatementComma DesignatorStatementComma) {
-		// TODO Auto-generated method stub
-		super.visit(DesignatorStatementComma);
-	}
+	
+	Obj currentClass = null;
+	Obj currentMethod = null;
+	
+	int mainPc = -1;
+	int initializerPc = -1;
+	
+	List<Integer> initializerAddresses = new LinkedList<>();
+	Stack<List<Integer>> breakFixups = new Stack<>();
+	Stack<List<Integer>> continueFixups = new Stack<>();
 
 	@Override
 	public void visit(DesignatorSimple DesignatorSimple) {
@@ -467,400 +287,496 @@ public class CodeGenerator extends VisitorAdaptor {
 		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementAssign);
 	}
-
 	@Override
 	public void visit(DesignatorStatementCommaEmpty DesignatorStatementCommaEmpty) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementCommaEmpty);
 	}
-
 	@Override
 	public void visit(DesignatorStatementCommaEnd DesignatorStatementCommaEnd) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementCommaEnd);
 	}
-
 	@Override
 	public void visit(DesignatorStatementCommaItem DesignatorStatementCommaItem) {
-		// TODO Auto-generated method stub
 		super.visit(DesignatorStatementCommaItem);
 	}
 
+	/*
+	 * Statements
+	 */
 	@Override
 	public void visit(ForExit ForExit) {
-		// TODO Auto-generated method stub
 		super.visit(ForExit);
+		Code.put(Code.jmp); Code.put2(0);
+		ForExit.myint.val = Code.pc;
 	}
-
 	@Override
 	public void visit(ForConditionEmpty ForConditionEmpty) {
-		// TODO Auto-generated method stub
 		super.visit(ForConditionEmpty);
+		
+		Code.put(Code.const_1);
+		Code.put(Code.const_1);
+		Code.put(Code.jcc + Code.ne); Code.put2(0);
+		Code.put(Code.jmp); Code.put2(0);
+		
+		ForConditionEmpty.myint.val = Code.pc;
 	}
-
 	@Override
 	public void visit(ForConditionNonempty ForConditionNonempty) {
-		// TODO Auto-generated method stub
 		super.visit(ForConditionNonempty);
+		
+		Code.put(Code.const_1);
+		Code.put(Code.jcc + Code.ne); Code.put2(0);
+		Code.put(Code.jmp); Code.put2(0);
+		
+		ForConditionNonempty.myint.val = Code.pc;
 	}
-
 	@Override
 	public void visit(ForEntry ForEntry) {
-		// TODO Auto-generated method stub
 		super.visit(ForEntry);
+		ForEntry.myint.val = Code.pc;
+		breakFixups.push(new ArrayList<>());
+		continueFixups.push(new ArrayList<>());
 	}
-
-	@Override
-	public void visit(IfStatement IfStatement) {
-		// TODO Auto-generated method stub
-		super.visit(IfStatement);
-	}
-
-	@Override
-	public void visit(IfCondition IfCondition) {
-		// TODO Auto-generated method stub
-		super.visit(IfCondition);
-	}
-
 	@Override
 	public void visit(StatementFor StatementFor) {
-		// TODO Auto-generated method stub
 		super.visit(StatementFor);
+		Code.put(Code.jmp); Code.put2(0);
+		
+		int forconditionAdr = StatementFor.getForEntry().myint.val;
+		int forexitAdr = StatementFor.getForCondition().myint.val;
+		int forstatementAdr = StatementFor.getForExit().myint.val;
+		int forendAdr = Code.pc;
+		
+		int forendFixupAdr = forexitAdr - 5;
+		Utils.codeFixup(forendFixupAdr, forendAdr);
+		
+		int forstatementFixupAdr = forexitAdr - 2;
+		Utils.codeFixup(forstatementFixupAdr, forstatementAdr);
+		
+		int forconditionFixupAdr = forstatementAdr - 2;
+		Utils.codeFixup(forconditionFixupAdr, forconditionAdr);
+		
+		int forexitFixupAdr= forendAdr - 2;
+		Utils.codeFixup(forexitFixupAdr, forexitAdr);
+		
+		List<Integer> breaks = breakFixups.pop();
+		for (Integer fixup: breaks) {
+			Utils.codeFixup(fixup, forendAdr);
+		}
+		
+		List<Integer> continues = continueFixups.pop();
+		for (Integer fixup: continues) {
+			Utils.codeFixup(fixup, forexitAdr);
+		}
+		
 	}
-
-	@Override
-	public void visit(StatementMatchedIf StatementMatchedIf) {
-		// TODO Auto-generated method stub
-		super.visit(StatementMatchedIf);
-	}
-
 	@Override
 	public void visit(StatementBlock StatementBlock) {
-		// TODO Auto-generated method stub
 		super.visit(StatementBlock);
 	}
-
 	@Override
 	public void visit(StatementPrintNum StatementPrintNum) {
-		// TODO Auto-generated method stub
 		super.visit(StatementPrintNum);
+		int width = StatementPrintNum.getNum();
+		Struct type = StatementPrintNum.getExpr().struct;
+		Code.put(Code.const_); Code.put4(width);
+		if (type == MyTab.charType) {
+			Code.put(Code.bprint);
+		}
+		else {
+			Code.put(Code.print);
+		}
 	}
-
 	@Override
 	public void visit(StatementPrint StatementPrint) {
-		// TODO Auto-generated method stub
 		super.visit(StatementPrint);
+		Struct type = StatementPrint.getExpr().struct;
+		if (type == MyTab.charType) {
+			Code.put(Code.const_1);
+			Code.put(Code.print);
+		}
+		else {
+			Code.put(Code.const_4);
+			Code.put(Code.bprint);
+		}
 	}
-
 	@Override
 	public void visit(StatementRead StatementRead) {
-		// TODO Auto-generated method stub
 		super.visit(StatementRead);
+		Obj designator = StatementRead.getDesignator().obj;
+		if (designator.getType() == MyTab.charType) {
+			Code.put(Code.bread);
+		}
+		else {
+			Code.put(Code.read);
+		}
+		Code.store(designator);
 	}
-
 	@Override
 	public void visit(StatementReturnExpr StatementReturnExpr) {
-		// TODO Auto-generated method stub
 		super.visit(StatementReturnExpr);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
 	}
-
 	@Override
 	public void visit(StatementReturn StatementReturn) {
-		// TODO Auto-generated method stub
 		super.visit(StatementReturn);
+		Code.put(Code.exit);
+		Code.put(Code.return_);
 	}
-
 	@Override
 	public void visit(StatementContinue StatementContinue) {
-		// TODO Auto-generated method stub
 		super.visit(StatementContinue);
+		Code.put(Code.jmp);
+		continueFixups.peek().add(Code.pc);
+		Code.put2(0);
 	}
-
 	@Override
 	public void visit(StatementBreak StatementBreak) {
-		// TODO Auto-generated method stub
 		super.visit(StatementBreak);
+		Code.put(Code.jmp);
+		breakFixups.peek().add(Code.pc);
+		Code.put2(0);
 	}
-
 	@Override
 	public void visit(StatementDesignatorStatement StatementDesignatorStatement) {
-		// TODO Auto-generated method stub
 		super.visit(StatementDesignatorStatement);
 	}
-
+	@Override
+	public void visit(IfStatement IfStatement) {
+		super.visit(IfStatement);
+		if (IfStatement.getParent() instanceof StatementMatchedIf) {
+			Code.put(Code.jmp); Code.put2(0);
+			IfStatement.myint.val = Code.pc;
+		}
+	}
+	@Override
+	public void visit(IfCondition IfCondition) {
+		super.visit(IfCondition);
+		Code.put(Code.const_1);
+		Code.put(Code.jcc + Code.ne); Code.put2(0);
+		IfCondition.myint.val = Code.pc;
+	}
+	@Override
+	public void visit(StatementMatchedIf StatementMatchedIf) {
+		super.visit(StatementMatchedIf);
+		int ifstatementAdr = StatementMatchedIf.getIfCondition().myint.val;
+		int elseAdr = StatementMatchedIf.getIfStatement().myint.val;
+		int ifendAdr = Code.pc;
+		
+		int elseFixupAdr = ifstatementAdr - 2;
+		Utils.codeFixup(elseFixupAdr, elseAdr);
+		
+		int ifendFixupAdr = elseAdr - 2;
+		Utils.codeFixup(ifendFixupAdr, ifendAdr);
+	}
 	@Override
 	public void visit(StatementUnmatchedIf StatementUnmatchedIf) {
-		// TODO Auto-generated method stub
 		super.visit(StatementUnmatchedIf);
+		int ifstatementAdr = StatementUnmatchedIf.getIfCondition().myint.val;
+		int ifendFixupAdr = ifstatementAdr - 2;
+		int ifendAdr = Code.pc;
+		
+		Utils.codeFixup(ifendFixupAdr, ifendAdr);
 	}
-
 	@Override
 	public void visit(StatementListEnd StatementListEnd) {
-		// TODO Auto-generated method stub
 		super.visit(StatementListEnd);
 	}
-
 	@Override
 	public void visit(StatementListItem StatementListItem) {
-		// TODO Auto-generated method stub
 		super.visit(StatementListItem);
 	}
 
+	/*
+	 * Actual params, Method invocation
+	 */
 	@Override
 	public void visit(ActPar ActPar) {
-		// TODO Auto-generated method stub
 		super.visit(ActPar);
 	}
-
 	@Override
 	public void visit(ActParsEmpty ActParsEmpty) {
-		// TODO Auto-generated method stub
 		super.visit(ActParsEmpty);
 	}
-
 	@Override
 	public void visit(ActParsEnd ActParsEnd) {
-		// TODO Auto-generated method stub
 		super.visit(ActParsEnd);
 	}
-
 	@Override
 	public void visit(ActParsItem ActParsItem) {
-		// TODO Auto-generated method stub
 		super.visit(ActParsItem);
 	}
-
 	@Override
 	public void visit(MethodInvocation MethodInvocation) {
-		// TODO Auto-generated method stub
 		super.visit(MethodInvocation);
+		Obj meth = MethodInvocation.getDesignator().obj;
+		if (meth == MyTab.chrObj || meth == MyTab.ordObj) {
+			//nije potreban kod
+		}
+		else if (meth == MyTab.lenObj) {
+			Code.put(Code.arraylength);
+		}
+		else if (meth.getLevel() == 0) {
+			//static method
+			Code.put(Code.call); Code.put2(meth.getAdr());
+		}
+		else {
+			//virtual method
+			
+			//this je sada "zakopano" ispod argumenata na esteku,
+			//i jedini nacin da se dodje do njega je ponovno
+			//generisanje koda za Designator)
+			MethodInvocation.getDesignator().traverseBottomUp(this);
+			//sada je this na vrhu esteka
+			Code.put(Code.getfield); Code.put2(0);
+			Code.put(Code.invokevirtual);
+			String name = meth.getName();
+			for (int i = 0; i < name.length(); i++) {
+				Code.put4(name.charAt(i));
+			}
+			Code.put4(-1);
+		}
 	}
-
+	
+	/*
+	 * Var declaration
+	 */
 	@Override
 	public void visit(VarDeclArray VarDeclArray) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclArray);
 	}
-
 	@Override
 	public void visit(VarDeclScalar VarDeclScalar) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclScalar);
 	}
-
 	@Override
 	public void visit(VarDeclCommaEnd VarDeclCommaEnd) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclCommaEnd);
 	}
-
 	@Override
 	public void visit(VarDeclCommaItem VarDeclCommaItem) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclCommaItem);
 	}
-
 	@Override
 	public void visit(VarDeclLineStart VarDeclLineStart) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclLineStart);
 	}
-
 	@Override
 	public void visit(VarDeclLine VarDeclLine) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclLine);
 	}
-
 	@Override
 	public void visit(VarDeclLineListEnd VarDeclLineListEnd) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclLineListEnd);
 	}
-
 	@Override
 	public void visit(VarDeclLineListItem VarDeclLineListItem) {
-		// TODO Auto-generated method stub
 		super.visit(VarDeclLineListItem);
 	}
-
+	
+	/*
+	 * Formal param declaration
+	 */
 	@Override
 	public void visit(FormalParamArray FormalParamArray) {
-		// TODO Auto-generated method stub
 		super.visit(FormalParamArray);
 	}
-
 	@Override
 	public void visit(FormalParamScalar FormalParamScalar) {
-		// TODO Auto-generated method stub
 		super.visit(FormalParamScalar);
 	}
-
 	@Override
 	public void visit(FormalParamCommaEmpty FormalParamCommaEmpty) {
-		// TODO Auto-generated method stub
 		super.visit(FormalParamCommaEmpty);
 	}
-
 	@Override
 	public void visit(FormalParamCommaEnd FormalParamCommaEnd) {
-		// TODO Auto-generated method stub
 		super.visit(FormalParamCommaEnd);
 	}
-
 	@Override
 	public void visit(FormalParamCommaItem FormalParamCommaItem) {
-		// TODO Auto-generated method stub
 		super.visit(FormalParamCommaItem);
 	}
 
+	/*
+	 * Method declaration
+	 */
 	@Override
 	public void visit(MethodNameCons MethodNameCons) {
-		// TODO Auto-generated method stub
 		super.visit(MethodNameCons);
+		Obj obj = MethodNameCons.obj;
+		generateMethodEntry(obj);
+		if (currentClass != null) {
+			//all constructors should set the vtable pointer as field 0
+			Code.put(Code.load_n);
+			Code.put(Code.const_); Code.put4(currentClass.getAdr());
+			Code.put(Code.putfield); Code.put2(0);
+		}
 	}
-
 	@Override
 	public void visit(MethodNameVoid MethodNameVoid) {
-		// TODO Auto-generated method stub
 		super.visit(MethodNameVoid);
+		Obj obj = MethodNameVoid.obj;
+		generateMethodEntry(obj);
 	}
-
 	@Override
 	public void visit(MethodNameRet MethodNameRet) {
-		// TODO Auto-generated method stub
 		super.visit(MethodNameRet);
+		Obj obj = MethodNameRet.obj;
+		generateMethodEntry(obj);
 	}
-
+	private void generateMethodEntry(Obj obj) {
+		obj.setAdr(Code.pc);
+		int argCount = obj.getFpPos();
+		int localCount = Utils.localVariableCount(obj);
+		Code.put(Code.enter); Code.put(argCount); Code.put(localCount);
+	}
 	@Override
 	public void visit(MethodDeclaration MethodDeclaration) {
-		// TODO Auto-generated method stub
 		super.visit(MethodDeclaration);
 	}
-
 	@Override
 	public void visit(Method Method) {
-		// TODO Auto-generated method stub
 		super.visit(Method);
+		Obj obj = Method.obj;
+		if (obj.getType() == MyTab.noType) {
+			Code.put(Code.exit);
+			Code.put(Code.return_);
+		}
+		else {
+			Code.put(Code.trap); Code.put(1);
+		}
 	}
-
 	@Override
 	public void visit(MethodListEnd MethodListEnd) {
-		// TODO Auto-generated method stub
 		super.visit(MethodListEnd);
 	}
-
 	@Override
 	public void visit(MethodListItem MethodListItem) {
-		// TODO Auto-generated method stub
 		super.visit(MethodListItem);
 	}
 
+	/*
+	 * Static members
+	 */
 	@Override
 	public void visit(StaticInitializerStart StaticInitializerStart) {
-		// TODO Auto-generated method stub
 		super.visit(StaticInitializerStart);
+		initializerAddresses.add(Code.pc);
 	}
-
 	@Override
 	public void visit(StaticInitializer StaticInitializer) {
-		// TODO Auto-generated method stub
 		super.visit(StaticInitializer);
+		Code.put(Code.return_);
 	}
-
 	@Override
 	public void visit(StaticVarDeclArray StaticVarDeclArray) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclArray);
 	}
-
 	@Override
 	public void visit(StaticVarDeclScalar StaticVarDeclScalar) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclScalar);
 	}
-
 	@Override
 	public void visit(StaticVarDeclCommaEnd StaticVarDeclCommaEnd) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclCommaEnd);
 	}
-
 	@Override
 	public void visit(StaticVarDeclCommaItem StaticVarDeclCommaItem) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclCommaItem);
 	}
-
 	@Override
 	public void visit(StaticVarDeclLineStart StaticVarDeclLineStart) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclLineStart);
 	}
-
 	@Override
 	public void visit(StaticVarDeclLine StaticVarDeclLine) {
-		// TODO Auto-generated method stub
 		super.visit(StaticVarDeclLine);
 	}
-
+	
+	/*
+	 * Class decl fillers
+	 */
 	@Override
 	public void visit(MethodsEmpty MethodsEmpty) {
-		// TODO Auto-generated method stub
 		super.visit(MethodsEmpty);
 	}
-
 	@Override
 	public void visit(MethodsNonempty MethodsNonempty) {
-		// TODO Auto-generated method stub
 		super.visit(MethodsNonempty);
 	}
-
 	@Override
 	public void visit(StaticMemberVar StaticMemberVar) {
-		// TODO Auto-generated method stub
 		super.visit(StaticMemberVar);
 	}
-
 	@Override
 	public void visit(StaticMemberInitializer StaticMemberInitializer) {
-		// TODO Auto-generated method stub
 		super.visit(StaticMemberInitializer);
 	}
-
 	@Override
 	public void visit(StaticMemberListEnd StaticMemberListEnd) {
-		// TODO Auto-generated method stub
 		super.visit(StaticMemberListEnd);
 	}
-
 	@Override
 	public void visit(StaticMemberListItem StaticMemberListItem) {
-		// TODO Auto-generated method stub
 		super.visit(StaticMemberListItem);
 	}
 
+	/*
+	 * Class
+	 */
 	@Override
 	public void visit(ClassNameExtend ClassNameExtend) {
 		super.visit(ClassNameExtend);
+		currentClass = ClassNameExtend.obj;
 	}
 	@Override
 	public void visit(ClassNameNoExtend ClassNameNoExtend) {
 		super.visit(ClassNameNoExtend);
+		currentClass = ClassNameNoExtend.obj;
 	}
 	@Override
 	public void visit(ClassDecl ClassDecl) {
 		super.visit(ClassDecl);
 		
 		Obj obj = ClassDecl.obj;
+		int vtadr = obj.getAdr();
 		ConstructorIterator iter = new ConstructorIterator(obj.getType());
 		Obj cons0 = iter.next();
 		if (cons0.getAdr() == -1) {
 			//podrazumevani konstruktor
 			cons0.setAdr(Code.pc);
 			Code.put(Code.enter); Code.put(1); Code.put(1);
-			Code.put(Code.load);
+			Code.put(Code.load_n);
+			Code.put(Code.const_); Code.put4(vtadr);
+			Code.put(Code.putfield); Code.put2(0);
+			Code.put(Code.exit);
+			Code.put(Code.return_);
 		}
+		
+		//inicijalizacioni kod za vtable
+		initializerAddresses.add(0, Code.pc);
+		int currentStaticAdr = vtadr;
+		MethodIterator methods = new MethodIterator(obj);
+		Obj cur = methods.next();
+		while (cur != null) {
+			String name = cur.getName();
+			for (int i = 0; i < name.length(); i++) {
+				Code.put(Code.const_); Code.put4(name.charAt(i));
+				Code.put(Code.putstatic); Code.put2(currentStaticAdr++);
+			}
+			Code.put(Code.const_m1);
+			Code.put(Code.putstatic); Code.put2(currentStaticAdr++);
+			Code.put(Code.const_); Code.put4(cur.getAdr());
+			Code.put(Code.putstatic); Code.put2(currentStaticAdr++);
+			cur = methods.next();
+		}
+		Code.put(Code.const_); Code.put4(-2);
+		Code.put(Code.putstatic); Code.put2(currentStaticAdr++);
+		Code.put(Code.return_);
+		
+		currentClass = null;
 	}
 	
 	@Override

@@ -184,7 +184,7 @@ Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition RPAREN IfStatement
 				| (StatementReturnExpr) RETURN Expr SEMI
 				| (StatementRead) READ LPAREN Designator RPAREN SEMI
 				| (StatementPrint) PRINT LPAREN Expr RPAREN SEMI
-				| (StatementPrintNum) PRINT LPAREN Expr COMMA NUM RPAREN SEMI
+				| (StatementPrintNum) PRINT LPAREN Expr COMMA NUM:num RPAREN SEMI
 				| (StatementBlock) LBRACE StatementList RBRACE
 				| (StatementMatchedIf) IF LPAREN IfCondition RPAREN IfStatement ELSE Statement
 				| (StatementFor) FOR LPAREN ForEntry SEMI ForCondition SEMI ForExit RPAREN Statement

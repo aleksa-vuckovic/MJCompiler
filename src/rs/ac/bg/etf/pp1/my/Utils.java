@@ -3,6 +3,7 @@ package rs.ac.bg.etf.pp1.my;
 import java.util.Collection;
 import java.util.Iterator;
 
+import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
 import rs.etf.pp1.symboltable.structure.HashTableDataStructure;
@@ -104,5 +105,12 @@ public class Utils {
 	
 	public static int localVariableCount(Obj meth) {
 		return meth.getLocalSymbols().size();
+	}
+	
+	public static void codeFixup(int patchAdr, int destination) {
+		int curPc = Code.pc;
+		Code.pc = destination;
+		Code.fixup(patchAdr);
+		Code.pc = curPc;
 	}
 }
