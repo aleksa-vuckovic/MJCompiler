@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 22/11/2023 2:5:12
+// 23/11/2023 16:18:18
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -36,6 +36,7 @@ public interface Visitor {
     public void visit(DesignatorStatement DesignatorStatement);
     public void visit(StaticMember StaticMember);
     public void visit(Decl Decl);
+    public void visit(DesignatorComma DesignatorComma);
     public void visit(Statement Statement);
     public void visit(VarDecl VarDecl);
     public void visit(Type Type);
@@ -80,6 +81,10 @@ public interface Visitor {
     public void visit(ConditionTermAnd ConditionTermAnd);
     public void visit(ConditionSingle ConditionSingle);
     public void visit(ConditionOr ConditionOr);
+    public void visit(DesignatorCommaEnd DesignatorCommaEnd);
+    public void visit(DesignatorCommaEmptyItem DesignatorCommaEmptyItem);
+    public void visit(DesignatorCommaItem DesignatorCommaItem);
+    public void visit(DesignatorStatementMultipleAssign DesignatorStatementMultipleAssign);
     public void visit(DesignatorStatementDec DesignatorStatementDec);
     public void visit(DesignatorStatementInc DesignatorStatementInc);
     public void visit(DesignatorStatementMethod DesignatorStatementMethod);
@@ -93,8 +98,6 @@ public interface Visitor {
     public void visit(ForEntry ForEntry);
     public void visit(IfStatement IfStatement);
     public void visit(IfCondition IfCondition);
-    public void visit(StatementFor StatementFor);
-    public void visit(StatementMatchedIf StatementMatchedIf);
     public void visit(StatementBlock StatementBlock);
     public void visit(StatementPrintNum StatementPrintNum);
     public void visit(StatementPrint StatementPrint);
@@ -104,6 +107,8 @@ public interface Visitor {
     public void visit(StatementContinue StatementContinue);
     public void visit(StatementBreak StatementBreak);
     public void visit(StatementDesignatorStatement StatementDesignatorStatement);
+    public void visit(StatementFor StatementFor);
+    public void visit(StatementMatchedIf StatementMatchedIf);
     public void visit(StatementUnmatchedIf StatementUnmatchedIf);
     public void visit(StatementListEnd StatementListEnd);
     public void visit(StatementListItem StatementListItem);

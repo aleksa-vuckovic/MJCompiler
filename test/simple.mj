@@ -1,29 +1,23 @@
 program MJProgram
 	
-	class Counter {
-		
-		int count;
-		{
-			Counter() {
-				count = 10;
-			}
-			void inc() {
-				count++;
-				print(count); print('\n');
-			}
-			void prnt() {
-				inc();
-			}
-		}
-		
-	}
 {
-	void main() Counter counter; char x; {
+	void main() int x[]; int a, b, c; int y[]; {
 		
-		for (;;) {
-			read(x);
-			if (x == '\n') print('\n');
-			else print(x);
-		}
+		a = 0;
+		b = 0;
+		c = 0;
+		
+		x = new int[5];
+		y = new int[5];
+		
+		x[0] = 0; x[1] = 1; x[2] = 2; x[3] = 3; x[4] = 4;
+		
+		[,,,*y] = x;
+		
+		print(a);
+		print(b);
+		print(c);
+		print(y[0]);
+		print(y[1]);
 	}
 }

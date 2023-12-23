@@ -100,6 +100,7 @@ nonterminal DesignatorStatement DesignatorStatement;
 nonterminal DesignatorStatementComma DesignatorStatementComma;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
+nonterminal rs.ac.bg.etf.pp1.my.DesignatorList DesignatorComma;
 
 nonterminal Condition Condition;
 nonterminal ConditionTerm ConditionTerm;
@@ -196,6 +197,8 @@ StatementList ::= (StatementListItem) StatementList:S1 Statement:S2 {: RESULT=ne
 					| (StatementListEnd) {: RESULT=new StatementListEnd(); :}
 					;
 Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement:I2 {: RESULT=new StatementUnmatchedIf(I1, I2); RESULT.setLine(I1left); :}
+				| (StatementMatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement:I2 ELSE Statement:S3 {: RESULT=new StatementMatchedIf(I1, I2, S3); RESULT.setLine(I1left); :}
+				| (StatementFor) FOR LPAREN ForEntry:F1 SEMI ForCondition:F2 SEMI ForExit:F3 RPAREN Statement:S4 {: RESULT=new StatementFor(F1, F2, F3, S4); RESULT.setLine(F1left); :}
 				| (StatementDesignatorStatement) DesignatorStatement:D1 SEMI {: RESULT=new StatementDesignatorStatement(D1); RESULT.setLine(D1left); :}
 				| (StatementBreak) BREAK SEMI {: RESULT=new StatementBreak(); :}
 				| (StatementContinue) CONTINUE SEMI {: RESULT=new StatementContinue(); :}
@@ -205,8 +208,6 @@ Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement
 				| (StatementPrint) PRINT LPAREN Expr:E1 RPAREN SEMI {: RESULT=new StatementPrint(E1); RESULT.setLine(E1left); :}
 				| (StatementPrintNum) PRINT LPAREN Expr:E1 COMMA NUM:num RPAREN SEMI {: RESULT=new StatementPrintNum(E1, num); RESULT.setLine(E1left); :}
 				| (StatementBlock) LBRACE StatementList:S1 RBRACE {: RESULT=new StatementBlock(S1); RESULT.setLine(S1left); :}
-				| (StatementMatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement:I2 ELSE Statement:S3 {: RESULT=new StatementMatchedIf(I1, I2, S3); RESULT.setLine(I1left); :}
-				| (StatementFor) FOR LPAREN ForEntry:F1 SEMI ForCondition:F2 SEMI ForExit:F3 RPAREN Statement:S4 {: RESULT=new StatementFor(F1, F2, F3, S4); RESULT.setLine(F1left); :}
 				;
 
 IfCondition ::= (IfCondition) Condition:C1 {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :};
@@ -224,7 +225,12 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 Assignop:A2 Ex
 						| (DesignatorStatementMethod) MethodInvocation:M1 {: RESULT=new DesignatorStatementMethod(M1); RESULT.setLine(M1left); :}
 						| (DesignatorStatementInc) Designator:D1 INC {: RESULT=new DesignatorStatementInc(D1); RESULT.setLine(D1left); :}
 						| (DesignatorStatementDec) Designator:D1 DEC {: RESULT=new DesignatorStatementDec(D1); RESULT.setLine(D1left); :}
+						| (DesignatorStatementMultipleAssign) LBRACK DesignatorComma:D1 MUL Designator:D2 RBRACK ASSIGN Designator:D3 {: RESULT=new DesignatorStatementMultipleAssign(D1, D2, D3); RESULT.setLine(D1left); :}
 						;
+DesignatorComma ::= (DesignatorCommaItem) DesignatorComma:D1 Designator:D2 COMMA {: RESULT=new DesignatorCommaItem(D1, D2); RESULT.setLine(D1left); :}
+					| (DesignatorCommaEmptyItem) DesignatorComma:D1 COMMA {: RESULT=new DesignatorCommaEmptyItem(D1); RESULT.setLine(D1left); :}
+					| (DesignatorCommaEnd) {: RESULT=new DesignatorCommaEnd(); :}
+					;
 
 Condition ::= (ConditionOr) Condition:C1 OR ConditionTerm:C2 {: RESULT=new ConditionOr(C1, C2); RESULT.setLine(C1left); :}
 				| (ConditionSingle) ConditionTerm:C1 {: RESULT=new ConditionSingle(C1); RESULT.setLine(C1left); :}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 22/11/2023 2:5:12
+// 23/11/2023 16:18:18
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -36,6 +36,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorStatement DesignatorStatement) { }
     public void visit(StaticMember StaticMember) { }
     public void visit(Decl Decl) { }
+    public void visit(DesignatorComma DesignatorComma) { }
     public void visit(Statement Statement) { }
     public void visit(VarDecl VarDecl) { }
     public void visit(Type Type) { }
@@ -80,6 +81,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ConditionTermAnd ConditionTermAnd) { visit(); }
     public void visit(ConditionSingle ConditionSingle) { visit(); }
     public void visit(ConditionOr ConditionOr) { visit(); }
+    public void visit(DesignatorCommaEnd DesignatorCommaEnd) { visit(); }
+    public void visit(DesignatorCommaEmptyItem DesignatorCommaEmptyItem) { visit(); }
+    public void visit(DesignatorCommaItem DesignatorCommaItem) { visit(); }
+    public void visit(DesignatorStatementMultipleAssign DesignatorStatementMultipleAssign) { visit(); }
     public void visit(DesignatorStatementDec DesignatorStatementDec) { visit(); }
     public void visit(DesignatorStatementInc DesignatorStatementInc) { visit(); }
     public void visit(DesignatorStatementMethod DesignatorStatementMethod) { visit(); }
@@ -93,8 +98,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ForEntry ForEntry) { visit(); }
     public void visit(IfStatement IfStatement) { visit(); }
     public void visit(IfCondition IfCondition) { visit(); }
-    public void visit(StatementFor StatementFor) { visit(); }
-    public void visit(StatementMatchedIf StatementMatchedIf) { visit(); }
     public void visit(StatementBlock StatementBlock) { visit(); }
     public void visit(StatementPrintNum StatementPrintNum) { visit(); }
     public void visit(StatementPrint StatementPrint) { visit(); }
@@ -104,6 +107,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StatementContinue StatementContinue) { visit(); }
     public void visit(StatementBreak StatementBreak) { visit(); }
     public void visit(StatementDesignatorStatement StatementDesignatorStatement) { visit(); }
+    public void visit(StatementFor StatementFor) { visit(); }
+    public void visit(StatementMatchedIf StatementMatchedIf) { visit(); }
     public void visit(StatementUnmatchedIf StatementUnmatchedIf) { visit(); }
     public void visit(StatementListEnd StatementListEnd) { visit(); }
     public void visit(StatementListItem StatementListItem) { visit(); }

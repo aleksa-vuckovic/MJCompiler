@@ -83,6 +83,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Struct ActPar;
 nonterminal StatementList, Statement, DesignatorStatement, DesignatorStatementComma;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
+nonterminal rs.ac.bg.etf.pp1.my.DesignatorList DesignatorComma;
 
 nonterminal Condition, ConditionTerm, ConditionFactor;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt Relop;
@@ -177,6 +178,8 @@ StatementList ::= (StatementListItem) StatementList Statement
 					| (StatementListEnd)
 					;
 Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition RPAREN IfStatement
+				| (StatementMatchedIf) IF LPAREN IfCondition RPAREN IfStatement ELSE Statement
+				| (StatementFor) FOR LPAREN ForEntry SEMI ForCondition SEMI ForExit RPAREN Statement
 				| (StatementDesignatorStatement) DesignatorStatement SEMI
 				| (StatementBreak) BREAK SEMI
 				| (StatementContinue) CONTINUE SEMI
@@ -186,8 +189,6 @@ Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition RPAREN IfStatement
 				| (StatementPrint) PRINT LPAREN Expr RPAREN SEMI
 				| (StatementPrintNum) PRINT LPAREN Expr COMMA NUM:num RPAREN SEMI
 				| (StatementBlock) LBRACE StatementList RBRACE
-				| (StatementMatchedIf) IF LPAREN IfCondition RPAREN IfStatement ELSE Statement
-				| (StatementFor) FOR LPAREN ForEntry SEMI ForCondition SEMI ForExit RPAREN Statement
 				;
 
 IfCondition ::= (IfCondition) Condition;
@@ -205,7 +206,12 @@ DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr
 						| (DesignatorStatementMethod) MethodInvocation
 						| (DesignatorStatementInc) Designator INC
 						| (DesignatorStatementDec) Designator DEC
+						| (DesignatorStatementMultipleAssign) LBRACK DesignatorComma MUL Designator RBRACK ASSIGN Designator
 						;
+DesignatorComma ::= (DesignatorCommaItem) DesignatorComma Designator COMMA
+					| (DesignatorCommaEmptyItem) DesignatorComma COMMA
+					| (DesignatorCommaEnd)
+					;
 
 Condition ::= (ConditionOr) Condition OR ConditionTerm
 				| (ConditionSingle) ConditionTerm

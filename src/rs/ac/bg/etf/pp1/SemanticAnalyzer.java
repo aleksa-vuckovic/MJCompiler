@@ -1,9 +1,12 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.my.ConstructorIterator;
+import rs.ac.bg.etf.pp1.my.DesignatorList;
 import rs.ac.bg.etf.pp1.my.MyInt;
 import rs.ac.bg.etf.pp1.my.MyTab;
 import rs.ac.bg.etf.pp1.my.TypeList;
@@ -445,6 +448,38 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	 * Designator statement
 	 */
 	@Override
+	public void visit(DesignatorStatementMultipleAssign DesignatorStatementMultipleAssign) {
+		super.visit(DesignatorStatementMultipleAssign);
+		Obj leftArrObj = DesignatorStatementMultipleAssign.getDesignator().obj;
+		Obj rightArrObj = DesignatorStatementMultipleAssign.getDesignator1().obj;
+		List<Obj> designatorList = DesignatorStatementMultipleAssign.getDesignatorComma().designatorlist.list;
+		Struct leftElemType, rightElemType;
+		
+		if (!hasValue(leftArrObj) || leftArrObj.getType().getKind() != Struct.Array) {
+			report_error("Identifikator posle * u visestrukoj dodeli mora oznacavati niz.", DesignatorStatementMultipleAssign);
+			leftElemType = new Struct(Struct.None);
+		}
+		else leftElemType = leftArrObj.getType().getElemType();
+		if (!hasValue(rightArrObj) || rightArrObj.getType().getKind() != Struct.Array) {
+			report_error("Identifikator sa desne strane visestruke dodeli mora oznacavati niz.", DesignatorStatementMultipleAssign);
+			rightElemType = new Struct(Struct.None);
+		}
+		else rightElemType = rightArrObj.getType().getElemType();
+		
+		for (Obj obj: designatorList) {
+			if (obj == null) continue;
+			if (checkAssignable(obj, DesignatorStatementMultipleAssign)) {
+				if (!Utils.assignableTo(rightElemType, obj.getType())) {
+					report_error("Tip clana niza sa desne strane mora biti dodeljiv identifikatoru sa leve strane visestruke dodele.", DesignatorStatementMultipleAssign);
+				}
+			}
+		}
+		if (!Utils.assignableTo(leftElemType, rightElemType)) {
+			report_error("Tip clana niza sa desne strane mora biti dodeljiv tipu clan niza sa leve strane visestruke dodele.", DesignatorStatementMultipleAssign);
+		}
+		
+	}
+	@Override
 	public void visit(DesignatorStatementDec DesignatorStatementDec) {
 		super.visit(DesignatorStatementDec);
 		Obj designator = DesignatorStatementDec.getDesignator().obj;
@@ -489,6 +524,26 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(DesignatorStatementCommaItem DesignatorStatementCommaItem) {
 		super.visit(DesignatorStatementCommaItem);
+	}
+	@Override
+	public void visit(DesignatorCommaEnd DesignatorCommaEnd) {
+		super.visit(DesignatorCommaEnd);
+		DesignatorCommaEnd.designatorlist = new DesignatorList();
+	}
+	@Override
+	public void visit(DesignatorCommaEmptyItem DesignatorCommaEmptyItem) {
+		super.visit(DesignatorCommaEmptyItem);
+		DesignatorList list = DesignatorCommaEmptyItem.getDesignatorComma().designatorlist;
+		list.list.add(null);
+		DesignatorCommaEmptyItem.designatorlist = list;
+	}
+	@Override
+	public void visit(DesignatorCommaItem DesignatorCommaItem) {
+		super.visit(DesignatorCommaItem);
+		DesignatorList list = DesignatorCommaItem.getDesignatorComma().designatorlist;
+		Obj designator = DesignatorCommaItem.getDesignator().obj;
+		list.list.add(designator);
+		DesignatorCommaItem.designatorlist = list;
 	}
 
 	/*
@@ -1023,6 +1078,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 	}
+
 	@Override
 	public void visit(ClassNameNoExtend ClassNameNoExtend) {
 		super.visit(ClassNameNoExtend);

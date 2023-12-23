@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.ac.bg.etf.pp1.my.ConstructorIterator;
+import rs.ac.bg.etf.pp1.my.DesignatorList;
 import rs.ac.bg.etf.pp1.my.MethodIterator;
 import rs.ac.bg.etf.pp1.my.MyInt;
 import rs.ac.bg.etf.pp1.my.MyTab;
@@ -55,10 +56,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(DesignatorElem DesignatorElem) {
 		super.visit(DesignatorElem);
 		Obj designator = DesignatorElem.getDesignator().obj;
-		int pstackTop = 0;
-		if (currentMethod != null) {
-			pstackTop = Utils.localVariableCount(currentMethod);
-		}
+		int pstackTop = currentMethod == null ? 0 : Utils.localVariableCount(currentMethod);
 		//indeks treba sacuvati sa strane da bi se vrednost prethodnog
 		//designator objekta ucitala na estek
 		Code.put(Code.store); Code.put(pstackTop);
@@ -292,6 +290,87 @@ public class CodeGenerator extends VisitorAdaptor {
 	 * Designator statement
 	 */
 	@Override
+	public void visit(DesignatorStatementMultipleAssign DesignatorStatementMultipleAssign) {
+		super.visit(DesignatorStatementMultipleAssign);
+		Obj leftArrObj = DesignatorStatementMultipleAssign.getDesignator().obj;
+		Obj rightArrObj = DesignatorStatementMultipleAssign.getDesignator1().obj;
+		List<Obj> designatorList = DesignatorStatementMultipleAssign.getDesignatorComma().designatorlist.list;
+		
+		int varCount = designatorList.size();
+		int pstackTop = currentMethod == null ? 0 : Utils.localVariableCount(currentMethod);
+		int rightArr = pstackTop;
+		int rightIndex = pstackTop + 1;
+		int leftIndex = pstackTop + 2;
+		
+		int arrload = Code.aload;
+		int arrstore = Code.astore;
+		if (rightArrObj.getType().getElemType() == MyTab.charType) {
+			arrload = Code.baload;
+			arrstore = Code.bastore;
+		}
+		
+		Code.load(rightArrObj);
+		Code.put(Code.store); Code.put(rightArr);
+		Code.load(leftArrObj);
+		Code.put(Code.dup);
+		Code.put(Code.arraylength);
+		Code.put(Code.load); Code.put(rightArr);
+		Code.put(Code.arraylength);
+		Code.put(Code.dup);
+		//estek: leftarr, len(leftarr), len(rightarr) x 2
+		Code.put(Code.const_); Code.put4(varCount);
+		Code.put(Code.jcc + Code.ge); Code.put2(5);
+		Code.put(Code.trap); Code.put(2);
+		
+		Code.put(Code.const_); Code.put4(varCount);
+		Code.put(Code.sub);
+		//estek: leftarr, len(leftarr), visakcnt
+		Code.put(Code.dup2);
+		//nalazimo min(len(leftarr), visakcnt) i smestamo u leftIndex
+		Code.put(Code.jcc + Code.lt); Code.put2(9);
+		Code.put(Code.store); Code.put(leftIndex);
+		Code.put(Code.pop);
+		Code.put(Code.jmp); Code.put2(6);
+		Code.put(Code.pop);
+		Code.put(Code.store); Code.put(leftIndex);
+		
+		//rightIndex = leftIndex + varCount
+		Code.put(Code.load); Code.put(leftIndex);
+		Code.put(Code.const_); Code.put4(varCount);
+		Code.put(Code.add);
+		Code.put(Code.store); Code.put(rightIndex);
+		
+		//petlja while(leftIndex != 0)
+		Code.put(Code.load); Code.put(leftIndex);
+		Code.put(Code.const_n);
+		Code.put(Code.jcc + Code.eq); Code.put2(21);//leftIndex == 0
+		//leftArr[--leftIndex] = rightArr[--rightIndex]
+		Code.put(Code.inc); Code.put(rightIndex); Code.put(-1);
+		Code.put(Code.inc); Code.put(leftIndex); Code.put(-1);
+		Code.put(Code.dup); //estek: leftarr, leftarr
+		Code.put(Code.load); Code.put(leftIndex);
+		Code.put(Code.load); Code.put(rightArr);
+		Code.put(Code.load); Code.put(rightIndex);
+		//estek: leftarr, leftarr, leftIndex, rightArr, rightIndex
+		Code.put(arrload);
+		Code.put(arrstore);
+		Code.put(Code.jmp); Code.put2(-21);
+		
+		Code.put(Code.pop);
+		//Sada su na esteku samo identifikatori iz designatorList
+		for (int i = designatorList.size() - 1; i >= 0; i--) {
+			Code.put(Code.inc); Code.put(rightIndex); Code.put(-1);
+			Obj designator = designatorList.get(i);
+			if (designator != null) {
+				Code.put(Code.load); Code.put(rightArr);
+				Code.put(Code.load); Code.put(rightIndex);
+				Code.put(arrload);
+				Code.store(designator);
+			}
+		}
+		//KRAAAAAAAAAAAAAAAAAAAAAJ
+	}
+	@Override
 	public void visit(DesignatorStatementDec DesignatorStatementDec) {
 		super.visit(DesignatorStatementDec);
 		Obj designator = DesignatorStatementDec.getDesignator().obj;
@@ -344,7 +423,18 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(DesignatorStatementCommaItem DesignatorStatementCommaItem) {
 		super.visit(DesignatorStatementCommaItem);
 	}
-
+	@Override
+	public void visit(DesignatorCommaEnd DesignatorCommaEnd) {
+		super.visit(DesignatorCommaEnd);
+	}
+	@Override
+	public void visit(DesignatorCommaEmptyItem DesignatorCommaEmptyItem) {
+		super.visit(DesignatorCommaEmptyItem);
+	}
+	@Override
+	public void visit(DesignatorCommaItem DesignatorCommaItem) {
+		super.visit(DesignatorCommaItem);
+	}
 	/*
 	 * Statements
 	 */
