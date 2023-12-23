@@ -1,5 +1,4 @@
 program MJProgram
-	
 	class String {
 		static int max;
 		static {
@@ -14,7 +13,6 @@ program MJProgram
 				val = new char[max];
 				len = 0;
 			}
-			//String() {}
 			
 			void addChar(char c) {
 				if (len >= max) return;
@@ -31,27 +29,30 @@ program MJProgram
 				for(i = 0; i < len; i++) {
 					print(val[i]);
 				}
-				print('\n');
+			}
+			void clear() {
+				len = 0;
 			}
 		}
 	}
-	
 {
-	void main() String a, b, c;{
-		a = new String();
-		b = new String();
-		c = new String();
-
-		a.add3Chars('H', 'e', 'l');
-		a.add3Chars('l', 'o', ' ');
-		b.add3Chars('W', 'o', 'r');
-		b.add3Chars('l', 'd', '!');
-		c.add2Chars(':', ')');
-		a.prnt();
-		b.prnt();
-		c.prnt();
+	void main() String prompt, input; char x; {
+		prompt = new String();
+		prompt.add3Chars('>','>','>');
 		
-		return;
-		//return 10;
+		input = new String();
+		
+		prompt.prnt();
+		for(;;) {
+			read(x);
+			input.addChar(x);
+			if (x == '\n') {
+				input.prnt();
+				input.clear();
+				prompt.prnt();
+			}
+		}
+		
+		
 	}
 }

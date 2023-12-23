@@ -1,5 +1,6 @@
 package rs.ac.bg.etf.pp1;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Stack;
@@ -16,6 +17,7 @@ import rs.ac.bg.etf.pp1.my.Utils;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
+import rs.etf.pp1.symboltable.structure.SymbolDataStructure;
 
 public class CodeGenerator extends VisitorAdaptor {
 	
@@ -40,7 +42,7 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(DesignatorSimple DesignatorSimple) {
 		super.visit(DesignatorSimple);
 		Obj leftObj = DesignatorSimple.obj;
-		if (leftObj.getLevel() == 1) {
+		if (leftObj.getLevel() == 1 && leftObj.getKind() != Obj.Var) {
 			//pristup preko podrazumevanog this
 			Code.put(Code.load_n);
 		}
@@ -780,6 +782,21 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(ClassNameExtend ClassNameExtend) {
 		super.visit(ClassNameExtend);
 		currentClass = ClassNameExtend.obj;
+		//Kopiranje adresa virtuelnih metoda osnovne klase
+		//(objektni cvorovi nisu isti)
+		
+		Struct baseCls = ClassNameExtend.getType().struct;
+		Collection<Obj> baseMembers = baseCls.getMembers();
+		SymbolDataStructure derivedMembers = currentClass.getType().getMembersTable();
+		
+		for (Obj member: baseMembers) {
+			if (member.getKind() != Obj.Meth || member.getLevel() != 1) continue;
+			String name = member.getName();
+			int adr = member.getAdr();
+			
+			derivedMembers.searchKey(name).setAdr(adr);
+		}
+		
 	}
 	@Override
 	public void visit(ClassNameNoExtend ClassNameNoExtend) {

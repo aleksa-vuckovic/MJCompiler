@@ -100,7 +100,7 @@ public class Utils {
 	
 	public static int getSize(Struct cls) {
 		cls.setMembers(cls.getMembersTable());
-		return cls.getNumberOfFields() + 1;
+		return (cls.getNumberOfFields() + 1)*4;
 	}
 	
 	public static int localVariableCount(Obj meth) {

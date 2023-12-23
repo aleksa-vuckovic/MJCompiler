@@ -11,7 +11,11 @@ public class MyTab extends Tab {
 	public static Struct boolType = new Struct(Struct.Bool);
 	
 	public static boolean insert(Obj obj) {
-		return currentScope.addToLocals(obj);
+		int adr = obj.getAdr();
+		boolean ret = currentScope.addToLocals(obj);
+		obj.setAdr(adr);
+		return ret;
+		//Scope.addToLocals iz nekog razloga menja adresu
 	}
 	public static boolean insertParentScope(Obj obj) {
 		if (currentScope.getOuter() != null) return currentScope.getOuter().addToLocals(obj);

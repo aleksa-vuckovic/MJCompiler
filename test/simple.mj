@@ -1,14 +1,29 @@
 program MJProgram
-	int x, y;
-{
-	void main() {
 	
-		x = 1;
-		y = 100;
+	class Counter {
 		
-		for(;x < y; x = x * 2) print(x);
+		int count;
+		{
+			Counter() {
+				count = 10;
+			}
+			void inc() {
+				count++;
+				print(count); print('\n');
+			}
+			void prnt() {
+				inc();
+			}
+		}
 		
+	}
+{
+	void main() Counter counter; char x; {
 		
-		
+		for (;;) {
+			read(x);
+			if (x == '\n') print('\n');
+			else print(x);
+		}
 	}
 }

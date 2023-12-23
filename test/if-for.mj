@@ -12,7 +12,7 @@ program MJProgram
 		for (; res * res <= t;) {
 			res = res + 1;
 		}
-		return res / 2;
+		return res - 1;
 	}
 	
 	void main() int cur; {
@@ -27,7 +27,7 @@ program MJProgram
 			if (cur > data::max) break;
 		}
 		
-		
+		print(data::callcount);
 		
 		return;
 	}

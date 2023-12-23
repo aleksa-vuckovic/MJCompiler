@@ -37,19 +37,19 @@ program MJProgram
 	}
 	
 {
-	void main() String a, b, c; {
+	void main() String a, b, c;{
 		a = new String();
 		b = new String();
 		c = new String();
-		
+
 		a.add3Chars('H', 'e', 'l');
-		a.add2Chars('l', 'o');
+		a.add3Chars('l', 'o', ' ');
 		b.add3Chars('W', 'o', 'r');
-		b.add2Chars('l', 'd');
-		c.add3Chars('!', '!', '!');
-		
-		a.prnt(); b.prnt(); c.prnt();
-		
+		b.add3Chars('l', 'd', '!');
+		c.add2Chars(':', ')');
+		a.prnt();
+		b.prnt();
+		c.prnt();
 		
 		return;
 		//return 10;
