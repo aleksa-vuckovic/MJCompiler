@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/11/2023 16:18:18
+// 23/11/2023 21:49:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -14,6 +14,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDeclLineList VarDeclLineList) { }
     public void visit(VarDeclComma VarDeclComma) { }
     public void visit(StatementList StatementList) { }
+    public void visit(ClassVarDecl ClassVarDecl) { }
     public void visit(NamespaceList NamespaceList) { }
     public void visit(ClassName ClassName) { }
     public void visit(Addop Addop) { }
@@ -27,6 +28,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StaticVarDecl StaticVarDecl) { }
     public void visit(Condition Condition) { }
     public void visit(FormalParamComma FormalParamComma) { }
+    public void visit(IfCondition IfCondition) { }
     public void visit(MethodList MethodList) { }
     public void visit(StaticMemberList StaticMemberList) { }
     public void visit(Methods Methods) { }
@@ -88,6 +90,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorStatementDec DesignatorStatementDec) { visit(); }
     public void visit(DesignatorStatementInc DesignatorStatementInc) { visit(); }
     public void visit(DesignatorStatementMethod DesignatorStatementMethod) { visit(); }
+    public void visit(DesignatorStatementAssignError DesignatorStatementAssignError) { visit(); }
     public void visit(DesignatorStatementAssign DesignatorStatementAssign) { visit(); }
     public void visit(DesignatorStatementCommaEmpty DesignatorStatementCommaEmpty) { visit(); }
     public void visit(DesignatorStatementCommaEnd DesignatorStatementCommaEnd) { visit(); }
@@ -97,7 +100,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ForConditionNonempty ForConditionNonempty) { visit(); }
     public void visit(ForEntry ForEntry) { visit(); }
     public void visit(IfStatement IfStatement) { visit(); }
-    public void visit(IfCondition IfCondition) { visit(); }
+    public void visit(IfConditionError IfConditionError) { visit(); }
+    public void visit(IfConditionOk IfConditionOk) { visit(); }
     public void visit(StatementBlock StatementBlock) { visit(); }
     public void visit(StatementPrintNum StatementPrintNum) { visit(); }
     public void visit(StatementPrint StatementPrint) { visit(); }
@@ -119,6 +123,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodInvocation MethodInvocation) { visit(); }
     public void visit(VarDeclArray VarDeclArray) { visit(); }
     public void visit(VarDeclScalar VarDeclScalar) { visit(); }
+    public void visit(VarDeclCommaEndError VarDeclCommaEndError) { visit(); }
+    public void visit(VarDeclCommaItemError VarDeclCommaItemError) { visit(); }
     public void visit(VarDeclCommaEnd VarDeclCommaEnd) { visit(); }
     public void visit(VarDeclCommaItem VarDeclCommaItem) { visit(); }
     public void visit(VarDeclLineStart VarDeclLineStart) { visit(); }
@@ -127,6 +133,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(VarDeclLineListItem VarDeclLineListItem) { visit(); }
     public void visit(FormalParamArray FormalParamArray) { visit(); }
     public void visit(FormalParamScalar FormalParamScalar) { visit(); }
+    public void visit(FormalParamCommaEndError FormalParamCommaEndError) { visit(); }
+    public void visit(FormalParamCommaItemError FormalParamCommaItemError) { visit(); }
     public void visit(FormalParamCommaEmpty FormalParamCommaEmpty) { visit(); }
     public void visit(FormalParamCommaEnd FormalParamCommaEnd) { visit(); }
     public void visit(FormalParamCommaItem FormalParamCommaItem) { visit(); }
@@ -147,10 +155,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StaticVarDeclLine StaticVarDeclLine) { visit(); }
     public void visit(MethodsEmpty MethodsEmpty) { visit(); }
     public void visit(MethodsNonempty MethodsNonempty) { visit(); }
+    public void visit(ClassVarDeclError ClassVarDeclError) { visit(); }
+    public void visit(ClassVarDeclOk ClassVarDeclOk) { visit(); }
     public void visit(StaticMemberVar StaticMemberVar) { visit(); }
     public void visit(StaticMemberInitializer StaticMemberInitializer) { visit(); }
     public void visit(StaticMemberListEnd StaticMemberListEnd) { visit(); }
     public void visit(StaticMemberListItem StaticMemberListItem) { visit(); }
+    public void visit(ClassNameExtendError ClassNameExtendError) { visit(); }
     public void visit(ClassNameExtend ClassNameExtend) { visit(); }
     public void visit(ClassNameNoExtend ClassNameNoExtend) { visit(); }
     public void visit(ClassDecl ClassDecl) { visit(); }

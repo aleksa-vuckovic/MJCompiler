@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/11/2023 16:18:18
+// 23/11/2023 21:49:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -14,6 +14,7 @@ public interface Visitor {
     public void visit(VarDeclLineList VarDeclLineList);
     public void visit(VarDeclComma VarDeclComma);
     public void visit(StatementList StatementList);
+    public void visit(ClassVarDecl ClassVarDecl);
     public void visit(NamespaceList NamespaceList);
     public void visit(ClassName ClassName);
     public void visit(Addop Addop);
@@ -27,6 +28,7 @@ public interface Visitor {
     public void visit(StaticVarDecl StaticVarDecl);
     public void visit(Condition Condition);
     public void visit(FormalParamComma FormalParamComma);
+    public void visit(IfCondition IfCondition);
     public void visit(MethodList MethodList);
     public void visit(StaticMemberList StaticMemberList);
     public void visit(Methods Methods);
@@ -88,6 +90,7 @@ public interface Visitor {
     public void visit(DesignatorStatementDec DesignatorStatementDec);
     public void visit(DesignatorStatementInc DesignatorStatementInc);
     public void visit(DesignatorStatementMethod DesignatorStatementMethod);
+    public void visit(DesignatorStatementAssignError DesignatorStatementAssignError);
     public void visit(DesignatorStatementAssign DesignatorStatementAssign);
     public void visit(DesignatorStatementCommaEmpty DesignatorStatementCommaEmpty);
     public void visit(DesignatorStatementCommaEnd DesignatorStatementCommaEnd);
@@ -97,7 +100,8 @@ public interface Visitor {
     public void visit(ForConditionNonempty ForConditionNonempty);
     public void visit(ForEntry ForEntry);
     public void visit(IfStatement IfStatement);
-    public void visit(IfCondition IfCondition);
+    public void visit(IfConditionError IfConditionError);
+    public void visit(IfConditionOk IfConditionOk);
     public void visit(StatementBlock StatementBlock);
     public void visit(StatementPrintNum StatementPrintNum);
     public void visit(StatementPrint StatementPrint);
@@ -119,6 +123,8 @@ public interface Visitor {
     public void visit(MethodInvocation MethodInvocation);
     public void visit(VarDeclArray VarDeclArray);
     public void visit(VarDeclScalar VarDeclScalar);
+    public void visit(VarDeclCommaEndError VarDeclCommaEndError);
+    public void visit(VarDeclCommaItemError VarDeclCommaItemError);
     public void visit(VarDeclCommaEnd VarDeclCommaEnd);
     public void visit(VarDeclCommaItem VarDeclCommaItem);
     public void visit(VarDeclLineStart VarDeclLineStart);
@@ -127,6 +133,8 @@ public interface Visitor {
     public void visit(VarDeclLineListItem VarDeclLineListItem);
     public void visit(FormalParamArray FormalParamArray);
     public void visit(FormalParamScalar FormalParamScalar);
+    public void visit(FormalParamCommaEndError FormalParamCommaEndError);
+    public void visit(FormalParamCommaItemError FormalParamCommaItemError);
     public void visit(FormalParamCommaEmpty FormalParamCommaEmpty);
     public void visit(FormalParamCommaEnd FormalParamCommaEnd);
     public void visit(FormalParamCommaItem FormalParamCommaItem);
@@ -147,10 +155,13 @@ public interface Visitor {
     public void visit(StaticVarDeclLine StaticVarDeclLine);
     public void visit(MethodsEmpty MethodsEmpty);
     public void visit(MethodsNonempty MethodsNonempty);
+    public void visit(ClassVarDeclError ClassVarDeclError);
+    public void visit(ClassVarDeclOk ClassVarDeclOk);
     public void visit(StaticMemberVar StaticMemberVar);
     public void visit(StaticMemberInitializer StaticMemberInitializer);
     public void visit(StaticMemberListEnd StaticMemberListEnd);
     public void visit(StaticMemberListItem StaticMemberListItem);
+    public void visit(ClassNameExtendError ClassNameExtendError);
     public void visit(ClassNameExtend ClassNameExtend);
     public void visit(ClassNameNoExtend ClassNameNoExtend);
     public void visit(ClassDecl ClassDecl);

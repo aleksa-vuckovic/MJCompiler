@@ -1,28 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/11/2023 16:18:18
+// 23/11/2023 21:49:6
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class VarDeclCommaItem extends VarDeclComma {
 
-    private VarDeclComma VarDeclComma;
     private VarDecl VarDecl;
+    private VarDeclComma VarDeclComma;
 
-    public VarDeclCommaItem (VarDeclComma VarDeclComma, VarDecl VarDecl) {
-        this.VarDeclComma=VarDeclComma;
-        if(VarDeclComma!=null) VarDeclComma.setParent(this);
+    public VarDeclCommaItem (VarDecl VarDecl, VarDeclComma VarDeclComma) {
         this.VarDecl=VarDecl;
         if(VarDecl!=null) VarDecl.setParent(this);
-    }
-
-    public VarDeclComma getVarDeclComma() {
-        return VarDeclComma;
-    }
-
-    public void setVarDeclComma(VarDeclComma VarDeclComma) {
         this.VarDeclComma=VarDeclComma;
+        if(VarDeclComma!=null) VarDeclComma.setParent(this);
     }
 
     public VarDecl getVarDecl() {
@@ -33,24 +25,32 @@ public class VarDeclCommaItem extends VarDeclComma {
         this.VarDecl=VarDecl;
     }
 
+    public VarDeclComma getVarDeclComma() {
+        return VarDeclComma;
+    }
+
+    public void setVarDeclComma(VarDeclComma VarDeclComma) {
+        this.VarDeclComma=VarDeclComma;
+    }
+
     public void accept(Visitor visitor) {
         visitor.visit(this);
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(VarDeclComma!=null) VarDeclComma.accept(visitor);
         if(VarDecl!=null) VarDecl.accept(visitor);
+        if(VarDeclComma!=null) VarDeclComma.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(VarDeclComma!=null) VarDeclComma.traverseTopDown(visitor);
         if(VarDecl!=null) VarDecl.traverseTopDown(visitor);
+        if(VarDeclComma!=null) VarDeclComma.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(VarDeclComma!=null) VarDeclComma.traverseBottomUp(visitor);
         if(VarDecl!=null) VarDecl.traverseBottomUp(visitor);
+        if(VarDeclComma!=null) VarDeclComma.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -59,14 +59,14 @@ public class VarDeclCommaItem extends VarDeclComma {
         buffer.append(tab);
         buffer.append("VarDeclCommaItem(\n");
 
-        if(VarDeclComma!=null)
-            buffer.append(VarDeclComma.toString("  "+tab));
+        if(VarDecl!=null)
+            buffer.append(VarDecl.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(VarDecl!=null)
-            buffer.append(VarDecl.toString("  "+tab));
+        if(VarDeclComma!=null)
+            buffer.append(VarDeclComma.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

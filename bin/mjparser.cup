@@ -10,11 +10,18 @@ import java.util.List;
 
 parser code {:
 
-	boolean errorDetected = false;
-	boolean fatalErrorDetected = false;
+	private boolean errorDetected = false;
+	private boolean fatalErrorDetected = false;
 	
-	Logger log = Logger.getLogger(getClass());
+	private Logger log = Logger.getLogger(getClass());
    
+   	public boolean error() {
+   		return errorDetected;
+   	}
+   	
+   	public boolean fatalError() {
+   		return fatalErrorDetected;
+   	}
    
     public void syntax_error(Symbol cur_token) {
         report_error("Sintaksna greska.", cur_token);
@@ -34,8 +41,12 @@ parser code {:
 
     public void report_error(String message, Symbol token) {
     	errorDetected = true;
-        message = "Linija " + token.left + ", kolona " + token.right + ":" + message;
-        log.error(message);
+    	String msg = "Parser report";
+    	if (token != null) {
+    		msg += " - Linija " + token.left + ", kolona " + token.right + " (" + token.value.toString() + ")";
+    	}
+    	msg += ": " + message;
+        log.error(msg);
     }
 
 
@@ -64,8 +75,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj Namespace, NamespaceName;
 nonterminal DeclList, Decl;
 nonterminal ConstDeclLine, ConstDeclLineStart, ConstDeclComma, ConstDecl;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName;
-nonterminal Methods;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName, Methods, ClassVarDecl;
 nonterminal StaticMemberList, StaticMember;
 nonterminal StaticVarDeclLine, StaticVarDeclLineStart, StaticVarDeclComma, StaticVarDecl;
 nonterminal StaticInitializer, StaticInitializerStart;
@@ -120,9 +130,11 @@ ConstDecl ::= (ConstDeclNum) IDENT:name ASSIGN NUM:val
 				| (ConstDeclBool) IDENT:name ASSIGN BOOL:val
 				;
 
-ClassDecl ::= (ClassDecl) ClassName LBRACE StaticMemberList VarDeclLineList Methods RBRACE;
+ClassDecl ::= (ClassDecl) ClassName LBRACE StaticMemberList ClassVarDecl Methods RBRACE;
 ClassName ::= (ClassNameNoExtend) CLASS IDENT:name
 				| (ClassNameExtend) CLASS IDENT:name EXTENDS Type
+				| (ClassNameExtendError) CLASS IDENT:name EXTENDS error:E4
+					{: parser.report_error("Izvrsen oporavak deklaracije izvodjenja do '{' u liniji " + E4left + " i koloni " + E4right + ".", null); :}
 				;
 StaticMemberList ::= (StaticMemberListItem) StaticMemberList StaticMember
 						| (StaticMemberListEnd)
@@ -130,6 +142,10 @@ StaticMemberList ::= (StaticMemberListItem) StaticMemberList StaticMember
 StaticMember ::= (StaticMemberInitializer) StaticInitializer
 				| (StaticMemberVar) StaticVarDeclLine
 				;
+ClassVarDecl ::= (ClassVarDeclOk) VarDeclLineList
+					| (ClassVarDeclError) error:E1
+						{: parser.report_error("Izvrsen oporavak deklaracije polja do '{' u liniji " + E1left + " i koloni " + E1right + ".", null); :}
+					;
 Methods ::= (MethodsNonempty) LBRACE MethodList RBRACE
 			| (MethodsEmpty)
 			;
@@ -152,9 +168,14 @@ MethodName ::= (MethodNameRet) Type IDENT:name
 				| (MethodNameVoid) VOID IDENT:name
 				| (MethodNameCons) IDENT:name;
 
-FormalParamComma ::= (FormalParamCommaItem) FormalParamComma COMMA FormalParam
+FormalParamComma ::= (FormalParamCommaItem) FormalParam COMMA FormalParamComma
 						| (FormalParamCommaEnd) FormalParam
-						| (FormalParamCommaEmpty) ;
+						| (FormalParamCommaEmpty)
+						| (FormalParamCommaItemError) error:E1 COMMA:C2 FormalParamComma:F3
+							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji " + C2left + " i koloni " + C2right + ".", null); :}
+						| (FormalParamCommaEndError) error:E1
+							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji " + E1left + " i koloni " + E1right + ".", null); :}
+						;
 FormalParam ::= (FormalParamScalar) Type IDENT:name
 				| (FormalParamArray) Type IDENT:name LBRACK RBRACK;
 
@@ -163,10 +184,16 @@ VarDeclLineList ::= (VarDeclLineListItem) VarDeclLineList VarDeclLine
 					;
 VarDeclLine ::= (VarDeclLine) VarDeclLineStart VarDeclComma SEMI;
 VarDeclLineStart ::= (VarDeclLineStart) Type;
-VarDeclComma ::= (VarDeclCommaItem) VarDeclComma COMMA VarDecl
-					| (VarDeclCommaEnd) VarDecl;
+VarDeclComma ::= (VarDeclCommaItem) VarDecl COMMA VarDeclComma
+					| (VarDeclCommaEnd) VarDecl
+					| (VarDeclCommaItemError) error:E1 COMMA:C2 VarDeclComma:V3
+						{: parser.report_error("Izvrsen oporavak var deklaracije do ',' u liniji " + C2left + " i koloni " + C2right + ".", null); :}
+					| (VarDeclCommaEndError) error:E1
+						{: parser.report_error("Izvrsen oporavak var deklaracije do ';' u liniji " + E1left + " i koloni " + E1right + ".", null); :}
+					;
 VarDecl ::= (VarDeclScalar) IDENT:name
-			| (VarDeclArray) IDENT:name LBRACK RBRACK;
+			| (VarDeclArray) IDENT:name LBRACK RBRACK
+			;
 
 MethodInvocation ::= (MethodInvocation) Designator LPAREN ActPars RPAREN;
 ActPars ::= (ActParsItem) ActPars COMMA ActPar
@@ -191,7 +218,10 @@ Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition RPAREN IfStatement
 				| (StatementBlock) LBRACE StatementList RBRACE
 				;
 
-IfCondition ::= (IfCondition) Condition;
+IfCondition ::= (IfConditionOk) Condition
+				| (IfConditionError) error:E1
+					{: parser.report_error("Izvrsen oporavak if uslova do ')' u liniji " + E1left + " i koloni " + E1right + ".", null); :}
+				;
 IfStatement ::= (IfStatement) Statement;
 ForEntry ::= (ForEntry) DesignatorStatementComma;
 ForCondition ::= (ForConditionNonempty) ConditionFactor
@@ -203,6 +233,8 @@ DesignatorStatementComma ::= (DesignatorStatementCommaItem) DesignatorStatementC
 								| (DesignatorStatementCommaEmpty) 
 								;
 DesignatorStatement ::= (DesignatorStatementAssign) Designator Assignop Expr
+						| (DesignatorStatementAssignError) Designator:D1 ASSIGN error:E3
+							{: parser.report_error("Izvrsen oporavak naredbe dodele u liniji " + E3left + " i koloni " + E3right + ".", null); :}
 						| (DesignatorStatementMethod) MethodInvocation
 						| (DesignatorStatementInc) Designator INC
 						| (DesignatorStatementDec) Designator DEC

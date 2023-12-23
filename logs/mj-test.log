@@ -1,136 +1,283 @@
-INFO  16:32:32,418 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\simple.mj
-INFO  16:32:32,454 - Parser je ucitao token:#2 -> program
-INFO  16:32:32,454 - Parser je ucitao token:#45 -> MJProgram
-INFO  16:32:32,454 - Parser je ucitao token:#20 -> {
-INFO  16:32:32,456 - Parser je ucitao token:#6 -> void
-INFO  16:32:32,456 - Parser je ucitao token:#45 -> main
-INFO  16:32:32,457 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,457 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,458 - Parser je ucitao token:#45 -> int
-INFO  16:32:32,460 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,461 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,461 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,461 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,463 - Parser je ucitao token:#45 -> int
-INFO  16:32:32,464 - Parser je ucitao token:#45 -> a
-INFO  16:32:32,464 - Parser je ucitao token:#25 -> ,
-INFO  16:32:32,464 - Parser je ucitao token:#45 -> b
-INFO  16:32:32,464 - Parser je ucitao token:#25 -> ,
-INFO  16:32:32,464 - Parser je ucitao token:#45 -> c
-INFO  16:32:32,464 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,464 - Parser je ucitao token:#45 -> int
-INFO  16:32:32,464 - Parser je ucitao token:#45 -> y
-INFO  16:32:32,464 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,464 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,464 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,465 - Parser je ucitao token:#20 -> {
-INFO  16:32:32,465 - Parser je ucitao token:#45 -> a
-INFO  16:32:32,465 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,465 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,466 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,466 - Parser je ucitao token:#45 -> b
-INFO  16:32:32,466 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,466 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,466 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,466 - Parser je ucitao token:#45 -> c
-INFO  16:32:32,467 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,467 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,467 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,467 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,467 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,467 - Parser je ucitao token:#14 -> new
-INFO  16:32:32,467 - Parser je ucitao token:#45 -> int
-INFO  16:32:32,467 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,467 - Parser je ucitao token:#44 -> 5
-INFO  16:32:32,467 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,467 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,467 - Parser je ucitao token:#45 -> y
-INFO  16:32:32,467 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,467 - Parser je ucitao token:#14 -> new
-INFO  16:32:32,467 - Parser je ucitao token:#45 -> int
-INFO  16:32:32,468 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,468 - Parser je ucitao token:#44 -> 5
-INFO  16:32:32,468 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,468 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,468 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,468 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,468 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,468 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,468 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,468 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,468 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,468 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,469 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,469 - Parser je ucitao token:#44 -> 1
-INFO  16:32:32,469 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,469 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,469 - Parser je ucitao token:#44 -> 1
-INFO  16:32:32,469 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,469 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,469 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,469 - Parser je ucitao token:#44 -> 2
-INFO  16:32:32,469 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,469 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,469 - Parser je ucitao token:#44 -> 2
-INFO  16:32:32,469 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,469 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,470 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,470 - Parser je ucitao token:#44 -> 3
-INFO  16:32:32,470 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,470 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,470 - Parser je ucitao token:#44 -> 3
-INFO  16:32:32,470 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,470 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,470 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,470 - Parser je ucitao token:#44 -> 4
-INFO  16:32:32,470 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,470 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,470 - Parser je ucitao token:#44 -> 4
-INFO  16:32:32,470 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,470 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,470 - Parser je ucitao token:#25 -> ,
-INFO  16:32:32,471 - Parser je ucitao token:#25 -> ,
-INFO  16:32:32,471 - Parser je ucitao token:#25 -> ,
-INFO  16:32:32,471 - Parser je ucitao token:#30 -> *
-INFO  16:32:32,471 - Parser je ucitao token:#45 -> y
-INFO  16:32:32,471 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,472 - Parser je ucitao token:#41 -> =
-INFO  16:32:32,472 - Parser je ucitao token:#45 -> x
-INFO  16:32:32,472 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,472 - Parser je ucitao token:#12 -> print
-INFO  16:32:32,472 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,472 - Parser je ucitao token:#45 -> a
-INFO  16:32:32,472 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,472 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,472 - Parser je ucitao token:#12 -> print
-INFO  16:32:32,472 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,473 - Parser je ucitao token:#45 -> b
-INFO  16:32:32,473 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,473 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,473 - Parser je ucitao token:#12 -> print
-INFO  16:32:32,473 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,473 - Parser je ucitao token:#45 -> c
-INFO  16:32:32,473 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,473 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,473 - Parser je ucitao token:#12 -> print
-INFO  16:32:32,473 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,473 - Parser je ucitao token:#45 -> y
-INFO  16:32:32,473 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,473 - Parser je ucitao token:#44 -> 0
-INFO  16:32:32,474 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,474 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,474 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,474 - Parser je ucitao token:#12 -> print
-INFO  16:32:32,474 - Parser je ucitao token:#18 -> (
-INFO  16:32:32,474 - Parser je ucitao token:#45 -> y
-INFO  16:32:32,474 - Parser je ucitao token:#22 -> [
-INFO  16:32:32,474 - Parser je ucitao token:#44 -> 1
-INFO  16:32:32,474 - Parser je ucitao token:#23 -> ]
-INFO  16:32:32,474 - Parser je ucitao token:#19 -> )
-INFO  16:32:32,474 - Parser je ucitao token:#26 -> ;
-INFO  16:32:32,474 - Parser je ucitao token:#21 -> }
-INFO  16:32:32,474 - Parser je ucitao token:#21 -> }
-INFO  16:32:32,475 - Parser je ucitao token:#0 -> EOF
-INFO  16:32:32,477 - Parser je ucitao token:#0 -> EOF
-INFO  16:32:32,485 - ======================================
-INFO  16:32:32,488 - Objektni fajl je uspesno generisan!
+INFO  22:16:49,253 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\simple.mj
+INFO  22:16:49,290 - Parser je ucitao token:#2 -> program
+INFO  22:16:49,290 - Parser je ucitao token:#45 -> MJProgram
+INFO  22:16:49,290 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,292 - Parser je ucitao token:#45 -> a
+INFO  22:16:49,293 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,293 - Parser je ucitao token:#45 -> b
+INFO  22:16:49,293 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,293 - Parser je ucitao token:#30 -> *
+ERROR 22:16:49,293 - Parser report - Linija 4, kolona 10 (*): Sintaksna greska.
+INFO  22:16:49,294 - Parser je ucitao token:#45 -> err
+INFO  22:16:49,294 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,296 - Parser je ucitao token:#45 -> c
+INFO  22:16:49,296 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,296 - Parser je ucitao token:#45 -> d
+INFO  22:16:49,296 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,296 - Parser je ucitao token:#45 -> e
+INFO  22:16:49,296 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,297 - Parser je ucitao token:#30 -> *
+ERROR 22:16:49,297 - Parser report - Linija 4, kolona 25 (*): Sintaksna greska.
+INFO  22:16:49,297 - Parser je ucitao token:#45 -> err2
+INFO  22:16:49,297 - Parser je ucitao token:#26 -> ;
+INFO  22:16:49,297 - Parser je ucitao token:#3 -> class
+INFO  22:16:49,297 - Parser je ucitao token:#45 -> MyClass
+INFO  22:16:49,297 - Parser je ucitao token:#5 -> extends
+ERROR 22:16:49,297 - Parser report: Izvrsen oporavak var deklaracije do ';' u liniji 4 i koloni 23.
+ERROR 22:16:49,298 - Parser report: Izvrsen oporavak var deklaracije do ',' u liniji 4 i koloni 14.
+INFO  22:16:49,299 - Parser je ucitao token:#18 -> (
+ERROR 22:16:49,299 - Parser report - Linija 7, kolona 22 ((): Sintaksna greska.
+INFO  22:16:49,299 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,299 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,299 - Parser je ucitao token:#7 -> static
+INFO  22:16:49,299 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,299 - Parser je ucitao token:#45 -> a
+ERROR 22:16:49,299 - Parser report: Izvrsen oporavak deklaracije izvodjenja do '{' u liniji 7 i koloni 14.
+INFO  22:16:49,300 - Parser je ucitao token:#26 -> ;
+INFO  22:16:49,301 - Parser je ucitao token:#44 -> 12
+ERROR 22:16:49,301 - Parser report - Linija 12, kolona 1 (12): Sintaksna greska.
+INFO  22:16:49,301 - Parser je ucitao token:#45 -> err
+INFO  22:16:49,301 - Parser je ucitao token:#45 -> field
+INFO  22:16:49,301 - Parser je ucitao token:#26 -> ;
+INFO  22:16:49,301 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,301 - Parser je ucitao token:#6 -> void
+INFO  22:16:49,301 - Parser je ucitao token:#45 -> f
+INFO  22:16:49,301 - Parser je ucitao token:#18 -> (
+ERROR 22:16:49,301 - Parser report: Izvrsen oporavak deklaracije polja do '{' u liniji 9 i koloni 13.
+INFO  22:16:49,304 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,304 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,305 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,306 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,307 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,307 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,308 - Parser je ucitao token:#6 -> void
+INFO  22:16:49,308 - Parser je ucitao token:#45 -> f
+INFO  22:16:49,308 - Parser je ucitao token:#18 -> (
+INFO  22:16:49,308 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,308 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,308 - Parser je ucitao token:#45 -> a
+INFO  22:16:49,309 - Parser je ucitao token:#41 -> =
+INFO  22:16:49,309 - Parser je ucitao token:#28 -> +
+ERROR 22:16:49,309 - Parser report - Linija 27, kolona 6 (+): Sintaksna greska.
+INFO  22:16:49,309 - Parser je ucitao token:#44 -> 3
+INFO  22:16:49,309 - Parser je ucitao token:#26 -> ;
+INFO  22:16:49,309 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,309 - Parser je ucitao token:#6 -> void
+INFO  22:16:49,309 - Parser je ucitao token:#45 -> tmp
+ERROR 22:16:49,309 - Parser report: Izvrsen oporavak naredbe dodele u liniji 27 i koloni 4.
+INFO  22:16:49,309 - Parser je ucitao token:#18 -> (
+INFO  22:16:49,309 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,309 - Parser je ucitao token:#45 -> a
+INFO  22:16:49,309 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,309 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,309 - Parser je ucitao token:#31 -> /
+ERROR 22:16:49,310 - Parser report - Linija 33, kolona 21 (/): Sintaksna greska.
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> err
+INFO  22:16:49,310 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> b
+INFO  22:16:49,310 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> int
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> c
+INFO  22:16:49,310 - Parser je ucitao token:#25 -> ,
+INFO  22:16:49,310 - Parser je ucitao token:#28 -> +
+ERROR 22:16:49,310 - Parser report - Linija 33, kolona 41 (+): Sintaksna greska.
+INFO  22:16:49,310 - Parser je ucitao token:#45 -> err
+INFO  22:16:49,310 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,310 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,310 - Parser je ucitao token:#15 -> if
+INFO  22:16:49,311 - Parser je ucitao token:#18 -> (
+ERROR 22:16:49,311 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji 33 i koloni 39.
+ERROR 22:16:49,312 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji 33 i koloni 25.
+INFO  22:16:49,312 - Parser je ucitao token:#45 -> b
+INFO  22:16:49,312 - Parser je ucitao token:#37 -> <
+INFO  22:16:49,312 - Parser je ucitao token:#32 -> %
+ERROR 22:16:49,312 - Parser report - Linija 36, kolona 10 (%): Sintaksna greska.
+INFO  22:16:49,313 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,313 - Parser je ucitao token:#20 -> {
+INFO  22:16:49,313 - Parser je ucitao token:#12 -> print
+INFO  22:16:49,313 - Parser je ucitao token:#18 -> (
+ERROR 22:16:49,313 - Parser report: Izvrsen oporavak if uslova do ')' u liniji 36 i koloni 8.
+INFO  22:16:49,314 - Parser je ucitao token:#45 -> b
+INFO  22:16:49,314 - Parser je ucitao token:#19 -> )
+INFO  22:16:49,314 - Parser je ucitao token:#26 -> ;
+INFO  22:16:49,314 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,314 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,315 - Parser je ucitao token:#21 -> }
+INFO  22:16:49,315 - Parser je ucitao token:#0 -> EOF
+INFO  22:16:49,316 - Parser je ucitao token:#0 -> EOF
+INFO  22:16:49,316 - Greske su detektovane! Preskace se generisanje koda.
+INFO  22:16:49,317 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListEnd(
+  ) [NamespaceListEnd]
+  DeclListItem(
+    DeclListItem(
+      DeclListEnd(
+      ) [DeclListEnd]
+      DeclVar(
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaItem(
+            VarDeclScalar(
+             a
+            ) [VarDeclScalar]
+            VarDeclCommaItem(
+              VarDeclScalar(
+               b
+              ) [VarDeclScalar]
+              VarDeclCommaItemError(
+                VarDeclCommaItem(
+                  VarDeclScalar(
+                   c
+                  ) [VarDeclScalar]
+                  VarDeclCommaItem(
+                    VarDeclScalar(
+                     d
+                    ) [VarDeclScalar]
+                    VarDeclCommaItem(
+                      VarDeclScalar(
+                       e
+                      ) [VarDeclScalar]
+                      VarDeclCommaEndError(
+                      ) [VarDeclCommaEndError]
+                    ) [VarDeclCommaItem]
+                  ) [VarDeclCommaItem]
+                ) [VarDeclCommaItem]
+              ) [VarDeclCommaItemError]
+            ) [VarDeclCommaItem]
+          ) [VarDeclCommaItem]
+        ) [VarDeclLine]
+      ) [DeclVar]
+    ) [DeclListItem]
+    DeclClass(
+      ClassDecl(
+        ClassNameExtendError(
+         MyClass
+        ) [ClassNameExtendError]
+        StaticMemberListEnd(
+        ) [StaticMemberListEnd]
+        ClassVarDeclError(
+        ) [ClassVarDeclError]
+        MethodsNonempty(
+          MethodListItem(
+            MethodListEnd(
+            ) [MethodListEnd]
+            Method(
+              MethodDeclaration(
+                MethodNameVoid(
+                 f
+                ) [MethodNameVoid]
+                FormalParamCommaEmpty(
+                ) [FormalParamCommaEmpty]
+              ) [MethodDeclaration]
+              VarDeclLineListEnd(
+              ) [VarDeclLineListEnd]
+              StatementListEnd(
+              ) [StatementListEnd]
+            ) [Method]
+          ) [MethodListItem]
+        ) [MethodsNonempty]
+      ) [ClassDecl]
+    ) [DeclClass]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListItem(
+      MethodListEnd(
+      ) [MethodListEnd]
+      Method(
+        MethodDeclaration(
+          MethodNameVoid(
+           f
+          ) [MethodNameVoid]
+          FormalParamCommaEmpty(
+          ) [FormalParamCommaEmpty]
+        ) [MethodDeclaration]
+        VarDeclLineListEnd(
+        ) [VarDeclLineListEnd]
+        StatementListItem(
+          StatementListEnd(
+          ) [StatementListEnd]
+          StatementDesignatorStatement(
+            DesignatorStatementAssignError(
+              DesignatorSimple(
+               a
+              ) [DesignatorSimple]
+            ) [DesignatorStatementAssignError]
+          ) [StatementDesignatorStatement]
+        ) [StatementListItem]
+      ) [Method]
+    ) [MethodListItem]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         tmp
+        ) [MethodNameVoid]
+        FormalParamCommaItem(
+          FormalParamScalar(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           a
+          ) [FormalParamScalar]
+          FormalParamCommaItemError(
+            FormalParamCommaItem(
+              FormalParamScalar(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               b
+              ) [FormalParamScalar]
+              FormalParamCommaItem(
+                FormalParamScalar(
+                  TypeSimple(
+                   int
+                  ) [TypeSimple]
+                 c
+                ) [FormalParamScalar]
+                FormalParamCommaEndError(
+                ) [FormalParamCommaEndError]
+              ) [FormalParamCommaItem]
+            ) [FormalParamCommaItem]
+          ) [FormalParamCommaItemError]
+        ) [FormalParamCommaItem]
+      ) [MethodDeclaration]
+      VarDeclLineListEnd(
+      ) [VarDeclLineListEnd]
+      StatementListItem(
+        StatementListEnd(
+        ) [StatementListEnd]
+        StatementUnmatchedIf(
+          IfConditionError(
+          ) [IfConditionError]
+          IfStatement(
+            StatementBlock(
+              StatementListItem(
+                StatementListEnd(
+                ) [StatementListEnd]
+                StatementPrint(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         b
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [StatementPrint]
+              ) [StatementListItem]
+            ) [StatementBlock]
+          ) [IfStatement]
+        ) [StatementUnmatchedIf]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  22:16:49,317 - ===================================

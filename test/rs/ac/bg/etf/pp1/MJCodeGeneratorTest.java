@@ -36,15 +36,15 @@ public class MJCodeGeneratorTest {
 			MJParser parser = new MJParser(lexer);
 	        Symbol s = parser.parse();
 	        
-	        if (lexer.errorDetected) {
+	        if (lexer.error()) {
 	        	log.info("Lekser je detektovao greske! Semanticka analiza se preskace.");
 	        }
-	        else if (parser.fatalErrorDetected) {
+	        else if (parser.fatalError()) {
 	        	log.info("Detektovane fatalne greske! Semanticka analiza se preskace.");
 	        	log.info(s.value.toString());
 	        }
 	        else {
-	        	if (parser.errorDetected) log.info("Greske su detektovane! Preskace se generisanje koda.");
+	        	if (parser.error()) log.info("Greske su detektovane! Preskace se generisanje koda.");
 	        	Program prog = (Program)(s.value);
 				/*log.info(prog.toString(""));
 				log.info("===================================");*/
@@ -59,7 +59,7 @@ public class MJCodeGeneratorTest {
 					log.info("Semanticki analizator je detektovao greske. Preskace se generisanje koda");
 				}
 				
-				if (!parser.errorDetected && !sem.error()) {
+				if (!parser.error() && !sem.error()) {
 					//code generation
 					File objFile = new File("test/program.obj");
 					if(objFile.exists()) objFile.delete();

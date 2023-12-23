@@ -504,6 +504,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		super.visit(DesignatorStatementMethod);
 	}
 	@Override
+	public void visit(DesignatorStatementAssignError DesignatorStatementAssignError) {
+		super.visit(DesignatorStatementAssignError);
+	}
+	@Override
 	public void visit(DesignatorStatementAssign DesignatorStatementAssign) {
 		super.visit(DesignatorStatementAssign);
 		Obj designator = DesignatorStatementAssign.getDesignator().obj;
@@ -571,8 +575,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		super.visit(IfStatement);
 	}
 	@Override
-	public void visit(IfCondition IfCondition) {
-		super.visit(IfCondition);
+	public void visit(IfConditionError IfConditionError) {
+		super.visit(IfConditionError);
+	}
+	@Override
+	public void visit(IfConditionOk IfConditionOk) {
+		super.visit(IfConditionOk);
 	}
 	@Override
 	public void visit(StatementFor StatementFor) {
@@ -770,10 +778,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 	}
 	@Override
+	public void visit(VarDeclCommaEndError VarDeclCommaEndError) {
+		super.visit(VarDeclCommaEndError);
+	}
+	@Override
+	public void visit(VarDeclCommaItemError VarDeclCommaItemError) {
+		super.visit(VarDeclCommaItemError);
+	}
+	@Override
 	public void visit(VarDeclCommaEnd VarDeclCommaEnd) {
 		super.visit(VarDeclCommaEnd);
 	}
-
 	@Override
 	public void visit(VarDeclCommaItem VarDeclCommaItem) {
 		super.visit(VarDeclCommaItem);
@@ -825,6 +840,13 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			obj.setAdr(adr++);
 			currentMethod.setFpPos(adr);
 		}
+	}
+	@Override
+	public void visit(FormalParamCommaItemError FormalParamCommaItemError) {
+		super.visit(FormalParamCommaItemError);
+	}
+	public void visit(FormalParamCommaEndError FormalParamCommaEndError) {
+		super.visit(FormalParamCommaEndError);
 	}
 	@Override
 	public void visit(FormalParamCommaEmpty FormalParamCommaEmpty) {
@@ -1028,6 +1050,14 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		super.visit(MethodsNonempty);
 	}
 	@Override
+	public void visit(ClassVarDeclOk ClassVarDeclOk) {
+		super.visit(ClassVarDeclOk);
+	}
+	@Override
+	public void visit(ClassVarDeclError ClassVarDeclError) {
+		super.visit(ClassVarDeclError);
+	}
+	@Override
 	public void visit(StaticMemberVar StaticMemberVar) {
 		super.visit(StaticMemberVar);
 	}
@@ -1048,21 +1078,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	 * CLASS DECLARATION
 	 */
 	@Override
+	public void visit(ClassNameExtendError ClassNameExtendError) {
+		super.visit(ClassNameExtendError);
+		String name = ClassNameExtendError.getName();
+		ClassNameExtendError.obj = classDeclared(name, ClassNameExtendError);
+	}
+	@Override
 	public void visit(ClassNameExtend ClassNameExtend) {
 		super.visit(ClassNameExtend);
-		
 		String name = ClassNameExtend.getName();
-		Struct struct = new Struct(Struct.Class);
-		Obj obj = new Obj(Obj.Type, name, struct, Obj.NO_VALUE, 0);
-		obj.setFpPos(0);
-		currentClass = obj;
+		Obj obj = classDeclared(name, ClassNameExtend);
 		ClassNameExtend.obj = obj;
-		constructorCount = 0;
-		
-		if (!MyTab.insert(obj)) {
-			report_error("Ime " + name + " je vec deklarisano.", ClassNameExtend);
-		}
-		MyTab.openScopeAndChain(struct);
+		Struct struct = obj.getType();
 		
 		Struct baseType = ClassNameExtend.getType().struct;
 		if (baseType.getKind() != Struct.Class) {
@@ -1078,22 +1105,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		}
 		
 	}
-
 	@Override
 	public void visit(ClassNameNoExtend ClassNameNoExtend) {
 		super.visit(ClassNameNoExtend);
 		String name = ClassNameNoExtend.getName();
+		ClassNameNoExtend.obj = classDeclared(name, ClassNameNoExtend);
+	}
+	private Obj classDeclared(String name, SyntaxNode node) {
 		Struct struct = new Struct(Struct.Class);
 		Obj obj = new Obj(Obj.Type, name, struct, Obj.NO_VALUE, 0);
 		obj.setFpPos(0);
 		currentClass = obj;
-		ClassNameNoExtend.obj = obj;
 		constructorCount = 0;
 		
 		if (!MyTab.insert(obj)) {
-			report_error("Ime " + name + " je vec deklarisano.", ClassNameNoExtend);
+			report_error("Ime " + name + " je vec deklarisano.", node);
 		}
 		MyTab.openScopeAndChain(struct);
+		return obj;
 	}
 	@Override
 	public void visit(ClassDecl ClassDecl) {

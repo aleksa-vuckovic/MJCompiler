@@ -33,13 +33,13 @@ public class MJParserTest {
 			MJParser p = new MJParser(lexer);
 	        Symbol s = p.parse();
 	        
-	        if (lexer.errorDetected) {
+	        if (lexer.error()) {
 	        	log.info("Lekser je detektovao greske! Semanticka analiza se preskace.");
 	        }
-	        else if (p.fatalErrorDetected) {
+	        else if (p.fatalError()) {
 	        	log.info("Detektovane fatalne greske! Semanticka analiza se preskace.");
 	        }
-	        else if (p.errorDetected) {
+	        else if (p.error()) {
 	        	log.info("Greske su detektovane! Preskace se generisanje koda.");
 	        	Program prog = (Program)(s.value);
 				log.info(prog.toString(""));

@@ -17,7 +17,11 @@ import org.apache.log4j.*;
 		return new Symbol(type, yyline+1, yycolumn, value);
 	}
 	
-	public boolean errorDetected = false;
+	private boolean errorDetected = false;
+	
+	public boolean error() {
+		return errorDetected;
+	}
 
 %}
 
@@ -26,6 +30,7 @@ import org.apache.log4j.*;
 %column
 
 %xstate COMMENT
+%xstate MULTICOMMENT
 
 %eofval{
 	return new_symbol(sym.EOF, "EOF");
@@ -36,7 +41,9 @@ import org.apache.log4j.*;
 " " 	{ }
 "\b" 	{ }
 "\t" 	{ }
-"\r\n" 	{ }
+"\r\n"	{ }
+"\r"	{ }
+"\n" 	{ }
 "\f" 	{ }
 
 "program"   { return new_symbol(sym.PROG, yytext()); }
@@ -85,9 +92,8 @@ import org.apache.log4j.*;
 "false"		{ return new_symbol(sym.BOOL, new Integer(0)); }
 
 
-"//" {yybegin(COMMENT);}
-<COMMENT> . {yybegin(COMMENT);}
-<COMMENT> "\r\n" { yybegin(YYINITIAL); }
+"//" 		{ yybegin(COMMENT); }
+"/*"		{ yybegin(MULTICOMMENT); }
 
 [0-9]+  	{ return new_symbol(sym.NUM, new Integer (yytext())); }
 ([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{ return new_symbol(sym.IDENT, yytext()); }
@@ -97,8 +103,16 @@ import org.apache.log4j.*;
 . { log.error("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); errorDetected = true; }
 
 
+<COMMENT> "\r\n" { yybegin(YYINITIAL); }
+<COMMENT> "\n"	{ yybegin(YYINITIAL); }
+<COMMENT> "\r"	{ yybegin(YYINITIAL); }
+<COMMENT> . { }
 
-
+<MULTICOMMENT> "\n"	{ }
+<MULTICOMMENT> "\r"	{ }
+<MULTICOMMENT> "\r\n" { }
+<MULTICOMMENT> "*/"	{ yybegin(YYINITIAL); }
+<MULTICOMMENT> . { }
 
 
 

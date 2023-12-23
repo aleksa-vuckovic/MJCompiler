@@ -406,6 +406,10 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	@Override
+	public void visit(DesignatorStatementAssignError DesignatorStatementAssignError) {
+		super.visit(DesignatorStatementAssignError);
+	}
+	@Override
 	public void visit(DesignatorStatementAssign DesignatorStatementAssign) {
 		super.visit(DesignatorStatementAssign);
 		Obj obj = DesignatorStatementAssign.getDesignator().obj;
@@ -586,11 +590,15 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 	}
 	@Override
-	public void visit(IfCondition IfCondition) {
-		super.visit(IfCondition);
+	public void visit(IfConditionError IfConditionError) {
+		super.visit(IfConditionError);
+	}
+	@Override
+	public void visit(IfConditionOk IfConditionOk) {
+		super.visit(IfConditionOk);
 		Code.put(Code.const_1);
 		Code.put(Code.jcc + Code.ne); Code.put2(0);
-		IfCondition.myint = new MyInt(Code.pc);
+		IfConditionOk.myint = new MyInt(Code.pc);
 	}
 	@Override
 	public void visit(StatementMatchedIf StatementMatchedIf) {
@@ -686,6 +694,14 @@ public class CodeGenerator extends VisitorAdaptor {
 		super.visit(VarDeclScalar);
 	}
 	@Override
+	public void visit(VarDeclCommaEndError VarDeclCommaEndError) {
+		super.visit(VarDeclCommaEndError);
+	}
+	@Override
+	public void visit(VarDeclCommaItemError VarDeclCommaItemError) {
+		super.visit(VarDeclCommaItemError);
+	}
+	@Override
 	public void visit(VarDeclCommaEnd VarDeclCommaEnd) {
 		super.visit(VarDeclCommaEnd);
 	}
@@ -720,6 +736,13 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(FormalParamScalar FormalParamScalar) {
 		super.visit(FormalParamScalar);
+	}
+	@Override
+	public void visit(FormalParamCommaItemError FormalParamCommaItemError) {
+		super.visit(FormalParamCommaItemError);
+	}
+	public void visit(FormalParamCommaEndError FormalParamCommaEndError) {
+		super.visit(FormalParamCommaEndError);
 	}
 	@Override
 	public void visit(FormalParamCommaEmpty FormalParamCommaEmpty) {

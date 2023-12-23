@@ -32,7 +32,7 @@ public class MJLexerTest {
 				if (currToken != null && currToken.value != null)
 					log.info("Token string: " + currToken.toString() + " Token value: " + currToken.value.toString());
 			}
-			if (lexer.errorDetected) {
+			if (lexer.error()) {
 				log.info("Lekser je detektovao greske!");
 			}
 		} catch (IOException e1) {

@@ -1,23 +1,42 @@
 program MJProgram
+
+//Nivo A -> Globalne promenljive
+int a, b, *err, c, d, e, *err2;
+
+//Nivo C -> Prosirenje klase
+class MyClass extends () {
 	
+	static int a;
+	
+	//Nivo C -> Polja klase
+	12err field;
+	
+	
+	{
+		void f() {
+		
+		}
+	}	
+}
+
 {
-	void main() int x[]; int a, b, c; int y[]; {
+	
+	void f() {
 		
-		a = 0;
-		b = 0;
-		c = 0;
+		//Nivo A -> Dodela
+		a = +3;
+
 		
-		x = new int[5];
-		y = new int[5];
-		
-		x[0] = 0; x[1] = 1; x[2] = 2; x[3] = 3; x[4] = 4;
-		
-		[,,,*y] = x;
-		
-		print(a);
-		print(b);
-		print(c);
-		print(y[0]);
-		print(y[1]);
 	}
+	
+	//Nivo B -> Formalni parametri
+	void tmp(int a, int /err, int b, int c, +err) {
+	
+		//Nivo B -> Uslovi
+		if (b < %) {
+			print(b);
+		}
+	}
+	
+	
 }

@@ -10,11 +10,18 @@ import java.util.List;
 
 parser code {:
 
-	boolean errorDetected = false;
-	boolean fatalErrorDetected = false;
+	private boolean errorDetected = false;
+	private boolean fatalErrorDetected = false;
 	
-	Logger log = Logger.getLogger(getClass());
+	private Logger log = Logger.getLogger(getClass());
    
+   	public boolean error() {
+   		return errorDetected;
+   	}
+   	
+   	public boolean fatalError() {
+   		return fatalErrorDetected;
+   	}
    
     public void syntax_error(Symbol cur_token) {
         report_error("Sintaksna greska.", cur_token);
@@ -34,8 +41,12 @@ parser code {:
 
     public void report_error(String message, Symbol token) {
     	errorDetected = true;
-        message = "Linija " + token.left + ", kolona " + token.right + ":" + message;
-        log.error(message);
+    	String msg = "Parser report";
+    	if (token != null) {
+    		msg += " - Linija " + token.left + ", kolona " + token.right + " (" + token.value.toString() + ")";
+    	}
+    	msg += ": " + message;
+        log.error(msg);
     }
 
 
@@ -68,8 +79,7 @@ nonterminal ConstDeclLineStart ConstDeclLineStart;
 nonterminal ConstDeclComma ConstDeclComma;
 nonterminal ConstDecl ConstDecl;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName;
-nonterminal Methods Methods;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj ClassDecl, ClassName, Methods, ClassVarDecl;
 nonterminal StaticMemberList StaticMemberList;
 nonterminal StaticMember StaticMember;
 nonterminal StaticVarDeclLine StaticVarDeclLine;
@@ -139,9 +149,11 @@ ConstDecl ::= (ConstDeclNum) IDENT:name ASSIGN NUM:val {: RESULT=new ConstDeclNu
 				| (ConstDeclBool) IDENT:name ASSIGN BOOL:val {: RESULT=new ConstDeclBool(name, val); RESULT.setLine(nameleft); :}
 				;
 
-ClassDecl ::= (ClassDecl) ClassName:C1 LBRACE StaticMemberList:S2 VarDeclLineList:V3 Methods:M4 RBRACE {: RESULT=new ClassDecl(C1, S2, V3, M4); RESULT.setLine(C1left); :};
+ClassDecl ::= (ClassDecl) ClassName:C1 LBRACE StaticMemberList:S2 ClassVarDecl:C3 Methods:M4 RBRACE {: RESULT=new ClassDecl(C1, S2, C3, M4); RESULT.setLine(C1left); :};
 ClassName ::= (ClassNameNoExtend) CLASS IDENT:name {: RESULT=new ClassNameNoExtend(name); RESULT.setLine(nameleft); :}
 				| (ClassNameExtend) CLASS IDENT:name EXTENDS Type:T1 {: RESULT=new ClassNameExtend(name, T1); RESULT.setLine(nameleft); :}
+				| (ClassNameExtendError) CLASS IDENT:name EXTENDS error:E4
+					{: parser.report_error("Izvrsen oporavak deklaracije izvodjenja do '{' u liniji " + E4left + " i koloni " + E4right + ".", null); :} {: RESULT=new ClassNameExtendError(name); RESULT.setLine(nameleft); :}
 				;
 StaticMemberList ::= (StaticMemberListItem) StaticMemberList:S1 StaticMember:S2 {: RESULT=new StaticMemberListItem(S1, S2); RESULT.setLine(S1left); :}
 						| (StaticMemberListEnd) {: RESULT=new StaticMemberListEnd(); :}
@@ -149,6 +161,10 @@ StaticMemberList ::= (StaticMemberListItem) StaticMemberList:S1 StaticMember:S2 
 StaticMember ::= (StaticMemberInitializer) StaticInitializer:S1 {: RESULT=new StaticMemberInitializer(S1); RESULT.setLine(S1left); :}
 				| (StaticMemberVar) StaticVarDeclLine:S1 {: RESULT=new StaticMemberVar(S1); RESULT.setLine(S1left); :}
 				;
+ClassVarDecl ::= (ClassVarDeclOk) VarDeclLineList:V1 {: RESULT=new ClassVarDeclOk(V1); RESULT.setLine(V1left); :}
+					| (ClassVarDeclError) error:E1
+						{: parser.report_error("Izvrsen oporavak deklaracije polja do '{' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new ClassVarDeclError(); :}
+					;
 Methods ::= (MethodsNonempty) LBRACE MethodList:M1 RBRACE {: RESULT=new MethodsNonempty(M1); RESULT.setLine(M1left); :}
 			| (MethodsEmpty) {: RESULT=new MethodsEmpty(); :}
 			;
@@ -171,9 +187,14 @@ MethodName ::= (MethodNameRet) Type:T1 IDENT:name {: RESULT=new MethodNameRet(T1
 				| (MethodNameVoid) VOID IDENT:name {: RESULT=new MethodNameVoid(name); RESULT.setLine(nameleft); :}
 				| (MethodNameCons) IDENT:name {: RESULT=new MethodNameCons(name); RESULT.setLine(nameleft); :};
 
-FormalParamComma ::= (FormalParamCommaItem) FormalParamComma:F1 COMMA FormalParam:F2 {: RESULT=new FormalParamCommaItem(F1, F2); RESULT.setLine(F1left); :}
+FormalParamComma ::= (FormalParamCommaItem) FormalParam:F1 COMMA FormalParamComma:F2 {: RESULT=new FormalParamCommaItem(F1, F2); RESULT.setLine(F1left); :}
 						| (FormalParamCommaEnd) FormalParam:F1 {: RESULT=new FormalParamCommaEnd(F1); RESULT.setLine(F1left); :}
-						| (FormalParamCommaEmpty) {: RESULT=new FormalParamCommaEmpty(); :} ;
+						| (FormalParamCommaEmpty) {: RESULT=new FormalParamCommaEmpty(); :}
+						| (FormalParamCommaItemError) error:E1 COMMA:C2 FormalParamComma:F3
+							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji " + C2left + " i koloni " + C2right + ".", null); :} {: RESULT=new FormalParamCommaItemError(F3); RESULT.setLine(F3left); :}
+						| (FormalParamCommaEndError) error:E1
+							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ';' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new FormalParamCommaEndError(); :}
+						;
 FormalParam ::= (FormalParamScalar) Type:T1 IDENT:name {: RESULT=new FormalParamScalar(T1, name); RESULT.setLine(T1left); :}
 				| (FormalParamArray) Type:T1 IDENT:name LBRACK RBRACK {: RESULT=new FormalParamArray(T1, name); RESULT.setLine(T1left); :};
 
@@ -182,10 +203,16 @@ VarDeclLineList ::= (VarDeclLineListItem) VarDeclLineList:V1 VarDeclLine:V2 {: R
 					;
 VarDeclLine ::= (VarDeclLine) VarDeclLineStart:V1 VarDeclComma:V2 SEMI {: RESULT=new VarDeclLine(V1, V2); RESULT.setLine(V1left); :};
 VarDeclLineStart ::= (VarDeclLineStart) Type:T1 {: RESULT=new VarDeclLineStart(T1); RESULT.setLine(T1left); :};
-VarDeclComma ::= (VarDeclCommaItem) VarDeclComma:V1 COMMA VarDecl:V2 {: RESULT=new VarDeclCommaItem(V1, V2); RESULT.setLine(V1left); :}
-					| (VarDeclCommaEnd) VarDecl:V1 {: RESULT=new VarDeclCommaEnd(V1); RESULT.setLine(V1left); :};
+VarDeclComma ::= (VarDeclCommaItem) VarDecl:V1 COMMA VarDeclComma:V2 {: RESULT=new VarDeclCommaItem(V1, V2); RESULT.setLine(V1left); :}
+					| (VarDeclCommaEnd) VarDecl:V1 {: RESULT=new VarDeclCommaEnd(V1); RESULT.setLine(V1left); :}
+					| (VarDeclCommaItemError) error:E1 COMMA:C2 VarDeclComma:V3
+						{: parser.report_error("Izvrsen oporavak var deklaracije do ',' u liniji " + C2left + " i koloni " + C2right + ".", null); :} {: RESULT=new VarDeclCommaItemError(V3); RESULT.setLine(V3left); :}
+					| (VarDeclCommaEndError) error:E1
+						{: parser.report_error("Izvrsen oporavak var deklaracije do ';' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new VarDeclCommaEndError(); :}
+					;
 VarDecl ::= (VarDeclScalar) IDENT:name {: RESULT=new VarDeclScalar(name); RESULT.setLine(nameleft); :}
-			| (VarDeclArray) IDENT:name LBRACK RBRACK {: RESULT=new VarDeclArray(name); RESULT.setLine(nameleft); :};
+			| (VarDeclArray) IDENT:name LBRACK RBRACK {: RESULT=new VarDeclArray(name); RESULT.setLine(nameleft); :}
+			;
 
 MethodInvocation ::= (MethodInvocation) Designator:D1 LPAREN ActPars:A2 RPAREN {: RESULT=new MethodInvocation(D1, A2); RESULT.setLine(D1left); :};
 ActPars ::= (ActParsItem) ActPars:A1 COMMA ActPar:A2 {: RESULT=new ActParsItem(A1, A2); RESULT.setLine(A1left); :}
@@ -210,7 +237,10 @@ Statement ::= (StatementUnmatchedIf) IF LPAREN IfCondition:I1 RPAREN IfStatement
 				| (StatementBlock) LBRACE StatementList:S1 RBRACE {: RESULT=new StatementBlock(S1); RESULT.setLine(S1left); :}
 				;
 
-IfCondition ::= (IfCondition) Condition:C1 {: RESULT=new IfCondition(C1); RESULT.setLine(C1left); :};
+IfCondition ::= (IfConditionOk) Condition:C1 {: RESULT=new IfConditionOk(C1); RESULT.setLine(C1left); :}
+				| (IfConditionError) error:E1
+					{: parser.report_error("Izvrsen oporavak if uslova do ')' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new IfConditionError(); :}
+				;
 IfStatement ::= (IfStatement) Statement:S1 {: RESULT=new IfStatement(S1); RESULT.setLine(S1left); :};
 ForEntry ::= (ForEntry) DesignatorStatementComma:D1 {: RESULT=new ForEntry(D1); RESULT.setLine(D1left); :};
 ForCondition ::= (ForConditionNonempty) ConditionFactor:C1 {: RESULT=new ForConditionNonempty(C1); RESULT.setLine(C1left); :}
@@ -222,6 +252,8 @@ DesignatorStatementComma ::= (DesignatorStatementCommaItem) DesignatorStatementC
 								| (DesignatorStatementCommaEmpty) {: RESULT=new DesignatorStatementCommaEmpty(); :} 
 								;
 DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStatementAssign(D1, A2, E3); RESULT.setLine(D1left); :}
+						| (DesignatorStatementAssignError) Designator:D1 ASSIGN error:E3
+							{: parser.report_error("Izvrsen oporavak naredbe dodele u liniji " + E3left + " i koloni " + E3right + ".", null); :} {: RESULT=new DesignatorStatementAssignError(D1); RESULT.setLine(D1left); :}
 						| (DesignatorStatementMethod) MethodInvocation:M1 {: RESULT=new DesignatorStatementMethod(M1); RESULT.setLine(M1left); :}
 						| (DesignatorStatementInc) Designator:D1 INC {: RESULT=new DesignatorStatementInc(D1); RESULT.setLine(D1left); :}
 						| (DesignatorStatementDec) Designator:D1 DEC {: RESULT=new DesignatorStatementDec(D1); RESULT.setLine(D1left); :}
