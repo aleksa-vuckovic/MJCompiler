@@ -1,0 +1,35 @@
+program MJProgram
+
+	namespace data {
+		const int max = 10;
+		{}
+	}
+
+	class Test {
+		static int max;
+		
+		int a;
+		
+		{
+		}
+	}	
+	
+{
+	void f(Test test) int b; {
+		
+		//1. Pristup nestatickom polju
+		b = Test.a;
+		
+		//2. Pristup nepostojecem polju
+		b = test.c;
+		
+		//3. Neispravan naziv namespace
+		b = Test::max;
+		
+		//4. Pristup statickom polju preko reference
+		b = test.max;
+		
+		//5. Indeksiranje neniza
+		b = test[10];
+	}
+}

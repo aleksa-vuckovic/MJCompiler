@@ -5,19 +5,17 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.Reader;
-
-import java_cup.runtime.Symbol;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
 
+import java_cup.runtime.Symbol;
 import rs.ac.bg.etf.pp1.ast.Program;
 import rs.ac.bg.etf.pp1.my.MyTab;
 import rs.ac.bg.etf.pp1.util.Log4JUtils;
 import rs.etf.pp1.mj.runtime.Code;
 
-public class MJCodeGeneratorTest {
+public class Compiler {
 
 	static {
 		DOMConfigurator.configure(Log4JUtils.instance().findLoggerConfigFile());
@@ -26,7 +24,8 @@ public class MJCodeGeneratorTest {
 	
 	public static void main(String[] args) throws IOException {
 		Logger log = Logger.getLogger(MJParserTest.class);
-		File sourceCode = new File(Test.getInputFile(args));
+		File sourceCode = new File(args[1]);
+		File objFile = new File(args[2]);
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(sourceCode));) {
@@ -64,9 +63,7 @@ public class MJCodeGeneratorTest {
 				}
 				
 				if (!parser.error() && !sem.error()) {
-					File objFile = new File("test/program.obj");
 					if(objFile.exists()) objFile.delete();
-					
 					CodeGenerator codeGenerator = new CodeGenerator();
 					prog.traverseBottomUp(codeGenerator);
 					Code.dataSize = sem.getStaticSize();
@@ -75,8 +72,6 @@ public class MJCodeGeneratorTest {
 					log.info("Objektni fajl je uspesno generisan!");
 				}
 	        }
-	        
 		} catch (Exception e1) { log.error(e1.getMessage(), e1); }
 	}
-	
 }

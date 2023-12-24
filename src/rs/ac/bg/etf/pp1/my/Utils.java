@@ -119,4 +119,70 @@ public class Utils {
 		Code.put(Code.call);
 		Code.put2(adr - pc);
 	}
+	
+	public static String objToString(Obj obj) {
+		StringBuilder output = new StringBuilder();
+		int kind = obj.getKind();
+		Struct type = obj.getType();
+		switch (kind) {
+		case Obj.Con:  output.append("Con "); break;
+		case Obj.Var:  output.append("Var "); break;
+		case Obj.Type: output.append("Type "); break;
+		case Obj.Meth: output.append("Meth "); break;
+		case Obj.Fld:  output.append("Fld "); break;
+		case Obj.Prog: output.append("Prog "); break;
+		case Utils.Namespace: output.append("Namespace "); break;
+		}
+		
+		output.append(obj.getName());
+		output.append(": ");
+		output.append(structToString(type));
+		output.append(", ");
+		output.append(obj.getAdr());
+		output.append(", ");
+		output.append(obj.getLevel());
+		output.append(", ");
+		output.append(obj.getFpPos());
+		
+		return output.toString();
+	}
+	public static String structToString(Struct struct) {
+		StringBuilder output = new StringBuilder();
+		switch (struct.getKind()) {
+		case Struct.None:
+			output.append("notype");
+			break;
+		case Struct.Int:
+			output.append("int");
+			break;
+		case Struct.Char:
+			output.append("char");
+			break;
+		case Struct.Bool:
+			output.append("bool");
+			break;
+		case Struct.Array:
+			output.append("Arr of ");
+			
+			switch (struct.getElemType().getKind()) {
+			case Struct.None:
+				output.append("notype");
+				break;
+			case Struct.Int:
+				output.append("int");
+				break;
+			case Struct.Char:
+				output.append("char");
+				break;
+			case Struct.Class:
+				output.append("Class");
+				break;
+			}
+			break;
+		case Struct.Class:
+			output.append("Class");
+			break;
+		}
+		return output.toString();
+	}
 }

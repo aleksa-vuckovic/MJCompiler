@@ -100,7 +100,7 @@ import org.apache.log4j.*;
 ['].[']			{ return new_symbol(sym.CHAR, new Integer(yytext().charAt(1))); }
 [']"\\n"[']		{ return new_symbol(sym.CHAR, new Integer(10)); }
 
-. { log.error("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); errorDetected = true; }
+. { log.error("Leksicka greska ("+yytext()+") u liniji "+(yyline+1) + "i koloni " + yycolumn + "."); errorDetected = true; }
 
 
 <COMMENT> "\r\n" { yybegin(YYINITIAL); }

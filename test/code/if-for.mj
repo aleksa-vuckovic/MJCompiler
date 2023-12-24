@@ -1,0 +1,78 @@
+/*
+	Testira for petlje, sa break i continue, ulaznim, izlaznim naredbama i uslovom,
+	If naredbe u svim varijacijama.
+*/
+program MJProgram
+	namespace data {
+		int callcount;
+		const int max = 100;
+		{}
+	}
+	int cur;
+{
+	int sqrt(int t) int res; {
+		data::callcount ++;
+		res = 0;
+		for (; res * res <= t;) {
+			res = res + 1;
+		}
+		return res - 1;
+	}
+	
+	void main() int cur, res, tmp; bool skip; {
+		data::callcount = 0;
+		cur = 1;
+		res = -1;
+		
+		for(;;) {
+			tmp = sqrt(cur);
+			if (tmp == res) print('+');
+			else {
+				res = tmp;
+				print('\n');
+				print(res);
+			}
+			
+			cur++;
+			if (cur > data::max) break;
+		}
+		print('\n');
+		print(data::callcount);
+		print('\n'); print('-'); print('\n');
+		
+		skip = true;
+		for (cur = 10; cur < 100000; cur = cur * 5) {
+			if (cur == 1250) if (skip) print('.'); else print('!');
+			
+			if (cur == 6250) continue;
+			
+			if (cur != 1250 && cur != 6250) print(cur);
+			print('\n');
+		}
+		
+		if (cur == 31250 && skip || data::callcount == 100) print('Y');
+		print('\n');
+		
+		return;
+	}
+}
+/* Ocekivani izlaz:
+     [java]    1++
+     [java]    2++++
+     [java]    3++++++
+     [java]    4++++++++
+     [java]    5++++++++++
+     [java]    6++++++++++++
+     [java]    7++++++++++++++
+     [java]    8++++++++++++++++
+     [java]    9++++++++++++++++++
+     [java]   10
+     [java]  100
+     [java] -
+     [java]   10
+     [java]   50
+     [java]  250
+     [java] .
+     [java] 31250
+     [java] Y
+*/

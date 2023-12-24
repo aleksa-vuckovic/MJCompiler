@@ -1,0 +1,53 @@
+program MJProgram
+
+	namespace data {
+		const int max = 10;
+		{}
+	}
+
+	//1. Dodela neekvivalentnog tipa konstanti
+	const int a = 'b';
+	const char b = true;
+	
+	//2. Izvodjenje iz nekorisnickog tipa
+	class MyClass extends int {
+		
+		//3. Type je nepostojeci tip
+		static nonexistent a;
+	}
+	
+	class Derived extends MyClass {
+		
+	}
+	
+	
+{
+	void f(MyClass obj) int x; Derived derived; char mychar; bool myboolean; {
+		//4. Pristup this u globalnoj metodi
+		x = this;
+		
+		//5. Designator nije promenljiva, polje, ili element niza
+		data = 4;
+		
+		//6. Dodela neodgovarajuceg tipa
+		derived = obj;
+		
+		//7. Poziv nad identifikatorom koji nije metoda
+		MJProgram();
+		
+		//8. Inkrement nad tipom koji nije int
+		mychar++;
+		
+		//9. break i continue van for petlje
+		break;
+		continue;
+		
+		//10. Read nad boolean tipom
+		read(myboolean);
+	}
+
+	//11. Nema main metode bez argumenata
+	void main(int a) {
+	
+	}
+}

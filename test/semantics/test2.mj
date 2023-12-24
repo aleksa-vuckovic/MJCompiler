@@ -1,0 +1,53 @@
+program MJProgram
+
+	namespace data {
+		const int max = 10;
+		{}
+	}
+
+	class Test {
+		static int max;
+	}	
+	
+{
+	Test f() int a[], b, c, d; char e[], f; int g[]; Test h; {
+		
+		e = new char[10];
+		a = new int[10];
+		g = new int[10];
+		
+		//1. Niz e nema elemente odgovarajuceg tipa
+		[b,,,c,*e] = a;
+		
+		//2. c nije niz
+		[b,,*c] = a;
+		
+		//3. f nije int
+		[f,,,*g] = a;
+		
+		h = new Test();
+		
+		//4. print sa neodgovarajucim tipom
+		print(h);
+		
+		//5. return sa neodgovarajucim tipom
+		return a;
+		
+		//6. void return
+		return;
+		
+		
+		//7. nekompatibilni izrazi u if uslovu
+		if (g == b) {}
+		
+		//8. sabiranje tipova koji nisu int
+		e[0] = e[1] + e[2];
+		
+		//9.Duzina niza koja nije int
+		a = new char[true];
+		
+		
+		//10. Konstruisanje nekorisnickog tipa
+		g[0] = new int();
+	}
+}

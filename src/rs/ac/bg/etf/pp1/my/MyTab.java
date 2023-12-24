@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1.my;
 
+import org.apache.log4j.Logger;
+
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Scope;
@@ -9,6 +11,8 @@ import rs.etf.pp1.symboltable.visitors.SymbolTableVisitor;
 
 public class MyTab extends Tab {
 	public static Struct boolType = new Struct(Struct.Bool);
+	
+	private static Logger log = Logger.getLogger(MyTab.class);
 	
 	public static boolean insert(Obj obj) {
 		int adr = obj.getAdr();
@@ -45,7 +49,6 @@ public class MyTab extends Tab {
 	
 	
 	public static void dump(SymbolTableVisitor stv) {
-		System.out.println("=====================SYMBOL TABLE DUMP=========================");
 		if (stv == null)
 			stv = new MySymbolTableVisitor();
 		for (Scope s = currentScope; s != null; s = s.getOuter()) {
@@ -55,5 +58,16 @@ public class MyTab extends Tab {
 	}
 	public static void dump() {
 		MyTab.dump(null);
+	}
+	
+	public static Obj find(String name) {
+		
+		String msg = "Trazi se " + name + " - ";
+		Obj ret = Tab.find(name);
+		if (ret == Tab.noObj) msg += "Pretraga neuspesna.";
+		else msg += Utils.objToString(ret);
+		log.info(msg);
+		
+		return ret;
 	}
 }

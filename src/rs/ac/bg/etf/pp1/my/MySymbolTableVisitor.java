@@ -31,25 +31,8 @@ public class MySymbolTableVisitor extends SymbolTableVisitor {
 		//output.append("[");
 		int kind = objToVisit.getKind();
 		Struct type = objToVisit.getType();
-		switch (kind) {
-		case Obj.Con:  output.append("Con "); break;
-		case Obj.Var:  output.append("Var "); break;
-		case Obj.Type: output.append("Type "); break;
-		case Obj.Meth: output.append("Meth "); break;
-		case Obj.Fld:  output.append("Fld "); break;
-		case Obj.Prog: output.append("Prog "); break;
-		case Utils.Namespace: output.append("Namespace "); break;
-		}
 		
-		output.append(objToVisit.getName());
-		output.append(": ");
-		printStructShort(type);
-		output.append(", ");
-		output.append(objToVisit.getAdr());
-		output.append(", ");
-		output.append(objToVisit.getLevel());
-		output.append(", ");
-		output.append(objToVisit.getFpPos() + " ");
+		output.append(Utils.objToString(objToVisit));
 		
 		Collection<Obj> nested = null;
 		if (kind == Obj.Prog || kind == Obj.Type || kind == Utils.Namespace) {
@@ -90,45 +73,7 @@ public class MySymbolTableVisitor extends SymbolTableVisitor {
 	 */
 	@Override
 	public void visitStructNode(Struct structToVisit) {
-		printStructShort(structToVisit);
-
-	}
-	public void printStructShort(Struct struct) {
-		switch (struct.getKind()) {
-		case Struct.None:
-			output.append("notype");
-			break;
-		case Struct.Int:
-			output.append("int");
-			break;
-		case Struct.Char:
-			output.append("char");
-			break;
-		case Struct.Bool:
-			output.append("bool");
-			break;
-		case Struct.Array:
-			output.append("Arr of ");
-			
-			switch (struct.getElemType().getKind()) {
-			case Struct.None:
-				output.append("notype");
-				break;
-			case Struct.Int:
-				output.append("int");
-				break;
-			case Struct.Char:
-				output.append("char");
-				break;
-			case Struct.Class:
-				output.append("Class");
-				break;
-			}
-			break;
-		case Struct.Class:
-			output.append("Class");
-			break;
-		}
+		output.append(Utils.structToString(structToVisit));
 	}
 
 	public String getOutput() {

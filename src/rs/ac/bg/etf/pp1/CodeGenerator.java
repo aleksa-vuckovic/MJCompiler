@@ -266,7 +266,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		super.visit(ConditionTermAnd);
 		Code.put(Code.add);
 		Code.put(Code.const_2);
-		Code.put(Code.jcc + Code.ne); Code.put2(7);
+		Code.put(Code.jcc + Code.eq); Code.put2(7);
 		Code.put(Code.const_n);
 		Code.put(Code.jmp); Code.put2(4);
 		Code.put(Code.const_1);
