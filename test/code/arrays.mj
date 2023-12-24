@@ -1,0 +1,100 @@
+/*
+Testira nizove i visestruku dodelu.
+*/
+program MJProgram
+	
+	class User {
+		static int regularCnt;
+		static int adminCnt;
+		
+		static {
+			regularCnt = 100;
+			adminCnt = 0;
+		}
+	
+		char type;
+		int password;
+		
+		{
+			User(char type, int pass) {
+				this.type = type;
+				password = pass;
+				if (type == 'A') adminCnt++;
+				else regularCnt++;
+			}
+			
+			void prnt() {
+				print(type);
+				print('(');
+				print(password);
+				print(')');
+				print('\n');
+			}
+		}
+	}
+{
+	void main() User users[]; char t; int x[]; int a, b, c; int y[]; {
+	
+		users = new User[15];
+		
+		for (a = 0; a < 15; a++) {
+			t = 'R';
+			if (a % 5 == 0) t = 'A';
+			users[a] = new User(t, a);
+		}
+		
+		a = len(users);
+		for (a--; a>=0; a--) {
+			users[a].prnt();
+		}
+		
+		print('R'); print(':'); print(User.regularCnt); print(eol);
+		print('A'); print(':'); print(User.adminCnt); print(eol);
+		
+		print('-'); print('-'); print('\n');
+		
+		
+		a = 0;
+		b = 0;
+		c = 0;
+		
+		x = new int[6];
+		y = new int[2];
+		
+		x[0] = 1; x[1] = 2; x[2] = 3; x[3] = 4; x[4] = 5; x[5] = 6;
+		
+		[a,,c,*y] = x;
+		
+		print(a);
+		print(b);
+		print(c);
+		print(y[0]);
+		print(y[1]);
+		
+		[a,b,c,*x] = y;		
+	}
+}
+
+/*
+Ocekivani izlaz:
+     [java] R(  14)
+     [java] R(  13)
+     [java] R(  12)
+     [java] R(  11)
+     [java] A(  10)
+     [java] R(   9)
+     [java] R(   8)
+     [java] R(   7)
+     [java] R(   6)
+     [java] A(   5)
+     [java] R(   4)
+     [java] R(   3)
+     [java] R(   2)
+     [java] R(   1)
+     [java] A(   0)
+     [java] R: 112
+     [java] A:   3
+     [java] --
+     [java]    1   0   3   4   5
+     [java] -- exception at address 619: trap(2)
+*/

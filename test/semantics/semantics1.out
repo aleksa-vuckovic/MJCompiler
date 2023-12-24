@@ -1,0 +1,512 @@
+INFO  03:20:25,657 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics1.mj
+INFO  03:20:25,657 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics1.obj
+INFO  03:20:25,696 - Parser je ucitao token:#2 -> program
+INFO  03:20:25,696 - Parser je ucitao token:#45 -> MJProgram
+INFO  03:20:25,696 - Parser je ucitao token:#4 -> namespace
+INFO  03:20:25,697 - Parser je ucitao token:#45 -> data
+INFO  03:20:25,697 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,697 - Parser je ucitao token:#8 -> const
+INFO  03:20:25,698 - Parser je ucitao token:#45 -> int
+INFO  03:20:25,699 - Parser je ucitao token:#45 -> max
+INFO  03:20:25,701 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,701 - Parser je ucitao token:#44 -> 10
+INFO  03:20:25,701 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,701 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,702 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,702 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,702 - Parser je ucitao token:#8 -> const
+INFO  03:20:25,703 - Parser je ucitao token:#45 -> int
+INFO  03:20:25,703 - Parser je ucitao token:#45 -> a
+INFO  03:20:25,703 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,703 - Parser je ucitao token:#47 -> 98
+INFO  03:20:25,703 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,703 - Parser je ucitao token:#8 -> const
+INFO  03:20:25,703 - Parser je ucitao token:#45 -> char
+INFO  03:20:25,703 - Parser je ucitao token:#45 -> b
+INFO  03:20:25,704 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,704 - Parser je ucitao token:#46 -> 1
+INFO  03:20:25,704 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,704 - Parser je ucitao token:#3 -> class
+INFO  03:20:25,704 - Parser je ucitao token:#45 -> MyClass
+INFO  03:20:25,704 - Parser je ucitao token:#5 -> extends
+INFO  03:20:25,704 - Parser je ucitao token:#45 -> int
+INFO  03:20:25,704 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,704 - Parser je ucitao token:#7 -> static
+INFO  03:20:25,705 - Parser je ucitao token:#45 -> nonexistent
+INFO  03:20:25,705 - Parser je ucitao token:#45 -> a
+INFO  03:20:25,706 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,706 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,707 - Parser je ucitao token:#3 -> class
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> Derived
+INFO  03:20:25,708 - Parser je ucitao token:#5 -> extends
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> MyClass
+INFO  03:20:25,708 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,708 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,708 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,708 - Parser je ucitao token:#6 -> void
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> f
+INFO  03:20:25,708 - Parser je ucitao token:#18 -> (
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> MyClass
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> obj
+INFO  03:20:25,708 - Parser je ucitao token:#19 -> )
+INFO  03:20:25,708 - Parser je ucitao token:#45 -> int
+INFO  03:20:25,709 - Parser je ucitao token:#45 -> x
+INFO  03:20:25,709 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,709 - Parser je ucitao token:#45 -> Derived
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> derived
+INFO  03:20:25,710 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> char
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> mychar
+INFO  03:20:25,710 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> bool
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> myboolean
+INFO  03:20:25,710 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,710 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,710 - Parser je ucitao token:#45 -> x
+INFO  03:20:25,711 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,711 - Parser je ucitao token:#45 -> this
+INFO  03:20:25,711 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,712 - Parser je ucitao token:#45 -> data
+INFO  03:20:25,712 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,712 - Parser je ucitao token:#44 -> 4
+INFO  03:20:25,712 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,712 - Parser je ucitao token:#45 -> derived
+INFO  03:20:25,712 - Parser je ucitao token:#41 -> =
+INFO  03:20:25,712 - Parser je ucitao token:#45 -> obj
+INFO  03:20:25,712 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,712 - Parser je ucitao token:#45 -> MJProgram
+INFO  03:20:25,712 - Parser je ucitao token:#18 -> (
+INFO  03:20:25,712 - Parser je ucitao token:#19 -> )
+INFO  03:20:25,713 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,713 - Parser je ucitao token:#45 -> mychar
+INFO  03:20:25,713 - Parser je ucitao token:#42 -> ++
+INFO  03:20:25,713 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,713 - Parser je ucitao token:#10 -> break
+INFO  03:20:25,713 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,714 - Parser je ucitao token:#11 -> continue
+INFO  03:20:25,714 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,714 - Parser je ucitao token:#13 -> read
+INFO  03:20:25,714 - Parser je ucitao token:#18 -> (
+INFO  03:20:25,714 - Parser je ucitao token:#45 -> myboolean
+INFO  03:20:25,714 - Parser je ucitao token:#19 -> )
+INFO  03:20:25,714 - Parser je ucitao token:#26 -> ;
+INFO  03:20:25,715 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,715 - Parser je ucitao token:#6 -> void
+INFO  03:20:25,716 - Parser je ucitao token:#45 -> main
+INFO  03:20:25,716 - Parser je ucitao token:#18 -> (
+INFO  03:20:25,716 - Parser je ucitao token:#45 -> int
+INFO  03:20:25,716 - Parser je ucitao token:#45 -> a
+INFO  03:20:25,716 - Parser je ucitao token:#19 -> )
+INFO  03:20:25,716 - Parser je ucitao token:#20 -> {
+INFO  03:20:25,716 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,716 - Parser je ucitao token:#21 -> }
+INFO  03:20:25,716 - Parser je ucitao token:#0 -> EOF
+INFO  03:20:25,717 - Parser je ucitao token:#0 -> EOF
+INFO  03:20:25,717 - ===========================================================
+INFO  03:20:25,717 - APSTRAKTNO SINTAKSNO STABLO
+INFO  03:20:25,718 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListItem(
+    NamespaceListEnd(
+    ) [NamespaceListEnd]
+    Namespace(
+      NamespaceName(
+       data
+      ) [NamespaceName]
+      DeclListItem(
+        DeclListEnd(
+        ) [DeclListEnd]
+        DeclConst(
+          ConstDeclLine(
+            ConstDeclLineStart(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+            ) [ConstDeclLineStart]
+            ConstDeclCommaEnd(
+              ConstDeclNum(
+               max
+               10
+              ) [ConstDeclNum]
+            ) [ConstDeclCommaEnd]
+          ) [ConstDeclLine]
+        ) [DeclConst]
+      ) [DeclListItem]
+      MethodListEnd(
+      ) [MethodListEnd]
+    ) [Namespace]
+  ) [NamespaceListItem]
+  DeclListItem(
+    DeclListItem(
+      DeclListItem(
+        DeclListItem(
+          DeclListEnd(
+          ) [DeclListEnd]
+          DeclConst(
+            ConstDeclLine(
+              ConstDeclLineStart(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+              ) [ConstDeclLineStart]
+              ConstDeclCommaEnd(
+                ConstDeclChar(
+                 a
+                 98
+                ) [ConstDeclChar]
+              ) [ConstDeclCommaEnd]
+            ) [ConstDeclLine]
+          ) [DeclConst]
+        ) [DeclListItem]
+        DeclConst(
+          ConstDeclLine(
+            ConstDeclLineStart(
+              TypeSimple(
+               char
+              ) [TypeSimple]
+            ) [ConstDeclLineStart]
+            ConstDeclCommaEnd(
+              ConstDeclBool(
+               b
+               1
+              ) [ConstDeclBool]
+            ) [ConstDeclCommaEnd]
+          ) [ConstDeclLine]
+        ) [DeclConst]
+      ) [DeclListItem]
+      DeclClass(
+        ClassDecl(
+          ClassNameExtend(
+           MyClass
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [ClassNameExtend]
+          StaticMemberListItem(
+            StaticMemberListEnd(
+            ) [StaticMemberListEnd]
+            StaticMemberVar(
+              StaticVarDeclLine(
+                StaticVarDeclLineStart(
+                  TypeSimple(
+                   nonexistent
+                  ) [TypeSimple]
+                ) [StaticVarDeclLineStart]
+                StaticVarDeclCommaEnd(
+                  StaticVarDeclScalar(
+                   a
+                  ) [StaticVarDeclScalar]
+                ) [StaticVarDeclCommaEnd]
+              ) [StaticVarDeclLine]
+            ) [StaticMemberVar]
+          ) [StaticMemberListItem]
+          ClassVarDeclOk(
+            VarDeclLineListEnd(
+            ) [VarDeclLineListEnd]
+          ) [ClassVarDeclOk]
+          MethodsEmpty(
+          ) [MethodsEmpty]
+        ) [ClassDecl]
+      ) [DeclClass]
+    ) [DeclListItem]
+    DeclClass(
+      ClassDecl(
+        ClassNameExtend(
+         Derived
+          TypeSimple(
+           MyClass
+          ) [TypeSimple]
+        ) [ClassNameExtend]
+        StaticMemberListEnd(
+        ) [StaticMemberListEnd]
+        ClassVarDeclOk(
+          VarDeclLineListEnd(
+          ) [VarDeclLineListEnd]
+        ) [ClassVarDeclOk]
+        MethodsEmpty(
+        ) [MethodsEmpty]
+      ) [ClassDecl]
+    ) [DeclClass]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListItem(
+      MethodListEnd(
+      ) [MethodListEnd]
+      Method(
+        MethodDeclaration(
+          MethodNameVoid(
+           f
+          ) [MethodNameVoid]
+          FormalParamCommaEnd(
+            FormalParamScalar(
+              TypeSimple(
+               MyClass
+              ) [TypeSimple]
+             obj
+            ) [FormalParamScalar]
+          ) [FormalParamCommaEnd]
+        ) [MethodDeclaration]
+        VarDeclLineListItem(
+          VarDeclLineListItem(
+            VarDeclLineListItem(
+              VarDeclLineListItem(
+                VarDeclLineListEnd(
+                ) [VarDeclLineListEnd]
+                VarDeclLine(
+                  VarDeclLineStart(
+                    TypeSimple(
+                     int
+                    ) [TypeSimple]
+                  ) [VarDeclLineStart]
+                  VarDeclCommaEnd(
+                    VarDeclScalar(
+                     x
+                    ) [VarDeclScalar]
+                  ) [VarDeclCommaEnd]
+                ) [VarDeclLine]
+              ) [VarDeclLineListItem]
+              VarDeclLine(
+                VarDeclLineStart(
+                  TypeSimple(
+                   Derived
+                  ) [TypeSimple]
+                ) [VarDeclLineStart]
+                VarDeclCommaEnd(
+                  VarDeclScalar(
+                   derived
+                  ) [VarDeclScalar]
+                ) [VarDeclCommaEnd]
+              ) [VarDeclLine]
+            ) [VarDeclLineListItem]
+            VarDeclLine(
+              VarDeclLineStart(
+                TypeSimple(
+                 char
+                ) [TypeSimple]
+              ) [VarDeclLineStart]
+              VarDeclCommaEnd(
+                VarDeclScalar(
+                 mychar
+                ) [VarDeclScalar]
+              ) [VarDeclCommaEnd]
+            ) [VarDeclLine]
+          ) [VarDeclLineListItem]
+          VarDeclLine(
+            VarDeclLineStart(
+              TypeSimple(
+               bool
+              ) [TypeSimple]
+            ) [VarDeclLineStart]
+            VarDeclCommaEnd(
+              VarDeclScalar(
+               myboolean
+              ) [VarDeclScalar]
+            ) [VarDeclCommaEnd]
+          ) [VarDeclLine]
+        ) [VarDeclLineListItem]
+        StatementListItem(
+          StatementListItem(
+            StatementListItem(
+              StatementListItem(
+                StatementListItem(
+                  StatementListItem(
+                    StatementListItem(
+                      StatementListItem(
+                        StatementListEnd(
+                        ) [StatementListEnd]
+                        StatementDesignatorStatement(
+                          DesignatorStatementAssign(
+                            DesignatorSimple(
+                             x
+                            ) [DesignatorSimple]
+                            Assignop(
+                            ) [Assignop]
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   this
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [DesignatorStatementAssign]
+                        ) [StatementDesignatorStatement]
+                      ) [StatementListItem]
+                      StatementDesignatorStatement(
+                        DesignatorStatementAssign(
+                          DesignatorSimple(
+                           data
+                          ) [DesignatorSimple]
+                          Assignop(
+                          ) [Assignop]
+                          ExprSingle(
+                            TermSingle(
+                              FactorNum(
+                               4
+                              ) [FactorNum]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesignatorStatement]
+                    ) [StatementListItem]
+                    StatementDesignatorStatement(
+                      DesignatorStatementAssign(
+                        DesignatorSimple(
+                         derived
+                        ) [DesignatorSimple]
+                        Assignop(
+                        ) [Assignop]
+                        ExprSingle(
+                          TermSingle(
+                            FactorDesignator(
+                              DesignatorSimple(
+                               obj
+                              ) [DesignatorSimple]
+                            ) [FactorDesignator]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [DesignatorStatementAssign]
+                    ) [StatementDesignatorStatement]
+                  ) [StatementListItem]
+                  StatementDesignatorStatement(
+                    DesignatorStatementMethod(
+                      MethodInvocation(
+                        DesignatorSimple(
+                         MJProgram
+                        ) [DesignatorSimple]
+                        ActParsEmpty(
+                        ) [ActParsEmpty]
+                      ) [MethodInvocation]
+                    ) [DesignatorStatementMethod]
+                  ) [StatementDesignatorStatement]
+                ) [StatementListItem]
+                StatementDesignatorStatement(
+                  DesignatorStatementInc(
+                    DesignatorSimple(
+                     mychar
+                    ) [DesignatorSimple]
+                  ) [DesignatorStatementInc]
+                ) [StatementDesignatorStatement]
+              ) [StatementListItem]
+              StatementBreak(
+              ) [StatementBreak]
+            ) [StatementListItem]
+            StatementContinue(
+            ) [StatementContinue]
+          ) [StatementListItem]
+          StatementRead(
+            DesignatorSimple(
+             myboolean
+            ) [DesignatorSimple]
+          ) [StatementRead]
+        ) [StatementListItem]
+      ) [Method]
+    ) [MethodListItem]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         main
+        ) [MethodNameVoid]
+        FormalParamCommaEnd(
+          FormalParamScalar(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           a
+          ) [FormalParamScalar]
+        ) [FormalParamCommaEnd]
+      ) [MethodDeclaration]
+      VarDeclLineListEnd(
+      ) [VarDeclLineListEnd]
+      StatementListEnd(
+      ) [StatementListEnd]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  03:20:25,718 - ===========================================================
+INFO  03:20:25,726 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:20:25,726 - Trazi se int - Type int: int, -1, -1, 0
+ERROR 03:20:25,726 - Semanticka greska na liniji 9: Tip dodeljene konstante (char) ne odgovara deklarisanom tipu.
+INFO  03:20:25,726 - Trazi se char - Type char: char, -1, -1, 0
+ERROR 03:20:25,726 - Semanticka greska na liniji 10: Tip dodeljene konstante (bool) ne odgovara deklarisanom tipu.
+INFO  03:20:25,726 - Trazi se int - Type int: int, -1, -1, 0
+ERROR 03:20:25,726 - Semanticka greska na liniji 13: Nedozvoljeno izvodjenje klase iz nekorisnickog tipa.
+INFO  03:20:25,727 - Trazi se nonexistent - Pretraga neuspesna.
+ERROR 03:20:25,727 - Semanticka greska na liniji 16: Identifikator nonexistent ne oznacava tip.
+INFO  03:20:25,727 - Trazi se MyClass - Type MyClass: Class, 1, 0, 0
+INFO  03:20:25,727 - Trazi se MyClass - Type MyClass: Class, 1, 0, 0
+INFO  03:20:25,727 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:20:25,727 - Trazi se Derived - Type Derived: Class, 2, 0, 0
+INFO  03:20:25,727 - Trazi se char - Type char: char, -1, -1, 0
+INFO  03:20:25,727 - Trazi se bool - Type bool: bool, 0, 0, 0
+INFO  03:20:25,727 - Trazi se x - Var x: int, 1, 1, 1
+INFO  03:20:25,727 - Trazi se this - Pretraga neuspesna.
+ERROR 03:20:25,727 - Semanticka greska na liniji 27: Identifikator this nije deklarisan.
+ERROR 03:20:25,727 - Semanticka greska na liniji 27: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:20:25,727 - Trazi se data - Namespace data: notype, -1, 0, -1
+ERROR 03:20:25,727 - Semanticka greska na liniji 30: Dodela je moguca samo promenljivoj, polju ili elementu niza.
+INFO  03:20:25,728 - Trazi se derived - Var derived: Class, 2, 1, 1
+INFO  03:20:25,728 - Trazi se obj - Var obj: Class, 0, 1, 0
+ERROR 03:20:25,728 - Semanticka greska na liniji 33: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:20:25,728 - Trazi se MJProgram - Prog MJProgram: notype, -1, 0, -1
+ERROR 03:20:25,728 - Semanticka greska na liniji 36: Poziv metode nad objektom koji nije metoda.
+INFO  03:20:25,728 - Trazi se mychar - Var mychar: char, 3, 1, 1
+ERROR 03:20:25,728 - Semanticka greska na liniji 39: Inkrement operator zahteva int.
+ERROR 03:20:25,728 - Semanticka greska na liniji 0: Break naredba nije dozvoljena van for petlje.
+ERROR 03:20:25,728 - Semanticka greska na liniji 0: Continue naredba nije dozvoljena van for petlje.
+INFO  03:20:25,728 - Trazi se myboolean - Var myboolean: bool, 4, 1, 1
+INFO  03:20:25,728 - Trazi se int - Type int: int, -1, -1, 0
+ERROR 03:20:25,728 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
+INFO  03:20:25,728 - ===========================================================
+INFO  03:20:25,728 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Namespace data: notype, -1, 0, -1
+      Con max: int, 10, 0, -1
+
+   Con a: char, 98, 0, -1
+   Con b: bool, 1, 0, -1
+   Type MyClass: Class, 1, 0, 0
+      Var a: notype, 0, 0, -1
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+
+   Type Derived: Class, 2, 0, 0
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+
+   Meth f: notype, -1, 0, 1
+      Var obj: Class, 0, 1, 0
+      Var x: int, 1, 1, 1
+      Var derived: Class, 2, 1, 1
+      Var mychar: char, 3, 1, 1
+      Var myboolean: bool, 4, 1, 1
+
+   Meth main: notype, -1, 0, 1
+      Var a: int, 0, 1, 0
+
+
+
+INFO  03:20:25,729 - ===========================================================
+INFO  03:20:25,729 - Semanticki analizator je detektovao greske. Preskace se generisanje koda

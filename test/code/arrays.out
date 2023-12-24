@@ -1,0 +1,1817 @@
+INFO  03:22:26,564 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\code\arrays.mj
+INFO  03:22:26,564 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\code\arrays.obj
+INFO  03:22:26,604 - Parser je ucitao token:#2 -> program
+INFO  03:22:26,604 - Parser je ucitao token:#45 -> MJProgram
+INFO  03:22:26,604 - Parser je ucitao token:#3 -> class
+INFO  03:22:26,606 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,606 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,606 - Parser je ucitao token:#7 -> static
+INFO  03:22:26,607 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,607 - Parser je ucitao token:#45 -> regularCnt
+INFO  03:22:26,608 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,608 - Parser je ucitao token:#7 -> static
+INFO  03:22:26,609 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,609 - Parser je ucitao token:#45 -> adminCnt
+INFO  03:22:26,609 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,609 - Parser je ucitao token:#7 -> static
+INFO  03:22:26,609 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,610 - Parser je ucitao token:#45 -> regularCnt
+INFO  03:22:26,611 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,611 - Parser je ucitao token:#44 -> 100
+INFO  03:22:26,611 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,612 - Parser je ucitao token:#45 -> adminCnt
+INFO  03:22:26,612 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,612 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,612 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,612 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,613 - Parser je ucitao token:#45 -> char
+INFO  03:22:26,613 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,614 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,614 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,615 - Parser je ucitao token:#45 -> password
+INFO  03:22:26,615 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,615 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,615 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,615 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,615 - Parser je ucitao token:#45 -> char
+INFO  03:22:26,615 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,615 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,616 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,616 - Parser je ucitao token:#45 -> pass
+INFO  03:22:26,616 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,616 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,616 - Parser je ucitao token:#45 -> this
+INFO  03:22:26,616 - Parser je ucitao token:#24 -> .
+INFO  03:22:26,616 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,617 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,617 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,617 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,617 - Parser je ucitao token:#45 -> password
+INFO  03:22:26,617 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,617 - Parser je ucitao token:#45 -> pass
+INFO  03:22:26,617 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,617 - Parser je ucitao token:#15 -> if
+INFO  03:22:26,617 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,617 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,617 - Parser je ucitao token:#33 -> ==
+INFO  03:22:26,617 - Parser je ucitao token:#47 -> 65
+INFO  03:22:26,618 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,618 - Parser je ucitao token:#45 -> adminCnt
+INFO  03:22:26,618 - Parser je ucitao token:#42 -> ++
+INFO  03:22:26,618 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,618 - Parser je ucitao token:#16 -> else
+INFO  03:22:26,619 - Parser je ucitao token:#45 -> regularCnt
+INFO  03:22:26,619 - Parser je ucitao token:#42 -> ++
+INFO  03:22:26,619 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,619 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,619 - Parser je ucitao token:#6 -> void
+INFO  03:22:26,620 - Parser je ucitao token:#45 -> prnt
+INFO  03:22:26,620 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,620 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,620 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,620 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,620 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,620 - Parser je ucitao token:#45 -> type
+INFO  03:22:26,621 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,621 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,621 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,621 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,621 - Parser je ucitao token:#47 -> 40
+INFO  03:22:26,621 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,621 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,621 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,621 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,621 - Parser je ucitao token:#45 -> password
+INFO  03:22:26,621 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,621 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,621 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,621 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,621 - Parser je ucitao token:#47 -> 41
+INFO  03:22:26,621 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,621 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,621 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,621 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,622 - Parser je ucitao token:#47 -> 10
+INFO  03:22:26,622 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,622 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,622 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,622 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,622 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,622 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,623 - Parser je ucitao token:#6 -> void
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> main
+INFO  03:22:26,623 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,623 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> users
+INFO  03:22:26,623 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,623 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,623 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> char
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> t
+INFO  03:22:26,623 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,623 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,623 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,623 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,623 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,624 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> b
+INFO  03:22:26,624 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> c
+INFO  03:22:26,624 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,624 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,624 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,624 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,624 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> users
+INFO  03:22:26,624 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,624 - Parser je ucitao token:#14 -> new
+INFO  03:22:26,624 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,624 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,625 - Parser je ucitao token:#44 -> 15
+INFO  03:22:26,625 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,625 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,625 - Parser je ucitao token:#17 -> for
+INFO  03:22:26,625 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,625 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,625 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,625 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,625 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,626 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,626 - Parser je ucitao token:#37 -> <
+INFO  03:22:26,626 - Parser je ucitao token:#44 -> 15
+INFO  03:22:26,626 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,626 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,626 - Parser je ucitao token:#42 -> ++
+INFO  03:22:26,627 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,627 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,627 - Parser je ucitao token:#45 -> t
+INFO  03:22:26,627 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,627 - Parser je ucitao token:#47 -> 82
+INFO  03:22:26,627 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,627 - Parser je ucitao token:#15 -> if
+INFO  03:22:26,627 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,627 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,627 - Parser je ucitao token:#32 -> %
+INFO  03:22:26,627 - Parser je ucitao token:#44 -> 5
+INFO  03:22:26,628 - Parser je ucitao token:#33 -> ==
+INFO  03:22:26,628 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,628 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,629 - Parser je ucitao token:#45 -> t
+INFO  03:22:26,629 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,629 - Parser je ucitao token:#47 -> 65
+INFO  03:22:26,629 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,629 - Parser je ucitao token:#45 -> users
+INFO  03:22:26,629 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,629 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,629 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,629 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,629 - Parser je ucitao token:#14 -> new
+INFO  03:22:26,629 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,629 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,630 - Parser je ucitao token:#45 -> t
+INFO  03:22:26,630 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,631 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,631 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,631 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,631 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,631 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,631 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,631 - Parser je ucitao token:#45 -> len
+INFO  03:22:26,631 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,631 - Parser je ucitao token:#45 -> users
+INFO  03:22:26,631 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,631 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,632 - Parser je ucitao token:#17 -> for
+INFO  03:22:26,632 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,632 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,632 - Parser je ucitao token:#43 -> --
+INFO  03:22:26,632 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,632 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,632 - Parser je ucitao token:#36 -> >=
+INFO  03:22:26,632 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,633 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,633 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,633 - Parser je ucitao token:#43 -> --
+INFO  03:22:26,633 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,633 - Parser je ucitao token:#20 -> {
+INFO  03:22:26,633 - Parser je ucitao token:#45 -> users
+INFO  03:22:26,633 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,633 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,633 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,633 - Parser je ucitao token:#24 -> .
+INFO  03:22:26,633 - Parser je ucitao token:#45 -> prnt
+INFO  03:22:26,633 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,634 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,634 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,634 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,634 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,634 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,634 - Parser je ucitao token:#47 -> 82
+INFO  03:22:26,634 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,634 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,634 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,634 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,634 - Parser je ucitao token:#47 -> 58
+INFO  03:22:26,635 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,635 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,635 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,635 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,635 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,635 - Parser je ucitao token:#24 -> .
+INFO  03:22:26,635 - Parser je ucitao token:#45 -> regularCnt
+INFO  03:22:26,635 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,635 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,635 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,635 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,635 - Parser je ucitao token:#45 -> eol
+INFO  03:22:26,635 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,635 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,635 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,635 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,635 - Parser je ucitao token:#47 -> 65
+INFO  03:22:26,635 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,635 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,635 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,635 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,635 - Parser je ucitao token:#47 -> 58
+INFO  03:22:26,635 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,635 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,635 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,635 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,636 - Parser je ucitao token:#45 -> User
+INFO  03:22:26,636 - Parser je ucitao token:#24 -> .
+INFO  03:22:26,636 - Parser je ucitao token:#45 -> adminCnt
+INFO  03:22:26,636 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,636 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,636 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,636 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,636 - Parser je ucitao token:#45 -> eol
+INFO  03:22:26,636 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,636 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,636 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,636 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,636 - Parser je ucitao token:#47 -> 45
+INFO  03:22:26,636 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,636 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,636 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,636 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,636 - Parser je ucitao token:#47 -> 45
+INFO  03:22:26,636 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,636 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,636 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,636 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,636 - Parser je ucitao token:#47 -> 10
+INFO  03:22:26,637 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,637 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,637 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,637 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,637 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> b
+INFO  03:22:26,637 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,637 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,637 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> c
+INFO  03:22:26,637 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,637 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,637 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,637 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,637 - Parser je ucitao token:#14 -> new
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,637 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,637 - Parser je ucitao token:#44 -> 6
+INFO  03:22:26,637 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,637 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,637 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,637 - Parser je ucitao token:#14 -> new
+INFO  03:22:26,637 - Parser je ucitao token:#45 -> int
+INFO  03:22:26,637 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 2
+INFO  03:22:26,638 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,638 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,638 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,638 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,638 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,638 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 1
+INFO  03:22:26,638 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,638 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,638 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 1
+INFO  03:22:26,638 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,638 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 2
+INFO  03:22:26,638 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,638 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,638 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 2
+INFO  03:22:26,638 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,638 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,638 - Parser je ucitao token:#44 -> 3
+INFO  03:22:26,638 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,638 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,639 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 3
+INFO  03:22:26,639 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,639 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 4
+INFO  03:22:26,639 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,639 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,639 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 4
+INFO  03:22:26,639 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,639 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 5
+INFO  03:22:26,639 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,639 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,639 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 5
+INFO  03:22:26,639 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,639 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,639 - Parser je ucitao token:#44 -> 6
+INFO  03:22:26,639 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,640 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,640 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,641 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,641 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,641 - Parser je ucitao token:#45 -> c
+INFO  03:22:26,641 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,641 - Parser je ucitao token:#30 -> *
+INFO  03:22:26,641 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,641 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,641 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,641 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,641 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,641 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,641 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,641 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,641 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,641 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,642 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,642 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,642 - Parser je ucitao token:#45 -> b
+INFO  03:22:26,642 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,642 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,642 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,642 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,642 - Parser je ucitao token:#45 -> c
+INFO  03:22:26,642 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,642 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,642 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,642 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,642 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,642 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,642 - Parser je ucitao token:#44 -> 0
+INFO  03:22:26,642 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,642 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,642 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,642 - Parser je ucitao token:#12 -> print
+INFO  03:22:26,642 - Parser je ucitao token:#18 -> (
+INFO  03:22:26,642 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,642 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,642 - Parser je ucitao token:#44 -> 1
+INFO  03:22:26,642 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,642 - Parser je ucitao token:#19 -> )
+INFO  03:22:26,642 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,642 - Parser je ucitao token:#22 -> [
+INFO  03:22:26,643 - Parser je ucitao token:#45 -> a
+INFO  03:22:26,643 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,643 - Parser je ucitao token:#45 -> b
+INFO  03:22:26,643 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,643 - Parser je ucitao token:#45 -> c
+INFO  03:22:26,643 - Parser je ucitao token:#25 -> ,
+INFO  03:22:26,643 - Parser je ucitao token:#30 -> *
+INFO  03:22:26,643 - Parser je ucitao token:#45 -> x
+INFO  03:22:26,643 - Parser je ucitao token:#23 -> ]
+INFO  03:22:26,643 - Parser je ucitao token:#41 -> =
+INFO  03:22:26,643 - Parser je ucitao token:#45 -> y
+INFO  03:22:26,643 - Parser je ucitao token:#26 -> ;
+INFO  03:22:26,643 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,643 - Parser je ucitao token:#21 -> }
+INFO  03:22:26,643 - Parser je ucitao token:#0 -> EOF
+INFO  03:22:26,644 - Parser je ucitao token:#0 -> EOF
+INFO  03:22:26,644 - ===========================================================
+INFO  03:22:26,644 - APSTRAKTNO SINTAKSNO STABLO
+INFO  03:22:26,649 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListEnd(
+  ) [NamespaceListEnd]
+  DeclListItem(
+    DeclListEnd(
+    ) [DeclListEnd]
+    DeclClass(
+      ClassDecl(
+        ClassNameNoExtend(
+         User
+        ) [ClassNameNoExtend]
+        StaticMemberListItem(
+          StaticMemberListItem(
+            StaticMemberListItem(
+              StaticMemberListEnd(
+              ) [StaticMemberListEnd]
+              StaticMemberVar(
+                StaticVarDeclLine(
+                  StaticVarDeclLineStart(
+                    TypeSimple(
+                     int
+                    ) [TypeSimple]
+                  ) [StaticVarDeclLineStart]
+                  StaticVarDeclCommaEnd(
+                    StaticVarDeclScalar(
+                     regularCnt
+                    ) [StaticVarDeclScalar]
+                  ) [StaticVarDeclCommaEnd]
+                ) [StaticVarDeclLine]
+              ) [StaticMemberVar]
+            ) [StaticMemberListItem]
+            StaticMemberVar(
+              StaticVarDeclLine(
+                StaticVarDeclLineStart(
+                  TypeSimple(
+                   int
+                  ) [TypeSimple]
+                ) [StaticVarDeclLineStart]
+                StaticVarDeclCommaEnd(
+                  StaticVarDeclScalar(
+                   adminCnt
+                  ) [StaticVarDeclScalar]
+                ) [StaticVarDeclCommaEnd]
+              ) [StaticVarDeclLine]
+            ) [StaticMemberVar]
+          ) [StaticMemberListItem]
+          StaticMemberInitializer(
+            StaticInitializer(
+              StaticInitializerStart(
+              ) [StaticInitializerStart]
+              StatementListItem(
+                StatementListItem(
+                  StatementListEnd(
+                  ) [StatementListEnd]
+                  StatementDesignatorStatement(
+                    DesignatorStatementAssign(
+                      DesignatorSimple(
+                       regularCnt
+                      ) [DesignatorSimple]
+                      Assignop(
+                      ) [Assignop]
+                      ExprSingle(
+                        TermSingle(
+                          FactorNum(
+                           100
+                          ) [FactorNum]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [DesignatorStatementAssign]
+                  ) [StatementDesignatorStatement]
+                ) [StatementListItem]
+                StatementDesignatorStatement(
+                  DesignatorStatementAssign(
+                    DesignatorSimple(
+                     adminCnt
+                    ) [DesignatorSimple]
+                    Assignop(
+                    ) [Assignop]
+                    ExprSingle(
+                      TermSingle(
+                        FactorNum(
+                         0
+                        ) [FactorNum]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [DesignatorStatementAssign]
+                ) [StatementDesignatorStatement]
+              ) [StatementListItem]
+            ) [StaticInitializer]
+          ) [StaticMemberInitializer]
+        ) [StaticMemberListItem]
+        ClassVarDeclOk(
+          VarDeclLineListItem(
+            VarDeclLineListItem(
+              VarDeclLineListEnd(
+              ) [VarDeclLineListEnd]
+              VarDeclLine(
+                VarDeclLineStart(
+                  TypeSimple(
+                   char
+                  ) [TypeSimple]
+                ) [VarDeclLineStart]
+                VarDeclCommaEnd(
+                  VarDeclScalar(
+                   type
+                  ) [VarDeclScalar]
+                ) [VarDeclCommaEnd]
+              ) [VarDeclLine]
+            ) [VarDeclLineListItem]
+            VarDeclLine(
+              VarDeclLineStart(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+              ) [VarDeclLineStart]
+              VarDeclCommaEnd(
+                VarDeclScalar(
+                 password
+                ) [VarDeclScalar]
+              ) [VarDeclCommaEnd]
+            ) [VarDeclLine]
+          ) [VarDeclLineListItem]
+        ) [ClassVarDeclOk]
+        MethodsNonempty(
+          MethodListItem(
+            MethodListItem(
+              MethodListEnd(
+              ) [MethodListEnd]
+              Method(
+                MethodDeclaration(
+                  MethodNameCons(
+                   User
+                  ) [MethodNameCons]
+                  FormalParamCommaItem(
+                    FormalParamScalar(
+                      TypeSimple(
+                       char
+                      ) [TypeSimple]
+                     type
+                    ) [FormalParamScalar]
+                    FormalParamCommaEnd(
+                      FormalParamScalar(
+                        TypeSimple(
+                         int
+                        ) [TypeSimple]
+                       pass
+                      ) [FormalParamScalar]
+                    ) [FormalParamCommaEnd]
+                  ) [FormalParamCommaItem]
+                ) [MethodDeclaration]
+                VarDeclLineListEnd(
+                ) [VarDeclLineListEnd]
+                StatementListItem(
+                  StatementListItem(
+                    StatementListItem(
+                      StatementListEnd(
+                      ) [StatementListEnd]
+                      StatementDesignatorStatement(
+                        DesignatorStatementAssign(
+                          DesignatorField(
+                            DesignatorSimple(
+                             this
+                            ) [DesignatorSimple]
+                           type
+                          ) [DesignatorField]
+                          Assignop(
+                          ) [Assignop]
+                          ExprSingle(
+                            TermSingle(
+                              FactorDesignator(
+                                DesignatorSimple(
+                                 type
+                                ) [DesignatorSimple]
+                              ) [FactorDesignator]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesignatorStatement]
+                    ) [StatementListItem]
+                    StatementDesignatorStatement(
+                      DesignatorStatementAssign(
+                        DesignatorSimple(
+                         password
+                        ) [DesignatorSimple]
+                        Assignop(
+                        ) [Assignop]
+                        ExprSingle(
+                          TermSingle(
+                            FactorDesignator(
+                              DesignatorSimple(
+                               pass
+                              ) [DesignatorSimple]
+                            ) [FactorDesignator]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [DesignatorStatementAssign]
+                    ) [StatementDesignatorStatement]
+                  ) [StatementListItem]
+                  StatementMatchedIf(
+                    IfConditionOk(
+                      ConditionSingle(
+                        ConditionTermSingle(
+                          ConditionFactorRel(
+                            ExprSingle(
+                              TermSingle(
+                                FactorDesignator(
+                                  DesignatorSimple(
+                                   type
+                                  ) [DesignatorSimple]
+                                ) [FactorDesignator]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                            RelopEq(
+                            ) [RelopEq]
+                            ExprSingle(
+                              TermSingle(
+                                FactorChar(
+                                 65
+                                ) [FactorChar]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [ConditionFactorRel]
+                        ) [ConditionTermSingle]
+                      ) [ConditionSingle]
+                    ) [IfConditionOk]
+                    IfStatement(
+                      StatementDesignatorStatement(
+                        DesignatorStatementInc(
+                          DesignatorSimple(
+                           adminCnt
+                          ) [DesignatorSimple]
+                        ) [DesignatorStatementInc]
+                      ) [StatementDesignatorStatement]
+                    ) [IfStatement]
+                    StatementDesignatorStatement(
+                      DesignatorStatementInc(
+                        DesignatorSimple(
+                         regularCnt
+                        ) [DesignatorSimple]
+                      ) [DesignatorStatementInc]
+                    ) [StatementDesignatorStatement]
+                  ) [StatementMatchedIf]
+                ) [StatementListItem]
+              ) [Method]
+            ) [MethodListItem]
+            Method(
+              MethodDeclaration(
+                MethodNameVoid(
+                 prnt
+                ) [MethodNameVoid]
+                FormalParamCommaEmpty(
+                ) [FormalParamCommaEmpty]
+              ) [MethodDeclaration]
+              VarDeclLineListEnd(
+              ) [VarDeclLineListEnd]
+              StatementListItem(
+                StatementListItem(
+                  StatementListItem(
+                    StatementListItem(
+                      StatementListItem(
+                        StatementListEnd(
+                        ) [StatementListEnd]
+                        StatementPrint(
+                          ExprSingle(
+                            TermSingle(
+                              FactorDesignator(
+                                DesignatorSimple(
+                                 type
+                                ) [DesignatorSimple]
+                              ) [FactorDesignator]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [StatementPrint]
+                      ) [StatementListItem]
+                      StatementPrint(
+                        ExprSingle(
+                          TermSingle(
+                            FactorChar(
+                             40
+                            ) [FactorChar]
+                          ) [TermSingle]
+                        ) [ExprSingle]
+                      ) [StatementPrint]
+                    ) [StatementListItem]
+                    StatementPrint(
+                      ExprSingle(
+                        TermSingle(
+                          FactorDesignator(
+                            DesignatorSimple(
+                             password
+                            ) [DesignatorSimple]
+                          ) [FactorDesignator]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [StatementPrint]
+                  ) [StatementListItem]
+                  StatementPrint(
+                    ExprSingle(
+                      TermSingle(
+                        FactorChar(
+                         41
+                        ) [FactorChar]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [StatementPrint]
+                ) [StatementListItem]
+                StatementPrint(
+                  ExprSingle(
+                    TermSingle(
+                      FactorChar(
+                       10
+                      ) [FactorChar]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [StatementPrint]
+              ) [StatementListItem]
+            ) [Method]
+          ) [MethodListItem]
+        ) [MethodsNonempty]
+      ) [ClassDecl]
+    ) [DeclClass]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListEnd(
+    ) [MethodListEnd]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         main
+        ) [MethodNameVoid]
+        FormalParamCommaEmpty(
+        ) [FormalParamCommaEmpty]
+      ) [MethodDeclaration]
+      VarDeclLineListItem(
+        VarDeclLineListItem(
+          VarDeclLineListItem(
+            VarDeclLineListItem(
+              VarDeclLineListItem(
+                VarDeclLineListEnd(
+                ) [VarDeclLineListEnd]
+                VarDeclLine(
+                  VarDeclLineStart(
+                    TypeSimple(
+                     User
+                    ) [TypeSimple]
+                  ) [VarDeclLineStart]
+                  VarDeclCommaEnd(
+                    VarDeclArray(
+                     users
+                    ) [VarDeclArray]
+                  ) [VarDeclCommaEnd]
+                ) [VarDeclLine]
+              ) [VarDeclLineListItem]
+              VarDeclLine(
+                VarDeclLineStart(
+                  TypeSimple(
+                   char
+                  ) [TypeSimple]
+                ) [VarDeclLineStart]
+                VarDeclCommaEnd(
+                  VarDeclScalar(
+                   t
+                  ) [VarDeclScalar]
+                ) [VarDeclCommaEnd]
+              ) [VarDeclLine]
+            ) [VarDeclLineListItem]
+            VarDeclLine(
+              VarDeclLineStart(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+              ) [VarDeclLineStart]
+              VarDeclCommaEnd(
+                VarDeclArray(
+                 x
+                ) [VarDeclArray]
+              ) [VarDeclCommaEnd]
+            ) [VarDeclLine]
+          ) [VarDeclLineListItem]
+          VarDeclLine(
+            VarDeclLineStart(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+            ) [VarDeclLineStart]
+            VarDeclCommaItem(
+              VarDeclScalar(
+               a
+              ) [VarDeclScalar]
+              VarDeclCommaItem(
+                VarDeclScalar(
+                 b
+                ) [VarDeclScalar]
+                VarDeclCommaEnd(
+                  VarDeclScalar(
+                   c
+                  ) [VarDeclScalar]
+                ) [VarDeclCommaEnd]
+              ) [VarDeclCommaItem]
+            ) [VarDeclCommaItem]
+          ) [VarDeclLine]
+        ) [VarDeclLineListItem]
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaEnd(
+            VarDeclArray(
+             y
+            ) [VarDeclArray]
+          ) [VarDeclCommaEnd]
+        ) [VarDeclLine]
+      ) [VarDeclLineListItem]
+      StatementListItem(
+        StatementListItem(
+          StatementListItem(
+            StatementListItem(
+              StatementListItem(
+                StatementListItem(
+                  StatementListItem(
+                    StatementListItem(
+                      StatementListItem(
+                        StatementListItem(
+                          StatementListItem(
+                            StatementListItem(
+                              StatementListItem(
+                                StatementListItem(
+                                  StatementListItem(
+                                    StatementListItem(
+                                      StatementListItem(
+                                        StatementListItem(
+                                          StatementListItem(
+                                            StatementListItem(
+                                              StatementListItem(
+                                                StatementListItem(
+                                                  StatementListItem(
+                                                    StatementListItem(
+                                                      StatementListItem(
+                                                        StatementListItem(
+                                                          StatementListItem(
+                                                            StatementListItem(
+                                                              StatementListItem(
+                                                                StatementListItem(
+                                                                  StatementListItem(
+                                                                    StatementListItem(
+                                                                      StatementListItem(
+                                                                        StatementListEnd(
+                                                                        ) [StatementListEnd]
+                                                                        StatementDesignatorStatement(
+                                                                          DesignatorStatementAssign(
+                                                                            DesignatorSimple(
+                                                                             users
+                                                                            ) [DesignatorSimple]
+                                                                            Assignop(
+                                                                            ) [Assignop]
+                                                                            ExprSingle(
+                                                                              TermSingle(
+                                                                                FactorArray(
+                                                                                  TypeSimple(
+                                                                                   User
+                                                                                  ) [TypeSimple]
+                                                                                  ExprSingle(
+                                                                                    TermSingle(
+                                                                                      FactorNum(
+                                                                                       15
+                                                                                      ) [FactorNum]
+                                                                                    ) [TermSingle]
+                                                                                  ) [ExprSingle]
+                                                                                ) [FactorArray]
+                                                                              ) [TermSingle]
+                                                                            ) [ExprSingle]
+                                                                          ) [DesignatorStatementAssign]
+                                                                        ) [StatementDesignatorStatement]
+                                                                      ) [StatementListItem]
+                                                                      StatementFor(
+                                                                        ForEntry(
+                                                                          DesignatorStatementCommaEnd(
+                                                                            DesignatorStatementAssign(
+                                                                              DesignatorSimple(
+                                                                               a
+                                                                              ) [DesignatorSimple]
+                                                                              Assignop(
+                                                                              ) [Assignop]
+                                                                              ExprSingle(
+                                                                                TermSingle(
+                                                                                  FactorNum(
+                                                                                   0
+                                                                                  ) [FactorNum]
+                                                                                ) [TermSingle]
+                                                                              ) [ExprSingle]
+                                                                            ) [DesignatorStatementAssign]
+                                                                          ) [DesignatorStatementCommaEnd]
+                                                                        ) [ForEntry]
+                                                                        ForConditionNonempty(
+                                                                          ConditionFactorRel(
+                                                                            ExprSingle(
+                                                                              TermSingle(
+                                                                                FactorDesignator(
+                                                                                  DesignatorSimple(
+                                                                                   a
+                                                                                  ) [DesignatorSimple]
+                                                                                ) [FactorDesignator]
+                                                                              ) [TermSingle]
+                                                                            ) [ExprSingle]
+                                                                            RelopLt(
+                                                                            ) [RelopLt]
+                                                                            ExprSingle(
+                                                                              TermSingle(
+                                                                                FactorNum(
+                                                                                 15
+                                                                                ) [FactorNum]
+                                                                              ) [TermSingle]
+                                                                            ) [ExprSingle]
+                                                                          ) [ConditionFactorRel]
+                                                                        ) [ForConditionNonempty]
+                                                                        ForExit(
+                                                                          DesignatorStatementCommaEnd(
+                                                                            DesignatorStatementInc(
+                                                                              DesignatorSimple(
+                                                                               a
+                                                                              ) [DesignatorSimple]
+                                                                            ) [DesignatorStatementInc]
+                                                                          ) [DesignatorStatementCommaEnd]
+                                                                        ) [ForExit]
+                                                                        StatementBlock(
+                                                                          StatementListItem(
+                                                                            StatementListItem(
+                                                                              StatementListItem(
+                                                                                StatementListEnd(
+                                                                                ) [StatementListEnd]
+                                                                                StatementDesignatorStatement(
+                                                                                  DesignatorStatementAssign(
+                                                                                    DesignatorSimple(
+                                                                                     t
+                                                                                    ) [DesignatorSimple]
+                                                                                    Assignop(
+                                                                                    ) [Assignop]
+                                                                                    ExprSingle(
+                                                                                      TermSingle(
+                                                                                        FactorChar(
+                                                                                         82
+                                                                                        ) [FactorChar]
+                                                                                      ) [TermSingle]
+                                                                                    ) [ExprSingle]
+                                                                                  ) [DesignatorStatementAssign]
+                                                                                ) [StatementDesignatorStatement]
+                                                                              ) [StatementListItem]
+                                                                              StatementUnmatchedIf(
+                                                                                IfConditionOk(
+                                                                                  ConditionSingle(
+                                                                                    ConditionTermSingle(
+                                                                                      ConditionFactorRel(
+                                                                                        ExprSingle(
+                                                                                          TermMul(
+                                                                                            TermSingle(
+                                                                                              FactorDesignator(
+                                                                                                DesignatorSimple(
+                                                                                                 a
+                                                                                                ) [DesignatorSimple]
+                                                                                              ) [FactorDesignator]
+                                                                                            ) [TermSingle]
+                                                                                            MulopMod(
+                                                                                            ) [MulopMod]
+                                                                                            FactorNum(
+                                                                                             5
+                                                                                            ) [FactorNum]
+                                                                                          ) [TermMul]
+                                                                                        ) [ExprSingle]
+                                                                                        RelopEq(
+                                                                                        ) [RelopEq]
+                                                                                        ExprSingle(
+                                                                                          TermSingle(
+                                                                                            FactorNum(
+                                                                                             0
+                                                                                            ) [FactorNum]
+                                                                                          ) [TermSingle]
+                                                                                        ) [ExprSingle]
+                                                                                      ) [ConditionFactorRel]
+                                                                                    ) [ConditionTermSingle]
+                                                                                  ) [ConditionSingle]
+                                                                                ) [IfConditionOk]
+                                                                                IfStatement(
+                                                                                  StatementDesignatorStatement(
+                                                                                    DesignatorStatementAssign(
+                                                                                      DesignatorSimple(
+                                                                                       t
+                                                                                      ) [DesignatorSimple]
+                                                                                      Assignop(
+                                                                                      ) [Assignop]
+                                                                                      ExprSingle(
+                                                                                        TermSingle(
+                                                                                          FactorChar(
+                                                                                           65
+                                                                                          ) [FactorChar]
+                                                                                        ) [TermSingle]
+                                                                                      ) [ExprSingle]
+                                                                                    ) [DesignatorStatementAssign]
+                                                                                  ) [StatementDesignatorStatement]
+                                                                                ) [IfStatement]
+                                                                              ) [StatementUnmatchedIf]
+                                                                            ) [StatementListItem]
+                                                                            StatementDesignatorStatement(
+                                                                              DesignatorStatementAssign(
+                                                                                DesignatorElem(
+                                                                                  DesignatorSimple(
+                                                                                   users
+                                                                                  ) [DesignatorSimple]
+                                                                                  ExprSingle(
+                                                                                    TermSingle(
+                                                                                      FactorDesignator(
+                                                                                        DesignatorSimple(
+                                                                                         a
+                                                                                        ) [DesignatorSimple]
+                                                                                      ) [FactorDesignator]
+                                                                                    ) [TermSingle]
+                                                                                  ) [ExprSingle]
+                                                                                ) [DesignatorElem]
+                                                                                Assignop(
+                                                                                ) [Assignop]
+                                                                                ExprSingle(
+                                                                                  TermSingle(
+                                                                                    FactorCons(
+                                                                                      ConstructorInvocation(
+                                                                                        TypeSimple(
+                                                                                         User
+                                                                                        ) [TypeSimple]
+                                                                                      ) [ConstructorInvocation]
+                                                                                      ActParsItem(
+                                                                                        ActParsEnd(
+                                                                                          ActPar(
+                                                                                            ExprSingle(
+                                                                                              TermSingle(
+                                                                                                FactorDesignator(
+                                                                                                  DesignatorSimple(
+                                                                                                   t
+                                                                                                  ) [DesignatorSimple]
+                                                                                                ) [FactorDesignator]
+                                                                                              ) [TermSingle]
+                                                                                            ) [ExprSingle]
+                                                                                          ) [ActPar]
+                                                                                        ) [ActParsEnd]
+                                                                                        ActPar(
+                                                                                          ExprSingle(
+                                                                                            TermSingle(
+                                                                                              FactorDesignator(
+                                                                                                DesignatorSimple(
+                                                                                                 a
+                                                                                                ) [DesignatorSimple]
+                                                                                              ) [FactorDesignator]
+                                                                                            ) [TermSingle]
+                                                                                          ) [ExprSingle]
+                                                                                        ) [ActPar]
+                                                                                      ) [ActParsItem]
+                                                                                    ) [FactorCons]
+                                                                                  ) [TermSingle]
+                                                                                ) [ExprSingle]
+                                                                              ) [DesignatorStatementAssign]
+                                                                            ) [StatementDesignatorStatement]
+                                                                          ) [StatementListItem]
+                                                                        ) [StatementBlock]
+                                                                      ) [StatementFor]
+                                                                    ) [StatementListItem]
+                                                                    StatementDesignatorStatement(
+                                                                      DesignatorStatementAssign(
+                                                                        DesignatorSimple(
+                                                                         a
+                                                                        ) [DesignatorSimple]
+                                                                        Assignop(
+                                                                        ) [Assignop]
+                                                                        ExprSingle(
+                                                                          TermSingle(
+                                                                            FactorMethod(
+                                                                              MethodInvocation(
+                                                                                DesignatorSimple(
+                                                                                 len
+                                                                                ) [DesignatorSimple]
+                                                                                ActParsEnd(
+                                                                                  ActPar(
+                                                                                    ExprSingle(
+                                                                                      TermSingle(
+                                                                                        FactorDesignator(
+                                                                                          DesignatorSimple(
+                                                                                           users
+                                                                                          ) [DesignatorSimple]
+                                                                                        ) [FactorDesignator]
+                                                                                      ) [TermSingle]
+                                                                                    ) [ExprSingle]
+                                                                                  ) [ActPar]
+                                                                                ) [ActParsEnd]
+                                                                              ) [MethodInvocation]
+                                                                            ) [FactorMethod]
+                                                                          ) [TermSingle]
+                                                                        ) [ExprSingle]
+                                                                      ) [DesignatorStatementAssign]
+                                                                    ) [StatementDesignatorStatement]
+                                                                  ) [StatementListItem]
+                                                                  StatementFor(
+                                                                    ForEntry(
+                                                                      DesignatorStatementCommaEnd(
+                                                                        DesignatorStatementDec(
+                                                                          DesignatorSimple(
+                                                                           a
+                                                                          ) [DesignatorSimple]
+                                                                        ) [DesignatorStatementDec]
+                                                                      ) [DesignatorStatementCommaEnd]
+                                                                    ) [ForEntry]
+                                                                    ForConditionNonempty(
+                                                                      ConditionFactorRel(
+                                                                        ExprSingle(
+                                                                          TermSingle(
+                                                                            FactorDesignator(
+                                                                              DesignatorSimple(
+                                                                               a
+                                                                              ) [DesignatorSimple]
+                                                                            ) [FactorDesignator]
+                                                                          ) [TermSingle]
+                                                                        ) [ExprSingle]
+                                                                        RelopGe(
+                                                                        ) [RelopGe]
+                                                                        ExprSingle(
+                                                                          TermSingle(
+                                                                            FactorNum(
+                                                                             0
+                                                                            ) [FactorNum]
+                                                                          ) [TermSingle]
+                                                                        ) [ExprSingle]
+                                                                      ) [ConditionFactorRel]
+                                                                    ) [ForConditionNonempty]
+                                                                    ForExit(
+                                                                      DesignatorStatementCommaEnd(
+                                                                        DesignatorStatementDec(
+                                                                          DesignatorSimple(
+                                                                           a
+                                                                          ) [DesignatorSimple]
+                                                                        ) [DesignatorStatementDec]
+                                                                      ) [DesignatorStatementCommaEnd]
+                                                                    ) [ForExit]
+                                                                    StatementBlock(
+                                                                      StatementListItem(
+                                                                        StatementListEnd(
+                                                                        ) [StatementListEnd]
+                                                                        StatementDesignatorStatement(
+                                                                          DesignatorStatementMethod(
+                                                                            MethodInvocation(
+                                                                              DesignatorField(
+                                                                                DesignatorElem(
+                                                                                  DesignatorSimple(
+                                                                                   users
+                                                                                  ) [DesignatorSimple]
+                                                                                  ExprSingle(
+                                                                                    TermSingle(
+                                                                                      FactorDesignator(
+                                                                                        DesignatorSimple(
+                                                                                         a
+                                                                                        ) [DesignatorSimple]
+                                                                                      ) [FactorDesignator]
+                                                                                    ) [TermSingle]
+                                                                                  ) [ExprSingle]
+                                                                                ) [DesignatorElem]
+                                                                               prnt
+                                                                              ) [DesignatorField]
+                                                                              ActParsEmpty(
+                                                                              ) [ActParsEmpty]
+                                                                            ) [MethodInvocation]
+                                                                          ) [DesignatorStatementMethod]
+                                                                        ) [StatementDesignatorStatement]
+                                                                      ) [StatementListItem]
+                                                                    ) [StatementBlock]
+                                                                  ) [StatementFor]
+                                                                ) [StatementListItem]
+                                                                StatementPrint(
+                                                                  ExprSingle(
+                                                                    TermSingle(
+                                                                      FactorChar(
+                                                                       82
+                                                                      ) [FactorChar]
+                                                                    ) [TermSingle]
+                                                                  ) [ExprSingle]
+                                                                ) [StatementPrint]
+                                                              ) [StatementListItem]
+                                                              StatementPrint(
+                                                                ExprSingle(
+                                                                  TermSingle(
+                                                                    FactorChar(
+                                                                     58
+                                                                    ) [FactorChar]
+                                                                  ) [TermSingle]
+                                                                ) [ExprSingle]
+                                                              ) [StatementPrint]
+                                                            ) [StatementListItem]
+                                                            StatementPrint(
+                                                              ExprSingle(
+                                                                TermSingle(
+                                                                  FactorDesignator(
+                                                                    DesignatorField(
+                                                                      DesignatorSimple(
+                                                                       User
+                                                                      ) [DesignatorSimple]
+                                                                     regularCnt
+                                                                    ) [DesignatorField]
+                                                                  ) [FactorDesignator]
+                                                                ) [TermSingle]
+                                                              ) [ExprSingle]
+                                                            ) [StatementPrint]
+                                                          ) [StatementListItem]
+                                                          StatementPrint(
+                                                            ExprSingle(
+                                                              TermSingle(
+                                                                FactorDesignator(
+                                                                  DesignatorSimple(
+                                                                   eol
+                                                                  ) [DesignatorSimple]
+                                                                ) [FactorDesignator]
+                                                              ) [TermSingle]
+                                                            ) [ExprSingle]
+                                                          ) [StatementPrint]
+                                                        ) [StatementListItem]
+                                                        StatementPrint(
+                                                          ExprSingle(
+                                                            TermSingle(
+                                                              FactorChar(
+                                                               65
+                                                              ) [FactorChar]
+                                                            ) [TermSingle]
+                                                          ) [ExprSingle]
+                                                        ) [StatementPrint]
+                                                      ) [StatementListItem]
+                                                      StatementPrint(
+                                                        ExprSingle(
+                                                          TermSingle(
+                                                            FactorChar(
+                                                             58
+                                                            ) [FactorChar]
+                                                          ) [TermSingle]
+                                                        ) [ExprSingle]
+                                                      ) [StatementPrint]
+                                                    ) [StatementListItem]
+                                                    StatementPrint(
+                                                      ExprSingle(
+                                                        TermSingle(
+                                                          FactorDesignator(
+                                                            DesignatorField(
+                                                              DesignatorSimple(
+                                                               User
+                                                              ) [DesignatorSimple]
+                                                             adminCnt
+                                                            ) [DesignatorField]
+                                                          ) [FactorDesignator]
+                                                        ) [TermSingle]
+                                                      ) [ExprSingle]
+                                                    ) [StatementPrint]
+                                                  ) [StatementListItem]
+                                                  StatementPrint(
+                                                    ExprSingle(
+                                                      TermSingle(
+                                                        FactorDesignator(
+                                                          DesignatorSimple(
+                                                           eol
+                                                          ) [DesignatorSimple]
+                                                        ) [FactorDesignator]
+                                                      ) [TermSingle]
+                                                    ) [ExprSingle]
+                                                  ) [StatementPrint]
+                                                ) [StatementListItem]
+                                                StatementPrint(
+                                                  ExprSingle(
+                                                    TermSingle(
+                                                      FactorChar(
+                                                       45
+                                                      ) [FactorChar]
+                                                    ) [TermSingle]
+                                                  ) [ExprSingle]
+                                                ) [StatementPrint]
+                                              ) [StatementListItem]
+                                              StatementPrint(
+                                                ExprSingle(
+                                                  TermSingle(
+                                                    FactorChar(
+                                                     45
+                                                    ) [FactorChar]
+                                                  ) [TermSingle]
+                                                ) [ExprSingle]
+                                              ) [StatementPrint]
+                                            ) [StatementListItem]
+                                            StatementPrint(
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorChar(
+                                                   10
+                                                  ) [FactorChar]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [StatementPrint]
+                                          ) [StatementListItem]
+                                          StatementDesignatorStatement(
+                                            DesignatorStatementAssign(
+                                              DesignatorSimple(
+                                               a
+                                              ) [DesignatorSimple]
+                                              Assignop(
+                                              ) [Assignop]
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorNum(
+                                                   0
+                                                  ) [FactorNum]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [DesignatorStatementAssign]
+                                          ) [StatementDesignatorStatement]
+                                        ) [StatementListItem]
+                                        StatementDesignatorStatement(
+                                          DesignatorStatementAssign(
+                                            DesignatorSimple(
+                                             b
+                                            ) [DesignatorSimple]
+                                            Assignop(
+                                            ) [Assignop]
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNum(
+                                                 0
+                                                ) [FactorNum]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [DesignatorStatementAssign]
+                                        ) [StatementDesignatorStatement]
+                                      ) [StatementListItem]
+                                      StatementDesignatorStatement(
+                                        DesignatorStatementAssign(
+                                          DesignatorSimple(
+                                           c
+                                          ) [DesignatorSimple]
+                                          Assignop(
+                                          ) [Assignop]
+                                          ExprSingle(
+                                            TermSingle(
+                                              FactorNum(
+                                               0
+                                              ) [FactorNum]
+                                            ) [TermSingle]
+                                          ) [ExprSingle]
+                                        ) [DesignatorStatementAssign]
+                                      ) [StatementDesignatorStatement]
+                                    ) [StatementListItem]
+                                    StatementDesignatorStatement(
+                                      DesignatorStatementAssign(
+                                        DesignatorSimple(
+                                         x
+                                        ) [DesignatorSimple]
+                                        Assignop(
+                                        ) [Assignop]
+                                        ExprSingle(
+                                          TermSingle(
+                                            FactorArray(
+                                              TypeSimple(
+                                               int
+                                              ) [TypeSimple]
+                                              ExprSingle(
+                                                TermSingle(
+                                                  FactorNum(
+                                                   6
+                                                  ) [FactorNum]
+                                                ) [TermSingle]
+                                              ) [ExprSingle]
+                                            ) [FactorArray]
+                                          ) [TermSingle]
+                                        ) [ExprSingle]
+                                      ) [DesignatorStatementAssign]
+                                    ) [StatementDesignatorStatement]
+                                  ) [StatementListItem]
+                                  StatementDesignatorStatement(
+                                    DesignatorStatementAssign(
+                                      DesignatorSimple(
+                                       y
+                                      ) [DesignatorSimple]
+                                      Assignop(
+                                      ) [Assignop]
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorArray(
+                                            TypeSimple(
+                                             int
+                                            ) [TypeSimple]
+                                            ExprSingle(
+                                              TermSingle(
+                                                FactorNum(
+                                                 2
+                                                ) [FactorNum]
+                                              ) [TermSingle]
+                                            ) [ExprSingle]
+                                          ) [FactorArray]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [DesignatorStatementAssign]
+                                  ) [StatementDesignatorStatement]
+                                ) [StatementListItem]
+                                StatementDesignatorStatement(
+                                  DesignatorStatementAssign(
+                                    DesignatorElem(
+                                      DesignatorSimple(
+                                       x
+                                      ) [DesignatorSimple]
+                                      ExprSingle(
+                                        TermSingle(
+                                          FactorNum(
+                                           0
+                                          ) [FactorNum]
+                                        ) [TermSingle]
+                                      ) [ExprSingle]
+                                    ) [DesignatorElem]
+                                    Assignop(
+                                    ) [Assignop]
+                                    ExprSingle(
+                                      TermSingle(
+                                        FactorNum(
+                                         1
+                                        ) [FactorNum]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [DesignatorStatementAssign]
+                                ) [StatementDesignatorStatement]
+                              ) [StatementListItem]
+                              StatementDesignatorStatement(
+                                DesignatorStatementAssign(
+                                  DesignatorElem(
+                                    DesignatorSimple(
+                                     x
+                                    ) [DesignatorSimple]
+                                    ExprSingle(
+                                      TermSingle(
+                                        FactorNum(
+                                         1
+                                        ) [FactorNum]
+                                      ) [TermSingle]
+                                    ) [ExprSingle]
+                                  ) [DesignatorElem]
+                                  Assignop(
+                                  ) [Assignop]
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorNum(
+                                       2
+                                      ) [FactorNum]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                ) [DesignatorStatementAssign]
+                              ) [StatementDesignatorStatement]
+                            ) [StatementListItem]
+                            StatementDesignatorStatement(
+                              DesignatorStatementAssign(
+                                DesignatorElem(
+                                  DesignatorSimple(
+                                   x
+                                  ) [DesignatorSimple]
+                                  ExprSingle(
+                                    TermSingle(
+                                      FactorNum(
+                                       2
+                                      ) [FactorNum]
+                                    ) [TermSingle]
+                                  ) [ExprSingle]
+                                ) [DesignatorElem]
+                                Assignop(
+                                ) [Assignop]
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorNum(
+                                     3
+                                    ) [FactorNum]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [DesignatorStatementAssign]
+                            ) [StatementDesignatorStatement]
+                          ) [StatementListItem]
+                          StatementDesignatorStatement(
+                            DesignatorStatementAssign(
+                              DesignatorElem(
+                                DesignatorSimple(
+                                 x
+                                ) [DesignatorSimple]
+                                ExprSingle(
+                                  TermSingle(
+                                    FactorNum(
+                                     3
+                                    ) [FactorNum]
+                                  ) [TermSingle]
+                                ) [ExprSingle]
+                              ) [DesignatorElem]
+                              Assignop(
+                              ) [Assignop]
+                              ExprSingle(
+                                TermSingle(
+                                  FactorNum(
+                                   4
+                                  ) [FactorNum]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [DesignatorStatementAssign]
+                          ) [StatementDesignatorStatement]
+                        ) [StatementListItem]
+                        StatementDesignatorStatement(
+                          DesignatorStatementAssign(
+                            DesignatorElem(
+                              DesignatorSimple(
+                               x
+                              ) [DesignatorSimple]
+                              ExprSingle(
+                                TermSingle(
+                                  FactorNum(
+                                   4
+                                  ) [FactorNum]
+                                ) [TermSingle]
+                              ) [ExprSingle]
+                            ) [DesignatorElem]
+                            Assignop(
+                            ) [Assignop]
+                            ExprSingle(
+                              TermSingle(
+                                FactorNum(
+                                 5
+                                ) [FactorNum]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [DesignatorStatementAssign]
+                        ) [StatementDesignatorStatement]
+                      ) [StatementListItem]
+                      StatementDesignatorStatement(
+                        DesignatorStatementAssign(
+                          DesignatorElem(
+                            DesignatorSimple(
+                             x
+                            ) [DesignatorSimple]
+                            ExprSingle(
+                              TermSingle(
+                                FactorNum(
+                                 5
+                                ) [FactorNum]
+                              ) [TermSingle]
+                            ) [ExprSingle]
+                          ) [DesignatorElem]
+                          Assignop(
+                          ) [Assignop]
+                          ExprSingle(
+                            TermSingle(
+                              FactorNum(
+                               6
+                              ) [FactorNum]
+                            ) [TermSingle]
+                          ) [ExprSingle]
+                        ) [DesignatorStatementAssign]
+                      ) [StatementDesignatorStatement]
+                    ) [StatementListItem]
+                    StatementDesignatorStatement(
+                      DesignatorStatementMultipleAssign(
+                        DesignatorCommaItem(
+                          DesignatorCommaEmptyItem(
+                            DesignatorCommaItem(
+                              DesignatorCommaEnd(
+                              ) [DesignatorCommaEnd]
+                              DesignatorSimple(
+                               a
+                              ) [DesignatorSimple]
+                            ) [DesignatorCommaItem]
+                          ) [DesignatorCommaEmptyItem]
+                          DesignatorSimple(
+                           c
+                          ) [DesignatorSimple]
+                        ) [DesignatorCommaItem]
+                        DesignatorSimple(
+                         y
+                        ) [DesignatorSimple]
+                        DesignatorSimple(
+                         x
+                        ) [DesignatorSimple]
+                      ) [DesignatorStatementMultipleAssign]
+                    ) [StatementDesignatorStatement]
+                  ) [StatementListItem]
+                  StatementPrint(
+                    ExprSingle(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorSimple(
+                           a
+                          ) [DesignatorSimple]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [StatementPrint]
+                ) [StatementListItem]
+                StatementPrint(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         b
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [StatementPrint]
+              ) [StatementListItem]
+              StatementPrint(
+                ExprSingle(
+                  TermSingle(
+                    FactorDesignator(
+                      DesignatorSimple(
+                       c
+                      ) [DesignatorSimple]
+                    ) [FactorDesignator]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [StatementPrint]
+            ) [StatementListItem]
+            StatementPrint(
+              ExprSingle(
+                TermSingle(
+                  FactorDesignator(
+                    DesignatorElem(
+                      DesignatorSimple(
+                       y
+                      ) [DesignatorSimple]
+                      ExprSingle(
+                        TermSingle(
+                          FactorNum(
+                           0
+                          ) [FactorNum]
+                        ) [TermSingle]
+                      ) [ExprSingle]
+                    ) [DesignatorElem]
+                  ) [FactorDesignator]
+                ) [TermSingle]
+              ) [ExprSingle]
+            ) [StatementPrint]
+          ) [StatementListItem]
+          StatementPrint(
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorElem(
+                    DesignatorSimple(
+                     y
+                    ) [DesignatorSimple]
+                    ExprSingle(
+                      TermSingle(
+                        FactorNum(
+                         1
+                        ) [FactorNum]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [DesignatorElem]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [StatementPrint]
+        ) [StatementListItem]
+        StatementDesignatorStatement(
+          DesignatorStatementMultipleAssign(
+            DesignatorCommaItem(
+              DesignatorCommaItem(
+                DesignatorCommaItem(
+                  DesignatorCommaEnd(
+                  ) [DesignatorCommaEnd]
+                  DesignatorSimple(
+                   a
+                  ) [DesignatorSimple]
+                ) [DesignatorCommaItem]
+                DesignatorSimple(
+                 b
+                ) [DesignatorSimple]
+              ) [DesignatorCommaItem]
+              DesignatorSimple(
+               c
+              ) [DesignatorSimple]
+            ) [DesignatorCommaItem]
+            DesignatorSimple(
+             x
+            ) [DesignatorSimple]
+            DesignatorSimple(
+             y
+            ) [DesignatorSimple]
+          ) [DesignatorStatementMultipleAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  03:22:26,650 - ===========================================================
+INFO  03:22:26,657 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,657 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,658 - Trazi se regularCnt - Var regularCnt: int, 0, 0, -1
+INFO  03:22:26,658 - Trazi se adminCnt - Var adminCnt: int, 1, 0, -1
+INFO  03:22:26,658 - Trazi se char - Type char: char, -1, -1, 0
+INFO  03:22:26,658 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,658 - Trazi se char - Type char: char, -1, -1, 0
+INFO  03:22:26,658 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,658 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  03:22:26,658 - Trazi se type - Var type: char, 1, 1, 0
+INFO  03:22:26,658 - Trazi se password - Fld password: int, 2, 1, -1
+INFO  03:22:26,658 - Trazi se pass - Var pass: int, 2, 1, 0
+INFO  03:22:26,658 - Trazi se type - Var type: char, 1, 1, 0
+INFO  03:22:26,659 - Trazi se adminCnt - Var adminCnt: int, 1, 0, -1
+INFO  03:22:26,659 - Trazi se regularCnt - Var regularCnt: int, 0, 0, -1
+INFO  03:22:26,659 - Trazi se type - Fld type: char, 1, 1, -1
+INFO  03:22:26,659 - Trazi se password - Fld password: int, 2, 1, -1
+INFO  03:22:26,659 - Trazi se User - Type User: Class, 2, 0, 2
+INFO  03:22:26,659 - Trazi se char - Type char: char, -1, -1, 0
+INFO  03:22:26,659 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,659 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,660 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,660 - Trazi se users - Var users: Arr of Class, 0, 1, 1
+INFO  03:22:26,660 - Trazi se User - Type User: Class, 2, 0, 2
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,660 - Trazi se t - Var t: char, 1, 1, 1
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,660 - Trazi se t - Var t: char, 1, 1, 1
+INFO  03:22:26,660 - Trazi se users - Var users: Arr of Class, 0, 1, 1
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,660 - Trazi se User - Type User: Class, 2, 0, 2
+INFO  03:22:26,660 - Trazi se t - Var t: char, 1, 1, 1
+INFO  03:22:26,660 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se len - Meth len: int, -1, 0, 0
+INFO  03:22:26,661 - Trazi se users - Var users: Arr of Class, 0, 1, 1
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se users - Var users: Arr of Class, 0, 1, 1
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se User - Type User: Class, 2, 0, 2
+INFO  03:22:26,661 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  03:22:26,661 - Trazi se User - Type User: Class, 2, 0, 2
+INFO  03:22:26,661 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  03:22:26,661 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,661 - Trazi se b - Var b: int, 4, 1, 1
+INFO  03:22:26,661 - Trazi se c - Var c: int, 5, 1, 1
+INFO  03:22:26,661 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,661 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,661 - Trazi se y - Var y: Arr of int, 6, 1, 1
+INFO  03:22:26,661 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:22:26,661 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,661 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,661 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,661 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,662 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,662 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,662 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,662 - Trazi se c - Var c: int, 5, 1, 1
+INFO  03:22:26,662 - Trazi se y - Var y: Arr of int, 6, 1, 1
+INFO  03:22:26,662 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,662 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,662 - Trazi se b - Var b: int, 4, 1, 1
+INFO  03:22:26,662 - Trazi se c - Var c: int, 5, 1, 1
+INFO  03:22:26,662 - Trazi se y - Var y: Arr of int, 6, 1, 1
+INFO  03:22:26,662 - Trazi se y - Var y: Arr of int, 6, 1, 1
+INFO  03:22:26,662 - Trazi se a - Var a: int, 3, 1, 1
+INFO  03:22:26,662 - Trazi se b - Var b: int, 4, 1, 1
+INFO  03:22:26,662 - Trazi se c - Var c: int, 5, 1, 1
+INFO  03:22:26,662 - Trazi se x - Var x: Arr of int, 2, 1, 1
+INFO  03:22:26,662 - Trazi se y - Var y: Arr of int, 6, 1, 1
+INFO  03:22:26,662 - ===========================================================
+INFO  03:22:26,662 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Type User: Class, 2, 0, 2
+      Var regularCnt: int, 0, 0, -1
+      Var adminCnt: int, 1, 0, -1
+      Fld type: char, 1, 1, -1
+      Fld password: int, 2, 1, -1
+      Meth __constructor0: notype, -1, 0, 3
+         Var this: Class, 0, 1, 0
+         Var type: char, 1, 1, 0
+         Var pass: int, 2, 1, 0
+
+      Meth prnt: notype, -1, 1, 1
+         Var this: Class, 0, 1, 0
+
+
+   Meth main: notype, -1, 0, 0
+      Var users: Arr of Class, 0, 1, 1
+      Var t: char, 1, 1, 1
+      Var x: Arr of int, 2, 1, 1
+      Var a: int, 3, 1, 1
+      Var b: int, 4, 1, 1
+      Var c: int, 5, 1, 1
+      Var y: Arr of int, 6, 1, 1
+
+
+
+INFO  03:22:26,662 - ===========================================================
+INFO  03:22:26,665 - Objektni fajl je uspesno generisan!

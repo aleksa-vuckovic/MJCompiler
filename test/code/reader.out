@@ -1186,5 +1186,60 @@ INFO  03:25:57,737 - Trazi se input - Var input: Class, 1, 1, 1
 INFO  03:25:57,737 - Trazi se prompt - Var prompt: Class, 0, 1, 1
 INFO  03:25:57,737 - ===========================================================
 INFO  03:25:57,737 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Type String: Class, 1, 0, 2
+      Var max: int, 0, 0, -1
+      Fld val: Arr of char, 1, 1, -1
+      Fld len: int, 2, 1, -1
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+      Meth addChar: notype, -1, 1, 2
+         Var this: Class, 0, 1, 0
+         Var c: char, 1, 1, 0
+
+      Meth add2Chars: notype, -1, 1, 3
+         Var this: Class, 0, 1, 0
+         Var c1: char, 1, 1, 0
+         Var c2: char, 2, 1, 0
+
+      Meth add3Chars: notype, -1, 1, 4
+         Var this: Class, 0, 1, 0
+         Var c1: char, 1, 1, 0
+         Var c2: char, 2, 1, 0
+         Var c3: char, 3, 1, 0
+
+      Meth prnt: notype, -1, 1, 1
+         Var this: Class, 0, 1, 0
+         Var i: int, 1, 1, 1
+
+      Meth clear: notype, -1, 1, 1
+         Var this: Class, 0, 1, 0
+
+
+   Meth main: notype, -1, 0, 0
+      Var prompt: Class, 0, 1, 1
+      Var input: Class, 1, 1, 1
+      Var x: char, 2, 1, 1
+
+
+
 INFO  03:25:57,737 - ===========================================================
 INFO  03:25:57,740 - Objektni fajl je uspesno generisan!

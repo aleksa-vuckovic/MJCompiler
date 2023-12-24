@@ -31,6 +31,10 @@ public class MyTab extends Tab {
 	public static void init() {
 		Tab.init();
 		currentScope.addToLocals(new Obj(Obj.Type, "bool", boolType, 0, 0));
+		
+		Tab.lenObj.setLevel(0); Tab.lenObj.setFpPos(0); Tab.lenObj.setAdr(Obj.NO_VALUE);
+		Tab.chrObj.setLevel(0); Tab.chrObj.setFpPos(0); Tab.chrObj.setAdr(Obj.NO_VALUE);
+		Tab.ordObj.setLevel(0); Tab.ordObj.setFpPos(0); Tab.ordObj.setAdr(Obj.NO_VALUE);
 	}
 	public static void openScopeAndChain(Obj obj) {
 		openScope();

@@ -60,7 +60,9 @@ public class Utils {
 			if (param == null && type != null) return false;
 			if (param != null && type == null) return false;
 			if (param == null && type == null) return true;
-			if (!assignableTo(type, param.getType())) return false;
+			if (!assignableTo(type, param.getType())) {
+				return false;
+			}
 		}
 	}
 	

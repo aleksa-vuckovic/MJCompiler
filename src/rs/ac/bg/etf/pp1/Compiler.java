@@ -23,10 +23,11 @@ public class Compiler {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Logger log = Logger.getLogger(MJParserTest.class);
-		File sourceCode = new File(args[1]);
-		File objFile = new File(args[2]);
+		Logger log = Logger.getLogger(Compiler.class);
+		File sourceCode = new File(args[0]);
+		File objFile = new File(args[1]);
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
+		log.info("Output file: " + objFile.getAbsolutePath());
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(sourceCode));) {
 			

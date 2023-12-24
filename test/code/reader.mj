@@ -1,8 +1,13 @@
+/*
+	Testira citanje sa ulaza.
+	Ocekivano ponasanje: Korisnik na prompt (>>>) unosi tekst do 30 karaktera, i pritiskom
+						 enter karakteri se ispisuju ponovo u narednoj liniji.
+*/
 program MJProgram
 	class String {
 		static int max;
 		static {
-			max = 10;
+			max = 31;
 		}
 		
 		char val[];

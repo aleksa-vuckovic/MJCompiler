@@ -1,0 +1,337 @@
+INFO  03:18:59,710 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.mj
+INFO  03:18:59,711 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.obj
+INFO  03:18:59,750 - Parser je ucitao token:#2 -> program
+INFO  03:18:59,750 - Parser je ucitao token:#45 -> MJProgram
+INFO  03:18:59,750 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,752 - Parser je ucitao token:#45 -> a
+INFO  03:18:59,753 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,754 - Parser je ucitao token:#45 -> b
+INFO  03:18:59,754 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,754 - Parser je ucitao token:#30 -> *
+ERROR 03:18:59,754 - Parser report - Linija 4, kolona 10 (*): Sintaksna greska.
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> err
+INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> c
+INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> d
+INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> e
+INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,757 - Parser je ucitao token:#30 -> *
+ERROR 03:18:59,757 - Parser report - Linija 4, kolona 25 (*): Sintaksna greska.
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> err2
+INFO  03:18:59,757 - Parser je ucitao token:#26 -> ;
+INFO  03:18:59,757 - Parser je ucitao token:#3 -> class
+INFO  03:18:59,757 - Parser je ucitao token:#45 -> MyClass
+INFO  03:18:59,757 - Parser je ucitao token:#5 -> extends
+ERROR 03:18:59,757 - Parser report: Izvrsen oporavak var deklaracije do ';' u liniji 4 i koloni 23.
+ERROR 03:18:59,759 - Parser report: Izvrsen oporavak var deklaracije do ',' u liniji 4 i koloni 14.
+INFO  03:18:59,759 - Parser je ucitao token:#18 -> (
+ERROR 03:18:59,759 - Parser report - Linija 7, kolona 22 ((): Sintaksna greska.
+INFO  03:18:59,759 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,759 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,759 - Parser je ucitao token:#7 -> static
+INFO  03:18:59,759 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,759 - Parser je ucitao token:#45 -> a
+ERROR 03:18:59,759 - Parser report: Izvrsen oporavak deklaracije izvodjenja do '{' u liniji 7 i koloni 14.
+INFO  03:18:59,761 - Parser je ucitao token:#26 -> ;
+INFO  03:18:59,761 - Parser je ucitao token:#44 -> 12
+ERROR 03:18:59,761 - Parser report - Linija 12, kolona 1 (12): Sintaksna greska.
+INFO  03:18:59,761 - Parser je ucitao token:#45 -> err
+INFO  03:18:59,761 - Parser je ucitao token:#45 -> field
+INFO  03:18:59,761 - Parser je ucitao token:#26 -> ;
+INFO  03:18:59,761 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,761 - Parser je ucitao token:#6 -> void
+INFO  03:18:59,761 - Parser je ucitao token:#45 -> f
+INFO  03:18:59,761 - Parser je ucitao token:#18 -> (
+ERROR 03:18:59,762 - Parser report: Izvrsen oporavak deklaracije polja do '{' u liniji 9 i koloni 13.
+INFO  03:18:59,763 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,763 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,764 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,766 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,766 - Parser je ucitao token:#6 -> void
+INFO  03:18:59,766 - Parser je ucitao token:#45 -> f
+INFO  03:18:59,766 - Parser je ucitao token:#18 -> (
+INFO  03:18:59,766 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,766 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,766 - Parser je ucitao token:#45 -> a
+INFO  03:18:59,766 - Parser je ucitao token:#41 -> =
+INFO  03:18:59,766 - Parser je ucitao token:#28 -> +
+ERROR 03:18:59,766 - Parser report - Linija 27, kolona 6 (+): Sintaksna greska.
+INFO  03:18:59,766 - Parser je ucitao token:#44 -> 3
+INFO  03:18:59,766 - Parser je ucitao token:#26 -> ;
+INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,767 - Parser je ucitao token:#6 -> void
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> tmp
+ERROR 03:18:59,767 - Parser report: Izvrsen oporavak naredbe dodele u liniji 27 i koloni 4.
+INFO  03:18:59,767 - Parser je ucitao token:#18 -> (
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> a
+INFO  03:18:59,767 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,767 - Parser je ucitao token:#31 -> /
+ERROR 03:18:59,767 - Parser report - Linija 33, kolona 21 (/): Sintaksna greska.
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> err
+INFO  03:18:59,767 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,767 - Parser je ucitao token:#45 -> b
+INFO  03:18:59,768 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,768 - Parser je ucitao token:#45 -> int
+INFO  03:18:59,768 - Parser je ucitao token:#45 -> c
+INFO  03:18:59,768 - Parser je ucitao token:#25 -> ,
+INFO  03:18:59,768 - Parser je ucitao token:#28 -> +
+ERROR 03:18:59,768 - Parser report - Linija 33, kolona 41 (+): Sintaksna greska.
+INFO  03:18:59,769 - Parser je ucitao token:#45 -> err
+INFO  03:18:59,769 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,769 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,769 - Parser je ucitao token:#15 -> if
+INFO  03:18:59,769 - Parser je ucitao token:#18 -> (
+ERROR 03:18:59,769 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji 33 i koloni 39.
+ERROR 03:18:59,769 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji 33 i koloni 25.
+INFO  03:18:59,769 - Parser je ucitao token:#45 -> b
+INFO  03:18:59,769 - Parser je ucitao token:#37 -> <
+INFO  03:18:59,769 - Parser je ucitao token:#32 -> %
+ERROR 03:18:59,769 - Parser report - Linija 36, kolona 10 (%): Sintaksna greska.
+INFO  03:18:59,769 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,769 - Parser je ucitao token:#20 -> {
+INFO  03:18:59,769 - Parser je ucitao token:#12 -> print
+INFO  03:18:59,769 - Parser je ucitao token:#18 -> (
+ERROR 03:18:59,769 - Parser report: Izvrsen oporavak if uslova do ')' u liniji 36 i koloni 8.
+INFO  03:18:59,771 - Parser je ucitao token:#45 -> b
+INFO  03:18:59,771 - Parser je ucitao token:#19 -> )
+INFO  03:18:59,771 - Parser je ucitao token:#26 -> ;
+INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
+INFO  03:18:59,771 - Parser je ucitao token:#0 -> EOF
+INFO  03:18:59,771 - Parser je ucitao token:#0 -> EOF
+INFO  03:18:59,771 - ===========================================================
+INFO  03:18:59,771 - APSTRAKTNO SINTAKSNO STABLO
+INFO  03:18:59,773 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListEnd(
+  ) [NamespaceListEnd]
+  DeclListItem(
+    DeclListItem(
+      DeclListEnd(
+      ) [DeclListEnd]
+      DeclVar(
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaItem(
+            VarDeclScalar(
+             a
+            ) [VarDeclScalar]
+            VarDeclCommaItem(
+              VarDeclScalar(
+               b
+              ) [VarDeclScalar]
+              VarDeclCommaItemError(
+                VarDeclCommaItem(
+                  VarDeclScalar(
+                   c
+                  ) [VarDeclScalar]
+                  VarDeclCommaItem(
+                    VarDeclScalar(
+                     d
+                    ) [VarDeclScalar]
+                    VarDeclCommaItem(
+                      VarDeclScalar(
+                       e
+                      ) [VarDeclScalar]
+                      VarDeclCommaEndError(
+                      ) [VarDeclCommaEndError]
+                    ) [VarDeclCommaItem]
+                  ) [VarDeclCommaItem]
+                ) [VarDeclCommaItem]
+              ) [VarDeclCommaItemError]
+            ) [VarDeclCommaItem]
+          ) [VarDeclCommaItem]
+        ) [VarDeclLine]
+      ) [DeclVar]
+    ) [DeclListItem]
+    DeclClass(
+      ClassDecl(
+        ClassNameExtendError(
+         MyClass
+        ) [ClassNameExtendError]
+        StaticMemberListEnd(
+        ) [StaticMemberListEnd]
+        ClassVarDeclError(
+        ) [ClassVarDeclError]
+        MethodsNonempty(
+          MethodListItem(
+            MethodListEnd(
+            ) [MethodListEnd]
+            Method(
+              MethodDeclaration(
+                MethodNameVoid(
+                 f
+                ) [MethodNameVoid]
+                FormalParamCommaEmpty(
+                ) [FormalParamCommaEmpty]
+              ) [MethodDeclaration]
+              VarDeclLineListEnd(
+              ) [VarDeclLineListEnd]
+              StatementListEnd(
+              ) [StatementListEnd]
+            ) [Method]
+          ) [MethodListItem]
+        ) [MethodsNonempty]
+      ) [ClassDecl]
+    ) [DeclClass]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListItem(
+      MethodListEnd(
+      ) [MethodListEnd]
+      Method(
+        MethodDeclaration(
+          MethodNameVoid(
+           f
+          ) [MethodNameVoid]
+          FormalParamCommaEmpty(
+          ) [FormalParamCommaEmpty]
+        ) [MethodDeclaration]
+        VarDeclLineListEnd(
+        ) [VarDeclLineListEnd]
+        StatementListItem(
+          StatementListEnd(
+          ) [StatementListEnd]
+          StatementDesignatorStatement(
+            DesignatorStatementAssignError(
+              DesignatorSimple(
+               a
+              ) [DesignatorSimple]
+            ) [DesignatorStatementAssignError]
+          ) [StatementDesignatorStatement]
+        ) [StatementListItem]
+      ) [Method]
+    ) [MethodListItem]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         tmp
+        ) [MethodNameVoid]
+        FormalParamCommaItem(
+          FormalParamScalar(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+           a
+          ) [FormalParamScalar]
+          FormalParamCommaItemError(
+            FormalParamCommaItem(
+              FormalParamScalar(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+               b
+              ) [FormalParamScalar]
+              FormalParamCommaItem(
+                FormalParamScalar(
+                  TypeSimple(
+                   int
+                  ) [TypeSimple]
+                 c
+                ) [FormalParamScalar]
+                FormalParamCommaEndError(
+                ) [FormalParamCommaEndError]
+              ) [FormalParamCommaItem]
+            ) [FormalParamCommaItem]
+          ) [FormalParamCommaItemError]
+        ) [FormalParamCommaItem]
+      ) [MethodDeclaration]
+      VarDeclLineListEnd(
+      ) [VarDeclLineListEnd]
+      StatementListItem(
+        StatementListEnd(
+        ) [StatementListEnd]
+        StatementUnmatchedIf(
+          IfConditionError(
+          ) [IfConditionError]
+          IfStatement(
+            StatementBlock(
+              StatementListItem(
+                StatementListEnd(
+                ) [StatementListEnd]
+                StatementPrint(
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorSimple(
+                         b
+                        ) [DesignatorSimple]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [StatementPrint]
+              ) [StatementListItem]
+            ) [StatementBlock]
+          ) [IfStatement]
+        ) [StatementUnmatchedIf]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  03:18:59,773 - ===========================================================
+INFO  03:18:59,773 - Parser je detektovao greske. Preskace se generisanje koda.
+INFO  03:18:59,781 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:18:59,782 - Trazi se a - Var a: int, 0, 0, -1
+INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:18:59,782 - Trazi se b - Var b: int, 1, 1, 0
+ERROR 03:18:59,782 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
+INFO  03:18:59,782 - ===========================================================
+INFO  03:18:59,782 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Var a: int, 0, 0, -1
+   Var b: int, 1, 0, -1
+   Var c: int, 2, 0, -1
+   Var d: int, 3, 0, -1
+   Var e: int, 4, 0, -1
+   Type MyClass: Class, 5, 0, 0
+      Meth f: notype, -1, 1, 1
+         Var this: Class, 0, 1, 0
+
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+
+   Meth f: notype, -1, 0, 0
+
+   Meth tmp: notype, -1, 0, 3
+      Var a: int, 0, 1, 0
+      Var b: int, 1, 1, 0
+      Var c: int, 2, 1, 0
+
+
+
+INFO  03:18:59,783 - ===========================================================
+INFO  03:18:59,783 - Semanticki analizator je detektovao greske. Preskace se generisanje koda

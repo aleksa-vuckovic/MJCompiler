@@ -1,3 +1,6 @@
+/*
+Testira izvodjenje i polimorfizam.
+*/
 program MJProgram
 
 	namespace colors {
@@ -128,3 +131,8 @@ program MJProgram
 		return;
 	}
 }
+/*
+Ocekivani izlaz:
+     [java] C(KIA,Red)
+     [java] B(Mercedes,Yellow)
+*/

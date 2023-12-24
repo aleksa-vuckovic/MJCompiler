@@ -1,0 +1,384 @@
+INFO  03:21:17,844 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.mj
+INFO  03:21:17,844 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.obj
+INFO  03:21:17,886 - Parser je ucitao token:#2 -> program
+INFO  03:21:17,886 - Parser je ucitao token:#45 -> MJProgram
+INFO  03:21:17,886 - Parser je ucitao token:#4 -> namespace
+INFO  03:21:17,887 - Parser je ucitao token:#45 -> data
+INFO  03:21:17,887 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,888 - Parser je ucitao token:#8 -> const
+INFO  03:21:17,889 - Parser je ucitao token:#45 -> int
+INFO  03:21:17,894 - Parser je ucitao token:#45 -> max
+INFO  03:21:17,895 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,895 - Parser je ucitao token:#44 -> 10
+INFO  03:21:17,895 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,895 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,896 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,896 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,896 - Parser je ucitao token:#3 -> class
+INFO  03:21:17,897 - Parser je ucitao token:#45 -> Test
+INFO  03:21:17,897 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,897 - Parser je ucitao token:#7 -> static
+INFO  03:21:17,897 - Parser je ucitao token:#45 -> int
+INFO  03:21:17,897 - Parser je ucitao token:#45 -> max
+INFO  03:21:17,898 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,898 - Parser je ucitao token:#45 -> int
+INFO  03:21:17,899 - Parser je ucitao token:#45 -> a
+INFO  03:21:17,899 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,899 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,899 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,900 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,900 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,901 - Parser je ucitao token:#6 -> void
+INFO  03:21:17,901 - Parser je ucitao token:#45 -> f
+INFO  03:21:17,901 - Parser je ucitao token:#18 -> (
+INFO  03:21:17,901 - Parser je ucitao token:#45 -> Test
+INFO  03:21:17,901 - Parser je ucitao token:#45 -> test
+INFO  03:21:17,901 - Parser je ucitao token:#19 -> )
+INFO  03:21:17,901 - Parser je ucitao token:#45 -> int
+INFO  03:21:17,902 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,902 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,902 - Parser je ucitao token:#20 -> {
+INFO  03:21:17,902 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,902 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,903 - Parser je ucitao token:#45 -> Test
+INFO  03:21:17,903 - Parser je ucitao token:#24 -> .
+INFO  03:21:17,903 - Parser je ucitao token:#45 -> a
+INFO  03:21:17,903 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,904 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> test
+INFO  03:21:17,904 - Parser je ucitao token:#24 -> .
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> c
+INFO  03:21:17,904 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,904 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> Test
+INFO  03:21:17,904 - Parser je ucitao token:#27 -> ::
+INFO  03:21:17,904 - Parser je ucitao token:#45 -> max
+INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,905 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,905 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,905 - Parser je ucitao token:#45 -> test
+INFO  03:21:17,905 - Parser je ucitao token:#24 -> .
+INFO  03:21:17,905 - Parser je ucitao token:#45 -> max
+INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,905 - Parser je ucitao token:#45 -> b
+INFO  03:21:17,905 - Parser je ucitao token:#41 -> =
+INFO  03:21:17,905 - Parser je ucitao token:#45 -> test
+INFO  03:21:17,905 - Parser je ucitao token:#22 -> [
+INFO  03:21:17,905 - Parser je ucitao token:#44 -> 10
+INFO  03:21:17,905 - Parser je ucitao token:#23 -> ]
+INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
+INFO  03:21:17,905 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,905 - Parser je ucitao token:#21 -> }
+INFO  03:21:17,906 - Parser je ucitao token:#0 -> EOF
+INFO  03:21:17,907 - Parser je ucitao token:#0 -> EOF
+INFO  03:21:17,907 - ===========================================================
+INFO  03:21:17,907 - APSTRAKTNO SINTAKSNO STABLO
+INFO  03:21:17,908 - Program(
+  ProgramName(
+   MJProgram
+  ) [ProgramName]
+  NamespaceListItem(
+    NamespaceListEnd(
+    ) [NamespaceListEnd]
+    Namespace(
+      NamespaceName(
+       data
+      ) [NamespaceName]
+      DeclListItem(
+        DeclListEnd(
+        ) [DeclListEnd]
+        DeclConst(
+          ConstDeclLine(
+            ConstDeclLineStart(
+              TypeSimple(
+               int
+              ) [TypeSimple]
+            ) [ConstDeclLineStart]
+            ConstDeclCommaEnd(
+              ConstDeclNum(
+               max
+               10
+              ) [ConstDeclNum]
+            ) [ConstDeclCommaEnd]
+          ) [ConstDeclLine]
+        ) [DeclConst]
+      ) [DeclListItem]
+      MethodListEnd(
+      ) [MethodListEnd]
+    ) [Namespace]
+  ) [NamespaceListItem]
+  DeclListItem(
+    DeclListEnd(
+    ) [DeclListEnd]
+    DeclClass(
+      ClassDecl(
+        ClassNameNoExtend(
+         Test
+        ) [ClassNameNoExtend]
+        StaticMemberListItem(
+          StaticMemberListEnd(
+          ) [StaticMemberListEnd]
+          StaticMemberVar(
+            StaticVarDeclLine(
+              StaticVarDeclLineStart(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+              ) [StaticVarDeclLineStart]
+              StaticVarDeclCommaEnd(
+                StaticVarDeclScalar(
+                 max
+                ) [StaticVarDeclScalar]
+              ) [StaticVarDeclCommaEnd]
+            ) [StaticVarDeclLine]
+          ) [StaticMemberVar]
+        ) [StaticMemberListItem]
+        ClassVarDeclOk(
+          VarDeclLineListItem(
+            VarDeclLineListEnd(
+            ) [VarDeclLineListEnd]
+            VarDeclLine(
+              VarDeclLineStart(
+                TypeSimple(
+                 int
+                ) [TypeSimple]
+              ) [VarDeclLineStart]
+              VarDeclCommaEnd(
+                VarDeclScalar(
+                 a
+                ) [VarDeclScalar]
+              ) [VarDeclCommaEnd]
+            ) [VarDeclLine]
+          ) [VarDeclLineListItem]
+        ) [ClassVarDeclOk]
+        MethodsNonempty(
+          MethodListEnd(
+          ) [MethodListEnd]
+        ) [MethodsNonempty]
+      ) [ClassDecl]
+    ) [DeclClass]
+  ) [DeclListItem]
+  MethodListItem(
+    MethodListEnd(
+    ) [MethodListEnd]
+    Method(
+      MethodDeclaration(
+        MethodNameVoid(
+         f
+        ) [MethodNameVoid]
+        FormalParamCommaEnd(
+          FormalParamScalar(
+            TypeSimple(
+             Test
+            ) [TypeSimple]
+           test
+          ) [FormalParamScalar]
+        ) [FormalParamCommaEnd]
+      ) [MethodDeclaration]
+      VarDeclLineListItem(
+        VarDeclLineListEnd(
+        ) [VarDeclLineListEnd]
+        VarDeclLine(
+          VarDeclLineStart(
+            TypeSimple(
+             int
+            ) [TypeSimple]
+          ) [VarDeclLineStart]
+          VarDeclCommaEnd(
+            VarDeclScalar(
+             b
+            ) [VarDeclScalar]
+          ) [VarDeclCommaEnd]
+        ) [VarDeclLine]
+      ) [VarDeclLineListItem]
+      StatementListItem(
+        StatementListItem(
+          StatementListItem(
+            StatementListItem(
+              StatementListItem(
+                StatementListEnd(
+                ) [StatementListEnd]
+                StatementDesignatorStatement(
+                  DesignatorStatementAssign(
+                    DesignatorSimple(
+                     b
+                    ) [DesignatorSimple]
+                    Assignop(
+                    ) [Assignop]
+                    ExprSingle(
+                      TermSingle(
+                        FactorDesignator(
+                          DesignatorField(
+                            DesignatorSimple(
+                             Test
+                            ) [DesignatorSimple]
+                           a
+                          ) [DesignatorField]
+                        ) [FactorDesignator]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [DesignatorStatementAssign]
+                ) [StatementDesignatorStatement]
+              ) [StatementListItem]
+              StatementDesignatorStatement(
+                DesignatorStatementAssign(
+                  DesignatorSimple(
+                   b
+                  ) [DesignatorSimple]
+                  Assignop(
+                  ) [Assignop]
+                  ExprSingle(
+                    TermSingle(
+                      FactorDesignator(
+                        DesignatorField(
+                          DesignatorSimple(
+                           test
+                          ) [DesignatorSimple]
+                         c
+                        ) [DesignatorField]
+                      ) [FactorDesignator]
+                    ) [TermSingle]
+                  ) [ExprSingle]
+                ) [DesignatorStatementAssign]
+              ) [StatementDesignatorStatement]
+            ) [StatementListItem]
+            StatementDesignatorStatement(
+              DesignatorStatementAssign(
+                DesignatorSimple(
+                 b
+                ) [DesignatorSimple]
+                Assignop(
+                ) [Assignop]
+                ExprSingle(
+                  TermSingle(
+                    FactorDesignator(
+                      DesignatorScoped(
+                       Test
+                       max
+                      ) [DesignatorScoped]
+                    ) [FactorDesignator]
+                  ) [TermSingle]
+                ) [ExprSingle]
+              ) [DesignatorStatementAssign]
+            ) [StatementDesignatorStatement]
+          ) [StatementListItem]
+          StatementDesignatorStatement(
+            DesignatorStatementAssign(
+              DesignatorSimple(
+               b
+              ) [DesignatorSimple]
+              Assignop(
+              ) [Assignop]
+              ExprSingle(
+                TermSingle(
+                  FactorDesignator(
+                    DesignatorField(
+                      DesignatorSimple(
+                       test
+                      ) [DesignatorSimple]
+                     max
+                    ) [DesignatorField]
+                  ) [FactorDesignator]
+                ) [TermSingle]
+              ) [ExprSingle]
+            ) [DesignatorStatementAssign]
+          ) [StatementDesignatorStatement]
+        ) [StatementListItem]
+        StatementDesignatorStatement(
+          DesignatorStatementAssign(
+            DesignatorSimple(
+             b
+            ) [DesignatorSimple]
+            Assignop(
+            ) [Assignop]
+            ExprSingle(
+              TermSingle(
+                FactorDesignator(
+                  DesignatorElem(
+                    DesignatorSimple(
+                     test
+                    ) [DesignatorSimple]
+                    ExprSingle(
+                      TermSingle(
+                        FactorNum(
+                         10
+                        ) [FactorNum]
+                      ) [TermSingle]
+                    ) [ExprSingle]
+                  ) [DesignatorElem]
+                ) [FactorDesignator]
+              ) [TermSingle]
+            ) [ExprSingle]
+          ) [DesignatorStatementAssign]
+        ) [StatementDesignatorStatement]
+      ) [StatementListItem]
+    ) [Method]
+  ) [MethodListItem]
+) [Program]
+INFO  03:21:17,908 - ===========================================================
+INFO  03:21:17,917 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:21:17,918 - Trazi se Test - Type Test: Class, 1, 0, 1
+INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
+INFO  03:21:17,918 - Trazi se b - Var b: int, 1, 1, 1
+INFO  03:21:17,919 - Trazi se Test - Type Test: Class, 1, 0, 1
+ERROR 03:21:17,919 - Semanticka greska na liniji 21: Clan a klase Test nije staticki.
+ERROR 03:21:17,919 - Semanticka greska na liniji 21: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
+INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 03:21:17,919 - Semanticka greska na liniji 24: Clan c nije pronadjen.
+ERROR 03:21:17,919 - Semanticka greska na liniji 24: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
+INFO  03:21:17,919 - Trazi se Test - Type Test: Class, 1, 0, 1
+ERROR 03:21:17,919 - Semanticka greska na liniji 27: Identifikator Test ne oznacava prostor imena.
+ERROR 03:21:17,919 - Semanticka greska na liniji 27: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
+INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 03:21:17,919 - Semanticka greska na liniji 30: Pristup statickom clanu preko reference.
+ERROR 03:21:17,919 - Semanticka greska na liniji 30: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
+INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 03:21:17,919 - Semanticka greska na liniji 33: Indeksiranje je moguce samo nad nizovima.
+ERROR 03:21:17,919 - Semanticka greska na liniji 33: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+ERROR 03:21:17,919 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
+INFO  03:21:17,919 - ===========================================================
+INFO  03:21:17,920 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Namespace data: notype, -1, 0, -1
+      Con max: int, 10, 0, -1
+
+   Type Test: Class, 1, 0, 1
+      Var max: int, 0, 0, -1
+      Fld a: int, 1, 1, -1
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+
+   Meth f: notype, -1, 0, 1
+      Var test: Class, 0, 1, 0
+      Var b: int, 1, 1, 1
+
+
+
+INFO  03:21:17,920 - ===========================================================
+INFO  03:21:17,920 - Semanticki analizator je detektovao greske. Preskace se generisanje koda

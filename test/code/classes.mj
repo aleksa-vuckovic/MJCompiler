@@ -1,3 +1,7 @@
+/*
+Tests all class feautures except inheritance and polymorphism:
+static fields, static initializers, methods, implicit this, allocation, constructors.
+*/
 program MJProgram
 	
 	class String {
@@ -55,3 +59,8 @@ program MJProgram
 		//return 10;
 	}
 }
+/* Expected output:
+	 [java] Hello 
+     [java] World!
+     [java] :)
+*/
