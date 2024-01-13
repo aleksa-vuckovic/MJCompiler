@@ -8,7 +8,7 @@ import rs.etf.pp1.symboltable.structure.SymbolDataStructure;
 public class Test {
 
 	public static String getInputFile(String[] args) {
-		return "test/official/test303.mj";
+		return "test/code/polymorphism.mj";
 	}
 	public static String getOutputFile(String[] args) {
 		return "test/program.obj";

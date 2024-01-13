@@ -956,10 +956,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 						report_error("Ime " + obj.getName() + " je vec deklarisano.", MethodDeclaration);
 					}
 					else if (Utils.overrideCompatible(base, obj)) {
-						//base.setType(obj.getType())
-						base.setFpPos(obj.getFpPos());
-						MyTab.chainLocalSymbols(base);
-						obj = base;
+						MyTab.parentScope().getLocals().deleteKey(obj.getName());
+						MyTab.insertParentScope(obj);
 					} else {
 						report_error("Override nije moguc jer argumenti ili povratna vrednost nisu kompatibilni!", MethodDeclaration);
 					}
@@ -1100,7 +1098,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			struct.setElementType(baseType);
 			for (Obj member: baseType.getMembers()) {
 				if (member.getLevel() == 0) continue; //staticki clanovi se prekacu (ovo ukljucuje i konstruktore)
-				MyTab.insert(Utils.clone(member)); //kopija, jer se zbog override moze menjati metoda
+				MyTab.insert(member);
 				if (member.getKind() == Obj.Fld) obj.setFpPos(obj.getFpPos() + 1); //fpPos predstavlja broj polja
 			}
 		}
