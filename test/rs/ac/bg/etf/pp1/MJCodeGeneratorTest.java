@@ -27,6 +27,7 @@ public class MJCodeGeneratorTest {
 	public static void main(String[] args) throws IOException {
 		Logger log = Logger.getLogger(MJParserTest.class);
 		File sourceCode = new File(Test.getInputFile(args));
+		File objFile = new File(Test.getOutputFile(args));
 		log.info("Compiling source file: " + sourceCode.getAbsolutePath());
 		
 		try(BufferedReader br = new BufferedReader(new FileReader(sourceCode));) {
@@ -64,7 +65,6 @@ public class MJCodeGeneratorTest {
 				}
 				
 				if (!parser.error() && !sem.error()) {
-					File objFile = new File("test/program.obj");
 					if(objFile.exists()) objFile.delete();
 					
 					CodeGenerator codeGenerator = new CodeGenerator();

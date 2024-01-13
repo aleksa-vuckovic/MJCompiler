@@ -899,5 +899,37 @@ INFO  17:01:58,152 - Trazi se int - Type int: int, -1, -1, 0
 INFO  17:01:58,152 - Trazi se f - Meth f: notype, -1, 0, 2
 INFO  17:01:58,152 - ===========================================================
 INFO  17:01:58,152 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog MJProgram: notype, -1, 0, -1
+   Meth f: notype, -1, 0, 2
+      Var x: int, 0, 1, 0
+      Var y: int, 1, 1, 0
+      Var a: int, 2, 1, 1
+      Var b: int, 3, 1, 1
+      Var i: int, 4, 1, 1
+      Var res: Arr of char, 5, 1, 1
+
+   Meth main: notype, -1, 0, 0
+      Var x: int, 0, 1, 1
+      Var y: int, 1, 1, 1
+
+
+
 INFO  17:01:58,152 - ===========================================================
 INFO  17:01:58,155 - Objektni fajl je uspesno generisan!

@@ -1,0 +1,61 @@
+/*
+	Testira ugnezdjavanje for petlji, sa break i continue naredbama.
+	Otkomentarisati for petlju za interaktivni rezim.
+*/
+program MJProgram
+
+{
+	
+	void f(int x, int y) int a, b, i; char res[]; {
+		res = new char[10];
+		i = 10;
+		if (x == 0) {
+			print('0');
+		}
+		else {
+			for (;;) {
+				a = 0;
+				for (;;) {
+					if (x % y != 0) {
+						a++;
+						x--;
+						continue;
+					}
+					break;
+				}
+				i--;
+				b = ord('0') + a;
+				if (a > 9) b = b + 7;
+				res[i] = chr(b);
+				x = x / y;
+				if (x==0) break;
+			}
+			for (;i < 10; i++) print(res[i]);
+		}
+		
+		print('\n');
+		return;
+		
+	}
+	
+	void main() int x; int y; {
+		
+		f(1234987, 10);
+		/*
+		for(;;) {
+			print('x');
+			print('?');
+			print(' ');
+			read(x);
+			print('y');
+			print('?');
+			print(' ');
+			read(y);
+			f(x, y);
+		}
+		*/
+	}
+}
+/* Ocekivani izlaz:
+	     [java] 1234987
+*/
