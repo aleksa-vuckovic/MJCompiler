@@ -32,7 +32,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	//Tip deklaracione linije
 	private Struct declLineType = null;
 	//Pokazivac na narednu slobodnu lokaciju u statickoj memoriji, ujedno i ukupno zauzeta staticka memorija
-	private int totalStatic = 0;
+	//Pocinje od 1, jer je za indeksiranje potrebna privremena lokacija za cuvanje indeksa, pa se za to koristi static[0]
+	private int totalStatic = 1;
 	//Broj konstruktora definisanih za trenutnu klasu
 	private int constructorCount = 0;
 	private boolean mainFound = false;

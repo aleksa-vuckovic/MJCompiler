@@ -59,9 +59,9 @@ public class CodeGenerator extends VisitorAdaptor {
 		int pstackTop = currentMethod == null ? 0 : Utils.localVariableCount(currentMethod);
 		//indeks treba sacuvati sa strane da bi se vrednost prethodnog
 		//designator objekta ucitala na estek
-		Code.put(Code.store); Code.put(pstackTop);
+		Code.put(Code.putstatic); Code.put2(0);
 		Code.load(designator);
-		Code.put(Code.load); Code.put(pstackTop);
+		Code.put(Code.getstatic); Code.put2(0);
 	}
 	@Override
 	public void visit(DesignatorField DesignatorField) {

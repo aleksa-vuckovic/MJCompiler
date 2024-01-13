@@ -4218,5 +4218,172 @@ INFO  19:08:15,437 - Trazi se tezinaK - Var tezinaK: int, 313, 0, -1
 INFO  19:08:15,438 - Trazi se eol - Con eol: char, 10, 0, 0
 INFO  19:08:15,438 - ===========================================================
 INFO  19:08:15,438 - TABELA SIMBOLA
+Type int: int, -1, -1, 0
+
+Type char: char, -1, -1, 0
+
+Con eol: char, 10, 0, 0
+Con null: Class, 0, 0, 0
+Meth chr: char, -1, 0, 0
+   Var i: int, 0, 1, 0
+
+Meth ord: int, -1, 0, 0
+   Var ch: char, 0, 1, 0
+
+Meth len: int, -1, 0, 0
+   Var arr: Arr of notype, 0, 1, 0
+
+Type bool: bool, 0, 0, 0
+
+Prog test_303: notype, -1, 0, -1
+   Namespace Predmeti: notype, -1, 0, -1
+      Con cinilac: int, 4, 0, -1
+      Con delilac: int, 3, 0, -1
+      Type Predmet: Class, 1, 0, 2
+         Fld tezina: int, 1, 1, -1
+         Fld vrsta: char, 2, 1, -1
+         Meth postaviTezinu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var tezina: int, 1, 1, 0
+
+         Meth ucitajTezinu: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth zapremina: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth Q: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth postaviVrstu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var vrsta: char, 1, 1, 0
+
+         Meth dohvVrstu: char, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth dohvTezinu: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth ispisi: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth __constructor0: notype, -1, 0, 1
+            Var this: Class, 0, 1, 0
+
+
+      Type Sfera: Class, 90, 0, 3
+         Fld tezina: int, 1, 1, -1
+         Fld vrsta: char, 2, 1, -1
+         Meth postaviTezinu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var tezina: int, 1, 1, 0
+
+         Meth ucitajTezinu: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth zapremina: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+            Var z: int, 1, 1, 1
+
+         Meth Q: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth postaviVrstu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var vrsta: char, 1, 1, 0
+
+         Meth dohvVrstu: char, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth dohvTezinu: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth ispisi: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Fld r: int, 3, 1, -1
+         Meth postaviPoluprecnik: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var r: int, 1, 1, 0
+
+         Meth __constructor0: notype, -1, 0, 1
+            Var this: Class, 0, 1, 0
+
+
+      Type Kvadar: Class, 199, 0, 5
+         Fld tezina: int, 1, 1, -1
+         Fld vrsta: char, 2, 1, -1
+         Meth postaviTezinu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var tezina: int, 1, 1, 0
+
+         Meth ucitajTezinu: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth zapremina: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+            Var z: int, 1, 1, 1
+
+         Meth Q: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth postaviVrstu: notype, -1, 1, 2
+            Var this: Class, 0, 1, 0
+            Var vrsta: char, 1, 1, 0
+
+         Meth dohvVrstu: char, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth dohvTezinu: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Meth ispisi: notype, -1, 1, 1
+            Var this: Class, 0, 1, 0
+
+         Fld a: int, 3, 1, -1
+         Fld b: int, 4, 1, -1
+         Fld c: int, 5, 1, -1
+         Meth postaviStranice: notype, -1, 1, 4
+            Var this: Class, 0, 1, 0
+            Var a: int, 1, 1, 0
+            Var b: int, 2, 1, 0
+            Var c: int, 3, 1, 0
+
+         Meth __constructor0: notype, -1, 0, 1
+            Var this: Class, 0, 1, 0
+
+
+
+   Type ProstiBrojevi: Class, 310, 0, 0
+      Var prosti: Arr of int, 305, 0, -1
+      Var X: int, 306, 0, -1
+      Var i: int, 307, 0, -1
+      Var j: int, 308, 0, -1
+      Var flag: bool, 309, 0, -1
+      Meth __constructor0: notype, -1, 0, 1
+         Var this: Class, 0, 1, 0
+
+
+   Var zapreminaK: int, 311, 0, -1
+   Var zapreminaS: int, 312, 0, -1
+   Var tezinaK: int, 313, 0, -1
+   Var tezinaS: int, 314, 0, -1
+   Meth ispis: notype, -1, 0, 1
+      Var p: Class, 0, 1, 0
+
+   Meth main: notype, -1, 0, 0
+      Var predmeti: Arr of Class, 0, 1, 1
+      Var i: int, 1, 1, 1
+      Var s1: Class, 2, 1, 1
+      Var s2: Class, 3, 1, 1
+      Var s3: Class, 4, 1, 1
+      Var k1: Class, 5, 1, 1
+      Var k2: Class, 6, 1, 1
+      Var k3: Class, 7, 1, 1
+      Var t: int, 8, 1, 1
+
+
+
 INFO  19:08:15,438 - ===========================================================
 INFO  19:08:15,448 - Objektni fajl je uspesno generisan!
