@@ -59,9 +59,9 @@ public class CodeGenerator extends VisitorAdaptor {
 		int pstackTop = currentMethod == null ? 0 : Utils.localVariableCount(currentMethod);
 		//indeks treba sacuvati sa strane da bi se vrednost prethodnog
 		//designator objekta ucitala na estek
-		Code.put(Code.putstatic); Code.put2(0);
+		Code.put(Code.store); Code.put(pstackTop);
 		Code.load(designator);
-		Code.put(Code.getstatic); Code.put2(0);
+		Code.put(Code.load); Code.put(pstackTop);
 	}
 	@Override
 	public void visit(DesignatorField DesignatorField) {
@@ -345,7 +345,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.dup);
 		//estek: leftarr, len(leftarr), len(rightarr) x 2
 		Code.put(Code.const_); Code.put4(varCount);
-		Code.put(Code.jcc + Code.ge); Code.put2(5);
+		Code.put(Code.jcc + Code.gt); Code.put2(5);
 		Code.put(Code.trap); Code.put(2);
 		
 		Code.put(Code.const_); Code.put4(varCount);
@@ -855,10 +855,12 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(StaticInitializerStart StaticInitializerStart) {
 		super.visit(StaticInitializerStart);
 		initializerAddresses.add(Code.pc);
+		Code.put(Code.enter); Code.put(0); Code.put(0);
 	}
 	@Override
 	public void visit(StaticInitializer StaticInitializer) {
 		super.visit(StaticInitializer);
+		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
 	@Override
@@ -1068,10 +1070,12 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 
 		initializerPc = Code.pc;
+		Code.put(Code.enter); Code.put(0); Code.put(0);
 		for (Integer initBlock: initializerAddresses) {
 			Utils.generateCall(initBlock);
 		}
 		Utils.generateCall(mainPc);
+		Code.put(Code.exit);
 		Code.put(Code.return_);
 	}
 
