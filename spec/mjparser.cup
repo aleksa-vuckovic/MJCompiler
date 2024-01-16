@@ -95,7 +95,8 @@ nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
 nonterminal rs.ac.bg.etf.pp1.my.DesignatorList DesignatorComma;
 
-nonterminal Condition, ConditionTerm, ConditionFactor;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Condition, ConditionTerm;
+nonterminal ConditionFactor;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt Relop;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Term, Factor, ConstructorInvocation;

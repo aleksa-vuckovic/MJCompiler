@@ -1,10 +1,16 @@
 program MJProgram
 
 {	
+
+	bool f() {
+		print('F');
+		return false;
+	}
+	bool t() {
+		print('T');
+		return true;
+	}
 	void main() int a; {
-		for(;;) {
-			read(a);
-			print(a);
-		}
+		if (f() && t() || t() || f()) print('O');
 	}	
 }

@@ -112,8 +112,7 @@ nonterminal rs.ac.bg.etf.pp1.my.MyInt IfCondition, IfStatement;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt ForEntry, ForCondition, ForExit;
 nonterminal rs.ac.bg.etf.pp1.my.DesignatorList DesignatorComma;
 
-nonterminal Condition Condition;
-nonterminal ConditionTerm ConditionTerm;
+nonterminal rs.ac.bg.etf.pp1.my.MyInt Condition, ConditionTerm;
 nonterminal ConditionFactor ConditionFactor;
 nonterminal rs.ac.bg.etf.pp1.my.MyInt Relop;
 
@@ -193,7 +192,7 @@ FormalParamComma ::= (FormalParamCommaItem) FormalParam:F1 COMMA FormalParamComm
 						| (FormalParamCommaItemError) error:E1 COMMA:C2 FormalParamComma:F3
 							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji " + C2left + " i koloni " + C2right + ".", null); :} {: RESULT=new FormalParamCommaItemError(F3); RESULT.setLine(F3left); :}
 						| (FormalParamCommaEndError) error:E1
-							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ';' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new FormalParamCommaEndError(); :}
+							{: parser.report_error("Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji " + E1left + " i koloni " + E1right + ".", null); :} {: RESULT=new FormalParamCommaEndError(); :}
 						;
 FormalParam ::= (FormalParamScalar) Type:T1 IDENT:name {: RESULT=new FormalParamScalar(T1, name); RESULT.setLine(T1left); :}
 				| (FormalParamArray) Type:T1 IDENT:name LBRACK RBRACK {: RESULT=new FormalParamArray(T1, name); RESULT.setLine(T1left); :};

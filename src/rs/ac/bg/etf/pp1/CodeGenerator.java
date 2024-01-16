@@ -260,30 +260,56 @@ public class CodeGenerator extends VisitorAdaptor {
 	@Override
 	public void visit(ConditionTermSingle ConditionTermSingle) {
 		super.visit(ConditionTermSingle);
+		if (ConditionTermSingle.getParent() instanceof ConditionTermAnd) {
+			Code.put(Code.dup);
+			Code.put(Code.const_n);
+			Code.put(Code.jcc + Code.eq);
+			ConditionTermSingle.myint = new MyInt(Code.pc);
+			Code.put2(0);
+		}
 	}
 	@Override
 	public void visit(ConditionTermAnd ConditionTermAnd) {
 		super.visit(ConditionTermAnd);
-		Code.put(Code.add);
-		Code.put(Code.const_2);
-		Code.put(Code.jcc + Code.eq); Code.put2(7);
-		Code.put(Code.const_n);
-		Code.put(Code.jmp); Code.put2(4);
-		Code.put(Code.const_1);
+		Code.put(Code.mul);
+		
+		int fixupAdr = ConditionTermAnd.getConditionTerm().myint.val;
+		Utils.codeFixup(fixupAdr, Code.pc);
+		
+		if (ConditionTermAnd.getParent() instanceof ConditionTermAnd) {
+			Code.put(Code.dup);
+			Code.put(Code.const_n);
+			Code.put(Code.jcc + Code.eq);
+			ConditionTermAnd.myint = new MyInt(Code.pc);
+			Code.put2(0);
+		}
 	}
 	@Override
 	public void visit(ConditionSingle ConditionSingle) {
 		super.visit(ConditionSingle);
+		if (ConditionSingle.getParent() instanceof ConditionOr) {
+			Code.put(Code.dup);
+			Code.put(Code.const_1);
+			Code.put(Code.jcc + Code.eq);
+			ConditionSingle.myint = new MyInt(Code.pc);
+			Code.put2(0);
+		}
 	}
 	@Override
 	public void visit(ConditionOr ConditionOr) {
 		super.visit(ConditionOr);
 		Code.put(Code.add);
-		Code.put(Code.const_n);
-		Code.put(Code.jcc + Code.ne); Code.put2(7);
-		Code.put(Code.const_n);
-		Code.put(Code.jmp); Code.put2(4);
-		Code.put(Code.const_1);
+		
+		int fixupAdr = ConditionOr.getCondition().myint.val;
+		Utils.codeFixup(fixupAdr, Code.pc);
+		
+		if (ConditionOr.getParent() instanceof ConditionOr) {
+			Code.put(Code.dup);
+			Code.put(Code.const_1);
+			Code.put(Code.jcc + Code.eq);
+			ConditionOr.myint = new MyInt(Code.pc);
+			Code.put2(0);
+		}
 	}
 
 	/*

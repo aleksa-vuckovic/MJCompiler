@@ -149,7 +149,7 @@ int a, curr;
 
 /* Ocekivani izlaz za unos projeva 2,3,4:
      [java]    0   1v  97
-     [java] v   4
+     [java]    4
      [java]    9
      [java]    8  12  18  24
      [java] 1044   1   2   6
