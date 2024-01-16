@@ -1,923 +1,924 @@
-INFO  19:08:15,157 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\official\test303.mj
-INFO  19:08:15,158 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\official\test303.obj
-INFO  19:08:15,272 - Parser je ucitao token:#2 -> program
-INFO  19:08:15,272 - Parser je ucitao token:#45 -> test_303
-INFO  19:08:15,273 - Parser je ucitao token:#4 -> namespace
-INFO  19:08:15,275 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,276 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,277 - Parser je ucitao token:#8 -> const
-INFO  19:08:15,278 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,278 - Parser je ucitao token:#45 -> cinilac
-INFO  19:08:15,282 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,284 - Parser je ucitao token:#44 -> 4
-INFO  19:08:15,284 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,285 - Parser je ucitao token:#45 -> delilac
-INFO  19:08:15,285 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,285 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,285 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,286 - Parser je ucitao token:#3 -> class
-INFO  19:08:15,288 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,288 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,288 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,290 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,291 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,292 - Parser je ucitao token:#45 -> char
-INFO  19:08:15,293 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,293 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,293 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,293 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,294 - Parser je ucitao token:#45 -> postaviTezinu
-INFO  19:08:15,294 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,294 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,295 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,295 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,295 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,296 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,297 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,297 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,297 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,298 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,299 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,299 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,300 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,301 - Parser je ucitao token:#45 -> ucitajTezinu
-INFO  19:08:15,301 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,301 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,302 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,302 - Parser je ucitao token:#13 -> read
-INFO  19:08:15,302 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,302 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,302 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,302 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,303 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,303 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,303 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,303 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,304 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,304 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,304 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,304 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,304 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,304 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,304 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,305 - Parser je ucitao token:#45 -> Q
-INFO  19:08:15,305 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,305 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,305 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,305 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,305 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,305 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,305 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,306 - Parser je ucitao token:#30 -> *
-INFO  19:08:15,307 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,309 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,309 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,309 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,309 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,309 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,309 - Parser je ucitao token:#45 -> char
-INFO  19:08:15,309 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,310 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,310 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,310 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,310 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,310 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,310 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,310 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,310 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,310 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,311 - Parser je ucitao token:#45 -> char
-INFO  19:08:15,311 - Parser je ucitao token:#45 -> dohvVrstu
-INFO  19:08:15,311 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,311 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,311 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,311 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,311 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,311 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,311 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,312 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,312 - Parser je ucitao token:#45 -> dohvTezinu
-INFO  19:08:15,312 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,312 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,312 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,312 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,312 - Parser je ucitao token:#45 -> tezina
-INFO  19:08:15,312 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,312 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,312 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,313 - Parser je ucitao token:#45 -> ispisi
-INFO  19:08:15,313 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,313 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,313 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,313 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,313 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,313 - Parser je ucitao token:#45 -> vrsta
-INFO  19:08:15,313 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,313 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,313 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,314 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,314 - Parser je ucitao token:#45 -> Q
-INFO  19:08:15,314 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,314 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,314 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,314 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,314 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,314 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,314 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,314 - Parser je ucitao token:#3 -> class
-INFO  19:08:15,316 - Parser je ucitao token:#45 -> Sfera
-INFO  19:08:15,317 - Parser je ucitao token:#5 -> extends
-INFO  19:08:15,317 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,317 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,317 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,317 - Parser je ucitao token:#45 -> r
-INFO  19:08:15,317 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,317 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,317 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,317 - Parser je ucitao token:#45 -> postaviPoluprecnik
-INFO  19:08:15,317 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,318 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,318 - Parser je ucitao token:#45 -> r
-INFO  19:08:15,318 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,318 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,318 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,318 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,318 - Parser je ucitao token:#45 -> r
-INFO  19:08:15,318 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,318 - Parser je ucitao token:#45 -> r
-INFO  19:08:15,319 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,319 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,319 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,319 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,319 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,319 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,319 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,319 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,319 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,319 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,319 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,320 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,320 - Parser je ucitao token:#45 -> cinilac
-INFO  19:08:15,320 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,320 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,320 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,320 - Parser je ucitao token:#30 -> *
-INFO  19:08:15,320 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,320 - Parser je ucitao token:#45 -> r
-INFO  19:08:15,320 - Parser je ucitao token:#31 -> /
-INFO  19:08:15,321 - Parser je ucitao token:#45 -> delilac
-INFO  19:08:15,321 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,322 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,322 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,322 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,322 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,322 - Parser je ucitao token:#3 -> class
-INFO  19:08:15,322 - Parser je ucitao token:#45 -> Kvadar
-INFO  19:08:15,322 - Parser je ucitao token:#5 -> extends
-INFO  19:08:15,322 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,322 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,323 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,323 - Parser je ucitao token:#45 -> a
-INFO  19:08:15,323 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,323 - Parser je ucitao token:#45 -> b
-INFO  19:08:15,323 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,323 - Parser je ucitao token:#45 -> c
-INFO  19:08:15,323 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,323 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,323 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,323 - Parser je ucitao token:#45 -> postaviStranice
-INFO  19:08:15,323 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> a
-INFO  19:08:15,324 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> b
-INFO  19:08:15,324 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,324 - Parser je ucitao token:#45 -> c
-INFO  19:08:15,325 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,325 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,325 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,325 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,325 - Parser je ucitao token:#45 -> a
-INFO  19:08:15,325 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,325 - Parser je ucitao token:#45 -> a
-INFO  19:08:15,325 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,325 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,325 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> b
-INFO  19:08:15,326 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> b
-INFO  19:08:15,326 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> this
-INFO  19:08:15,326 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> c
-INFO  19:08:15,326 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> c
-INFO  19:08:15,326 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,326 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,326 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,327 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,327 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,327 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,327 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,327 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> a
-INFO  19:08:15,327 - Parser je ucitao token:#30 -> *
-INFO  19:08:15,327 - Parser je ucitao token:#45 -> b
-INFO  19:08:15,328 - Parser je ucitao token:#30 -> *
-INFO  19:08:15,328 - Parser je ucitao token:#45 -> c
-INFO  19:08:15,328 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,328 - Parser je ucitao token:#9 -> return
-INFO  19:08:15,328 - Parser je ucitao token:#45 -> z
-INFO  19:08:15,328 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,328 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,328 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,328 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,328 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,328 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,328 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,329 - Parser je ucitao token:#3 -> class
-INFO  19:08:15,330 - Parser je ucitao token:#45 -> ProstiBrojevi
-INFO  19:08:15,330 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,330 - Parser je ucitao token:#7 -> static
-INFO  19:08:15,330 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,330 - Parser je ucitao token:#45 -> prosti
-INFO  19:08:15,331 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,331 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,331 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,331 - Parser je ucitao token:#7 -> static
-INFO  19:08:15,332 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,332 - Parser je ucitao token:#45 -> X
-INFO  19:08:15,332 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,333 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,333 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,333 - Parser je ucitao token:#45 -> j
-INFO  19:08:15,333 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,333 - Parser je ucitao token:#7 -> static
-INFO  19:08:15,333 - Parser je ucitao token:#45 -> bool
-INFO  19:08:15,333 - Parser je ucitao token:#45 -> flag
-INFO  19:08:15,333 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,333 - Parser je ucitao token:#7 -> static
-INFO  19:08:15,333 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,334 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,334 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,335 - Parser je ucitao token:#47 -> 115
-INFO  19:08:15,335 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,335 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,335 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,335 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,335 - Parser je ucitao token:#47 -> 116
-INFO  19:08:15,335 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,335 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,335 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,335 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,335 - Parser je ucitao token:#47 -> 97
-INFO  19:08:15,335 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,335 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,336 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,336 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,336 - Parser je ucitao token:#47 -> 116
-INFO  19:08:15,336 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,336 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,336 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,336 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,336 - Parser je ucitao token:#47 -> 105
-INFO  19:08:15,336 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,336 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,336 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,336 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,337 - Parser je ucitao token:#47 -> 99
-INFO  19:08:15,337 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,337 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,337 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,337 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,337 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,337 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,337 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,337 - Parser je ucitao token:#45 -> prosti
-INFO  19:08:15,337 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,337 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,337 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,337 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,337 - Parser je ucitao token:#44 -> 10
-INFO  19:08:15,338 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,338 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,338 - Parser je ucitao token:#17 -> for
-INFO  19:08:15,338 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,338 - Parser je ucitao token:#45 -> X
-INFO  19:08:15,338 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,338 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,338 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,338 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,338 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,339 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,339 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,340 - Parser je ucitao token:#45 -> X
-INFO  19:08:15,340 - Parser je ucitao token:#37 -> <
-INFO  19:08:15,340 - Parser je ucitao token:#44 -> 10
-INFO  19:08:15,341 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,342 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,342 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,342 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,343 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,343 - Parser je ucitao token:#45 -> flag
-INFO  19:08:15,343 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,343 - Parser je ucitao token:#46 -> 1
-INFO  19:08:15,343 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,343 - Parser je ucitao token:#17 -> for
-INFO  19:08:15,343 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,343 - Parser je ucitao token:#45 -> j
-INFO  19:08:15,343 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,343 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,343 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,344 - Parser je ucitao token:#45 -> j
-INFO  19:08:15,344 - Parser je ucitao token:#37 -> <
-INFO  19:08:15,344 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,344 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,344 - Parser je ucitao token:#45 -> j
-INFO  19:08:15,344 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,344 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,344 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,344 - Parser je ucitao token:#15 -> if
-INFO  19:08:15,344 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,344 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,344 - Parser je ucitao token:#32 -> %
-INFO  19:08:15,344 - Parser je ucitao token:#45 -> j
-INFO  19:08:15,346 - Parser je ucitao token:#33 -> ==
-INFO  19:08:15,346 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,347 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,347 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,347 - Parser je ucitao token:#45 -> flag
-INFO  19:08:15,347 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,347 - Parser je ucitao token:#46 -> 0
-INFO  19:08:15,347 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,347 - Parser je ucitao token:#10 -> break
-INFO  19:08:15,347 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,347 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,348 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,349 - Parser je ucitao token:#15 -> if
-INFO  19:08:15,350 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,350 - Parser je ucitao token:#45 -> flag
-INFO  19:08:15,350 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,350 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,350 - Parser je ucitao token:#45 -> prosti
-INFO  19:08:15,350 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,350 - Parser je ucitao token:#45 -> X
-INFO  19:08:15,350 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,350 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,350 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,351 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,351 - Parser je ucitao token:#45 -> X
-INFO  19:08:15,351 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,351 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,351 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,351 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,351 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,351 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,353 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,353 - Parser je ucitao token:#45 -> zapreminaK
-INFO  19:08:15,353 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,353 - Parser je ucitao token:#45 -> zapreminaS
-INFO  19:08:15,353 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,353 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,353 - Parser je ucitao token:#45 -> tezinaK
-INFO  19:08:15,353 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> tezinaS
-INFO  19:08:15,354 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,354 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,354 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> ispis
-INFO  19:08:15,354 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,354 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> p
-INFO  19:08:15,354 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,354 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> p
-INFO  19:08:15,354 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,354 - Parser je ucitao token:#45 -> ispisi
-INFO  19:08:15,354 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,354 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,354 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,354 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,355 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,355 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,355 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,355 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,355 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> p
-INFO  19:08:15,355 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> dohvTezinu
-INFO  19:08:15,355 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,355 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,355 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,355 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,355 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,355 - Parser je ucitao token:#6 -> void
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> main
-INFO  19:08:15,355 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,355 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,355 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,355 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,356 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,356 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,356 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,356 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,356 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> Sfera
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> s1
-INFO  19:08:15,356 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> s2
-INFO  19:08:15,356 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> s3
-INFO  19:08:15,356 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,356 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,356 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> Kvadar
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> k1
-INFO  19:08:15,357 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> k2
-INFO  19:08:15,357 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> k3
-INFO  19:08:15,357 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> int
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> t
-INFO  19:08:15,357 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,357 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,357 - Parser je ucitao token:#15 -> if
-INFO  19:08:15,357 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> ProstiBrojevi
-INFO  19:08:15,357 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,357 - Parser je ucitao token:#45 -> prosti
-INFO  19:08:15,357 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,357 - Parser je ucitao token:#44 -> 9
-INFO  19:08:15,357 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,357 - Parser je ucitao token:#33 -> ==
-INFO  19:08:15,357 - Parser je ucitao token:#44 -> 29
-INFO  19:08:15,357 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,357 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,358 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,358 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,358 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,358 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,358 - Parser je ucitao token:#16 -> else
-INFO  19:08:15,358 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,358 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,358 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,358 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,358 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,358 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,358 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,358 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,358 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,358 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,358 - Parser je ucitao token:#45 -> Predmet
-INFO  19:08:15,358 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,358 - Parser je ucitao token:#44 -> 6
-INFO  19:08:15,358 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,358 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,358 - Parser je ucitao token:#45 -> s1
-INFO  19:08:15,359 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,359 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,359 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,359 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,359 - Parser je ucitao token:#45 -> Sfera
-INFO  19:08:15,359 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,361 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,361 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,361 - Parser je ucitao token:#45 -> s1
-INFO  19:08:15,361 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,361 - Parser je ucitao token:#45 -> postaviPoluprecnik
-INFO  19:08:15,361 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,362 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,362 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,362 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,362 - Parser je ucitao token:#45 -> s1
-INFO  19:08:15,362 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,362 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,362 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,363 - Parser je ucitao token:#47 -> 115
-INFO  19:08:15,363 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,363 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> s2
-INFO  19:08:15,363 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,363 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,363 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> Sfera
-INFO  19:08:15,363 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,363 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,363 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> s2
-INFO  19:08:15,363 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> postaviPoluprecnik
-INFO  19:08:15,363 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,363 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,363 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,363 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> s2
-INFO  19:08:15,363 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,363 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,364 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,364 - Parser je ucitao token:#47 -> 115
-INFO  19:08:15,364 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,364 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> s3
-INFO  19:08:15,364 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,364 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,364 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> Sfera
-INFO  19:08:15,364 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,364 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,364 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> s3
-INFO  19:08:15,364 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> postaviPoluprecnik
-INFO  19:08:15,364 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,364 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,364 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,364 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> s3
-INFO  19:08:15,364 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,364 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,364 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,364 - Parser je ucitao token:#47 -> 115
-INFO  19:08:15,364 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,364 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> k3
-INFO  19:08:15,365 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,365 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,365 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> Kvadar
-INFO  19:08:15,365 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,365 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,365 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> k3
-INFO  19:08:15,365 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> postaviStranice
-INFO  19:08:15,365 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,365 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,365 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,365 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,365 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,365 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,365 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,365 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,365 - Parser je ucitao token:#45 -> k3
-INFO  19:08:15,365 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,366 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,366 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,366 - Parser je ucitao token:#47 -> 107
-INFO  19:08:15,366 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,366 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,366 - Parser je ucitao token:#45 -> k1
-INFO  19:08:15,366 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,366 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,366 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,366 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,366 - Parser je ucitao token:#45 -> Kvadar
-INFO  19:08:15,366 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,366 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,367 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,367 - Parser je ucitao token:#45 -> k1
-INFO  19:08:15,367 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,367 - Parser je ucitao token:#45 -> postaviStranice
-INFO  19:08:15,367 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,367 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,367 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,367 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,367 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,367 - Parser je ucitao token:#44 -> 4
-INFO  19:08:15,367 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,367 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,367 - Parser je ucitao token:#45 -> k1
-INFO  19:08:15,367 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,367 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,367 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,368 - Parser je ucitao token:#47 -> 107
-INFO  19:08:15,368 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,368 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,368 - Parser je ucitao token:#45 -> k2
-INFO  19:08:15,368 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,368 - Parser je ucitao token:#14 -> new
-INFO  19:08:15,368 - Parser je ucitao token:#45 -> Predmeti
-INFO  19:08:15,368 - Parser je ucitao token:#27 -> ::
-INFO  19:08:15,368 - Parser je ucitao token:#45 -> Kvadar
-INFO  19:08:15,368 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,368 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,368 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,368 - Parser je ucitao token:#45 -> k2
-INFO  19:08:15,368 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,368 - Parser je ucitao token:#45 -> postaviStranice
-INFO  19:08:15,368 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,369 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,369 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,369 - Parser je ucitao token:#44 -> 4
-INFO  19:08:15,369 - Parser je ucitao token:#25 -> ,
-INFO  19:08:15,369 - Parser je ucitao token:#44 -> 5
-INFO  19:08:15,369 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,369 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> k2
-INFO  19:08:15,369 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> postaviVrstu
-INFO  19:08:15,369 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,369 - Parser je ucitao token:#47 -> 107
-INFO  19:08:15,369 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,369 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,369 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,369 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,369 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,369 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> s1
-INFO  19:08:15,369 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,369 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,369 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,369 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,369 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,369 - Parser je ucitao token:#45 -> s2
-INFO  19:08:15,370 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,370 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,370 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,370 - Parser je ucitao token:#44 -> 4
-INFO  19:08:15,370 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,370 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,370 - Parser je ucitao token:#45 -> s3
-INFO  19:08:15,370 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,370 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,370 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,370 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,370 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,370 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,370 - Parser je ucitao token:#45 -> k1
-INFO  19:08:15,370 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,370 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,370 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,370 - Parser je ucitao token:#44 -> 3
-INFO  19:08:15,371 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,371 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> k2
-INFO  19:08:15,371 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,371 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,371 - Parser je ucitao token:#44 -> 5
-INFO  19:08:15,371 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,371 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> k3
-INFO  19:08:15,371 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> t
-INFO  19:08:15,371 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,371 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,371 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,371 - Parser je ucitao token:#17 -> for
-INFO  19:08:15,371 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,371 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,371 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,371 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,371 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,371 - Parser je ucitao token:#37 -> <
-INFO  19:08:15,372 - Parser je ucitao token:#44 -> 6
-INFO  19:08:15,372 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,372 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,372 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,372 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,372 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,372 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,372 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> postaviTezinu
-INFO  19:08:15,372 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> t
-INFO  19:08:15,372 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,372 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,372 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> zapreminaS
-INFO  19:08:15,372 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,372 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,372 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,372 - Parser je ucitao token:#45 -> tezinaS
-INFO  19:08:15,372 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,372 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,373 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,373 - Parser je ucitao token:#17 -> for
-INFO  19:08:15,373 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,373 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,373 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,373 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,373 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,373 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,373 - Parser je ucitao token:#37 -> <
-INFO  19:08:15,373 - Parser je ucitao token:#44 -> 6
-INFO  19:08:15,373 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,373 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,374 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,374 - Parser je ucitao token:#15 -> if
-INFO  19:08:15,374 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,374 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,374 - Parser je ucitao token:#32 -> %
-INFO  19:08:15,374 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,374 - Parser je ucitao token:#33 -> ==
-INFO  19:08:15,374 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,374 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,374 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,374 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,375 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,375 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,375 - Parser je ucitao token:#11 -> continue
-INFO  19:08:15,375 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,375 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,375 - Parser je ucitao token:#45 -> zapreminaS
-INFO  19:08:15,375 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,376 - Parser je ucitao token:#45 -> zapreminaS
-INFO  19:08:15,376 - Parser je ucitao token:#28 -> +
-INFO  19:08:15,376 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,377 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,377 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,377 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,377 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,378 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,378 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,378 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,378 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,378 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,378 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> tezinaS
-INFO  19:08:15,379 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> tezinaS
-INFO  19:08:15,379 - Parser je ucitao token:#28 -> +
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,379 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,379 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,379 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,379 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,379 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> Q
-INFO  19:08:15,379 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,379 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,379 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> ispis
-INFO  19:08:15,379 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,379 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,379 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,379 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,379 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,379 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,379 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,379 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,379 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,379 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,379 - Parser je ucitao token:#45 -> zapreminaK
-INFO  19:08:15,379 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,379 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> tezinaK
-INFO  19:08:15,380 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 0
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,380 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,380 - Parser je ucitao token:#17 -> for
-INFO  19:08:15,380 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,380 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,380 - Parser je ucitao token:#37 -> <
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 6
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,380 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,380 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,380 - Parser je ucitao token:#15 -> if
-INFO  19:08:15,380 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,380 - Parser je ucitao token:#32 -> %
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 2
-INFO  19:08:15,380 - Parser je ucitao token:#33 -> ==
-INFO  19:08:15,380 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,380 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,380 - Parser je ucitao token:#20 -> {
-INFO  19:08:15,380 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,380 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,380 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,381 - Parser je ucitao token:#11 -> continue
-INFO  19:08:15,381 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,381 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,381 - Parser je ucitao token:#45 -> zapreminaK
-INFO  19:08:15,381 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,381 - Parser je ucitao token:#45 -> zapreminaK
-INFO  19:08:15,381 - Parser je ucitao token:#28 -> +
-INFO  19:08:15,381 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,381 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,381 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,381 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,381 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,381 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,381 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,381 - Parser je ucitao token:#45 -> zapremina
-INFO  19:08:15,381 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,382 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,382 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> tezinaK
-INFO  19:08:15,382 - Parser je ucitao token:#41 -> =
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> tezinaK
-INFO  19:08:15,382 - Parser je ucitao token:#28 -> +
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,382 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,382 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,382 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,382 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,382 - Parser je ucitao token:#24 -> .
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> Q
-INFO  19:08:15,382 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,382 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,382 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> ispis
-INFO  19:08:15,382 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> predmeti
-INFO  19:08:15,382 - Parser je ucitao token:#22 -> [
-INFO  19:08:15,382 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,382 - Parser je ucitao token:#29 -> -
-INFO  19:08:15,382 - Parser je ucitao token:#44 -> 1
-INFO  19:08:15,382 - Parser je ucitao token:#23 -> ]
-INFO  19:08:15,382 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,382 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> i
-INFO  19:08:15,383 - Parser je ucitao token:#42 -> ++
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> zapreminaS
-INFO  19:08:15,383 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,383 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> zapreminaK
-INFO  19:08:15,383 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,383 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,383 - Parser je ucitao token:#45 -> tezinaS
-INFO  19:08:15,383 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,383 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,383 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,383 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,384 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,384 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,384 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,384 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,384 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,384 - Parser je ucitao token:#45 -> tezinaK
-INFO  19:08:15,384 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,384 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,384 - Parser je ucitao token:#12 -> print
-INFO  19:08:15,384 - Parser je ucitao token:#18 -> (
-INFO  19:08:15,384 - Parser je ucitao token:#45 -> eol
-INFO  19:08:15,384 - Parser je ucitao token:#19 -> )
-INFO  19:08:15,384 - Parser je ucitao token:#26 -> ;
-INFO  19:08:15,384 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,384 - Parser je ucitao token:#21 -> }
-INFO  19:08:15,384 - Parser je ucitao token:#0 -> EOF
-INFO  19:08:15,385 - Parser je ucitao token:#0 -> EOF
-INFO  19:08:15,385 - ===========================================================
-INFO  19:08:15,385 - APSTRAKTNO SINTAKSNO STABLO
-INFO  19:08:15,404 - Program(
+INFO  21:49:02,556 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\official\test303.mj
+INFO  21:49:02,557 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\official\test303.obj
+INFO  21:49:02,646 - Parser je ucitao token:#2 -> program
+INFO  21:49:02,647 - Parser je ucitao token:#45 -> test_303
+INFO  21:49:02,647 - Parser je ucitao token:#4 -> namespace
+INFO  21:49:02,649 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,649 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,650 - Parser je ucitao token:#8 -> const
+INFO  21:49:02,651 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,651 - Parser je ucitao token:#45 -> cinilac
+INFO  21:49:02,653 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,655 - Parser je ucitao token:#44 -> 4
+INFO  21:49:02,655 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,655 - Parser je ucitao token:#45 -> delilac
+INFO  21:49:02,656 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,656 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,656 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,656 - Parser je ucitao token:#3 -> class
+INFO  21:49:02,658 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,658 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,660 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,663 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,665 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,665 - Parser je ucitao token:#45 -> char
+INFO  21:49:02,667 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,667 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,667 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,667 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,668 - Parser je ucitao token:#45 -> postaviTezinu
+INFO  21:49:02,668 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,668 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,669 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,669 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,669 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,670 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,673 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,673 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,673 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,674 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,675 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,676 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,676 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,677 - Parser je ucitao token:#45 -> ucitajTezinu
+INFO  21:49:02,678 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,678 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,680 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,680 - Parser je ucitao token:#13 -> read
+INFO  21:49:02,680 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,680 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,680 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,681 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,681 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,681 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,681 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,682 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,682 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,682 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,682 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,682 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,683 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,683 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,683 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,683 - Parser je ucitao token:#45 -> Q
+INFO  21:49:02,684 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,684 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,684 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,684 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,685 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,685 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,685 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,686 - Parser je ucitao token:#30 -> *
+INFO  21:49:02,688 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,690 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,690 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,690 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,691 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,691 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,691 - Parser je ucitao token:#45 -> char
+INFO  21:49:02,691 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,691 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,691 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,691 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,692 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,692 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,692 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,692 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,692 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,692 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,692 - Parser je ucitao token:#45 -> char
+INFO  21:49:02,693 - Parser je ucitao token:#45 -> dohvVrstu
+INFO  21:49:02,693 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,693 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,693 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,693 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,693 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,693 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,694 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,694 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,694 - Parser je ucitao token:#45 -> dohvTezinu
+INFO  21:49:02,694 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,694 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,694 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,695 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,695 - Parser je ucitao token:#45 -> tezina
+INFO  21:49:02,695 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,695 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,695 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,695 - Parser je ucitao token:#45 -> ispisi
+INFO  21:49:02,695 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,696 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,696 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,696 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,696 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,696 - Parser je ucitao token:#45 -> vrsta
+INFO  21:49:02,696 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,696 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,696 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,697 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,697 - Parser je ucitao token:#45 -> Q
+INFO  21:49:02,697 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,698 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,698 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,698 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,698 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,698 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,698 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,700 - Parser je ucitao token:#3 -> class
+INFO  21:49:02,702 - Parser je ucitao token:#45 -> Sfera
+INFO  21:49:02,702 - Parser je ucitao token:#5 -> extends
+INFO  21:49:02,703 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,703 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,703 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,703 - Parser je ucitao token:#45 -> r
+INFO  21:49:02,703 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,703 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,704 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,704 - Parser je ucitao token:#45 -> postaviPoluprecnik
+INFO  21:49:02,704 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,704 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,704 - Parser je ucitao token:#45 -> r
+INFO  21:49:02,704 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,705 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,705 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,705 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,705 - Parser je ucitao token:#45 -> r
+INFO  21:49:02,705 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,705 - Parser je ucitao token:#45 -> r
+INFO  21:49:02,705 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,706 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,706 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,706 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,706 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,706 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,706 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,706 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,707 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,707 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,707 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,707 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,707 - Parser je ucitao token:#45 -> cinilac
+INFO  21:49:02,707 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,707 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,708 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,708 - Parser je ucitao token:#30 -> *
+INFO  21:49:02,708 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,708 - Parser je ucitao token:#45 -> r
+INFO  21:49:02,708 - Parser je ucitao token:#31 -> /
+INFO  21:49:02,708 - Parser je ucitao token:#45 -> delilac
+INFO  21:49:02,709 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,710 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,710 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,710 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,710 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,711 - Parser je ucitao token:#3 -> class
+INFO  21:49:02,711 - Parser je ucitao token:#45 -> Kvadar
+INFO  21:49:02,711 - Parser je ucitao token:#5 -> extends
+INFO  21:49:02,711 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,711 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,711 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,711 - Parser je ucitao token:#45 -> a
+INFO  21:49:02,711 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,711 - Parser je ucitao token:#45 -> b
+INFO  21:49:02,712 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,712 - Parser je ucitao token:#45 -> c
+INFO  21:49:02,712 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,712 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,712 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,712 - Parser je ucitao token:#45 -> postaviStranice
+INFO  21:49:02,712 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> a
+INFO  21:49:02,713 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> b
+INFO  21:49:02,713 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,713 - Parser je ucitao token:#45 -> c
+INFO  21:49:02,714 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,714 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,714 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,714 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,714 - Parser je ucitao token:#45 -> a
+INFO  21:49:02,714 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,714 - Parser je ucitao token:#45 -> a
+INFO  21:49:02,715 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,715 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,715 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,715 - Parser je ucitao token:#45 -> b
+INFO  21:49:02,715 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,715 - Parser je ucitao token:#45 -> b
+INFO  21:49:02,715 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,715 - Parser je ucitao token:#45 -> this
+INFO  21:49:02,716 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,716 - Parser je ucitao token:#45 -> c
+INFO  21:49:02,716 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,716 - Parser je ucitao token:#45 -> c
+INFO  21:49:02,716 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,716 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,716 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,716 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,716 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,717 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,717 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,717 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,717 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,717 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,717 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,717 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,717 - Parser je ucitao token:#45 -> a
+INFO  21:49:02,718 - Parser je ucitao token:#30 -> *
+INFO  21:49:02,718 - Parser je ucitao token:#45 -> b
+INFO  21:49:02,718 - Parser je ucitao token:#30 -> *
+INFO  21:49:02,718 - Parser je ucitao token:#45 -> c
+INFO  21:49:02,718 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,718 - Parser je ucitao token:#9 -> return
+INFO  21:49:02,718 - Parser je ucitao token:#45 -> z
+INFO  21:49:02,718 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,719 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,719 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,719 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,719 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,719 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,719 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,719 - Parser je ucitao token:#3 -> class
+INFO  21:49:02,721 - Parser je ucitao token:#45 -> ProstiBrojevi
+INFO  21:49:02,721 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,721 - Parser je ucitao token:#7 -> static
+INFO  21:49:02,721 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,721 - Parser je ucitao token:#45 -> prosti
+INFO  21:49:02,722 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,723 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,723 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,723 - Parser je ucitao token:#7 -> static
+INFO  21:49:02,724 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,725 - Parser je ucitao token:#45 -> X
+INFO  21:49:02,725 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,725 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,725 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,726 - Parser je ucitao token:#45 -> j
+INFO  21:49:02,726 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,727 - Parser je ucitao token:#7 -> static
+INFO  21:49:02,727 - Parser je ucitao token:#45 -> bool
+INFO  21:49:02,727 - Parser je ucitao token:#45 -> flag
+INFO  21:49:02,727 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,727 - Parser je ucitao token:#7 -> static
+INFO  21:49:02,727 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,728 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,728 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,729 - Parser je ucitao token:#47 -> 115
+INFO  21:49:02,729 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,729 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,729 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,729 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,730 - Parser je ucitao token:#47 -> 116
+INFO  21:49:02,730 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,730 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,730 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,730 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,730 - Parser je ucitao token:#47 -> 97
+INFO  21:49:02,730 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,730 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,730 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,730 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,730 - Parser je ucitao token:#47 -> 116
+INFO  21:49:02,731 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,731 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,731 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,731 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,731 - Parser je ucitao token:#47 -> 105
+INFO  21:49:02,731 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,731 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,731 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,731 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,732 - Parser je ucitao token:#47 -> 99
+INFO  21:49:02,732 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,732 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,732 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,732 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,732 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,732 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,732 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,732 - Parser je ucitao token:#45 -> prosti
+INFO  21:49:02,733 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,733 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,733 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,733 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,733 - Parser je ucitao token:#44 -> 10
+INFO  21:49:02,733 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,733 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,734 - Parser je ucitao token:#17 -> for
+INFO  21:49:02,734 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,734 - Parser je ucitao token:#45 -> X
+INFO  21:49:02,734 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,734 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,734 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,735 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,735 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,735 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,735 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,736 - Parser je ucitao token:#45 -> X
+INFO  21:49:02,737 - Parser je ucitao token:#37 -> <
+INFO  21:49:02,737 - Parser je ucitao token:#44 -> 10
+INFO  21:49:02,738 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,739 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,739 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,739 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,740 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,740 - Parser je ucitao token:#45 -> flag
+INFO  21:49:02,741 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,741 - Parser je ucitao token:#46 -> 1
+INFO  21:49:02,741 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,741 - Parser je ucitao token:#17 -> for
+INFO  21:49:02,741 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,741 - Parser je ucitao token:#45 -> j
+INFO  21:49:02,741 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,741 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,741 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,742 - Parser je ucitao token:#45 -> j
+INFO  21:49:02,742 - Parser je ucitao token:#37 -> <
+INFO  21:49:02,742 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,742 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,742 - Parser je ucitao token:#45 -> j
+INFO  21:49:02,742 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,742 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,742 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,742 - Parser je ucitao token:#15 -> if
+INFO  21:49:02,742 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,742 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,743 - Parser je ucitao token:#32 -> %
+INFO  21:49:02,743 - Parser je ucitao token:#45 -> j
+INFO  21:49:02,744 - Parser je ucitao token:#33 -> ==
+INFO  21:49:02,744 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,746 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,747 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,747 - Parser je ucitao token:#45 -> flag
+INFO  21:49:02,747 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,747 - Parser je ucitao token:#46 -> 0
+INFO  21:49:02,747 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,747 - Parser je ucitao token:#10 -> break
+INFO  21:49:02,747 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,747 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,748 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,749 - Parser je ucitao token:#15 -> if
+INFO  21:49:02,750 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,750 - Parser je ucitao token:#45 -> flag
+INFO  21:49:02,750 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,750 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,750 - Parser je ucitao token:#45 -> prosti
+INFO  21:49:02,750 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,750 - Parser je ucitao token:#45 -> X
+INFO  21:49:02,750 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,751 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,751 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,751 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,751 - Parser je ucitao token:#45 -> X
+INFO  21:49:02,751 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,751 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,751 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,751 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,751 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,751 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,754 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,754 - Parser je ucitao token:#45 -> zapreminaK
+INFO  21:49:02,754 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,754 - Parser je ucitao token:#45 -> zapreminaS
+INFO  21:49:02,754 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,754 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,754 - Parser je ucitao token:#45 -> tezinaK
+INFO  21:49:02,755 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,755 - Parser je ucitao token:#45 -> tezinaS
+INFO  21:49:02,755 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,755 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,755 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,755 - Parser je ucitao token:#45 -> ispis
+INFO  21:49:02,755 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,755 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,755 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,755 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,756 - Parser je ucitao token:#45 -> p
+INFO  21:49:02,756 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,756 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,756 - Parser je ucitao token:#45 -> p
+INFO  21:49:02,756 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,756 - Parser je ucitao token:#45 -> ispisi
+INFO  21:49:02,756 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,756 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,756 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,756 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,757 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,757 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,757 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,757 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,757 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,757 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,757 - Parser je ucitao token:#45 -> p
+INFO  21:49:02,757 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,757 - Parser je ucitao token:#45 -> dohvTezinu
+INFO  21:49:02,758 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,758 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,758 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,758 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,758 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,758 - Parser je ucitao token:#6 -> void
+INFO  21:49:02,758 - Parser je ucitao token:#45 -> main
+INFO  21:49:02,758 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,758 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,758 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,758 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,759 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,759 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,759 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,760 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,760 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,761 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,761 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> Sfera
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> s1
+INFO  21:49:02,761 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,761 - Parser je ucitao token:#45 -> s2
+INFO  21:49:02,762 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> s3
+INFO  21:49:02,762 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,762 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> Kvadar
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> k1
+INFO  21:49:02,762 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> k2
+INFO  21:49:02,762 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> k3
+INFO  21:49:02,762 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> int
+INFO  21:49:02,762 - Parser je ucitao token:#45 -> t
+INFO  21:49:02,762 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,763 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,763 - Parser je ucitao token:#15 -> if
+INFO  21:49:02,763 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,763 - Parser je ucitao token:#45 -> ProstiBrojevi
+INFO  21:49:02,763 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,763 - Parser je ucitao token:#45 -> prosti
+INFO  21:49:02,763 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,763 - Parser je ucitao token:#44 -> 9
+INFO  21:49:02,763 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,763 - Parser je ucitao token:#33 -> ==
+INFO  21:49:02,763 - Parser je ucitao token:#44 -> 29
+INFO  21:49:02,763 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,763 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,764 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,764 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,764 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,764 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,764 - Parser je ucitao token:#16 -> else
+INFO  21:49:02,764 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,764 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,764 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,764 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,764 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,764 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,764 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,765 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,765 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,765 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,765 - Parser je ucitao token:#45 -> Predmet
+INFO  21:49:02,765 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,765 - Parser je ucitao token:#44 -> 6
+INFO  21:49:02,765 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,765 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,765 - Parser je ucitao token:#45 -> s1
+INFO  21:49:02,765 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,765 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,765 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,765 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,765 - Parser je ucitao token:#45 -> Sfera
+INFO  21:49:02,765 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,769 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,769 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,769 - Parser je ucitao token:#45 -> s1
+INFO  21:49:02,769 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,769 - Parser je ucitao token:#45 -> postaviPoluprecnik
+INFO  21:49:02,769 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,769 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,769 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,771 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,771 - Parser je ucitao token:#45 -> s1
+INFO  21:49:02,771 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,771 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,771 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,771 - Parser je ucitao token:#47 -> 115
+INFO  21:49:02,771 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,771 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,771 - Parser je ucitao token:#45 -> s2
+INFO  21:49:02,771 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,771 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,772 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> Sfera
+INFO  21:49:02,772 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,772 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,772 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> s2
+INFO  21:49:02,772 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> postaviPoluprecnik
+INFO  21:49:02,772 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,772 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,772 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,772 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> s2
+INFO  21:49:02,772 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,772 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,772 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,773 - Parser je ucitao token:#47 -> 115
+INFO  21:49:02,773 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,773 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,773 - Parser je ucitao token:#45 -> s3
+INFO  21:49:02,773 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,773 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,773 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,773 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,773 - Parser je ucitao token:#45 -> Sfera
+INFO  21:49:02,773 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,773 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,773 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,773 - Parser je ucitao token:#45 -> s3
+INFO  21:49:02,773 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,773 - Parser je ucitao token:#45 -> postaviPoluprecnik
+INFO  21:49:02,774 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,774 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,774 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,774 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,774 - Parser je ucitao token:#45 -> s3
+INFO  21:49:02,774 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,774 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,774 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,774 - Parser je ucitao token:#47 -> 115
+INFO  21:49:02,774 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,774 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,774 - Parser je ucitao token:#45 -> k3
+INFO  21:49:02,774 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,774 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,774 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,774 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,774 - Parser je ucitao token:#45 -> Kvadar
+INFO  21:49:02,775 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,775 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,775 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,775 - Parser je ucitao token:#45 -> k3
+INFO  21:49:02,775 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,775 - Parser je ucitao token:#45 -> postaviStranice
+INFO  21:49:02,775 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,775 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,775 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,775 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,775 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,775 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,776 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,776 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,776 - Parser je ucitao token:#45 -> k3
+INFO  21:49:02,776 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,776 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,776 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,776 - Parser je ucitao token:#47 -> 107
+INFO  21:49:02,776 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,776 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,776 - Parser je ucitao token:#45 -> k1
+INFO  21:49:02,776 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,776 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,777 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,777 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,777 - Parser je ucitao token:#45 -> Kvadar
+INFO  21:49:02,777 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,777 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,777 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,777 - Parser je ucitao token:#45 -> k1
+INFO  21:49:02,777 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,777 - Parser je ucitao token:#45 -> postaviStranice
+INFO  21:49:02,777 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,777 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,777 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,777 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,777 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,778 - Parser je ucitao token:#44 -> 4
+INFO  21:49:02,778 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,778 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,778 - Parser je ucitao token:#45 -> k1
+INFO  21:49:02,778 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,778 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,778 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,778 - Parser je ucitao token:#47 -> 107
+INFO  21:49:02,778 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,778 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,778 - Parser je ucitao token:#45 -> k2
+INFO  21:49:02,778 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,778 - Parser je ucitao token:#14 -> new
+INFO  21:49:02,778 - Parser je ucitao token:#45 -> Predmeti
+INFO  21:49:02,778 - Parser je ucitao token:#27 -> ::
+INFO  21:49:02,778 - Parser je ucitao token:#45 -> Kvadar
+INFO  21:49:02,778 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,778 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,779 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,779 - Parser je ucitao token:#45 -> k2
+INFO  21:49:02,779 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,779 - Parser je ucitao token:#45 -> postaviStranice
+INFO  21:49:02,779 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,779 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,779 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,779 - Parser je ucitao token:#44 -> 4
+INFO  21:49:02,779 - Parser je ucitao token:#25 -> ,
+INFO  21:49:02,779 - Parser je ucitao token:#44 -> 5
+INFO  21:49:02,779 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,779 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,779 - Parser je ucitao token:#45 -> k2
+INFO  21:49:02,779 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,779 - Parser je ucitao token:#45 -> postaviVrstu
+INFO  21:49:02,779 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,779 - Parser je ucitao token:#47 -> 107
+INFO  21:49:02,779 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,780 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,780 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,780 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,780 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,780 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,780 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,780 - Parser je ucitao token:#45 -> s1
+INFO  21:49:02,780 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,780 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,780 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,780 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,780 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,780 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,780 - Parser je ucitao token:#45 -> s2
+INFO  21:49:02,780 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,781 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,781 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,781 - Parser je ucitao token:#44 -> 4
+INFO  21:49:02,781 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,781 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,781 - Parser je ucitao token:#45 -> s3
+INFO  21:49:02,781 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,781 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,781 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,781 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,781 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,781 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,781 - Parser je ucitao token:#45 -> k1
+INFO  21:49:02,781 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,781 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,782 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,782 - Parser je ucitao token:#44 -> 3
+INFO  21:49:02,782 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,782 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,782 - Parser je ucitao token:#45 -> k2
+INFO  21:49:02,782 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,782 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,782 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,782 - Parser je ucitao token:#44 -> 5
+INFO  21:49:02,782 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,782 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,782 - Parser je ucitao token:#45 -> k3
+INFO  21:49:02,782 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,782 - Parser je ucitao token:#13 -> read
+INFO  21:49:02,782 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,782 - Parser je ucitao token:#45 -> t
+INFO  21:49:02,782 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,783 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,783 - Parser je ucitao token:#17 -> for
+INFO  21:49:02,783 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,783 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,783 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,783 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,783 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,783 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,783 - Parser je ucitao token:#37 -> <
+INFO  21:49:02,783 - Parser je ucitao token:#44 -> 6
+INFO  21:49:02,784 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,784 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,784 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,784 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,784 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,784 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,784 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,784 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,784 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,785 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,785 - Parser je ucitao token:#45 -> postaviTezinu
+INFO  21:49:02,785 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,785 - Parser je ucitao token:#45 -> t
+INFO  21:49:02,785 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,785 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,785 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,785 - Parser je ucitao token:#45 -> zapreminaS
+INFO  21:49:02,785 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,785 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,785 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,786 - Parser je ucitao token:#45 -> tezinaS
+INFO  21:49:02,786 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,786 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,786 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,786 - Parser je ucitao token:#17 -> for
+INFO  21:49:02,786 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,786 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,786 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,786 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,786 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,786 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,786 - Parser je ucitao token:#37 -> <
+INFO  21:49:02,786 - Parser je ucitao token:#44 -> 6
+INFO  21:49:02,786 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,787 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,788 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,788 - Parser je ucitao token:#15 -> if
+INFO  21:49:02,788 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,788 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,788 - Parser je ucitao token:#32 -> %
+INFO  21:49:02,788 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,788 - Parser je ucitao token:#33 -> ==
+INFO  21:49:02,788 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,788 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,788 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,788 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,788 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,788 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,788 - Parser je ucitao token:#11 -> continue
+INFO  21:49:02,788 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,789 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,789 - Parser je ucitao token:#45 -> zapreminaS
+INFO  21:49:02,790 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,790 - Parser je ucitao token:#45 -> zapreminaS
+INFO  21:49:02,790 - Parser je ucitao token:#28 -> +
+INFO  21:49:02,790 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,791 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,791 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,791 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,792 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,792 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,793 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,793 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,793 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,793 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> tezinaS
+INFO  21:49:02,793 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> tezinaS
+INFO  21:49:02,793 - Parser je ucitao token:#28 -> +
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,793 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,793 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,793 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,793 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,793 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,793 - Parser je ucitao token:#45 -> Q
+INFO  21:49:02,793 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,794 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,794 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,794 - Parser je ucitao token:#45 -> ispis
+INFO  21:49:02,794 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,794 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,794 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,794 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,794 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,794 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,794 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,794 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,794 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,794 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,794 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,794 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,794 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,794 - Parser je ucitao token:#45 -> zapreminaK
+INFO  21:49:02,794 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,794 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,794 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,795 - Parser je ucitao token:#45 -> tezinaK
+INFO  21:49:02,795 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,795 - Parser je ucitao token:#44 -> 0
+INFO  21:49:02,795 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,795 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,795 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,795 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,795 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,795 - Parser je ucitao token:#17 -> for
+INFO  21:49:02,795 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,795 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,795 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,795 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,795 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,795 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,795 - Parser je ucitao token:#37 -> <
+INFO  21:49:02,795 - Parser je ucitao token:#44 -> 6
+INFO  21:49:02,795 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,796 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,796 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,796 - Parser je ucitao token:#15 -> if
+INFO  21:49:02,796 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,796 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,796 - Parser je ucitao token:#32 -> %
+INFO  21:49:02,796 - Parser je ucitao token:#44 -> 2
+INFO  21:49:02,796 - Parser je ucitao token:#33 -> ==
+INFO  21:49:02,796 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,796 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,796 - Parser je ucitao token:#20 -> {
+INFO  21:49:02,796 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,796 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,796 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,796 - Parser je ucitao token:#11 -> continue
+INFO  21:49:02,796 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,796 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,796 - Parser je ucitao token:#45 -> zapreminaK
+INFO  21:49:02,796 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> zapreminaK
+INFO  21:49:02,797 - Parser je ucitao token:#28 -> +
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,797 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,797 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,797 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,797 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,797 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> zapremina
+INFO  21:49:02,797 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,797 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,797 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> tezinaK
+INFO  21:49:02,797 - Parser je ucitao token:#41 -> =
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> tezinaK
+INFO  21:49:02,797 - Parser je ucitao token:#28 -> +
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,797 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,797 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,798 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,798 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,798 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,798 - Parser je ucitao token:#24 -> .
+INFO  21:49:02,798 - Parser je ucitao token:#45 -> Q
+INFO  21:49:02,798 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,798 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,798 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,798 - Parser je ucitao token:#45 -> ispis
+INFO  21:49:02,798 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,798 - Parser je ucitao token:#45 -> predmeti
+INFO  21:49:02,798 - Parser je ucitao token:#22 -> [
+INFO  21:49:02,798 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,798 - Parser je ucitao token:#29 -> -
+INFO  21:49:02,798 - Parser je ucitao token:#44 -> 1
+INFO  21:49:02,798 - Parser je ucitao token:#23 -> ]
+INFO  21:49:02,798 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,798 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,798 - Parser je ucitao token:#45 -> i
+INFO  21:49:02,798 - Parser je ucitao token:#42 -> ++
+INFO  21:49:02,799 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,799 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,799 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,799 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,799 - Parser je ucitao token:#45 -> zapreminaS
+INFO  21:49:02,799 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,799 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,799 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,799 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,799 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,799 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,799 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,799 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,799 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,799 - Parser je ucitao token:#45 -> zapreminaK
+INFO  21:49:02,800 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,800 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,800 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,800 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,800 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,800 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,800 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,800 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,800 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,800 - Parser je ucitao token:#45 -> tezinaS
+INFO  21:49:02,800 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,800 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,800 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,800 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,800 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,800 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,800 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,800 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,800 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,800 - Parser je ucitao token:#45 -> tezinaK
+INFO  21:49:02,801 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,801 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,801 - Parser je ucitao token:#12 -> print
+INFO  21:49:02,801 - Parser je ucitao token:#18 -> (
+INFO  21:49:02,801 - Parser je ucitao token:#45 -> eol
+INFO  21:49:02,801 - Parser je ucitao token:#19 -> )
+INFO  21:49:02,801 - Parser je ucitao token:#26 -> ;
+INFO  21:49:02,801 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,801 - Parser je ucitao token:#21 -> }
+INFO  21:49:02,801 - Parser je ucitao token:#0 -> EOF
+INFO  21:49:02,803 - Parser je ucitao token:#0 -> EOF
+INFO  21:49:02,803 - ===========================================================
+INFO  21:49:02,803 - APSTRAKTNO SINTAKSNO STABLO
+INFO  21:49:02,830 - Program(
   ProgramName(
    test_303
   ) [ProgramName]
@@ -3193,22 +3194,11 @@ INFO  19:08:15,404 - Program(
                                             ) [DesignatorStatementAssign]
                                           ) [StatementDesignatorStatement]
                                         ) [StatementListItem]
-                                        StatementDesignatorStatement(
-                                          DesignatorStatementAssign(
-                                            DesignatorSimple(
-                                             t
-                                            ) [DesignatorSimple]
-                                            Assignop(
-                                            ) [Assignop]
-                                            ExprSingle(
-                                              TermSingle(
-                                                FactorNum(
-                                                 2
-                                                ) [FactorNum]
-                                              ) [TermSingle]
-                                            ) [ExprSingle]
-                                          ) [DesignatorStatementAssign]
-                                        ) [StatementDesignatorStatement]
+                                        StatementRead(
+                                          DesignatorSimple(
+                                           t
+                                          ) [DesignatorSimple]
+                                        ) [StatementRead]
                                       ) [StatementListItem]
                                       StatementFor(
                                         ForEntry(
@@ -4040,184 +4030,184 @@ INFO  19:08:15,404 - Program(
     ) [Method]
   ) [MethodListItem]
 ) [Program]
-INFO  19:08:15,406 - ===========================================================
-INFO  19:08:15,422 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,422 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,423 - Trazi se char - Type char: char, -1, -1, 0
-INFO  19:08:15,423 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,423 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,424 - Trazi se tezina - Var tezina: int, 1, 1, 0
-INFO  19:08:15,424 - Trazi se tezina - Fld tezina: int, 1, 1, -1
-INFO  19:08:15,424 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,424 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,424 - Trazi se zapremina - Meth zapremina: int, -1, 1, 1
-INFO  19:08:15,426 - Trazi se tezina - Fld tezina: int, 1, 1, -1
-INFO  19:08:15,427 - Trazi se char - Type char: char, -1, -1, 0
-INFO  19:08:15,427 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,427 - Trazi se vrsta - Var vrsta: char, 1, 1, 0
-INFO  19:08:15,427 - Trazi se char - Type char: char, -1, -1, 0
-INFO  19:08:15,427 - Trazi se vrsta - Fld vrsta: char, 2, 1, -1
-INFO  19:08:15,427 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,427 - Trazi se tezina - Fld tezina: int, 1, 1, -1
-INFO  19:08:15,427 - Trazi se vrsta - Fld vrsta: char, 2, 1, -1
-INFO  19:08:15,427 - Trazi se Q - Meth Q: int, -1, 1, 1
-INFO  19:08:15,427 - Trazi se Predmet - Type Predmet: Class, 1, 0, 2
-INFO  19:08:15,427 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,427 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,428 - Trazi se r - Var r: int, 1, 1, 0
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se z - Var z: int, 1, 1, 1
-INFO  19:08:15,428 - Trazi se cinilac - Con cinilac: int, 4, 0, -1
-INFO  19:08:15,428 - Trazi se z - Var z: int, 1, 1, 1
-INFO  19:08:15,428 - Trazi se r - Fld r: int, 3, 1, -1
-INFO  19:08:15,428 - Trazi se delilac - Con delilac: int, 3, 0, -1
-INFO  19:08:15,428 - Trazi se Predmet - Type Predmet: Class, 1, 0, 2
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,428 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,428 - Trazi se a - Var a: int, 1, 1, 0
-INFO  19:08:15,429 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,429 - Trazi se b - Var b: int, 2, 1, 0
-INFO  19:08:15,429 - Trazi se this - Var this: Class, 0, 1, 0
-INFO  19:08:15,429 - Trazi se c - Var c: int, 3, 1, 0
-INFO  19:08:15,429 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,429 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,429 - Trazi se z - Var z: int, 1, 1, 1
-INFO  19:08:15,429 - Trazi se a - Fld a: int, 3, 1, -1
-INFO  19:08:15,429 - Trazi se b - Fld b: int, 4, 1, -1
-INFO  19:08:15,429 - Trazi se c - Fld c: int, 5, 1, -1
-INFO  19:08:15,429 - Trazi se z - Var z: int, 1, 1, 1
-INFO  19:08:15,429 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,429 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,429 - Trazi se bool - Type bool: bool, 0, 0, 0
-INFO  19:08:15,430 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,430 - Trazi se prosti - Var prosti: Arr of int, 305, 0, -1
-INFO  19:08:15,430 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,430 - Trazi se X - Var X: int, 306, 0, -1
-INFO  19:08:15,430 - Trazi se i - Var i: int, 307, 0, -1
-INFO  19:08:15,430 - Trazi se X - Var X: int, 306, 0, -1
-INFO  19:08:15,431 - Trazi se i - Var i: int, 307, 0, -1
-INFO  19:08:15,431 - Trazi se flag - Var flag: bool, 309, 0, -1
-INFO  19:08:15,431 - Trazi se j - Var j: int, 308, 0, -1
-INFO  19:08:15,431 - Trazi se j - Var j: int, 308, 0, -1
-INFO  19:08:15,431 - Trazi se i - Var i: int, 307, 0, -1
-INFO  19:08:15,431 - Trazi se j - Var j: int, 308, 0, -1
-INFO  19:08:15,431 - Trazi se i - Var i: int, 307, 0, -1
-INFO  19:08:15,431 - Trazi se j - Var j: int, 308, 0, -1
-INFO  19:08:15,431 - Trazi se flag - Var flag: bool, 309, 0, -1
-INFO  19:08:15,431 - Trazi se flag - Var flag: bool, 309, 0, -1
-INFO  19:08:15,431 - Trazi se prosti - Var prosti: Arr of int, 305, 0, -1
-INFO  19:08:15,431 - Trazi se X - Var X: int, 306, 0, -1
-INFO  19:08:15,431 - Trazi se i - Var i: int, 307, 0, -1
-INFO  19:08:15,432 - Trazi se X - Var X: int, 306, 0, -1
-INFO  19:08:15,432 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,432 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,432 - Trazi se p - Var p: Class, 0, 1, 0
-INFO  19:08:15,432 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,432 - Trazi se p - Var p: Class, 0, 1, 0
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,432 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,432 - Trazi se int - Type int: int, -1, -1, 0
-INFO  19:08:15,432 - Trazi se ProstiBrojevi - Type ProstiBrojevi: Class, 310, 0, 0
-INFO  19:08:15,432 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,432 - Trazi se s1 - Var s1: Class, 2, 1, 1
-INFO  19:08:15,432 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se s1 - Var s1: Class, 2, 1, 1
-INFO  19:08:15,434 - Trazi se s1 - Var s1: Class, 2, 1, 1
-INFO  19:08:15,434 - Trazi se s2 - Var s2: Class, 3, 1, 1
-INFO  19:08:15,434 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se s2 - Var s2: Class, 3, 1, 1
-INFO  19:08:15,434 - Trazi se s2 - Var s2: Class, 3, 1, 1
-INFO  19:08:15,434 - Trazi se s3 - Var s3: Class, 4, 1, 1
-INFO  19:08:15,434 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se s3 - Var s3: Class, 4, 1, 1
-INFO  19:08:15,434 - Trazi se s3 - Var s3: Class, 4, 1, 1
-INFO  19:08:15,434 - Trazi se k3 - Var k3: Class, 7, 1, 1
-INFO  19:08:15,434 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se k3 - Var k3: Class, 7, 1, 1
-INFO  19:08:15,434 - Trazi se k3 - Var k3: Class, 7, 1, 1
-INFO  19:08:15,434 - Trazi se k1 - Var k1: Class, 5, 1, 1
-INFO  19:08:15,434 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se k1 - Var k1: Class, 5, 1, 1
-INFO  19:08:15,434 - Trazi se k1 - Var k1: Class, 5, 1, 1
-INFO  19:08:15,434 - Trazi se k2 - Var k2: Class, 6, 1, 1
-INFO  19:08:15,434 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
-INFO  19:08:15,434 - Trazi se k2 - Var k2: Class, 6, 1, 1
-INFO  19:08:15,434 - Trazi se k2 - Var k2: Class, 6, 1, 1
-INFO  19:08:15,434 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,434 - Trazi se s1 - Var s1: Class, 2, 1, 1
-INFO  19:08:15,434 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se s2 - Var s2: Class, 3, 1, 1
-INFO  19:08:15,435 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se s3 - Var s3: Class, 4, 1, 1
-INFO  19:08:15,435 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se k1 - Var k1: Class, 5, 1, 1
-INFO  19:08:15,435 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se k2 - Var k2: Class, 6, 1, 1
-INFO  19:08:15,435 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se k3 - Var k3: Class, 7, 1, 1
-INFO  19:08:15,435 - Trazi se t - Var t: int, 8, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se t - Var t: int, 8, 1, 1
-INFO  19:08:15,435 - Trazi se zapreminaS - Var zapreminaS: int, 312, 0, -1
-INFO  19:08:15,435 - Trazi se tezinaS - Var tezinaS: int, 314, 0, -1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,435 - Trazi se zapreminaS - Var zapreminaS: int, 312, 0, -1
-INFO  19:08:15,435 - Trazi se zapreminaS - Var zapreminaS: int, 312, 0, -1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se tezinaS - Var tezinaS: int, 314, 0, -1
-INFO  19:08:15,436 - Trazi se tezinaS - Var tezinaS: int, 314, 0, -1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se ispis - Meth ispis: notype, -1, 0, 1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se zapreminaK - Var zapreminaK: int, 311, 0, -1
-INFO  19:08:15,436 - Trazi se tezinaK - Var tezinaK: int, 313, 0, -1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se zapreminaK - Var zapreminaK: int, 311, 0, -1
-INFO  19:08:15,436 - Trazi se zapreminaK - Var zapreminaK: int, 311, 0, -1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se tezinaK - Var tezinaK: int, 313, 0, -1
-INFO  19:08:15,436 - Trazi se tezinaK - Var tezinaK: int, 313, 0, -1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se ispis - Meth ispis: notype, -1, 0, 1
-INFO  19:08:15,436 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se i - Var i: int, 1, 1, 1
-INFO  19:08:15,436 - Trazi se zapreminaS - Var zapreminaS: int, 312, 0, -1
-INFO  19:08:15,437 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,437 - Trazi se zapreminaK - Var zapreminaK: int, 311, 0, -1
-INFO  19:08:15,437 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,437 - Trazi se tezinaS - Var tezinaS: int, 314, 0, -1
-INFO  19:08:15,437 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,437 - Trazi se tezinaK - Var tezinaK: int, 313, 0, -1
-INFO  19:08:15,438 - Trazi se eol - Con eol: char, 10, 0, 0
-INFO  19:08:15,438 - ===========================================================
-INFO  19:08:15,438 - TABELA SIMBOLA
+INFO  21:49:02,832 - ===========================================================
+INFO  21:49:02,857 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,857 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,858 - Trazi se char - Type char: char, -1, -1, 0
+INFO  21:49:02,858 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,858 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,858 - Trazi se tezina - Var tezina: int, 1, 1, 0
+INFO  21:49:02,859 - Trazi se tezina - Fld tezina: int, 1, 1, -1
+INFO  21:49:02,859 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,859 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,859 - Trazi se zapremina - Meth zapremina: int, -1, 1, 1
+INFO  21:49:02,860 - Trazi se tezina - Fld tezina: int, 1, 1, -1
+INFO  21:49:02,861 - Trazi se char - Type char: char, -1, -1, 0
+INFO  21:49:02,861 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,861 - Trazi se vrsta - Var vrsta: char, 1, 1, 0
+INFO  21:49:02,861 - Trazi se char - Type char: char, -1, -1, 0
+INFO  21:49:02,861 - Trazi se vrsta - Fld vrsta: char, 2, 1, -1
+INFO  21:49:02,861 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,861 - Trazi se tezina - Fld tezina: int, 1, 1, -1
+INFO  21:49:02,861 - Trazi se vrsta - Fld vrsta: char, 2, 1, -1
+INFO  21:49:02,861 - Trazi se Q - Meth Q: int, -1, 1, 1
+INFO  21:49:02,861 - Trazi se Predmet - Type Predmet: Class, 0, 0, 2
+INFO  21:49:02,861 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,862 - Trazi se r - Var r: int, 1, 1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se z - Var z: int, 1, 1, 1
+INFO  21:49:02,862 - Trazi se cinilac - Con cinilac: int, 4, 0, -1
+INFO  21:49:02,862 - Trazi se z - Var z: int, 1, 1, 1
+INFO  21:49:02,862 - Trazi se r - Fld r: int, 3, 1, -1
+INFO  21:49:02,862 - Trazi se delilac - Con delilac: int, 3, 0, -1
+INFO  21:49:02,862 - Trazi se Predmet - Type Predmet: Class, 0, 0, 2
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,862 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,863 - Trazi se a - Var a: int, 1, 1, 0
+INFO  21:49:02,863 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,863 - Trazi se b - Var b: int, 2, 1, 0
+INFO  21:49:02,863 - Trazi se this - Var this: Class, 0, 1, 0
+INFO  21:49:02,863 - Trazi se c - Var c: int, 3, 1, 0
+INFO  21:49:02,863 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,863 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,863 - Trazi se z - Var z: int, 1, 1, 1
+INFO  21:49:02,863 - Trazi se a - Fld a: int, 3, 1, -1
+INFO  21:49:02,863 - Trazi se b - Fld b: int, 4, 1, -1
+INFO  21:49:02,863 - Trazi se c - Fld c: int, 5, 1, -1
+INFO  21:49:02,863 - Trazi se z - Var z: int, 1, 1, 1
+INFO  21:49:02,863 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,863 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,863 - Trazi se bool - Type bool: bool, 0, 0, 0
+INFO  21:49:02,863 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,863 - Trazi se prosti - Var prosti: Arr of int, 304, 0, -1
+INFO  21:49:02,863 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,863 - Trazi se X - Var X: int, 305, 0, -1
+INFO  21:49:02,863 - Trazi se i - Var i: int, 306, 0, -1
+INFO  21:49:02,864 - Trazi se X - Var X: int, 305, 0, -1
+INFO  21:49:02,865 - Trazi se i - Var i: int, 306, 0, -1
+INFO  21:49:02,865 - Trazi se flag - Var flag: bool, 308, 0, -1
+INFO  21:49:02,865 - Trazi se j - Var j: int, 307, 0, -1
+INFO  21:49:02,865 - Trazi se j - Var j: int, 307, 0, -1
+INFO  21:49:02,865 - Trazi se i - Var i: int, 306, 0, -1
+INFO  21:49:02,865 - Trazi se j - Var j: int, 307, 0, -1
+INFO  21:49:02,865 - Trazi se i - Var i: int, 306, 0, -1
+INFO  21:49:02,865 - Trazi se j - Var j: int, 307, 0, -1
+INFO  21:49:02,865 - Trazi se flag - Var flag: bool, 308, 0, -1
+INFO  21:49:02,865 - Trazi se flag - Var flag: bool, 308, 0, -1
+INFO  21:49:02,865 - Trazi se prosti - Var prosti: Arr of int, 304, 0, -1
+INFO  21:49:02,865 - Trazi se X - Var X: int, 305, 0, -1
+INFO  21:49:02,865 - Trazi se i - Var i: int, 306, 0, -1
+INFO  21:49:02,865 - Trazi se X - Var X: int, 305, 0, -1
+INFO  21:49:02,865 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,865 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,866 - Trazi se p - Var p: Class, 0, 1, 0
+INFO  21:49:02,866 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,866 - Trazi se p - Var p: Class, 0, 1, 0
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,866 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,866 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:49:02,866 - Trazi se ProstiBrojevi - Type ProstiBrojevi: Class, 309, 0, 0
+INFO  21:49:02,866 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,866 - Trazi se s1 - Var s1: Class, 2, 1, 1
+INFO  21:49:02,866 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,868 - Trazi se s1 - Var s1: Class, 2, 1, 1
+INFO  21:49:02,868 - Trazi se s1 - Var s1: Class, 2, 1, 1
+INFO  21:49:02,868 - Trazi se s2 - Var s2: Class, 3, 1, 1
+INFO  21:49:02,868 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,868 - Trazi se s2 - Var s2: Class, 3, 1, 1
+INFO  21:49:02,868 - Trazi se s2 - Var s2: Class, 3, 1, 1
+INFO  21:49:02,868 - Trazi se s3 - Var s3: Class, 4, 1, 1
+INFO  21:49:02,868 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,868 - Trazi se s3 - Var s3: Class, 4, 1, 1
+INFO  21:49:02,868 - Trazi se s3 - Var s3: Class, 4, 1, 1
+INFO  21:49:02,868 - Trazi se k3 - Var k3: Class, 7, 1, 1
+INFO  21:49:02,868 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,868 - Trazi se k3 - Var k3: Class, 7, 1, 1
+INFO  21:49:02,868 - Trazi se k3 - Var k3: Class, 7, 1, 1
+INFO  21:49:02,869 - Trazi se k1 - Var k1: Class, 5, 1, 1
+INFO  21:49:02,869 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,869 - Trazi se k1 - Var k1: Class, 5, 1, 1
+INFO  21:49:02,869 - Trazi se k1 - Var k1: Class, 5, 1, 1
+INFO  21:49:02,869 - Trazi se k2 - Var k2: Class, 6, 1, 1
+INFO  21:49:02,869 - Trazi se Predmeti - Namespace Predmeti: notype, -1, 0, -1
+INFO  21:49:02,869 - Trazi se k2 - Var k2: Class, 6, 1, 1
+INFO  21:49:02,869 - Trazi se k2 - Var k2: Class, 6, 1, 1
+INFO  21:49:02,869 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,869 - Trazi se s1 - Var s1: Class, 2, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se s2 - Var s2: Class, 3, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se s3 - Var s3: Class, 4, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se k1 - Var k1: Class, 5, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se k2 - Var k2: Class, 6, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se k3 - Var k3: Class, 7, 1, 1
+INFO  21:49:02,870 - Trazi se t - Var t: int, 8, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se t - Var t: int, 8, 1, 1
+INFO  21:49:02,870 - Trazi se zapreminaS - Var zapreminaS: int, 311, 0, -1
+INFO  21:49:02,870 - Trazi se tezinaS - Var tezinaS: int, 313, 0, -1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,870 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se zapreminaS - Var zapreminaS: int, 311, 0, -1
+INFO  21:49:02,871 - Trazi se zapreminaS - Var zapreminaS: int, 311, 0, -1
+INFO  21:49:02,871 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se tezinaS - Var tezinaS: int, 313, 0, -1
+INFO  21:49:02,871 - Trazi se tezinaS - Var tezinaS: int, 313, 0, -1
+INFO  21:49:02,871 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se ispis - Meth ispis: notype, -1, 0, 1
+INFO  21:49:02,871 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se zapreminaK - Var zapreminaK: int, 310, 0, -1
+INFO  21:49:02,871 - Trazi se tezinaK - Var tezinaK: int, 312, 0, -1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,871 - Trazi se zapreminaK - Var zapreminaK: int, 310, 0, -1
+INFO  21:49:02,871 - Trazi se zapreminaK - Var zapreminaK: int, 310, 0, -1
+INFO  21:49:02,872 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,872 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,872 - Trazi se tezinaK - Var tezinaK: int, 312, 0, -1
+INFO  21:49:02,872 - Trazi se tezinaK - Var tezinaK: int, 312, 0, -1
+INFO  21:49:02,872 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,872 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,872 - Trazi se ispis - Meth ispis: notype, -1, 0, 1
+INFO  21:49:02,872 - Trazi se predmeti - Var predmeti: Arr of Class, 0, 1, 1
+INFO  21:49:02,872 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,872 - Trazi se i - Var i: int, 1, 1, 1
+INFO  21:49:02,872 - Trazi se zapreminaS - Var zapreminaS: int, 311, 0, -1
+INFO  21:49:02,872 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,872 - Trazi se zapreminaK - Var zapreminaK: int, 310, 0, -1
+INFO  21:49:02,872 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,872 - Trazi se tezinaS - Var tezinaS: int, 313, 0, -1
+INFO  21:49:02,872 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,872 - Trazi se tezinaK - Var tezinaK: int, 312, 0, -1
+INFO  21:49:02,872 - Trazi se eol - Con eol: char, 10, 0, 0
+INFO  21:49:02,872 - ===========================================================
+INFO  21:49:02,872 - TABELA SIMBOLA
 Type int: int, -1, -1, 0
 
 Type char: char, -1, -1, 0
@@ -4239,7 +4229,7 @@ Prog test_303: notype, -1, 0, -1
    Namespace Predmeti: notype, -1, 0, -1
       Con cinilac: int, 4, 0, -1
       Con delilac: int, 3, 0, -1
-      Type Predmet: Class, 1, 0, 2
+      Type Predmet: Class, 0, 0, 2
          Fld tezina: int, 1, 1, -1
          Fld vrsta: char, 2, 1, -1
          Meth postaviTezinu: notype, -1, 1, 2
@@ -4272,7 +4262,7 @@ Prog test_303: notype, -1, 0, -1
             Var this: Class, 0, 1, 0
 
 
-      Type Sfera: Class, 90, 0, 3
+      Type Sfera: Class, 89, 0, 3
          Fld tezina: int, 1, 1, -1
          Fld vrsta: char, 2, 1, -1
          Meth postaviTezinu: notype, -1, 1, 2
@@ -4281,10 +4271,6 @@ Prog test_303: notype, -1, 0, -1
 
          Meth ucitajTezinu: notype, -1, 1, 1
             Var this: Class, 0, 1, 0
-
-         Meth zapremina: int, -1, 1, 1
-            Var this: Class, 0, 1, 0
-            Var z: int, 1, 1, 1
 
          Meth Q: int, -1, 1, 1
             Var this: Class, 0, 1, 0
@@ -4307,11 +4293,15 @@ Prog test_303: notype, -1, 0, -1
             Var this: Class, 0, 1, 0
             Var r: int, 1, 1, 0
 
+         Meth zapremina: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+            Var z: int, 1, 1, 1
+
          Meth __constructor0: notype, -1, 0, 1
             Var this: Class, 0, 1, 0
 
 
-      Type Kvadar: Class, 199, 0, 5
+      Type Kvadar: Class, 198, 0, 5
          Fld tezina: int, 1, 1, -1
          Fld vrsta: char, 2, 1, -1
          Meth postaviTezinu: notype, -1, 1, 2
@@ -4320,10 +4310,6 @@ Prog test_303: notype, -1, 0, -1
 
          Meth ucitajTezinu: notype, -1, 1, 1
             Var this: Class, 0, 1, 0
-
-         Meth zapremina: int, -1, 1, 1
-            Var this: Class, 0, 1, 0
-            Var z: int, 1, 1, 1
 
          Meth Q: int, -1, 1, 1
             Var this: Class, 0, 1, 0
@@ -4350,25 +4336,29 @@ Prog test_303: notype, -1, 0, -1
             Var b: int, 2, 1, 0
             Var c: int, 3, 1, 0
 
+         Meth zapremina: int, -1, 1, 1
+            Var this: Class, 0, 1, 0
+            Var z: int, 1, 1, 1
+
          Meth __constructor0: notype, -1, 0, 1
             Var this: Class, 0, 1, 0
 
 
 
-   Type ProstiBrojevi: Class, 310, 0, 0
-      Var prosti: Arr of int, 305, 0, -1
-      Var X: int, 306, 0, -1
-      Var i: int, 307, 0, -1
-      Var j: int, 308, 0, -1
-      Var flag: bool, 309, 0, -1
+   Type ProstiBrojevi: Class, 309, 0, 0
+      Var prosti: Arr of int, 304, 0, -1
+      Var X: int, 305, 0, -1
+      Var i: int, 306, 0, -1
+      Var j: int, 307, 0, -1
+      Var flag: bool, 308, 0, -1
       Meth __constructor0: notype, -1, 0, 1
          Var this: Class, 0, 1, 0
 
 
-   Var zapreminaK: int, 311, 0, -1
-   Var zapreminaS: int, 312, 0, -1
-   Var tezinaK: int, 313, 0, -1
-   Var tezinaS: int, 314, 0, -1
+   Var zapreminaK: int, 310, 0, -1
+   Var zapreminaS: int, 311, 0, -1
+   Var tezinaK: int, 312, 0, -1
+   Var tezinaS: int, 313, 0, -1
    Meth ispis: notype, -1, 0, 1
       Var p: Class, 0, 1, 0
 
@@ -4385,5 +4375,5 @@ Prog test_303: notype, -1, 0, -1
 
 
 
-INFO  19:08:15,438 - ===========================================================
-INFO  19:08:15,448 - Objektni fajl je uspesno generisan!
+INFO  21:49:02,873 - ===========================================================
+INFO  21:49:02,882 - Objektni fajl je uspesno generisan!

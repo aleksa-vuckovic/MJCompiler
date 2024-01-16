@@ -1,115 +1,115 @@
-INFO  03:18:59,710 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.mj
-INFO  03:18:59,711 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.obj
-INFO  03:18:59,750 - Parser je ucitao token:#2 -> program
-INFO  03:18:59,750 - Parser je ucitao token:#45 -> MJProgram
-INFO  03:18:59,750 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,752 - Parser je ucitao token:#45 -> a
-INFO  03:18:59,753 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,754 - Parser je ucitao token:#45 -> b
-INFO  03:18:59,754 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,754 - Parser je ucitao token:#30 -> *
-ERROR 03:18:59,754 - Parser report - Linija 4, kolona 10 (*): Sintaksna greska.
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> err
-INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> c
-INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> d
-INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> e
-INFO  03:18:59,757 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,757 - Parser je ucitao token:#30 -> *
-ERROR 03:18:59,757 - Parser report - Linija 4, kolona 25 (*): Sintaksna greska.
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> err2
-INFO  03:18:59,757 - Parser je ucitao token:#26 -> ;
-INFO  03:18:59,757 - Parser je ucitao token:#3 -> class
-INFO  03:18:59,757 - Parser je ucitao token:#45 -> MyClass
-INFO  03:18:59,757 - Parser je ucitao token:#5 -> extends
-ERROR 03:18:59,757 - Parser report: Izvrsen oporavak var deklaracije do ';' u liniji 4 i koloni 23.
-ERROR 03:18:59,759 - Parser report: Izvrsen oporavak var deklaracije do ',' u liniji 4 i koloni 14.
-INFO  03:18:59,759 - Parser je ucitao token:#18 -> (
-ERROR 03:18:59,759 - Parser report - Linija 7, kolona 22 ((): Sintaksna greska.
-INFO  03:18:59,759 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,759 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,759 - Parser je ucitao token:#7 -> static
-INFO  03:18:59,759 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,759 - Parser je ucitao token:#45 -> a
-ERROR 03:18:59,759 - Parser report: Izvrsen oporavak deklaracije izvodjenja do '{' u liniji 7 i koloni 14.
-INFO  03:18:59,761 - Parser je ucitao token:#26 -> ;
-INFO  03:18:59,761 - Parser je ucitao token:#44 -> 12
-ERROR 03:18:59,761 - Parser report - Linija 12, kolona 1 (12): Sintaksna greska.
-INFO  03:18:59,761 - Parser je ucitao token:#45 -> err
-INFO  03:18:59,761 - Parser je ucitao token:#45 -> field
-INFO  03:18:59,761 - Parser je ucitao token:#26 -> ;
-INFO  03:18:59,761 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,761 - Parser je ucitao token:#6 -> void
-INFO  03:18:59,761 - Parser je ucitao token:#45 -> f
-INFO  03:18:59,761 - Parser je ucitao token:#18 -> (
-ERROR 03:18:59,762 - Parser report: Izvrsen oporavak deklaracije polja do '{' u liniji 9 i koloni 13.
-INFO  03:18:59,763 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,763 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,764 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,766 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,766 - Parser je ucitao token:#6 -> void
-INFO  03:18:59,766 - Parser je ucitao token:#45 -> f
-INFO  03:18:59,766 - Parser je ucitao token:#18 -> (
-INFO  03:18:59,766 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,766 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,766 - Parser je ucitao token:#45 -> a
-INFO  03:18:59,766 - Parser je ucitao token:#41 -> =
-INFO  03:18:59,766 - Parser je ucitao token:#28 -> +
-ERROR 03:18:59,766 - Parser report - Linija 27, kolona 6 (+): Sintaksna greska.
-INFO  03:18:59,766 - Parser je ucitao token:#44 -> 3
-INFO  03:18:59,766 - Parser je ucitao token:#26 -> ;
-INFO  03:18:59,766 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,767 - Parser je ucitao token:#6 -> void
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> tmp
-ERROR 03:18:59,767 - Parser report: Izvrsen oporavak naredbe dodele u liniji 27 i koloni 4.
-INFO  03:18:59,767 - Parser je ucitao token:#18 -> (
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> a
-INFO  03:18:59,767 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,767 - Parser je ucitao token:#31 -> /
-ERROR 03:18:59,767 - Parser report - Linija 33, kolona 21 (/): Sintaksna greska.
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> err
-INFO  03:18:59,767 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,767 - Parser je ucitao token:#45 -> b
-INFO  03:18:59,768 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,768 - Parser je ucitao token:#45 -> int
-INFO  03:18:59,768 - Parser je ucitao token:#45 -> c
-INFO  03:18:59,768 - Parser je ucitao token:#25 -> ,
-INFO  03:18:59,768 - Parser je ucitao token:#28 -> +
-ERROR 03:18:59,768 - Parser report - Linija 33, kolona 41 (+): Sintaksna greska.
-INFO  03:18:59,769 - Parser je ucitao token:#45 -> err
-INFO  03:18:59,769 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,769 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,769 - Parser je ucitao token:#15 -> if
-INFO  03:18:59,769 - Parser je ucitao token:#18 -> (
-ERROR 03:18:59,769 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji 33 i koloni 39.
-ERROR 03:18:59,769 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji 33 i koloni 25.
-INFO  03:18:59,769 - Parser je ucitao token:#45 -> b
-INFO  03:18:59,769 - Parser je ucitao token:#37 -> <
-INFO  03:18:59,769 - Parser je ucitao token:#32 -> %
-ERROR 03:18:59,769 - Parser report - Linija 36, kolona 10 (%): Sintaksna greska.
-INFO  03:18:59,769 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,769 - Parser je ucitao token:#20 -> {
-INFO  03:18:59,769 - Parser je ucitao token:#12 -> print
-INFO  03:18:59,769 - Parser je ucitao token:#18 -> (
-ERROR 03:18:59,769 - Parser report: Izvrsen oporavak if uslova do ')' u liniji 36 i koloni 8.
-INFO  03:18:59,771 - Parser je ucitao token:#45 -> b
-INFO  03:18:59,771 - Parser je ucitao token:#19 -> )
-INFO  03:18:59,771 - Parser je ucitao token:#26 -> ;
-INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,771 - Parser je ucitao token:#21 -> }
-INFO  03:18:59,771 - Parser je ucitao token:#0 -> EOF
-INFO  03:18:59,771 - Parser je ucitao token:#0 -> EOF
-INFO  03:18:59,771 - ===========================================================
-INFO  03:18:59,771 - APSTRAKTNO SINTAKSNO STABLO
-INFO  03:18:59,773 - Program(
+INFO  21:41:44,934 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.mj
+INFO  21:41:44,935 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\syntax\syntax.obj
+INFO  21:41:45,040 - Parser je ucitao token:#2 -> program
+INFO  21:41:45,040 - Parser je ucitao token:#45 -> MJProgram
+INFO  21:41:45,040 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,044 - Parser je ucitao token:#45 -> a
+INFO  21:41:45,047 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,047 - Parser je ucitao token:#45 -> b
+INFO  21:41:45,048 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,048 - Parser je ucitao token:#30 -> *
+ERROR 21:41:45,048 - Parser report - Linija 4, kolona 10 (*): Sintaksna greska.
+INFO  21:41:45,050 - Parser je ucitao token:#45 -> err
+INFO  21:41:45,050 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,050 - Parser je ucitao token:#45 -> c
+INFO  21:41:45,051 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,051 - Parser je ucitao token:#45 -> d
+INFO  21:41:45,051 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,052 - Parser je ucitao token:#45 -> e
+INFO  21:41:45,052 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,052 - Parser je ucitao token:#30 -> *
+ERROR 21:41:45,052 - Parser report - Linija 4, kolona 25 (*): Sintaksna greska.
+INFO  21:41:45,053 - Parser je ucitao token:#45 -> err2
+INFO  21:41:45,053 - Parser je ucitao token:#26 -> ;
+INFO  21:41:45,053 - Parser je ucitao token:#3 -> class
+INFO  21:41:45,053 - Parser je ucitao token:#45 -> MyClass
+INFO  21:41:45,053 - Parser je ucitao token:#5 -> extends
+ERROR 21:41:45,054 - Parser report: Izvrsen oporavak var deklaracije do ';' u liniji 4 i koloni 23.
+ERROR 21:41:45,056 - Parser report: Izvrsen oporavak var deklaracije do ',' u liniji 4 i koloni 14.
+INFO  21:41:45,058 - Parser je ucitao token:#18 -> (
+ERROR 21:41:45,058 - Parser report - Linija 7, kolona 22 ((): Sintaksna greska.
+INFO  21:41:45,058 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,058 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,059 - Parser je ucitao token:#7 -> static
+INFO  21:41:45,059 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,060 - Parser je ucitao token:#45 -> a
+ERROR 21:41:45,060 - Parser report: Izvrsen oporavak deklaracije izvodjenja do '{' u liniji 7 i koloni 14.
+INFO  21:41:45,062 - Parser je ucitao token:#26 -> ;
+INFO  21:41:45,062 - Parser je ucitao token:#44 -> 12
+ERROR 21:41:45,063 - Parser report - Linija 12, kolona 1 (12): Sintaksna greska.
+INFO  21:41:45,063 - Parser je ucitao token:#45 -> err
+INFO  21:41:45,063 - Parser je ucitao token:#45 -> field
+INFO  21:41:45,063 - Parser je ucitao token:#26 -> ;
+INFO  21:41:45,063 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,063 - Parser je ucitao token:#6 -> void
+INFO  21:41:45,064 - Parser je ucitao token:#45 -> f
+INFO  21:41:45,064 - Parser je ucitao token:#18 -> (
+ERROR 21:41:45,064 - Parser report: Izvrsen oporavak deklaracije polja do '{' u liniji 9 i koloni 13.
+INFO  21:41:45,067 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,068 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,070 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,071 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,072 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,073 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,074 - Parser je ucitao token:#6 -> void
+INFO  21:41:45,074 - Parser je ucitao token:#45 -> f
+INFO  21:41:45,074 - Parser je ucitao token:#18 -> (
+INFO  21:41:45,075 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,075 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,075 - Parser je ucitao token:#45 -> a
+INFO  21:41:45,075 - Parser je ucitao token:#41 -> =
+INFO  21:41:45,075 - Parser je ucitao token:#28 -> +
+ERROR 21:41:45,077 - Parser report - Linija 27, kolona 6 (+): Sintaksna greska.
+INFO  21:41:45,077 - Parser je ucitao token:#44 -> 3
+INFO  21:41:45,077 - Parser je ucitao token:#26 -> ;
+INFO  21:41:45,077 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,077 - Parser je ucitao token:#6 -> void
+INFO  21:41:45,077 - Parser je ucitao token:#45 -> tmp
+ERROR 21:41:45,077 - Parser report: Izvrsen oporavak naredbe dodele u liniji 27 i koloni 4.
+INFO  21:41:45,078 - Parser je ucitao token:#18 -> (
+INFO  21:41:45,078 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,078 - Parser je ucitao token:#45 -> a
+INFO  21:41:45,079 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,080 - Parser je ucitao token:#31 -> /
+ERROR 21:41:45,080 - Parser report - Linija 33, kolona 21 (/): Sintaksna greska.
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> err
+INFO  21:41:45,080 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> b
+INFO  21:41:45,080 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> int
+INFO  21:41:45,080 - Parser je ucitao token:#45 -> c
+INFO  21:41:45,080 - Parser je ucitao token:#25 -> ,
+INFO  21:41:45,081 - Parser je ucitao token:#28 -> +
+ERROR 21:41:45,081 - Parser report - Linija 33, kolona 41 (+): Sintaksna greska.
+INFO  21:41:45,081 - Parser je ucitao token:#45 -> err
+INFO  21:41:45,081 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,081 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,081 - Parser je ucitao token:#15 -> if
+INFO  21:41:45,081 - Parser je ucitao token:#18 -> (
+ERROR 21:41:45,082 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ')' u liniji 33 i koloni 39.
+ERROR 21:41:45,084 - Parser report: Izvrsen oporavak deklaracije formalnog parametra do ',' u liniji 33 i koloni 25.
+INFO  21:41:45,084 - Parser je ucitao token:#45 -> b
+INFO  21:41:45,084 - Parser je ucitao token:#37 -> <
+INFO  21:41:45,085 - Parser je ucitao token:#32 -> %
+ERROR 21:41:45,085 - Parser report - Linija 36, kolona 10 (%): Sintaksna greska.
+INFO  21:41:45,085 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,086 - Parser je ucitao token:#20 -> {
+INFO  21:41:45,086 - Parser je ucitao token:#12 -> print
+INFO  21:41:45,086 - Parser je ucitao token:#18 -> (
+ERROR 21:41:45,086 - Parser report: Izvrsen oporavak if uslova do ')' u liniji 36 i koloni 8.
+INFO  21:41:45,088 - Parser je ucitao token:#45 -> b
+INFO  21:41:45,088 - Parser je ucitao token:#19 -> )
+INFO  21:41:45,088 - Parser je ucitao token:#26 -> ;
+INFO  21:41:45,089 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,089 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,090 - Parser je ucitao token:#21 -> }
+INFO  21:41:45,091 - Parser je ucitao token:#0 -> EOF
+INFO  21:41:45,093 - Parser je ucitao token:#0 -> EOF
+INFO  21:41:45,093 - ===========================================================
+INFO  21:41:45,093 - APSTRAKTNO SINTAKSNO STABLO
+INFO  21:41:45,094 - Program(
   ProgramName(
    MJProgram
   ) [ProgramName]
@@ -282,17 +282,17 @@ INFO  03:18:59,773 - Program(
     ) [Method]
   ) [MethodListItem]
 ) [Program]
-INFO  03:18:59,773 - ===========================================================
-INFO  03:18:59,773 - Parser je detektovao greske. Preskace se generisanje koda.
-INFO  03:18:59,781 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:18:59,782 - Trazi se a - Var a: int, 0, 0, -1
-INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:18:59,782 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:18:59,782 - Trazi se b - Var b: int, 1, 1, 0
-ERROR 03:18:59,782 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
-INFO  03:18:59,782 - ===========================================================
-INFO  03:18:59,782 - TABELA SIMBOLA
+INFO  21:41:45,095 - ===========================================================
+INFO  21:41:45,095 - Parser je detektovao greske. Preskace se generisanje koda.
+INFO  21:41:45,117 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:41:45,118 - Trazi se a - Var a: int, 0, 0, -1
+INFO  21:41:45,118 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:41:45,118 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:41:45,118 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:41:45,119 - Trazi se b - Var b: int, 1, 1, 0
+ERROR 21:41:45,119 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
+INFO  21:41:45,119 - ===========================================================
+INFO  21:41:45,120 - TABELA SIMBOLA
 Type int: int, -1, -1, 0
 
 Type char: char, -1, -1, 0
@@ -333,5 +333,5 @@ Prog MJProgram: notype, -1, 0, -1
 
 
 
-INFO  03:18:59,783 - ===========================================================
-INFO  03:18:59,783 - Semanticki analizator je detektovao greske. Preskace se generisanje koda
+INFO  21:41:45,121 - ===========================================================
+INFO  21:41:45,121 - Semanticki analizator je detektovao greske. Preskace se generisanje koda

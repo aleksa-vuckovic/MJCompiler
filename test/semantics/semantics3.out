@@ -1,81 +1,81 @@
-INFO  03:21:17,844 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.mj
-INFO  03:21:17,844 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.obj
-INFO  03:21:17,886 - Parser je ucitao token:#2 -> program
-INFO  03:21:17,886 - Parser je ucitao token:#45 -> MJProgram
-INFO  03:21:17,886 - Parser je ucitao token:#4 -> namespace
-INFO  03:21:17,887 - Parser je ucitao token:#45 -> data
-INFO  03:21:17,887 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,888 - Parser je ucitao token:#8 -> const
-INFO  03:21:17,889 - Parser je ucitao token:#45 -> int
-INFO  03:21:17,894 - Parser je ucitao token:#45 -> max
-INFO  03:21:17,895 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,895 - Parser je ucitao token:#44 -> 10
-INFO  03:21:17,895 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,895 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,896 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,896 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,896 - Parser je ucitao token:#3 -> class
-INFO  03:21:17,897 - Parser je ucitao token:#45 -> Test
-INFO  03:21:17,897 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,897 - Parser je ucitao token:#7 -> static
-INFO  03:21:17,897 - Parser je ucitao token:#45 -> int
-INFO  03:21:17,897 - Parser je ucitao token:#45 -> max
-INFO  03:21:17,898 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,898 - Parser je ucitao token:#45 -> int
-INFO  03:21:17,899 - Parser je ucitao token:#45 -> a
-INFO  03:21:17,899 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,899 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,899 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,900 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,900 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,901 - Parser je ucitao token:#6 -> void
-INFO  03:21:17,901 - Parser je ucitao token:#45 -> f
-INFO  03:21:17,901 - Parser je ucitao token:#18 -> (
-INFO  03:21:17,901 - Parser je ucitao token:#45 -> Test
-INFO  03:21:17,901 - Parser je ucitao token:#45 -> test
-INFO  03:21:17,901 - Parser je ucitao token:#19 -> )
-INFO  03:21:17,901 - Parser je ucitao token:#45 -> int
-INFO  03:21:17,902 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,902 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,902 - Parser je ucitao token:#20 -> {
-INFO  03:21:17,902 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,902 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,903 - Parser je ucitao token:#45 -> Test
-INFO  03:21:17,903 - Parser je ucitao token:#24 -> .
-INFO  03:21:17,903 - Parser je ucitao token:#45 -> a
-INFO  03:21:17,903 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,904 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> test
-INFO  03:21:17,904 - Parser je ucitao token:#24 -> .
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> c
-INFO  03:21:17,904 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,904 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> Test
-INFO  03:21:17,904 - Parser je ucitao token:#27 -> ::
-INFO  03:21:17,904 - Parser je ucitao token:#45 -> max
-INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,905 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,905 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,905 - Parser je ucitao token:#45 -> test
-INFO  03:21:17,905 - Parser je ucitao token:#24 -> .
-INFO  03:21:17,905 - Parser je ucitao token:#45 -> max
-INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,905 - Parser je ucitao token:#45 -> b
-INFO  03:21:17,905 - Parser je ucitao token:#41 -> =
-INFO  03:21:17,905 - Parser je ucitao token:#45 -> test
-INFO  03:21:17,905 - Parser je ucitao token:#22 -> [
-INFO  03:21:17,905 - Parser je ucitao token:#44 -> 10
-INFO  03:21:17,905 - Parser je ucitao token:#23 -> ]
-INFO  03:21:17,905 - Parser je ucitao token:#26 -> ;
-INFO  03:21:17,905 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,905 - Parser je ucitao token:#21 -> }
-INFO  03:21:17,906 - Parser je ucitao token:#0 -> EOF
-INFO  03:21:17,907 - Parser je ucitao token:#0 -> EOF
-INFO  03:21:17,907 - ===========================================================
-INFO  03:21:17,907 - APSTRAKTNO SINTAKSNO STABLO
-INFO  03:21:17,908 - Program(
+INFO  21:43:17,101 - Compiling source file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.mj
+INFO  21:43:17,102 - Output file: D:\7\PP1\Projekat\projekat\workspace\MJCompiler\test\semantics\semantics3.obj
+INFO  21:43:17,208 - Parser je ucitao token:#2 -> program
+INFO  21:43:17,208 - Parser je ucitao token:#45 -> MJProgram
+INFO  21:43:17,208 - Parser je ucitao token:#4 -> namespace
+INFO  21:43:17,212 - Parser je ucitao token:#45 -> data
+INFO  21:43:17,213 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,214 - Parser je ucitao token:#8 -> const
+INFO  21:43:17,215 - Parser je ucitao token:#45 -> int
+INFO  21:43:17,216 - Parser je ucitao token:#45 -> max
+INFO  21:43:17,217 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,219 - Parser je ucitao token:#44 -> 10
+INFO  21:43:17,220 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,220 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,222 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,223 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,223 - Parser je ucitao token:#3 -> class
+INFO  21:43:17,225 - Parser je ucitao token:#45 -> Test
+INFO  21:43:17,226 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,226 - Parser je ucitao token:#7 -> static
+INFO  21:43:17,228 - Parser je ucitao token:#45 -> int
+INFO  21:43:17,228 - Parser je ucitao token:#45 -> max
+INFO  21:43:17,229 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,230 - Parser je ucitao token:#45 -> int
+INFO  21:43:17,233 - Parser je ucitao token:#45 -> a
+INFO  21:43:17,234 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,234 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,236 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,236 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,236 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,238 - Parser je ucitao token:#6 -> void
+INFO  21:43:17,238 - Parser je ucitao token:#45 -> f
+INFO  21:43:17,238 - Parser je ucitao token:#18 -> (
+INFO  21:43:17,238 - Parser je ucitao token:#45 -> Test
+INFO  21:43:17,239 - Parser je ucitao token:#45 -> test
+INFO  21:43:17,239 - Parser je ucitao token:#19 -> )
+INFO  21:43:17,239 - Parser je ucitao token:#45 -> int
+INFO  21:43:17,241 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,241 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,241 - Parser je ucitao token:#20 -> {
+INFO  21:43:17,241 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,242 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,243 - Parser je ucitao token:#45 -> Test
+INFO  21:43:17,244 - Parser je ucitao token:#24 -> .
+INFO  21:43:17,244 - Parser je ucitao token:#45 -> a
+INFO  21:43:17,244 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,245 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,246 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,246 - Parser je ucitao token:#45 -> test
+INFO  21:43:17,246 - Parser je ucitao token:#24 -> .
+INFO  21:43:17,246 - Parser je ucitao token:#45 -> c
+INFO  21:43:17,247 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,247 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,247 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,247 - Parser je ucitao token:#45 -> Test
+INFO  21:43:17,247 - Parser je ucitao token:#27 -> ::
+INFO  21:43:17,247 - Parser je ucitao token:#45 -> max
+INFO  21:43:17,247 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,248 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,248 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,248 - Parser je ucitao token:#45 -> test
+INFO  21:43:17,248 - Parser je ucitao token:#24 -> .
+INFO  21:43:17,248 - Parser je ucitao token:#45 -> max
+INFO  21:43:17,249 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,249 - Parser je ucitao token:#45 -> b
+INFO  21:43:17,249 - Parser je ucitao token:#41 -> =
+INFO  21:43:17,249 - Parser je ucitao token:#45 -> test
+INFO  21:43:17,249 - Parser je ucitao token:#22 -> [
+INFO  21:43:17,249 - Parser je ucitao token:#44 -> 10
+INFO  21:43:17,250 - Parser je ucitao token:#23 -> ]
+INFO  21:43:17,250 - Parser je ucitao token:#26 -> ;
+INFO  21:43:17,250 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,250 - Parser je ucitao token:#21 -> }
+INFO  21:43:17,252 - Parser je ucitao token:#0 -> EOF
+INFO  21:43:17,253 - Parser je ucitao token:#0 -> EOF
+INFO  21:43:17,254 - ===========================================================
+INFO  21:43:17,254 - APSTRAKTNO SINTAKSNO STABLO
+INFO  21:43:17,255 - Program(
   ProgramName(
    MJProgram
   ) [ProgramName]
@@ -317,35 +317,35 @@ INFO  03:21:17,908 - Program(
     ) [Method]
   ) [MethodListItem]
 ) [Program]
-INFO  03:21:17,908 - ===========================================================
-INFO  03:21:17,917 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:21:17,918 - Trazi se Test - Type Test: Class, 1, 0, 1
-INFO  03:21:17,918 - Trazi se int - Type int: int, -1, -1, 0
-INFO  03:21:17,918 - Trazi se b - Var b: int, 1, 1, 1
-INFO  03:21:17,919 - Trazi se Test - Type Test: Class, 1, 0, 1
-ERROR 03:21:17,919 - Semanticka greska na liniji 21: Clan a klase Test nije staticki.
-ERROR 03:21:17,919 - Semanticka greska na liniji 21: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
-INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
-INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
-ERROR 03:21:17,919 - Semanticka greska na liniji 24: Clan c nije pronadjen.
-ERROR 03:21:17,919 - Semanticka greska na liniji 24: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
-INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
-INFO  03:21:17,919 - Trazi se Test - Type Test: Class, 1, 0, 1
-ERROR 03:21:17,919 - Semanticka greska na liniji 27: Identifikator Test ne oznacava prostor imena.
-ERROR 03:21:17,919 - Semanticka greska na liniji 27: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
-INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
-INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
-ERROR 03:21:17,919 - Semanticka greska na liniji 30: Pristup statickom clanu preko reference.
-ERROR 03:21:17,919 - Semanticka greska na liniji 30: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
-INFO  03:21:17,919 - Trazi se b - Var b: int, 1, 1, 1
-INFO  03:21:17,919 - Trazi se test - Var test: Class, 0, 1, 0
-ERROR 03:21:17,919 - Semanticka greska na liniji 33: Indeksiranje je moguce samo nad nizovima.
-ERROR 03:21:17,919 - Semanticka greska na liniji 33: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
-ERROR 03:21:17,919 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
-INFO  03:21:17,919 - ===========================================================
-INFO  03:21:17,920 - TABELA SIMBOLA
+INFO  21:43:17,256 - ===========================================================
+INFO  21:43:17,279 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:43:17,279 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:43:17,280 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:43:17,280 - Trazi se Test - Type Test: Class, 1, 0, 1
+INFO  21:43:17,280 - Trazi se int - Type int: int, -1, -1, 0
+INFO  21:43:17,280 - Trazi se b - Var b: int, 1, 1, 1
+INFO  21:43:17,281 - Trazi se Test - Type Test: Class, 1, 0, 1
+ERROR 21:43:17,281 - Semanticka greska na liniji 21: Clan a klase Test nije staticki.
+ERROR 21:43:17,282 - Semanticka greska na liniji 21: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  21:43:17,282 - Trazi se b - Var b: int, 1, 1, 1
+INFO  21:43:17,282 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 21:43:17,282 - Semanticka greska na liniji 24: Clan c nije pronadjen.
+ERROR 21:43:17,282 - Semanticka greska na liniji 24: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  21:43:17,282 - Trazi se b - Var b: int, 1, 1, 1
+INFO  21:43:17,282 - Trazi se Test - Type Test: Class, 1, 0, 1
+ERROR 21:43:17,282 - Semanticka greska na liniji 27: Identifikator Test ne oznacava prostor imena.
+ERROR 21:43:17,282 - Semanticka greska na liniji 27: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  21:43:17,282 - Trazi se b - Var b: int, 1, 1, 1
+INFO  21:43:17,283 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 21:43:17,283 - Semanticka greska na liniji 30: Pristup statickom clanu preko reference.
+ERROR 21:43:17,283 - Semanticka greska na liniji 30: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+INFO  21:43:17,283 - Trazi se b - Var b: int, 1, 1, 1
+INFO  21:43:17,283 - Trazi se test - Var test: Class, 0, 1, 0
+ERROR 21:43:17,283 - Semanticka greska na liniji 33: Indeksiranje je moguce samo nad nizovima.
+ERROR 21:43:17,283 - Semanticka greska na liniji 33: Tip izraza nije dodeljiv entitetu sa leve strane dodele.
+ERROR 21:43:17,283 - Semanticka greska na liniji 1: Nije pronadjena globalna main metoda bez argumenata!
+INFO  21:43:17,283 - ===========================================================
+INFO  21:43:17,283 - TABELA SIMBOLA
 Type int: int, -1, -1, 0
 
 Type char: char, -1, -1, 0
@@ -380,5 +380,5 @@ Prog MJProgram: notype, -1, 0, -1
 
 
 
-INFO  03:21:17,920 - ===========================================================
-INFO  03:21:17,920 - Semanticki analizator je detektovao greske. Preskace se generisanje koda
+INFO  21:43:17,284 - ===========================================================
+INFO  21:43:17,284 - Semanticki analizator je detektovao greske. Preskace se generisanje koda

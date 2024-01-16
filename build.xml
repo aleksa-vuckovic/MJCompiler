@@ -9,6 +9,7 @@
 				<exclude name="SemanticAnalyzer.java"/>
 				<exclude name="CodeGenerator.java"/>
 				<exclude name="Yylex.java"/>
+				<exclude name="Compiler.java"/>
 			</fileset>
 		</delete>
 		<delete>
@@ -29,6 +30,7 @@
 				<exclude name="CodeGenerator.java"/>
 				<exclude name="MJParser.java"/>
 				<exclude name="sym.java"/>
+				<exclude name="Compiler.java"/>
 			</fileset>
 		</delete>
 	</target>

@@ -48,8 +48,8 @@ namespace Nizovi{
 		print(Nizovi::nizch[Konstante::jedan * 2]);
 			
 		a=1;
-		//read(bodovi);
-		bodovi = 3;
+		read(bodovi);
+		//bodovi = 3;
 		bodovi = -bodovi + (Konstante::pet * a / 2 - Konstante::jedan) * bodovi - (3 % 2 + 3 * 2 - 3); 
 		print(bodovi);
 			

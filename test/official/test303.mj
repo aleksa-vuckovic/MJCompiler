@@ -133,8 +133,8 @@ int tezinaK, tezinaS;
 		predmeti[3] = k2;
 		predmeti[5] = k3;
 
-		//read(t);
-		t = 2;
+		read(t);
+		//t = 2;
 		for(i=0; i<6; i++){
 			predmeti[i].postaviTezinu(t); 	
 		}

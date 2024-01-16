@@ -83,12 +83,13 @@ int a, curr;
 		if(i == 3 && verify()) print(-4);
 		else print(4);  
 		
-		/*
+
 		read(niz[0]);
 		read(niz[1]);
 		read(niz[2]);
-		*/
-		niz[0] = 2; niz[1] = 3; niz[2] = 4;
+		
+		//niz[0] = 2; niz[1] = 3; niz[2] = 4;
+		
 		print(eol);
 		print(Addition::sum(Addition::sum(niz[0], niz[1]), niz[2])); 
 			
